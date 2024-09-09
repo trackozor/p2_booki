@@ -1,0 +1,295 @@
+/****** General ***********/
+/* Application globale de la police 'Raleway' pour tous les éléments */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Déclaration de variables CSS globales pour les couleurs */
+:root {
+    --main-color: #0065FC; /* Couleur principale utilisée pour les éléments de mise en valeur */
+    --main-bg-color: #F2F2F2; /* Couleur de fond principale */
+    --filter-bg-color: #DEEBFF; /* Couleur de fond des filtres */
+}
+
+/* Style pour les icônes de la bibliothèque Font Awesome */
+.fa-solid {
+    color: var(--main-color); /* Applique la couleur principale aux icônes */
+}
+
+/* Centrage horizontal du contenu dans le corps de la page */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* Conteneur principal qui limite la largeur à 1440px et gère le padding */
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px; /* Espacement intérieur sur les côtés gauche et droit */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Supprime la couleur et la décoration (soulignement) par défaut des liens */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Style des titres de section */
+.section-title {
+    margin: 0;
+    font-size: 22px; /* Taille du texte des titres de section */
+}
+
+/* Style général des cartes utilisées dans le site */
+.card {
+    background-color: white;
+    border-radius: 20px; /* Bords arrondis */
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre légère sous la carte */
+}
+
+/* Assure que les images dans les cartes conservent leur proportion tout en remplissant leur conteneur */
+.card img {
+    object-fit: cover;
+}
+
+/* Style des titres des cartes */
+.card-title {
+    font-size: 16px; /* Taille des titres des cartes */
+}
+
+/* Applique un poids de police plus élevé aux prix en euros */
+.euro {
+    font-weight: 700;
+}
+
+/* Style pour les étoiles neutres dans les notes */
+.neutral-star {
+    color: var(--main-bg-color); /* Les étoiles neutres ont la même couleur que le fond */
+}
+
+/****** Header ***************/
+.header {
+    height: 79px;
+    display: flex;/*utilise Flexbox pour organiser les éléments en ligne horizontale*/
+    justify-content: space-between; /* Aligne les éléments à chaque extrémité du conteneur */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+.logo img {
+    height: 19px;
+    width: 61.09px;
+}
+/****************Recherche************/
+.Search-bar {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width:20.56em;
+}
+/**************Filtres****************/
+.filtre {
+    display: flex;
+    gap: 2em;
+    margin: 10px;
+    align-items: center;
+}
+.info {
+    display: flex;
+}
+.info i {
+   color: #0065FC;
+   padding: 15px;
+}
+/********** bouton********************/
+.filtre-bouton {
+    display: flex;
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+    background-color:#FFF ;
+    gap: 8px;
+    border:2px solid #D9D9D9;
+    padding:4px 19px 4px 19px;
+}
+/*****changement du couleur du bouton lors du survol***********/
+.filtre-bouton:hover {
+    background-color: #DEEBFF;
+}
+/************* icone bouton **********************/
+.filtre-bouton i {
+    color: #0065FC;
+}
+/****** Hebergements And Populaires ***********/
+/* Section contenant les hébergements et les populaires, disposée en flexbox */
+.hebergements-and-populaires {
+    display: flex; /* Permet l'alignement des sections côte à côte */
+    justify-content: space-between; /* Espace les sections uniformément */
+}
+
+/* Style des sections hébergements et populaires */
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color); /* Fond des sections */
+    border-radius: 20px; /* Bords arrondis pour les sections */
+    padding: 30px; /* Espacement intérieur */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/****** Hebergements ***********/
+/* Section hébergements occupant 65% de la largeur de la zone parent */
+.hebergements {
+    width: 65%;
+}
+.rangée {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    height: 40%;
+    padding-top: 5%;
+
+}
+.hebergement-card{
+     background-color: #FFF;
+     border-radius: 15px;
+}
+.hebergement-card  img{
+    heigt:auto;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/****** Populaires ***********/
+/* Section populaires occupant 32% de la largeur de la zone parent */
+.populaires {
+    width: 32%;
+}
+
+/* Titre de la section populaire avec icône */
+.populaires-title {
+    display: flex; /* Alignement en ligne du titre et de l'icône */
+    justify-content: space-between; /* Le titre et l'icône sont espacés aux extrémités */
+    align-items: center; /* Alignement vertical au centre */
+}
+
+/* Les cartes dans la section populaires sont disposées en ligne */
+.populaires-cards .card {
+    display: flex; /* Aligne l'image et le texte en ligne */
+    margin-top: 33px; /* Espacement entre les cartes */
+}
+
+/* Style des images dans les cartes populaires */
+.populaires-cards img {
+    width: 33%; /* L'image occupe 33% de la largeur de la carte */
+    height: 136px; /* Hauteur fixe pour les images */
+    border-top-left-radius: 20px; /* Arrondit le coin supérieur gauche */
+    border-bottom-left-radius: 20px; /* Arrondit le coin inférieur gauche */
+}
+
+/* Contenu textuel des cartes populaires */
+.populaires-cards .card-content {
+    width: 67%; /* Le contenu textuel occupe 67% de la largeur de la carte */
+    padding-left: 15px; /* Espacement entre l'image et le texte */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments textuels verticalement */
+    justify-content: space-between; /* Espace les éléments verticalement */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Marges pour le titre des cartes populaires */
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+/* Pas de marges pour le sous-titre des cartes */
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+/* Espacement pour la zone de notation */
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+/*********************Activités***********/
+.activites {
+
+}
+.activites-a-marseille {
+    height:480px;
+    display: flex;
+    gap:30px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.activites-card{
+    height:90%;
+    width:300px;
+    border:2px solid #F2F2F2;
+    border-radius: 15px;
+}
+.activites-card img {
+    height: 85%;
+    width:100%;
+    border-top-left-radius: 15px;  /* Arrondit le coin supérieur gauche */
+    border-top-right-radius: 15px; /* Arrondit le coin supérieur droit */
+}
+.activites-card h3 {
+    padding-left: 15px;
+}
+/*********************Footer*************/
+.footer {
+    display: flex;
+    gap: 15%;
+    background-color: #F2F2F2;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Styles pour les appareils de taille moyenne (tablettes et inférieurs à 1024px) */
+@media (max-width: 1024px) {
+    /* Les sections hébergements et populaires passent en colonne sur petits écrans */
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    /* Les hébergements prennent 100% de la largeur sur petits écrans */
+    .hebergements {
+        width: 100%;
+    }
+
+    /* Les populaires prennent également 100% de la largeur et ont un espacement supérieur */
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /* Réorganisation des cartes populaires sur petits écrans */
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Les liens dans les cartes populaires prennent 30% de la largeur */
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    /* Réduction de la taille des titres et sous-titres des cartes populaires */
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Styles pour les petits appareils (moins de 768px, comme les téléphones) */
+@media (max-width: 767.98px) {
+    /* ... */
+    /* Styles supplémentaires pour petits écrans à définir si besoin */
+}
