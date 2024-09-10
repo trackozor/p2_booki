@@ -25,8 +25,8 @@ body {
 /* Conteneur principal qui limite la largeur à 1440px et gère le padding */
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px; /* Espacement intérieur sur les côtés gauche et droit */
+    max-width: 90vw; /* Limite la largeur à 90% de la lergeur de la fenêtre */
+    padding: 0 3vw; /* Espacement intérieur sur les côtés gauche et droit en pourcentage de la largeur de la fenetre */
     box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
 }
 
@@ -39,15 +39,15 @@ a {
 /* Style des titres de section */
 .section-title {
     margin: 0;
-    font-size: 22px; /* Taille du texte des titres de section */
+    font-size: 1.375rem; /* Taille relative à la racine, correspondant à 22px*/
 }
 
 /* Style général des cartes utilisées dans le site */
 .card {
     background-color: white;
-    border-radius: 20px; /* Bords arrondis */
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre légère sous la carte */
+    border-radius: 1.25rem; /* Bords arrondis */
+    padding: 0.3125rem;
+    filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ombre légère sous la carte */
 }
 
 /* Assure que les images dans les cartes conservent leur proportion tout en remplissant leur conteneur */
@@ -57,7 +57,7 @@ a {
 
 /* Style des titres des cartes */
 .card-title {
-    font-size: 16px; /* Taille des titres des cartes */
+    font-size: 1rem; /* Taille des titres des cartes */
 }
 
 /* Applique un poids de police plus élevé aux prix en euros */
@@ -72,27 +72,29 @@ a {
 
 /****** Header ***************/
 .header {
-    height: 79px;
+    height: 10vh; /* 10% de la fenêtre d'affichage */
     display: flex;/*utilise Flexbox pour organiser les éléments en ligne horizontale*/
     justify-content: space-between; /* Aligne les éléments à chaque extrémité du conteneur */
     align-items: center; /* Aligne les éléments verticalement au centre */
 }
 
 .logo img {
-    height: 19px;
-    width: 61.09px;
+    height: 2.5vw; /* Hauteur relative à 2.5% de la largeur de la fenêtre */
+    width: auto; /* Conserve le ratio d'aspect */
+}
+
 }
 /****************Recherche************/
 .Search-bar {
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    width:20.56em;
+    border-radius: 1.25rem; /* bord arronds*/
+    border: 0.0625rem solid #ccc; /* bordure du cadre*/
+    width:50%; /*largeur relative à la taille du conteneur parent*/
 }
 /**************Filtres****************/
 .filter {
     display: flex;
-    gap: 2em;
-    margin: 10px;
+    gap: 2rem;
+    margin: 0.625rem;
     align-items: center;
 }
 .info {
@@ -100,7 +102,7 @@ a {
 }
 .info i {
    color: #0065FC;
-   padding: 15px;
+   padding: 0.9375rem;
 }
 /********** bouton********************/
 .filter-button {
@@ -141,7 +143,7 @@ a {
 .hebergements {
     width: 65%;
 }
-.rangée {
+.rangee {
     display: flex;
     justify-content: space-between;
     gap: 5%;
