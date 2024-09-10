@@ -155,12 +155,15 @@ a {
      background-color: #FFF; /*Fond blanc pour chaque carte d'hebergement */
      border-radius: 0.9375rem; /* bords arrondis pour chaque carte */
      height: 60%;
+     width: 100%;
+     gap: 2%;
 }
 .hebergement-card  img{
-    height:100%;  /* l'imzge occupe toute la hauteur de son conteneur parent */
+    height:100%;  /* l'image occupe toute la hauteur de son conteneur parent */
     width: 100%; /* l'image occupe toute la largeur de son conteneur parent */
     border-top-left-radius: 0.9375rem;
     border-top-right-radius: 0.9375rem;
+    object-fit: cover;
 }
 
 /****** Populaires ***********/
@@ -183,7 +186,7 @@ a {
     flex-direction: row; /* l'image et le texte sont alignés horizontalement */
     background-color:#FFF; /* Couleur de fond des cartes */
     border-radius: 1.25rem; /*Coins arrondis */
-    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1);/* Ombre sous la carte */
+    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* empeche le contenu de dépasser les coins arrondis */
 }
 
@@ -198,7 +201,7 @@ a {
 /* Contenu textuel des cartes populaires */
 .populaires-cards .card-content {
     width: 67%; /* Le contenu textuel occupe 67% de la largeur de la carte */
-    padding-left: 15px; /* Espacement entre l'image et le texte */
+    padding-left: 1rem; /* Espacement entre l'image et le texte */
     display: flex;
     flex-direction: column; /* Aligne les éléments textuels verticalement */
     justify-content: space-between; /* Espace les éléments verticalement */
@@ -207,8 +210,8 @@ a {
 
 /* Marges pour le titre des cartes populaires */
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 0.625rem;
+    margin-bottom: 0.25rem;
 }
 
 /* Pas de marges pour le sous-titre des cartes */
@@ -218,46 +221,49 @@ a {
 
 /* Espacement pour la zone de notation */
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 /*********************Activités***********/
 .activites {
-
+     
 }
 .activites-a-marseille {
-    height:480px;
-    display: flex;
-    gap:30px;
-    margin-bottom: 100px;
+    height:50vh; /* ajustement de la fenetre*/
+    display: flex; 
+    gap:2rem; /* espacement */
     justify-content: space-between;
+    flex-wrap:wrap ;
 }
-.activites-card{
-    height:90%;
-    width:300px;
-    border:2px solid #F2F2F2;
-    border-radius: 15px;
+.activites-card  {
+    height:100%;
+    width:22rem;
+    border:0.125rem solid #F2F2F2;
+    border-radius: 1rem;
 }
 .activites-card img {
     height: 85%;
     width:100%;
-    border-top-left-radius: 15px;  /* Arrondit le coin supérieur gauche */
-    border-top-right-radius: 15px; /* Arrondit le coin supérieur droit */
+    border-top-left-radius: 1rem;  /* Arrondit le coin supérieur gauche */
+    border-top-right-radius: 1rem; /* Arrondit le coin supérieur droit */
 }
 .activites-card h3 {
-    padding-left: 15px;
+    padding-left: 1rem;
 }
 /*********************Footer*************/
 .footer {
     display: flex;
     gap: 15%;
     background-color: #F2F2F2;
+    padding: 1.5rem 0;
+    position: relative; /* Assure que le footer reste en position normale */
+    margin-top: 10rem;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Styles pour les appareils de taille moyenne (tablettes et inférieurs à 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
     /* Les sections hébergements et populaires passent en colonne sur petits écrans */
     .hebergements-and-populaires {
         flex-direction: column;
@@ -265,30 +271,38 @@ a {
 
     /* Les hébergements prennent 100% de la largeur sur petits écrans */
     .hebergements {
-        width: 100%;
+        width: 80%;
+        flex-direction: column;
+    }
+    .rangee {
+        flex-direction: column;
     }
 
     /* Les populaires prennent également 100% de la largeur et ont un espacement supérieur */
     .populaires {
-        width: 100%;
-        margin-top: 50px;
+        width: 80%;
+        margin-top: 3.125rem;
+    }
+    .activites-a-marseille {
+         width: 80%;
+         height: 80%;
     }
 
     /* Réorganisation des cartes populaires sur petits écrans */
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     /* Les liens dans les cartes populaires prennent 30% de la largeur */
     .populaires-cards a {
-        width: 30%;
+        width: 100%;
     }
 
     /* Réduction de la taille des titres et sous-titres des cartes populaires */
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .populaires-cards .card-subtitle {
@@ -297,7 +311,7 @@ a {
 }
 
 /* Styles pour les petits appareils (moins de 768px, comme les téléphones) */
-@media (max-width: 767.98px) {
+@media (max-width: 48rem) {
     /* ... */
     /* Styles supplémentaires pour petits écrans à définir si besoin */
 }
