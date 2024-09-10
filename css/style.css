@@ -20,6 +20,7 @@
 body {
     display: flex;
     justify-content: center;
+    min-height: 100vh; /* S'assure que la page prend au moins toute la hauteur de la fenêtre */
 }
 
 /* Conteneur principal qui limite la largeur à 1440px et gère le padding */
@@ -88,7 +89,7 @@ a {
 .Search-bar {
     border-radius: 1.25rem; /* bord arronds*/
     border: 0.125rem solid #ccc; /* bordure du cadre*/
-    width:50%; /*largeur relative à la taille du conteneur parent*/
+ 
 }
 /**************Filtres****************/
 .filter {
@@ -153,6 +154,7 @@ a {
 .hebergement-card{
      background-color: #FFF; /*Fond blanc pour chaque carte d'hebergement */
      border-radius: 0.9375rem; /* bords arrondis pour chaque carte */
+     height: 60%;
 }
 .hebergement-card  img{
     height:100%;  /* l'imzge occupe toute la hauteur de son conteneur parent */
@@ -177,19 +179,17 @@ a {
 /* Les cartes dans la section populaires sont disposées en ligne */
 .populaires-cards .card {
     display: flex; /* Aligne l'image et le texte en ligne */
-    margin-top: 2rem; /* Espacement entre les cartes */
+    margin-top: 1rem; /* Espacement entre les cartes */
     flex-direction: row; /* l'image et le texte sont alignés horizontalement */
     background-color:#FFF; /* Couleur de fond des cartes */
     border-radius: 1.25rem; /*Coins arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1);/* Ombre sous la carte */
     overflow: hidden; /* empeche le contenu de dépasser les coins arrondis */
-    flex-grow: 1;
 }
 
 /* Style des images dans les cartes populaires */
 .populaires-cards img {
     width: 33%; /* L'image occupe 33% de la largeur de la carte */
-    height: 100%; /* Hauteur automatique pour garder les proportions */
     object-fit: cover;/* Remplit l'espace de la carte sans déformer l'image */
     border-top-left-radius: 1.25rem; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 1.25rem; /* Arrondit le coin inférieur gauche */
