@@ -79,7 +79,7 @@ a {
 }
 
 .logo img {
-    height: 2.5vw; /* Hauteur relative à 2.5% de la largeur de la fenêtre */
+    height: 2rem; /* Hauteur relative  de la largeur de la fenêtre */
     width: auto; /* Conserve le ratio d'aspect */
 }
 
@@ -99,6 +99,7 @@ a {
 }
 .info {
     display: flex;
+
 }
 .info i {
    color: #0065FC;
@@ -134,31 +135,29 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color); /* Fond des sections */
     border-radius: 1.25rem; /* Bords arrondis pour les sections */
-    padding: 1.875remx; /* Espacement intérieur */
+    padding: 1.25rem; /* Espacement intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
 
 /****** Hebergements ***********/
 /* Section hébergements occupant 65% de la largeur de la zone parent */
 .hebergements {
-    width: 65%;
+    width: 65%; /* la section des hebergements accupe 65% de la largeur de son conteneur prent */
 }
 .rangee {
-    display: flex;
-    justify-content: space-between;
-    gap: 2%;
-    height: auto;
-    padding-top: 2%;
+    display: flex; /* Alignement des elements */
+    justify-content: space-between; /* les éléments sont espacés aux extrémités */
+    gap: 2%; /* Espacement entre chaque élément de la ligne */
 
 }
 .hebergement-card{
-     background-color: #FFF;
-     border-radius: 0.9375rem;
+     background-color: #FFF; /*Fond blanc pour chaque carte d'hebergement */
+     border-radius: 0.9375rem; /* bords arrondis pour chaque carte */
 }
 .hebergement-card  img{
-    height:auto;
-    width: 100%;
-    border-top-left-radius: 0.9375rempx;
+    height:100%;  /* l'imzge occupe toute la hauteur de son conteneur parent */
+    width: 100%; /* l'image occupe toute la largeur de son conteneur parent */
+    border-top-left-radius: 0.9375rem;
     border-top-right-radius: 0.9375rem;
 }
 
@@ -178,15 +177,22 @@ a {
 /* Les cartes dans la section populaires sont disposées en ligne */
 .populaires-cards .card {
     display: flex; /* Aligne l'image et le texte en ligne */
-    margin-top: 2.0625rem; /* Espacement entre les cartes */
+    margin-top: 2rem; /* Espacement entre les cartes */
+    flex-direction: row; /* l'image et le texte sont alignés horizontalement */
+    background-color:#FFF; /* Couleur de fond des cartes */
+    border-radius: 1.25rem; /*Coins arrondis */
+    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1);/* Ombre sous la carte */
+    overflow: hidden; /* empeche le contenu de dépasser les coins arrondis */
+    flex-grow: 1;
 }
 
 /* Style des images dans les cartes populaires */
 .populaires-cards img {
     width: 33%; /* L'image occupe 33% de la largeur de la carte */
-    height: auto; /* Hauteur automatique pour garder les proportions */
-    border-top-left-radius: 20px; /* Arrondit le coin supérieur gauche */
-    border-bottom-left-radius: 20px; /* Arrondit le coin inférieur gauche */
+    height: 100%; /* Hauteur automatique pour garder les proportions */
+    object-fit: cover;/* Remplit l'espace de la carte sans déformer l'image */
+    border-top-left-radius: 1.25rem; /* Arrondit le coin supérieur gauche */
+    border-bottom-left-radius: 1.25rem; /* Arrondit le coin inférieur gauche */
 }
 
 /* Contenu textuel des cartes populaires */
