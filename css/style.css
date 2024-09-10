@@ -89,7 +89,7 @@ a {
     width:20.56em;
 }
 /**************Filtres****************/
-.filtre {
+.filter {
     display: flex;
     gap: 2em;
     margin: 10px;
@@ -103,7 +103,7 @@ a {
    padding: 15px;
 }
 /********** bouton********************/
-.filtre-bouton {
+.filter-button {
     display: flex;
     height: 50px;
     border-radius: 25px;
@@ -114,11 +114,11 @@ a {
     padding:4px 19px 4px 19px;
 }
 /*****changement du couleur du bouton lors du survol***********/
-.filtre-bouton:hover {
+.filter-button:hover {
     background-color: #DEEBFF;
 }
 /************* icone bouton **********************/
-.filtre-bouton i {
+.filter-button i {
     color: #0065FC;
 }
 /****** Hebergements And Populaires ***********/
