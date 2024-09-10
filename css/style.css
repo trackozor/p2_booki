@@ -87,7 +87,7 @@ a {
 /****************Recherche************/
 .Search-bar {
     border-radius: 1.25rem; /* bord arronds*/
-    border: 0.0625rem solid #ccc; /* bordure du cadre*/
+    border: 0.125rem solid #ccc; /* bordure du cadre*/
     width:50%; /*largeur relative à la taille du conteneur parent*/
 }
 /**************Filtres****************/
@@ -107,13 +107,13 @@ a {
 /********** bouton********************/
 .filter-button {
     display: flex;
-    height: 50px;
-    border-radius: 25px;
+    height: 1.875rem;
+    border-radius: 1.5625rem;
     align-items: center;
     background-color:#FFF ;
-    gap: 8px;
-    border:2px solid #D9D9D9;
-    padding:4px 19px 4px 19px;
+    gap: 0.5rem;
+    border:0.125rem solid #D9D9D9;
+    padding:0.25rem 1.1875rem;
 }
 /*****changement du couleur du bouton lors du survol***********/
 .filter-button:hover {
@@ -133,8 +133,8 @@ a {
 /* Style des sections hébergements et populaires */
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color); /* Fond des sections */
-    border-radius: 20px; /* Bords arrondis pour les sections */
-    padding: 30px; /* Espacement intérieur */
+    border-radius: 1.25rem; /* Bords arrondis pour les sections */
+    padding: 1.875remx; /* Espacement intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
 
@@ -146,20 +146,20 @@ a {
 .rangee {
     display: flex;
     justify-content: space-between;
-    gap: 5%;
-    height: 40%;
-    padding-top: 5%;
+    gap: 2%;
+    height: auto;
+    padding-top: 2%;
 
 }
 .hebergement-card{
      background-color: #FFF;
-     border-radius: 15px;
+     border-radius: 0.9375rem;
 }
 .hebergement-card  img{
-    heigt:auto;
+    height:auto;
     width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 0.9375rempx;
+    border-top-right-radius: 0.9375rem;
 }
 
 /****** Populaires ***********/
@@ -178,13 +178,13 @@ a {
 /* Les cartes dans la section populaires sont disposées en ligne */
 .populaires-cards .card {
     display: flex; /* Aligne l'image et le texte en ligne */
-    margin-top: 33px; /* Espacement entre les cartes */
+    margin-top: 2.0625rem; /* Espacement entre les cartes */
 }
 
 /* Style des images dans les cartes populaires */
 .populaires-cards img {
     width: 33%; /* L'image occupe 33% de la largeur de la carte */
-    height: 136px; /* Hauteur fixe pour les images */
+    height: auto; /* Hauteur automatique pour garder les proportions */
     border-top-left-radius: 20px; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 20px; /* Arrondit le coin inférieur gauche */
 }
