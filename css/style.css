@@ -10,6 +10,7 @@
     --main-color: #0065FC; /* Couleur principale utilisée pour les éléments importants (ex: texte, bordures) */
     --main-bg-color: #F2F2F2; /* Couleur de fond globale pour les sections */
     --filter-bg-color: #DEEBFF; /* Couleur de fond spécifique pour les filtres */
+    --font-wight:700;
 }
 
 /* Style des icônes Font Awesome */
@@ -52,19 +53,25 @@ a {
     filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */
 }
 .card2 {
-  background-color: white; /* Fond blanc pour les cartes */
+    background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Coins arrondis */
     padding-bottom: 0.3125rem;
     filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */   
 }
 .card2 img {
+    height: 90%;
+    width: 100%;
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 /* Assure que les images des cartes conservent leurs proportions et remplissent bien l'espace */
 .card img {
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
+    overflow: hidden;
+
 
 }
 
@@ -104,6 +111,7 @@ a {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
     gap: 30%; /* Crée un espace de 30% entre les éléments */
     justify-content: center; /* Centre les éléments dans la barre de navigation */
+    padding-right: 2%;
 }
 
 /* Style des éléments du menu lors du survol */
@@ -113,13 +121,37 @@ a {
 }
 
 /****************Recherche************/
+.local {
+    background-color: var(--main-bg-color);
+    padding:0 5% 0 5%;
+    height: 100%;
+    overflow: hidden;
+}
 
 /* Style pour la barre de recherche */
 .Search-bar {
     border-radius: 1.25rem; /* Bord arrondi */
     border: 0.125rem solid #ccc; /* Bordure grise claire */
+    width: 35%;
+    height:3rem;
+    display: flex;
+    align-items: center;
 }
+.search-button {
+    background-color: var(--main-color);
+    color: #FFF;
+    border-top-right-radius: 1.25rem; /* Bord arrondi */
+    border-bottom-right-radius: 1.25rem;
+    border-color: var(--main-color);
+    width: 43%;
+    height:100%;
+}
+.search-input {
+    height:90%;
+    border:none;
+    padding-left: 1rem;
 
+}
 /**************Filtres****************/
 
 /* Conteneur pour les filtres, utilisant Flexbox */
@@ -181,17 +213,33 @@ a {
 /****** Hébergements ***********/
 
 /* Section des hébergements, occupant 65% de la largeur */
-.hebergements {
+.hebergements  {
     width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
 }
 
 /* Style pour les rangées d'éléments */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    justify-content: space-between; /* Espace les éléments aux extrémités */
-    gap: 2%; /* Ajoute un espace entre les éléments de la ligne */
-    overflow: hidden; /* Masque les débordements */
+    height: 40%;
+    margin-bottom: 5%;
+    gap: 2%;
+    justify-content: space-between; /* Espace les éléments également */
+}
+.rangee .card {
+    display: flex;
+    flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
+    height: 100%; /* Chaque carte prend 100% de la hauteur de la rangée */
+    flex-grow: 1; /* Permet à chaque carte de grandir et de prendre une part égale de l'espace disponible */
+    flex-basis: calc(33.33% - 2%); /* Ajuste la largeur de chaque carte pour qu'elle prenne 1/3 de la largeur de la rangée moins l'espace de 2% */
 
+}
+.rangee .card img {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border-top-left-radius: 1.25rem ;
+    border-top-right-radius: 1.25rem;
+    justify-content: space-between;
 }
 
 /****** Populaires ***********/
@@ -268,8 +316,6 @@ a {
 .activites-a-marseille .card2{
     height: 100%; /* Les cartes occupent toute la hauteur disponible */
     width: 22rem; /* Largeur des cartes */
-    border: 0.125rem solid #F2F2F2; /* Bordure grise légère */
-
 }
 
 /* Style des images dans les cartes d'activités */
