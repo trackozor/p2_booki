@@ -83,7 +83,12 @@ a {
     height: 2rem; /* Hauteur relative  de la largeur de la fenêtre */
     width: auto; /* Conserve le ratio d'aspect */
 }
+.nav {
+    gap: 20%;
+}
 
+.nav:hover {
+    color:var(--main-color);
 }
 /****************Recherche************/
 .Search-bar {
@@ -119,7 +124,7 @@ a {
 }
 /*****changement du couleur du bouton lors du survol***********/
 .filter-button:hover {
-    background-color: #DEEBFF;
+    background-color:var(--filter-bg-color);
 }
 /************* icone bouton **********************/
 .filter-button i {
@@ -149,10 +154,11 @@ a {
     display: flex; /* Alignement des elements */
     justify-content: space-between; /* les éléments sont espacés aux extrémités */
     gap: 2%; /* Espacement entre chaque élément de la ligne */
+    overflow: hidden;
 
 }
 .hebergement-card{
-     background-color: #FFF; /*Fond blanc pour chaque carte d'hebergement */
+     background-color:#FFF; /*Fond blanc pour chaque carte d'hebergement */
      border-radius: 0.9375rem; /* bords arrondis pour chaque carte */
      height: 60%;
      width: 100%;
@@ -163,7 +169,6 @@ a {
     width: 100%; /* l'image occupe toute la largeur de son conteneur parent */
     border-top-left-radius: 0.9375rem;
     border-top-right-radius: 0.9375rem;
-    object-fit: cover;
 }
 
 /****** Populaires ***********/
