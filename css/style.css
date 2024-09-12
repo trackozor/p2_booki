@@ -132,11 +132,10 @@ li {
 /********************************************************************************************************/
 /*--------------------------------Recherche-------------------------------------------------------------*/
 /*********************************************************************************************************/
-.research {
-}
+
 .local {
     display: flex;
-    height: 3vh;
+    height: 4vh;
     width:5vw;
     border-radius: 1rem  0  0 1rem ;
     background-color: var(--main-bg-color);
@@ -154,9 +153,10 @@ li {
     border-radius: 1rem; /* Bord arrondi */
     border: 0.125rem solid #ccc; /* Bordure grise claire */
     width: 20vw;
-    height:3vh;
+    height:4vh;
     display: flex;
     align-items: center;
+    margin-bottom: 2%;
 }
 .search-button {
     background-color: var(--main-color);
@@ -165,16 +165,19 @@ li {
     border-bottom-right-radius: 1rem;
     border-color: var(--main-color);
     width: 10vw;
-    height:3vh;
+    height:4vh;
 }
 .search-input {
-    height:3vh;
+    height:4vh;
     width: 20vw;
     border:none;
     padding-left: 1rem;
 
 }
-
+.search-input::placeholder {
+    color:#000;
+    font-weight: 700;
+}
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
 /*********************************************************************************************************/
@@ -253,6 +256,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
+    gap:2%;
 }
 
 /* Style pour les rangées d'éléments */
@@ -262,13 +266,14 @@ li {
     width: auto;
     height: 25vh;
     justify-content: space-between;
-    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .rangee .card {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
     height: 25vh; /* Chaque carte prend 100% de la hauteur de la rangée */
     width: 16vw;
+    padding-bottom: 5%;
     
 }
 .rangee .card img {
@@ -278,13 +283,7 @@ li {
     border-top-right-radius: 1.25rem;
     object-fit: cover;
 }
-.rangee .card-txt {
-    padding:0;
-    margin:0;
-}
-.affichez_plus {
-    margin-top: 2%;
-}
+
 /*********************************************************************************************************/
 /*------------------------------------ Section Populaire (droite) -----------------------------------*/
 /*********************************************************************************************************/
@@ -313,7 +312,7 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 15vh;
+    height: 16vh;
 }
 
 /* Style des images dans les cartes Populaires */
