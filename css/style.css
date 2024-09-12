@@ -70,9 +70,6 @@ a {
 /* Assure que les images des cartes conservent leurs proportions et remplissent bien l'espace */
 .card img {
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
-    overflow: hidden;
-
-
 }
 
 /* Style des titres des cartes */
@@ -111,7 +108,10 @@ a {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
     gap: 30%; /* Crée un espace de 30% entre les éléments */
     justify-content: center; /* Centre les éléments dans la barre de navigation */
-    padding-right: 2%;
+    padding: 2%;
+}
+.nav-element {
+    padding-top:5%;
 }
 
 /* Style des éléments du menu lors du survol */
@@ -122,10 +122,12 @@ a {
 
 /****************Recherche************/
 .local {
+    display: flex;
     background-color: var(--main-bg-color);
     padding:0 5% 0 5%;
     height: 100%;
-    overflow: hidden;
+    align-items: center;
+    border-radius: 1.25rem  0  0 1.25rem  ;
 }
 
 /* Style pour la barre de recherche */
@@ -165,12 +167,14 @@ a {
 /* Conteneur d'informations avec Flexbox */
 .info {
     display: flex; /* Flexbox pour aligner les informations */
+    gap:2%;
 }
 
 /* Style pour les icônes d'information */
 .info i {
-    color: #0065FC; /* Couleur bleue pour les icônes d'information */
-    padding: 0.9375rem; /* Espacement autour des icônes */
+    display: flex;
+    color: var(--main-color) ;
+    align-items: center;
 }
 
 /********** Bouton de filtre ********************/
@@ -192,7 +196,6 @@ a {
     background-color: var(--filter-bg-color); /* Change le fond du bouton lors du survol */
 }
 
-/************* Icône dans le bouton **********************/
 
 /****** Hébergements et Populaires ***********/
 
