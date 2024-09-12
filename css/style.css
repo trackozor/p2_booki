@@ -228,6 +228,7 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     padding:1.25rem; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
+
 }
 
 /*********************************************************************************************************/
@@ -238,32 +239,33 @@ li {
 
 /* Section des hébergements, occupant 65% de la largeur */
 .hebergements  {
+    display: flex;
+    flex-direction: column;
     width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
-    align-items: center;
+    height: 100%;
 }
 
 /* Style pour les rangées d'éléments */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    height: 40%;
     margin-bottom: 5%;
-    gap: 2%;
-    justify-content: space-between; /* Espace les éléments également */
+    gap: 5%;
+    margin-top: 3%;
+    width: auto;
 }
 .rangee .card {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
     height: 100%; /* Chaque carte prend 100% de la hauteur de la rangée */
-    flex-grow: 1; /* Permet à chaque carte de grandir et de prendre une part égale de l'espace disponible */
-    flex-basis: calc(33.33% - 2%); /* Ajuste la largeur de chaque carte pour qu'elle prenne 1/3 de la largeur de la rangée moins l'espace de 2% */
+    width: 100%;
+    
 }
 .rangee .card img {
     width: 100%;
-    height: 90%;
+    height: 70%;
     overflow: hidden;
     border-top-left-radius: 1.25rem ;
     border-top-right-radius: 1.25rem;
-    justify-content: space-between;
 }
 
 /*********************************************************************************************************/
@@ -274,6 +276,10 @@ li {
 /* Section Populaires occupant 32% de la largeur */
 .populaires {
     width: 32%; /* La section Populaires occupe 32% de la largeur de son parent */
+    display: flex;
+    flex-direction:column ;
+    gap: 2%;
+
 }
 
 /* Titre de la section Populaires avec icône */
@@ -292,6 +298,7 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
+    height: 55%;
 }
 
 /* Style des images dans les cartes Populaires */
@@ -358,7 +365,7 @@ li {
 }
 
 /* Style des titres dans les cartes d'activités */
-.activites-card h3 {
+.activites-a-marseille  h3 {
     padding-left: 1rem; /* Espacement à gauche pour le titre */
 }
 
