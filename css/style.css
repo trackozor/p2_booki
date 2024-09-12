@@ -22,7 +22,8 @@
 body {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
-    min-height: 100vh; /* Le contenu prend toute la hauteur visible du viewport */
+    max-height: 100vh; /* Le contenu prend toute la hauteur visible du viewport */
+    max-height: 100vh;
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
@@ -59,7 +60,7 @@ a {
     filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */   
 }
 .card2 img {
-    height: 90%;
+    height: 80%;
     width: 100%;
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
@@ -99,7 +100,7 @@ li {
 
 /* Style du conteneur principal de l'en-tête */
 .header {
-    height: 10vh; /* Hauteur de 10% de la hauteur visible de la fenêtre */
+    height: 2vh; /* Hauteur de 10% de la hauteur visible de la fenêtre */
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
     justify-content: space-between; /* Aligne les éléments à gauche et à droite */
     align-items: center; /* Centre verticalement les éléments */
@@ -131,36 +132,44 @@ li {
 /********************************************************************************************************/
 /*--------------------------------Recherche-------------------------------------------------------------*/
 /*********************************************************************************************************/
-
+.research {
+}
 .local {
     display: flex;
+    height: 3vh;
+    width:5vw;
+    border-radius: 1rem  0  0 1rem ;
     background-color: var(--main-bg-color);
-    padding:0 5% 0 5%;
-    height: 100%;
+
+}
+.local i{
+    display: flex;
+    padding-left: 30%;
     align-items: center;
-    border-radius: 1.25rem  0  0 1.25rem  ;
+
 }
 
 /* Style pour la barre de recherche */
 .Search-bar {
-    border-radius: 1.25rem; /* Bord arrondi */
+    border-radius: 1rem; /* Bord arrondi */
     border: 0.125rem solid #ccc; /* Bordure grise claire */
-    width: 35%;
-    height:3rem;
+    width: 20vw;
+    height:3vh;
     display: flex;
     align-items: center;
 }
 .search-button {
     background-color: var(--main-color);
     color: #FFF;
-    border-top-right-radius: 1.25rem; /* Bord arrondi */
-    border-bottom-right-radius: 1.25rem;
+    border-top-right-radius: 1rem; /* Bord arrondi */
+    border-bottom-right-radius: 1rem;
     border-color: var(--main-color);
-    width: 43%;
-    height:100%;
+    width: 10vw;
+    height:3vh;
 }
 .search-input {
-    height:90%;
+    height:3vh;
+    width: 20vw;
     border:none;
     padding-left: 1rem;
 
@@ -176,6 +185,7 @@ li {
     gap: 2rem; /* Espace de 2rem entre les éléments */
     margin: 0.625rem; /* Marge autour des filtres */
     align-items: center; /* Centre verticalement les éléments */
+    height:2vh;
 }
 
 /* Conteneur d'informations avec Flexbox */
@@ -228,6 +238,7 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     padding:1.25rem; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
+    height: 65vh;
 
 }
 
@@ -242,32 +253,38 @@ li {
     display: flex;
     flex-direction: column;
     width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
-    height: 100%;
 }
 
 /* Style pour les rangées d'éléments */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    margin-bottom: 5%;
-    gap: 5%;
-    margin-top: 3%;
+    gap: 2%;
     width: auto;
+    height: 25vh;
+    justify-content: space-between;
+    margin-top: 2%;
 }
 .rangee .card {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
-    height: 100%; /* Chaque carte prend 100% de la hauteur de la rangée */
-    width: 100%;
+    height: 25vh; /* Chaque carte prend 100% de la hauteur de la rangée */
+    width: 16vw;
     
 }
 .rangee .card img {
     width: 100%;
-    height: 70%;
-    overflow: hidden;
+    height: 60%;
     border-top-left-radius: 1.25rem ;
     border-top-right-radius: 1.25rem;
+    object-fit: cover;
 }
-
+.rangee .card-txt {
+    padding:0;
+    margin:0;
+}
+.affichez_plus {
+    margin-top: 2%;
+}
 /*********************************************************************************************************/
 /*------------------------------------ Section Populaire (droite) -----------------------------------*/
 /*********************************************************************************************************/
@@ -278,7 +295,6 @@ li {
     width: 32%; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;
     flex-direction:column ;
-    gap: 2%;
 
 }
 
@@ -286,7 +302,6 @@ li {
 .populaires-title {
     display: flex; /* Aligne l'icône et le texte horizontalement */
     justify-content: space-between; /* Espace le texte et l'icône */
-    align-items: center; /* Centre verticalement le contenu */
 }
 
 /* Style des cartes dans la section Populaires */
@@ -298,7 +313,7 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 55%;
+    height: 15vh;
 }
 
 /* Style des images dans les cartes Populaires */
@@ -343,22 +358,19 @@ li {
 
 /* Conteneur pour la section Activités à Marseille */
 .activites-a-marseille {
-    height: 50vh; /* La section prend 50% de la hauteur visible de la fenêtre */
     display: flex; /* Utilise Flexbox pour aligner les cartes */
-    gap: 2rem; /* Espace entre les cartes */
-    justify-content: space-between; /* Les cartes sont espacées uniformément */
-    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si elles dépassent */
+    gap:2%; /* Espace entre les cartes */
 }
 
 /* Style des cartes d'activités */
-.activites-a-marseille .card2{
-    height: 100%; /* Les cartes occupent toute la hauteur disponible */
-    width: 22rem; /* Largeur des cartes */
+.activites-a-marseille .card2 {
+    height: 40vh; /* Les cartes occupent toute la hauteur disponible */
+    width:20vw;
 }
 
 /* Style des images dans les cartes d'activités */
 .activites-card img {
-    height: 85%; /* L'image occupe 85% de la hauteur de la carte */
+    height: 80%; /* L'image occupe 85% de la hauteur de la carte */
     width: 100%; /* L'image prend toute la largeur de la carte */
     border-top-left-radius: 1rem; /* Arrondit le coin supérieur gauche */
     border-top-right-radius: 1rem; /* Arrondit le coin supérieur droit */
@@ -367,6 +379,7 @@ li {
 /* Style des titres dans les cartes d'activités */
 .activites-a-marseille  h3 {
     padding-left: 1rem; /* Espacement à gauche pour le titre */
+    align-items: center;
 }
 
 /*********************************************************************************************************/
@@ -378,9 +391,7 @@ li {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     gap: 15%; /* Espace entre les éléments du footer */
     background-color: #F2F2F2; /* Couleur de fond du footer */
-    padding: 1.5rem 0; /* Espacement intérieur du footer */
-    position: relative; /* Positionne le footer de manière normale dans le flux du document */
-    margin-top: 10rem; /* Grand espacement au-dessus du footer */
+    padding: 1% 0; /* Espacement intérieur du footer */
 }
 
 /*********************************************************************************************************/
@@ -389,39 +400,60 @@ li {
 
 /********* Styles pour les appareils de taille moyenne (tablettes et écrans inférieurs à 1024px) *********/
 @media (max-width: 64rem) {
-    /* Les sections Hébergements et Populaires passent en colonne sur petits écrans */
+    .main-container {
+        max-width: 64rem; /* Il est limité à 90% de la largeur de la fenêtre */
+        padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
+        box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
+    }
+
+}
+
+/********** Styles pour les petits appareils (moins de 768px, comme les téléphones) ********************/
+@media (max-width: 48rem) {
+     .main-container {
+        width: 100%;
+        max-width:48rem;
+        max-height: 64rem;
+        padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
+        box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
+    }
+    .footer {
+        width:auto;
+ 
+    }
     .hebergements-and-populaires {
-        flex-direction: column; /* Les sections sont empilées verticalement */
+        display: flex;
+        flex-direction: column;
     }
 
     /* La section Hébergements prend 80% de la largeur sur petits écrans */
     .hebergements {
-        width: 80%; /* La section occupe 80% de la largeur du parent */
-        flex-direction: column; /* Les éléments à l'intérieur sont empilés verticalement */
+        width: 48rem;/* La section occupe 80% de la largeur du parent */
+
     }
 
     /* Les éléments dans une rangée deviennent une colonne sur petits écrans */
     .rangee {
-        flex-direction: column; /* Les éléments sont empilés verticalement */
     }
 
     /* La section Populaires prend également 80% de la largeur et a un espacement supérieur */
     .populaires {
-        width: 80%; /* La section occupe 80% de la largeur du parent */
+        width: 48rem; /* La section occupe 80% de la largeur du parent */
         margin-top: 3.125rem; /* Marge au-dessus de la section Populaires */
     }
 
     /* Les activités prennent toute la largeur et hauteur sur petits écrans */
     .activites-a-marseille {
-        width: 80%; /* Largeur à 80% */
-        height: 80%; /* Hauteur à 80% */
+        width: 48rem; /* Largeur à 80% */
+
     }
+
 
     /* Réorganisation des cartes Populaires en colonne sur petits écrans */
     .populaires-cards {
         display: flex;
-        flex-direction: column; /* Les cartes sont empilées verticalement */
         justify-content: space-between; /* Espace entre les cartes */
+
     }
 
     /* Les liens dans les cartes Populaires prennent 100% de la largeur sur petits écrans */
@@ -437,9 +469,9 @@ li {
     .populaires-cards .card-subtitle {
         font-size: 13px; /* Taille plus petite pour les sous-titres */
     }
+    .footer {
+        width: 48rem;
+    }
 }
 
-/********** Styles pour les petits appareils (moins de 768px, comme les téléphones) ********************/
-@media (max-width: 48rem) {
-    /* Tu peux ajouter ici des styles supplémentaires pour les très petits écrans */
-}
+
