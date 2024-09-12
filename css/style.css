@@ -78,7 +78,7 @@ a {
 }
 
 /* Style renforcé pour les prix affichés en euros */
-.euro {
+.bold {
     font-weight: 700; /* Met le texte en gras */
 }
 
@@ -220,7 +220,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color); /* Fond gris clair pour les sections */
     border-radius: 1.25rem; /* Bords arrondis */
-    padding: 1.25rem; /* Espace intérieur */
+    padding:1.25rem; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
 }
 
@@ -233,6 +233,7 @@ a {
 /* Section des hébergements, occupant 65% de la largeur */
 .hebergements  {
     width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
+    align-items: center;
 }
 
 /* Style pour les rangées d'éléments */
@@ -249,7 +250,6 @@ a {
     height: 100%; /* Chaque carte prend 100% de la hauteur de la rangée */
     flex-grow: 1; /* Permet à chaque carte de grandir et de prendre une part égale de l'espace disponible */
     flex-basis: calc(33.33% - 2%); /* Ajuste la largeur de chaque carte pour qu'elle prenne 1/3 de la largeur de la rangée moins l'espace de 2% */
-
 }
 .rangee .card img {
     width: 100%;
