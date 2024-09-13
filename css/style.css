@@ -436,8 +436,9 @@ li {
         width: 15vw;
     }
 }
-
+/*-------------------------------------------------------------------------------------------------------*/
 /*------------------------Tablette -----------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
 
     /*------Portrait--------*/
 
@@ -452,10 +453,11 @@ li {
     .nav-element:hover{
         border-top: none; /* Supprime la bordure supérieur */
         border-bottom: 2px solid var(--main-color); /* Ajoute une bordure inférieur colorée */
+    }
     .research {
         height:20vh;
     }
-    }
+
     /* Les sections Hébergements et Populaires sont empilées les unes sur les autres (verticalement) */
     .hebergements-and-populaires {
         flex-direction: column; /* Les sections Hébergements et Populaires deviennent empilées en portrait */
@@ -491,5 +493,34 @@ li {
     .activites-a-marseille .card2 {
         width: 19vw; /* Chaque carte d'activités occupe 19% de la largeur de la fenêtre */
         height: 18vh; /* Hauteur des cartes ajustée à 18% de la hauteur de la fenêtre */
+    }
+}
+
+    /*----Landscape ---------*/
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    * {
+        font-size: 0.8rem; /* La taille de police est réduite à 0.8rem pour tout le contenu */
+    }
+    .main-container {
+        max-width: 95vw;
+        height: 40vh;
+    }
+    .hebergements-and-populaires {
+        flex-direction: column;
+        gap: 2%;
+        height:40vh;
+    }
+    .hebergements {
+        height: 25vh;
+    }
+    .hebergements, .populaires {
+        width: 90vw;
+    }
+    .rangee {
+        height:12vh;
+    }
+    .rangee .card {
+        width: 19vw;
+        height: 12vh;
     }
 }
