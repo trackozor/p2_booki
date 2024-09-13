@@ -46,9 +46,11 @@
 <!--##### Section contenant la barre de recherche et filtre #######-->
             <div class="research">
                 <!-- Titre de la section -->
-                <h2>Trouvez votre logement pour des vacances de rêve</h2>
-                <!-- complément illustrant le titre-->
-                <p>En plein centre-ville ou en pleine nature</p>
+                <div class="research-txt">
+                    <h1>Trouvez votre logement pour des vacances de rêve</h1>
+                    <!-- complément illustrant le titre-->
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
                 <!-- Formulaire de recherche -->
                 <form class="Search-bar">
                     <!-- Icône pour la localisation -->
@@ -56,7 +58,8 @@
                         <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
                     </div>
                     <!-- Zone de texte ou le lieu doit être rentré-->
-                    <input type="text" placeholder="Marseille,France" class="search-input" />
+                    <label for="localisation-search" class="sr-only">Saisissez un lieu</label>
+                    <input type="text" id="localisation-search" placeholder="Marseille, France" class="search-input" />
                     <!-- Bouton pour valider-->
                     <button type="submit" class="search-button">Rechercher</button>
                 </form>
@@ -456,9 +459,9 @@
             </section>
         </main>
 
-<!---------------------------------------------------------------------------------------->
-<!--******************************** Footer (pied de page) ****************************-->
-<!---------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!--***************************Footer (pied de page) ****************************-->
+<!---------------------------------------------------------------------------------->
 
         <footer class="footer">
 

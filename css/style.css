@@ -74,6 +74,12 @@ a {
 /* Style des titres des cartes */
 .card-title {
     font-size: 1rem; /* Taille des titres des cartes */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card-txt {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Style renforcé pour affichage en gras*/
@@ -102,11 +108,12 @@ li {
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
     justify-content: space-between; /* Aligne les éléments à gauche et à droite */
     align-items: center; /* Centre verticalement les éléments */
+    margin-top: 2vh;
 }
 
 /* Style du logo */
 .logo img {
-    height: 2rem; /* Définit la hauteur du logo */
+    height: 2vh; /* Définit la hauteur du logo */
     width: auto; /* Maintient le ratio d'aspect du logo */
 }
 
@@ -144,6 +151,13 @@ li {
     padding-left: 30%;
     align-items: center;
 
+}
+ .research-txt h1 {
+    margin-bottom: 0.5rem; /* Ajuste cette valeur pour réduire l'espace */
+}
+
+.research-txt p {
+    margin-top: 0; /* Supprime la marge supérieure pour coller le texte au titre */
 }
 
 /* Style pour la barre de recherche */
@@ -334,8 +348,8 @@ li {
 
 /* Marges pour le titre des cartes Populaires */
 .populaires-cards .card-title {
-    margin-top: 0.625rem; /* Marge en haut */
-    margin-bottom: 0.25rem; /* Marge en bas */
+    margin-top: 1vh; /* Marge en haut */
+    margin-bottom:1vh; /* Marge en bas */
 }
 
 /* Pas de marges pour le sous-titre des cartes */
@@ -427,38 +441,55 @@ li {
 
     /*------Portrait--------*/
 
-/* Media query pour les tablettes en mode portrait (768px à 1024px) */
+/* Media query pour les tablettes en mode portrait (entre 768px et 1024px) 
+   Converti en rem : 48rem = 768px, 64rem = 1024px */
 @media (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
-    /* Section Hébergements et Populaires empilées */
+
+    /* Réduction de la taille globale de la police pour l'ensemble de la page */
     * {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* La taille de police est réduite à 0.8rem pour tout le contenu */
     }
+    .nav-element:hover{
+        border-top: none; /* Supprime la bordure supérieur */
+        border-bottom: 2px solid var(--main-color); /* Ajoute une bordure inférieur colorée */
+    .research {
+        height:20vh;
+    }
+    }
+    /* Les sections Hébergements et Populaires sont empilées les unes sur les autres (verticalement) */
     .hebergements-and-populaires {
-        flex-direction: column; /* Les sections sont empilées en portrait */
-        gap: 3%;
-        width: 95vw;
-        height:60vh;
+        flex-direction: column; /* Les sections Hébergements et Populaires deviennent empilées en portrait */
+        gap: 3%; /* Ajoute un espace de 3% entre les sections */
+        width: 95vw; /* Largeur ajustée à 95% de la largeur de la fenêtre (viewport) */
+        height: 60vh; /* Hauteur ajustée à 60% de la hauteur de la fenêtre */
     }
+
+    /* Les sections Hébergements et Populaires prennent 85% de la largeur de l'écran */
     .hebergements, .populaires {
-        width: 85vw;
+        width: 85vw; /* Chaque section occupe 85% de la largeur du viewport */
     }
+
+    /* Les cartes populaires sont alignées en rangée (horizontalement) */
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
+        display: flex; /* Utilise Flexbox pour aligner les cartes en ligne */
+        flex-direction: row; /* Aligne les cartes côte à côte horizontalement */
     }
+
+    /* La hauteur des rangées de cartes est ajustée */
     .rangee {
-        height:15vh;
+        height: 15vh; /* Hauteur des rangées ajustée à 15% de la hauteur de la fenêtre */
     }
-    /* Cartes plus grandes en mode portrait */
+
+    /* Cartes d'hébergements et de populaires plus grandes en mode portrait */
     .rangee .card, .populaires-cards .card {
-        width: 25vw; /* Les cartes prennent toute la largeur */
-        height: 12vh; /* Ajuste la hauteur */
-        display: flex;
-
+        width: 25vw; /* Les cartes occupent 25% de la largeur de la fenêtre */
+        height: 12vh; /* Hauteur des cartes ajustée à 12% de la hauteur de la fenêtre */
+        display: flex; /* Utilise Flexbox pour l'alignement du contenu des cartes */
     }
 
+    /* Cartes d'activités avec des dimensions adaptées à l'écran portrait */
     .activites-a-marseille .card2 {
-        width: 19vw; /* Prend toute la largeur */
-        height: 18vh;
+        width: 19vw; /* Chaque carte d'activités occupe 19% de la largeur de la fenêtre */
+        height: 18vh; /* Hauteur des cartes ajustée à 18% de la hauteur de la fenêtre */
     }
 }
