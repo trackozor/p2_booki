@@ -134,7 +134,7 @@ li {
 .local {
     display: flex;
     height: 4vh;
-    width:5vw;
+    width:4vw;
     border-radius: 1rem  0  0 1rem ;
     background-color: var(--main-bg-color);
 
@@ -150,7 +150,7 @@ li {
 .Search-bar {
     border-radius: 1rem; /* Bord arrondi */
     border: 0.125rem solid #ccc; /* Bordure grise claire */
-    width: 30vw;
+    width: 25vw;
     height:4vh;
     display: flex;
     align-items: center;
@@ -271,7 +271,7 @@ li {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
     height: 25vh; /* Chaque carte prend 100% de la hauteur de la rangée */
-    width: 15vw;
+    width: 16vw;
     padding-bottom: 5%;
     
 }
@@ -363,7 +363,7 @@ li {
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
     height: 50vh; /* Les cartes occupent toute la hauteur disponible */
-    width:18vw;
+    width:19vw;
 }
 
 /* Style des images dans les cartes d'activités */
@@ -397,68 +397,28 @@ li {
 /*----------------------- Media queries ----------------------------------------------------------------*/
 /*********************************************************************************************************/
 
-/* Pour les écrans moyens-grands (entre 48rem et 63.99rem) */
-@media (min-width: 48rem) and (max-width: 64rem) {
-    * {
-        font-size: 0.8rem;
-    }
+/*------------------------Ecrans large et multi ecrans -----------------------------------------------------------------------/
+
+/* Media query pour les très grands écrans (au-dessus de 1440px) */
+@media (min-width: 1441px) {
+
+    /* Conteneur principal centré avec une largeur maximale */
     .main-container {
-        max-width: 90vw;
-        padding: 0 3vw;
-        height: 80vh;
-    }
-    .Search-bar {
-        width: 40%;
-    }
-      .search-input {
-        width: 75%;
+        max-width: 90vw; /* Limite la largeur du site pour les très grands écrans */
+        margin: 0 3vw; /* Centre le contenu */
     }
 
-    .hebergements-and-populaires {
-        width: 100%; /* Les sections deviennent empilées sur petits écrans */
-        display: flex;
-        flex-direction: column;
-        height: 65vh;
-        gap:2%;
-    }
+    /* Les sections Hébergements et Populaires conservent leur taille */
     .hebergements {
-        width: 100%;
+        width: 65vw; /* Section Hébergements garde 65% de la largeur */
+    }
+    .hebergements-and-populaires {
+        gap:2vw;
     }
     .populaires {
-        width: 100%;
-        height:40vh;
-        gap: 2%;
-
+        width: 32vw; /* Section Populaires garde 32% de la largeur */
     }
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 2%;
-    }
-    .populaires-cards .card {
-        width: 23vw;
-        height: 10vh;
-    }
-    .rangee {
-        flex-direction: row;
-        gap: 1%;
-        height: 16vh;
-    }
-
     .rangee .card {
-        width: 22vw; /* Réduire la largeur des cartes */
-        height: 13vh;
-        margin-bottom: 2%;
-        gap: 1%;
-    }
-
-    .activites-a-marseille .card2 {
-        height: 20vh;
-    }
-    .footer {
-        flex-direction: row;
-        gap: 3rem;
+        width: 15vw;
     }
 }
-
-
