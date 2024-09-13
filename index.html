@@ -2,27 +2,60 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Booki, votre plateforme de réservation d'hébergements et d'activités">
+    <!-- Encodage des caractères (UTF-8) pour supporter tous les types de caractères -->
+    <meta charset="UTF-8"> 
 
-    <title>Booki</title>
+    <!-- Ajuste l'affichage pour les appareils mobiles (responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Description du site pour le SEO -->
+    <meta name="description" content="Booki, votre plateforme de réservation d'hébergements et d'activités. Trouvez et réservez facilement des hébergements et des activités pour vos vacances de rêve.">
+
+    <!-- Auteur du site (optionnel, mais informatif) -->
+    <meta name="author" content="trackozor">
+
+    <!-- Autorise les moteurs de recherche à indexer la page et suivre les liens -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Balises Open Graph pour améliorer le partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Booki - Réservation d'hébergements et d'activités">
+    <meta property="og:description" content="Trouvez et réservez facilement des hébergements et des activités pour vos vacances de rêve, que ce soit en ville ou en pleine nature.">
+    <meta property="og:image" content="https://booki.com/images/booki-share-logo.jpg"> <!-- Remplace par l'URL réelle -->
+    <meta property="og:url" content="https://booki.com"> <!-- Remplace par l'URL réelle -->
+    <meta property="og:type" content="website">
+
+    <!-- Définition de la couleur de la barre d'adresse sur mobile -->
+    <meta name="theme-color" content="#0065FC"> 
+
+    <!-- Favicon (icone du site) : à remplacer par le chemin réel -->
+    <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon"> 
+
+    <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
+    <title>Booki - Réservation d'hébergements et d'activités</title>
+
+    <!-- Pré-connexion aux polices Google pour améliorer les performances de chargement -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importation des polices Google (Raleway) -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Importation de FontAwesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Importation de la feuille de style principale -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
+
 <body>
     <!-- Conteneur principal de la page -->
     <div class="main-container">
-<!---------------------------------------------------------------------------------------->
-<!--************************ Header ( En-tête) *****************************************-->
-<!---------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!--************************ Header ( En-tête) **********************************-->
+<!---------------------------------------------------------------------------------->
 
         <header class="header">
             <!-- logo -->
@@ -38,12 +71,13 @@
             </nav>
         </header>
 
-<!--------------------------------------------------------------------------------------->
-<!--************************* Main Section (Section principale)************************--> 
-<!---------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!--******************** Main Section (Section principale)************************-->
+<!---------------------------------------------------------------------------------->
 
         <main>
 <!--##### Section contenant la barre de recherche et filtre #######-->
+            
             <div class="research">
                 <!-- Titre de la section -->
                 <div class="research-txt">
@@ -65,7 +99,10 @@
                 </form>
             </div>
 
+
+<!---------------------------------------------------------------------------------->
 <!--#### section contenant les filtres #############-->
+            
             <div class="filter">
                 <!-- TItres-->
                 <h3>Filtres</h3>
@@ -99,7 +136,9 @@
                 </button>
             </div>
 
+<!---------------------------------------------------------------------------------->
 <!--#### Section info avec icone ###########-->
+            
             <!-- info avec icone -->
             <div class="info">
                 <!-- icône infobulle -->
@@ -108,25 +147,27 @@
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>     
             </div>
 
+<!---------------------------------------------------------------------------------->
 <!--#### Section contenant les hébergements et les plus populaires #####-->
-            <!-- Section contenant les hébergements et les plus populaires -->
             <div class="hebergements-and-populaires">
 
-    <!--========= Section pour les hébergements =============-->
+
+    <!--#### Section pour les hébergements #####-->
                 <section id="hebergements" class="hebergements">
                     <!-- titre de la section hebergements -->
                     <h2 class="section-title">Hébergements à Marseille</h2>
 
-             <!--===== premiere rangée de carte =======-->
+             <!--#### premiere rangée de cartes ####-->
                     <div class="rangee">
 
                         <!-- liens vers plus d'info carte 1--> 
                         <a href="#">
+
                             <!--++++++++ premiere carte +++++++++-->
                             <article class="card">
                                 <!-- Image de la carte-->
                                 <img src="./images/hebergements/Port_hotel.webp" alt="vue en perspective de deux lit simple avec en arriere plan une fenêtre ouverte">
-                                <!--contenud de la carte-->
+                                <!--contenue de la carte-->
                                 <div class="hebergement-content">
                                     <div class="card-txt">
                                         <!-- Titre de l hebergement----->
@@ -151,11 +192,12 @@
 
                         <!-- liens vers plus d'info carte 2--> 
                         <a href="#">
+
                             <!--++++++++ deuxième carte ++++++++-->
                             <article class="card">
                                 <!-- Image de la carte-->
                                 <img src="./images/hebergements/Amina.webp" alt="vue de deux lit simple sur le coté gauche avec en arriere plan une fenêtre ouverte">
-                                <!--contenud de la carte-->
+                                <!--contenue de la carte-->
                                 <div class="hebergement-content">
                                     <div class="card-txt">
                                         <!-- Titre de l hebergement----->
@@ -180,11 +222,12 @@
 
                         <!-- liens vers plus d'info carte 3--> 
                         <a href="#">
+
                             <!--+++++++++ troisième carte +++++++++-->
                             <article class="card">
                                 <!-- Image de la carte-->
                                 <img src="./images/hebergements/Mouettes.webp" alt="vue d'un lit simple  avec en arriere plan une armoire avec un miroir">
-                                <!--contenud de la carte-->
+                                <!--contenue de la carte-->
                                 <div class="hebergement-content">
                                     <div class="card-txt">
                                         <!-- Titre de l hebergement----->
@@ -208,11 +251,12 @@
                         </a>
                     </div>
 
-            <!--===== deuxième rangée de carte =======-->
+            <!--#### deuxième rangée de cartes ####-->
                     <div class="rangee">
 
                         <!-- liens vers plus d'info carte 4--> 
                         <a href="#">
+
                             <!--+++++++ quatrieme carte ++++++++-->
                             <article class="card">
                                 <!-- Image de la carte-->
@@ -242,6 +286,7 @@
 
                         <!-- liens vers plus d'info carte 5 -->
                         <a href="#">
+
                             <!--++++++++ cinquième carte ++++++++-->
                             <article class="card">
                                 <!-- Image de la carte-->
@@ -271,6 +316,7 @@
 
                         <!-- liens vers plus d'info carte 6--> 
                         <a href="#">
+
                             <!--+++++++++ sixième  carte +++++++++-->
                             <article class="card">
                                 <!-- Image de la carte-->
@@ -303,7 +349,9 @@
                     </div>
                 </section>
 
-        <!--========= Section pour les plus populaires =============-->
+<!---------------------------------------------------------------------------------->
+<!--#### Section pour les plus populaires ######-->
+
                 <section class="populaires">
                     <!-- Titre de la section des plus populaires -->
                     <div class="populaires-title">
@@ -317,6 +365,7 @@
 
                         <!--lien vers plus d'info carte 1--> 
                         <a href="#">
+
                             <!--++++++++ Première carte ++++++++++-->
                             <article class="card">
                                 <!-- Image de l'hébergement -->
@@ -346,6 +395,7 @@
 
                         <!-- lien vers plus d'info carte 2 -->
                         <a href="#">
+
                             <!--++++++ Deuxième carte ++++++++-->
                             <article class="card">
                                 <!-- Image hebergement -->
@@ -376,6 +426,7 @@
 
                         <!-- lien vers plus d info carte 3 -->
                         <a href="#">
+
                             <!--+++++++ Troisième carte +++++++-->
                             <article class="card">
                                 <!-- Image hebergement-->
@@ -407,7 +458,9 @@
                 </section>
             </div>
 
+<!---------------------------------------------------------------------------------->
 <!--##### Section Activités a Marseille ######-->
+
             <section id="activites" class="activites">
                 <H2>Activités à Marseille</H2>
 
@@ -425,6 +478,7 @@
 
                     <!-- lien vers plus d'info carte 2 -->
                     <a href="#">
+
                         <!--+++++ Deuxième carte ++++++-->
                         <article class="card2">
                             <!-- Image de la carte -->
@@ -436,6 +490,7 @@
 
                     <!-- lien vers plus d'info carte 3 -->
                     <a href="#">
+
                         <!--+++++++ Troisième carte +++++-->
                         <article class="card2">
                             <!-- Image de la carte -->
@@ -447,6 +502,7 @@
 
                     <!-- lien vers plus d'info carte 4 -->
                     <a href="#">
+
                         <!--++++++ Quatrième carte ++++++-->
                         <article class="card2">
                             <!-- Image de la carte -->
@@ -486,6 +542,8 @@
 
             <!-- Troisième liste Assistance -->
             <ul class="assistance">
+                <!-- Titre liste -->
+                <!-- deux liens en liste -->
                 <li><div class="bold">Assistance</div></li>
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
