@@ -397,10 +397,10 @@ li {
 /*----------------------- Media queries ----------------------------------------------------------------*/
 /*********************************************************************************************************/
 
-/*------------------------Ecrans large et multi ecrans -----------------------------------------------------------------------/
+/*------------------------Ecrans large et multi ecrans -----------------------------------------------*/
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
-@media (min-width: 1441px) {
+@media (min-width: 90.06rem) {
 
     /* Conteneur principal centré avec une largeur maximale */
     .main-container {
@@ -420,5 +420,45 @@ li {
     }
     .rangee .card {
         width: 15vw;
+    }
+}
+
+/*------------------------Tablette -----------------------------------------------------------------------*/
+
+    /*------Portrait--------*/
+
+/* Media query pour les tablettes en mode portrait (768px à 1024px) */
+@media (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
+    /* Section Hébergements et Populaires empilées */
+    * {
+        font-size: 0.8rem;
+    }
+    .hebergements-and-populaires {
+        flex-direction: column; /* Les sections sont empilées en portrait */
+        gap: 3%;
+        width: 95vw;
+        height:60vh;
+    }
+    .hebergements, .populaires {
+        width: 85vw;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+    }
+    .rangee {
+        height:15vh;
+    }
+    /* Cartes plus grandes en mode portrait */
+    .rangee .card, .populaires-cards .card {
+        width: 25vw; /* Les cartes prennent toute la largeur */
+        height: 12vh; /* Ajuste la hauteur */
+        display: flex;
+
+    }
+
+    .activites-a-marseille .card2 {
+        width: 19vw; /* Prend toute la largeur */
+        height: 18vh;
     }
 }
