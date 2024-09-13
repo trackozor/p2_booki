@@ -150,7 +150,7 @@ li {
 .Search-bar {
     border-radius: 1rem; /* Bord arrondi */
     border: 0.125rem solid #ccc; /* Bordure grise claire */
-    width: 20vw;
+    width: 30vw;
     height:4vh;
     display: flex;
     align-items: center;
@@ -398,41 +398,63 @@ li {
 /*********************************************************************************************************/
 
 /* Pour les écrans moyens-grands (entre 48rem et 63.99rem) */
-@media (min-width: 48rem) and (max-width: 63.99rem) {
+@media (min-width: 48rem) and (max-width: 64rem) {
+    * {
+        font-size: 0.8rem;
+    }
     .main-container {
-        max-width: 85vw;
+        max-width: 90vw;
         padding: 0 3vw;
+        height: 80vh;
     }
     .Search-bar {
         width: 40%;
+    }
+      .search-input {
+        width: 75%;
     }
 
     .hebergements-and-populaires {
         width: 100%; /* Les sections deviennent empilées sur petits écrans */
         display: flex;
         flex-direction: column;
+        height: 65vh;
+        gap:2%;
     }
     .hebergements {
         width: 100%;
-
     }
     .populaires {
         width: 100%;
+        height:40vh;
+        gap: 2%;
+
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+    }
+    .populaires-cards .card {
+        width: 23vw;
+        height: 10vh;
     }
     .rangee {
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 1%;
+        height: 16vh;
     }
 
     .rangee .card {
-        width: 20vw; /* Réduire la largeur des cartes */
-        height: 25vh;
+        width: 22vw; /* Réduire la largeur des cartes */
+        height: 13vh;
+        margin-bottom: 2%;
+        gap: 1%;
     }
 
-    .search-input {
-        width: 75%;
+    .activites-a-marseille .card2 {
+        height: 20vh;
     }
-
     .footer {
         flex-direction: row;
         gap: 3rem;
