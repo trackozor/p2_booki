@@ -22,8 +22,6 @@
 body {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
-    max-height: 100vh; /* Le contenu prend toute la hauteur visible du viewport */
-    max-height: 100vh;
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
@@ -85,7 +83,7 @@ a {
 
 /* Style pour les listes */
 li {
-     margin-bottom: 1rem; /* Espace entre chaque élément de liste */
+     margin-bottom: 0.5rem; /* Espace entre chaque élément de liste */
     list-style-type: none; /* Supprime les puces par défaut */
 }
 
@@ -160,6 +158,7 @@ li {
 }
 .search-button {
     background-color: var(--main-color);
+    font-weight: 700;
     color: #FFF;
     border-top-right-radius: 1rem; /* Bord arrondi */
     border-bottom-right-radius: 1rem;
@@ -272,7 +271,7 @@ li {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
     height: 25vh; /* Chaque carte prend 100% de la hauteur de la rangée */
-    width: 16vw;
+    width: 15vw;
     padding-bottom: 5%;
     
 }
@@ -358,13 +357,13 @@ li {
 /* Conteneur pour la section Activités à Marseille */
 .activites-a-marseille {
     display: flex; /* Utilise Flexbox pour aligner les cartes */
-    gap:2%; /* Espace entre les cartes */
+    gap:3.4%; /* Espace entre les cartes */
 }
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
-    height: 40vh; /* Les cartes occupent toute la hauteur disponible */
-    width:20vw;
+    height: 50vh; /* Les cartes occupent toute la hauteur disponible */
+    width:18vw;
 }
 
 /* Style des images dans les cartes d'activités */
@@ -390,86 +389,53 @@ li {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     gap: 15%; /* Espace entre les éléments du footer */
     background-color: #F2F2F2; /* Couleur de fond du footer */
-    padding: 1% 0; /* Espacement intérieur du footer */
+    padding:1% 0; /* Espacement intérieur du footer */
+    margin-top: 2%;
 }
 
 /*********************************************************************************************************/
 /*----------------------- Media queries ----------------------------------------------------------------*/
 /*********************************************************************************************************/
 
-/********* Styles pour les appareils de taille moyenne (tablettes et écrans inférieurs à 1024px) *********/
-@media (max-width: 64rem) {
+/* Pour les écrans moyens-grands (entre 48rem et 63.99rem) */
+@media (min-width: 48rem) and (max-width: 63.99rem) {
     .main-container {
-        max-width: 64rem; /* Il est limité à 90% de la largeur de la fenêtre */
-        padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
-        box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
+        max-width: 85vw;
+        padding: 0 3vw;
+    }
+    .Search-bar {
+        width: 40%;
     }
 
-}
-
-/********** Styles pour les petits appareils (moins de 768px, comme les téléphones) ********************/
-@media (max-width: 48rem) {
-     .main-container {
-        width: 100%;
-        max-width:48rem;
-        max-height: 64rem;
-        padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
-        box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
-    }
-    .footer {
-        width:auto;
- 
-    }
     .hebergements-and-populaires {
+        width: 100%; /* Les sections deviennent empilées sur petits écrans */
         display: flex;
         flex-direction: column;
     }
-
-    /* La section Hébergements prend 80% de la largeur sur petits écrans */
     .hebergements {
-        width: 48rem;/* La section occupe 80% de la largeur du parent */
+        width: 100%;
 
     }
-
-    /* Les éléments dans une rangée deviennent une colonne sur petits écrans */
-    .rangee {
-    }
-
-    /* La section Populaires prend également 80% de la largeur et a un espacement supérieur */
     .populaires {
-        width: 48rem; /* La section occupe 80% de la largeur du parent */
-        margin-top: 3.125rem; /* Marge au-dessus de la section Populaires */
+        width: 100%;
+    }
+    .rangee {
+        flex-direction: row;
+        gap: 1.5rem;
     }
 
-    /* Les activités prennent toute la largeur et hauteur sur petits écrans */
-    .activites-a-marseille {
-        width: 48rem; /* Largeur à 80% */
-
+    .rangee .card {
+        width: 20vw; /* Réduire la largeur des cartes */
+        height: 25vh;
     }
 
-
-    /* Réorganisation des cartes Populaires en colonne sur petits écrans */
-    .populaires-cards {
-        display: flex;
-        justify-content: space-between; /* Espace entre les cartes */
-
+    .search-input {
+        width: 75%;
     }
 
-    /* Les liens dans les cartes Populaires prennent 100% de la largeur sur petits écrans */
-    .populaires-cards a {
-        width: 100%; /* Les liens prennent toute la largeur */
-    }
-
-    /* Taille réduite des titres et sous-titres des cartes Populaires */
-    .populaires-cards .card-title {
-        font-size: 0.875rem; /* Taille plus petite pour les titres */
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px; /* Taille plus petite pour les sous-titres */
-    }
     .footer {
-        width: 48rem;
+        flex-direction: row;
+        gap: 3rem;
     }
 }
 
