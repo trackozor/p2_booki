@@ -142,7 +142,7 @@ li {
     display: flex;
     height: 4vh;
     width:4vw;
-    border-radius: 1rem  0  0 1rem ;
+    border-radius: 0.8rem  0  0 0.8rem ;
     background-color: var(--main-bg-color);
 
 }
@@ -172,8 +172,8 @@ li {
     background-color: var(--main-color);
     font-weight: 700;
     color: #FFF;
-    border-top-right-radius: 1rem; /* Bord arrondi */
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0.8rem; /* Bord arrondi */
+    border-bottom-right-radius:0.8rem;
     border-color: var(--main-color);
     width: 10vw;
     height:4vh;
@@ -197,9 +197,9 @@ li {
 .filter {
     display: flex; /* Flexbox pour aligner les éléments */
     gap: 2rem; /* Espace de 2rem entre les éléments */
-    margin: 0.625rem; /* Marge autour des filtres */
     align-items: center; /* Centre verticalement les éléments */
     height:2vh;
+    margin-bottom: 2vh;
 }
 
 /* Conteneur d'informations avec Flexbox */

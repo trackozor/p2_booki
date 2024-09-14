@@ -51,6 +51,10 @@
 
 
 <body>
+
+    <!-- Titre principal caché mais accessible aux lecteurs d'écran -->
+    <h1 class="sr-only">Booki réservation d'hébergements saisonniers</h1>
+
     <!-- Conteneur principal de la page -->
     <div class="main-container">
 <!---------------------------------------------------------------------------------->
@@ -81,7 +85,7 @@
             <div class="research">
                 <!-- Titre de la section -->
                 <div class="research-txt">
-                    <h1>Trouvez votre logement pour des vacances de rêve</h1>
+                    <h2>Trouvez votre logement pour des vacances de rêve</h2>
                     <!-- complément illustrant le titre-->
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
@@ -111,28 +115,28 @@
                     <!-- icone billet en vague-->
                     <i class="fa fa-solid fa-money-bill-wave" aria-hidden="true"></i>
                     <!-- titre bouton-->
-                    <span>Economique</span>
+                    <span class="bold">Economique</span>
                 </button>
                 <!-- Bouton familial -->
                 <button  type="button" class="filter-button">
                     <!-- icône femme stylisé -->
                     <i class="fa fa-solid fa-person" aria-hidden="true"></i>
                     <!-- Titre bouton -->
-                    <span>Familial</span>
+                    <span class="bold">Familial</span>
                 </button>
                 <!-- Bouton Romentique -->
                 <button type="button" class="filter-button">
                     <!-- icône coeur -->
                     <i class="fa fa-solid fa-heart" aria-hidden="true"></i>
                     <!-- Titre bouton -->
-                    <span>Romantique</span>
+                    <span class="bold">Romantique</span>
                 </button>
                 <!-- Bouton Nos pépites -->
                 <button type="button" class="filter-button">
                     <!-- icône flamme -->
                     <i class="fa fa-solid fa-fire" aria-hidden="true"></i>
                     <!-- Titre bouton -->
-                    <span>Nos pépites</span>
+                    <span class="bold">Nos pépites</span>
                 </button>
             </div>
 
@@ -143,8 +147,8 @@
             <div class="info">
                  <!-- Icône personnalisée avec un cercle et un "i" à l'intérieur -->
                 <span class="fa-layers fa-fw">
-                    <i class="fa-solid fa-circle icon-circle"></i>
-                    <i class="fa-solid fa-info icon-info"></i>
+                    <i class="fa-solid fa-circle icon-circle" aria-hidden="true"></i>
+                    <i class="fa-solid fa-info icon-info" aria-hidden="true"></i>
                 </span>
                 <!-- texte -->
                 <p>Plus  de 500 logements sont disponibles dans cette ville</p>     
