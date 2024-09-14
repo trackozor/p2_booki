@@ -503,12 +503,11 @@ li {
     }
     .main-container {
         max-width: 95vw;
-        height: 40vh;
     }
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 2%;
-        height:40vh;
+        height:60vh;
     }
     .hebergements {
         height: 25vh;
@@ -520,7 +519,22 @@ li {
         height:12vh;
     }
     .rangee .card {
-        width: 19vw;
+        width: 26vw;
         height: 12vh;
+    }
+     .populaires-cards  {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    }
+    .populaires-cards .card {
+        width: 26vw;
+        height:12vh;
+    }
+
+     /* Cartes d'activités avec des dimensions adaptées à l'écran portrait */
+    .activites-a-marseille .card2 {
+        width: 20vw; /* Chaque carte d'activités occupe 19% de la largeur de la fenêtre */
+        height: 15vh; /* Hauteur des cartes ajustée à 18% de la hauteur de la fenêtre */
     }
 }
