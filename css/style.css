@@ -162,8 +162,6 @@ li {
 
 /* Style pour la barre de recherche */
 .Search-bar {
-    border-radius: 1rem; /* Bord arrondi */
-    border: 0.125rem solid #ccc; /* Bordure grise claire */
     width: 25vw;
     height:4vh;
     display: flex;
@@ -207,15 +205,37 @@ li {
 /* Conteneur d'informations avec Flexbox */
 .info {
     display: flex; /* Flexbox pour aligner les informations */
-    gap:2%;
-}
-
-/* Style pour les icônes d'information */
-.info i {
-    display: flex;
-    color: var(--main-color) ;
     align-items: center;
 }
+
+.fa-layers {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem; /* Ajuste la taille de l'icône */
+    margin-right: 2vw; /* Espace entre l'icône et le texte*/
+    justify-content: center;
+}
+
+
+/* Style pour le cercle */
+.icon-circle {
+    position: absolute;
+    color: white; /* Couleur du cercle */
+    border: 0.2rem solid var(--main-bg-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+
+}
+
+/* Style pour le "i" */
+.icon-info {
+    color: var(--main-color); /* Couleur du "i" */
+    font-size: 1rem; /* Taille du "i", plus petit que le cercle */
+    z-index: 1;
+    position: relative;
+  
+}
+
 
 /********** Bouton de filtre ********************/
 
@@ -342,23 +362,19 @@ li {
     padding-left: 1rem; /* Espace entre l'image et le texte */
     display: flex;
     flex-direction: column; /* Le texte est aligné verticalement */
-    justify-content: space-between; /* Les éléments textuels sont espacés verticalement */
-    box-sizing: border-box; /* Inclut le padding dans les dimensions */
-}
-
-/* Marges pour le titre des cartes Populaires */
-.populaires-cards .card-title {
-    margin-top: 1vh; /* Marge en haut */
-    margin-bottom:1vh; /* Marge en bas */
 }
 
 /* Pas de marges pour le sous-titre des cartes */
 .populaires-cards .card-subtitle {
     margin: 0; /* Supprime les marges */
 }
+.populaires-cards .card-title {
+    margin-top: 0; /* Supprime les marges */
+}
 
 /* Espacement pour la zone de notation */
 .populaires-cards .card-rating {
+    margin-top: 6vh;
     margin-bottom: 0.3125rem; /* Marge en bas */
 }
 
@@ -461,14 +477,18 @@ li {
         flex-direction: column; /* Les sections Hébergements et Populaires deviennent empilées en portrait */
         gap: 3%; /* Ajoute un espace de 3% entre les sections */
         width: 95vw; /* Largeur ajustée à 95% de la largeur de la fenêtre (viewport) */
-        height: 65vh; /* Hauteur ajustée à 60% de la hauteur de la fenêtre */
+        height: 60vh; /* Hauteur ajustée à 60% de la hauteur de la fenêtre */
         margin: 0 1vw;
     }
 
     /* Les sections Hébergements et Populaires prennent 85% de la largeur de l'écran */
-    .hebergements, .populaires {
+    .hebergements  {
         width: 90vw; /* Chaque section occupe 85% de la largeur du viewport */
     }
+    .populaires {
+        width: 90vw;
+    }
+    
 
     /* Les cartes populaires sont alignées en rangée (horizontalement) */
     .populaires-cards {
@@ -479,13 +499,13 @@ li {
 
     /* La hauteur des rangées de cartes est ajustée */
     .rangee {
-        height: 15vh; /* Hauteur des rangées ajustée à 15% de la hauteur de la fenêtre */
+        height: 12vh; /* Hauteur des rangées ajustée à 15% de la hauteur de la fenêtre */
     }
 
     /* Cartes d'hébergements et de populaires plus grandes en mode portrait */
     .rangee .card {
         width: 25vw; /* Les cartes occupent 25% de la largeur de la fenêtre */
-        height: 12vh; /* Hauteur des cartes ajustée à 12% de la hauteur de la fenêtre */
+        height: 10vh; /* Hauteur des cartes ajustée à 12% de la hauteur de la fenêtre */
         display: flex; /* Utilise Flexbox pour l'alignement du contenu des cartes */
     }
     .populaires-cards .card {
@@ -495,12 +515,16 @@ li {
 
     /* Cartes d'activités avec des dimensions adaptées à l'écran portrait */
     .activites-a-marseille .card2 {
-        width: 19vw; /* Chaque carte d'activités occupe 19% de la largeur de la fenêtre */
-        height: 14vh; /* Hauteur des cartes ajustée à 18% de la hauteur de la fenêtre */
+        width: 20vw; /* Chaque carte d'activités occupe 19% de la largeur de la fenêtre */
+        height: 22vh; /* Hauteur des cartes ajustée à 18% de la hauteur de la fenêtre */
     }
     .footer {
         width: 90vw;
+        max-height: 20vh;
     }
+    .footer ul li {
+    margin-bottom: 5px; /* Vous pouvez réduire ou supprimer l'espacement entre les éléments de liste */
+}
 }
 
       /*----Landscape ---------*/
