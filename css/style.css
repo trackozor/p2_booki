@@ -27,7 +27,7 @@ body {
 
 /* Conteneur principal qui limite la largeur et gère le padding */
 .main-container {
-    width: 100%; /* Le conteneur occupe toute la largeur de la fenêtre */
+ /* Le conteneur occupe toute la largeur de la fenêtre */
     max-width: 90vw; /* Il est limité à 90% de la largeur de la fenêtre */
     padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
     box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
@@ -121,12 +121,12 @@ li {
 /* Style pour le menu de navigation dans l'en-tête */
 .nav {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    gap: 30%; /* Crée un espace de 30% entre les éléments */
+    gap: 10vw; /* Crée un espace de 30% entre les éléments */
     justify-content: center; /* Centre les éléments dans la barre de navigation */
-    padding: 2%;
+    padding: 1vw;
 }
 .nav-element {
-    padding-top:5%;
+    padding-top:2vh;
 }
 
 /* Style des éléments du menu lors du survol */
@@ -149,7 +149,7 @@ li {
 }
 .local i{
     display: flex;
-    padding-left: 30%;
+    padding-left: 1vw;
     align-items: center;
 
 }
@@ -450,7 +450,7 @@ li {
         width: 32vw; /* Section Populaires garde 32% de la largeur */
     }
     .rangee .card {
-        width: 15vw;
+        width: 16vw;
     }
 }
 
