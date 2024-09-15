@@ -141,7 +141,7 @@ li {
 
 .local {
     display: flex;
-    height: 4vh;
+    height: 3vw;
     width:4vw;
     border-radius: 0.8rem  0  0 0.8rem ;
     background-color: var(--main-bg-color);
@@ -164,10 +164,10 @@ li {
 /* Style pour la barre de recherche */
 .Search-bar {
     width: 25vw;
-    height:4vh;
+    height:3vw;
     display: flex;
     align-items: center;
-    margin-bottom: 2%;
+    margin-bottom: 1vw;
 }
 .search-button {
     background-color: var(--main-color);
@@ -177,10 +177,10 @@ li {
     border-bottom-right-radius:0.8rem;
     border-color: var(--main-color);
     width: 10vw;
-    height:4vh;
+    height:3vw;
 }
 .search-input {
-    height:4vh;
+    height:3vw;
     width: 20vw;
     border:none;
     padding-left: 1rem;
@@ -273,9 +273,9 @@ li {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color); /* Fond gris clair pour les sections */
     border-radius: 1.25rem; /* Bords arrondis */
-    padding:1.25rem; /* Espace intérieur */
+    padding:1.25vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
-    height: 65vh;
+    height: 70vh;
 
 }
 
@@ -289,25 +289,25 @@ li {
 .hebergements  {
     display: flex;
     flex-direction: column;
-    width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
+    width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
     gap:2%;
 }
 
 /* Style pour les rangées d'éléments */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    gap: 2%;
+    gap: 2vw;
     width: auto;
     height: 25vh;
     justify-content: space-between;
-    margin-bottom: 2%;
+    margin-bottom: 3vh;
 }
 .rangee .card {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
     height: 25vh; /* Chaque carte prend 100% de la hauteur de la rangée */
     width: 16vw;
-    padding-bottom: 5%;
+    padding-bottom: 1vh;
     
 }
 .rangee .card img {
@@ -325,7 +325,7 @@ li {
 
 /* Section Populaires occupant 32% de la largeur */
 .populaires {
-    width: 32%; /* La section Populaires occupe 32% de la largeur de son parent */
+    width: 32vw; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;
     flex-direction:column ;
 
