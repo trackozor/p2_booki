@@ -292,7 +292,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
-    gap:2vw;
+    gap:0.5vw;
 }
 
 /* Style pour les rangées d'éléments */
@@ -389,14 +389,15 @@ li {
 
 /* Conteneur pour la section Activités à Marseille */
 .activites-a-marseille {
+    width: 90vw;
     display: flex; /* Utilise Flexbox pour aligner les cartes */
-    gap:3.4%; /* Espace entre les cartes */
+    gap:2vh; /* Espace entre les cartes */
 }
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
-    height: 50vh; /* Les cartes occupent toute la hauteur disponible */
-    width:19vw;
+    height: 27vw; /* Les cartes occupent toute la hauteur disponible */
+    width:20vw;
 }
 
 /* Style des images dans les cartes d'activités */
@@ -433,7 +434,7 @@ li {
 /*------------------------Ecrans large et multi ecrans -----------------------------------------------*/
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
-@media (min-width: 90.06rem) {
+#@media (min-width: 90.06rem) {
 
     /* Conteneur principal centré avec une largeur maximale */
     .main-container {
@@ -442,10 +443,10 @@ li {
     }
 
     /* Les sections Hébergements et Populaires conservent leur taille */
-    .hebergements {
+    #.hebergements {
         width: 65vw; /* Section Hébergements garde 65% de la largeur */
     }
-    .hebergements-and-populaires {
+    #.hebergements-and-populaires {
         gap:2vw;
     }
     .populaires {
