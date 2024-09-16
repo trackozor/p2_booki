@@ -13,7 +13,8 @@
     --font-wight:700;
 }
 html {
-    font-size: clamp(16px, 2vh, 22px);
+    font-size: clamp(1rem, 1.86vh, 1.375rem);
+
 }
 
 /* Style des icônes Font Awesome */
@@ -85,8 +86,8 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.6vh;
-}
 
+}
 
 /* Style renforcé pour affichage en gras*/
 .bold {
