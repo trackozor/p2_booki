@@ -84,8 +84,9 @@ a {
 .card-txt {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.8vh;
+    font-size: 1.6vh;
 }
+
 
 /* Style renforcé pour affichage en gras*/
 .bold {
@@ -217,7 +218,7 @@ li {
     display: inline-flex;
     align-items: center;
     font-size: 1vh; /* Ajuste la taille de l'icône */
-    margin-right: 1vw; /* Espace entre l'icône et le texte*/
+    margin-right: 1vh; /* Espace entre l'icône et le texte*/
     justify-content: center;
 }
 
@@ -313,20 +314,19 @@ li {
     width: 16vw;
 }
 .rangee .card-subtitle {
-    margin-top: 0;
-    margin-bottom: 6vh;
-
-  
+    margin-top: 0.5vh;
 }
 
 .rangee .card img {
     width: 100%;
-    height: 50%;
-    border-top-left-radius: 1.25rem ;
-    border-top-right-radius: 1.25rem;
+    height: 60%;
+    border-top-left-radius: 1rem ;
+    border-top-right-radius: 1rem;
     object-fit: cover;
 }
-
+.rangee .hebergement-content {
+    padding:0.5vh 1vh;
+}
 /*********************************************************************************************************/
 /*------------------------------------ Section Populaire (droite) -----------------------------------*/
 /*********************************************************************************************************/
@@ -370,7 +370,7 @@ li {
 /* Contenu textuel des cartes Populaires */
 .populaires-cards .card-content {
     width: 67%; /* Le texte occupe 67% de la carte */
-    padding-left: 1rem; /* Espace entre l'image et le texte */
+    padding-left: 1vw; /* Espace entre l'image et le texte */
     display: flex;
     flex-direction: column; /* Le texte est aligné verticalement */
     justify-content: space-between;
@@ -378,13 +378,16 @@ li {
 
 /* Pas de marges pour le sous-titre des cartes */
 .populaires-cards .card-subtitle {
-    margin: 0; /* Supprime les marges */
+    margin-top: 0; /* Supprime les marges */
+    margin-bottom: 2vh;
 }
 .populaires-cards .card-title {
     margin: 0; /* Supprime les marges */
 }
 .populaires-cards .card-txt {
-    padding-top: 0;
+    
+
+    
 }
 
 
@@ -403,7 +406,7 @@ li {
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
-    height: 27vw; /* Les cartes occupent toute la hauteur disponible */
+    height: 28vw; /* Les cartes occupent toute la hauteur disponible */
     width:20vw;
 }
 
@@ -417,8 +420,8 @@ li {
 
 /* Style des titres dans les cartes d'activités */
 .activites-a-marseille  h3 {
-    padding-left: 2vh; /* Espacement à gauche pour le titre */
-    align-items: center;
+    padding-left: 1vw; /* Espacement à gauche pour le titre */
+    
 }
 
 /*********************************************************************************************************/
