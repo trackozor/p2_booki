@@ -49,7 +49,7 @@ a {
 .card {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Coins arrondis */
-    padding: 0.3125rem; /* Espace intérieur de la carte */
+    padding: 0.3125vw; /* Espace intérieur de la carte */
     filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */
 }
 .card2 {
@@ -59,10 +59,10 @@ a {
     filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */   
 }
 .card2 img {
-    height: 80%;
+    height: 90%;
     width: 100%;
     border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
+    border-top-right-radius: 1vw;
     object-fit: cover;
     overflow: hidden;
 }
@@ -121,7 +121,7 @@ li {
 /* Style pour le menu de navigation dans l'en-tête */
 .nav {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    gap: 10vw; /* Crée un espace de 30% entre les éléments */
+    gap: 5vw; /* Crée un espace de 30% entre les éléments */
     justify-content: center; /* Centre les éléments dans la barre de navigation */
     padding: 1vw;
 }
@@ -132,7 +132,7 @@ li {
 /* Style des éléments du menu lors du survol */
 .nav-element:hover {
     color: var(--main-color); /* Change la couleur de texte au survol */
-    border-top: 2px solid var(--main-color); /* Ajoute une bordure supérieure colorée */
+    border-top: 0.204vw solid var(--main-color); /* Ajoute une bordure supérieure colorée */
 }
 
 /********************************************************************************************************/
@@ -143,7 +143,7 @@ li {
     display: flex;
     height: 3vw;
     width:4vw;
-    border-radius: 0.8rem  0  0 0.8rem ;
+    border-radius: 0.8vw  0  0 0.8vw ;
     background-color: var(--main-bg-color);
 
 }
@@ -153,11 +153,11 @@ li {
     align-items: center;
 
 }
- .research-txt h1 {
-    margin-bottom: 0.5rem; /* Ajuste cette valeur pour réduire l'espace */
+#.research-txt h1 {
+    margin-bottom: 10.5vh; /* Ajuste cette valeur pour réduire l'espace */
 }
 
-.research-txt p {
+#.research-txt p {
     margin-top: 0; /* Supprime la marge supérieure pour coller le texte au titre */
 }
 
@@ -167,14 +167,15 @@ li {
     height:3vw;
     display: flex;
     align-items: center;
-    margin-bottom: 1vw;
+    margin:1vw 0;
+
 }
 .search-button {
     background-color: var(--main-color);
     font-weight: 700;
     color: #FFF;
-    border-top-right-radius: 0.8rem; /* Bord arrondi */
-    border-bottom-right-radius:0.8rem;
+    border-top-right-radius: 0.8vw; /* Bord arrondi */
+    border-bottom-right-radius:0.8vw;
     border-color: var(--main-color);
     width: 10vw;
     height:3vw;
@@ -266,7 +267,8 @@ li {
 /* Conteneur pour la section Hébergements et Populaires, alignée avec Flexbox */
 .hebergements-and-populaires {
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
-    justify-content: space-between; /* Crée de l'espace entre les sections */
+    #justify-content: space-between; /* Crée de l'espace entre les sections */
+    gap: 2vw;
 }
 
 /* Style des sections Hébergements et Populaires */
@@ -290,7 +292,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
-    gap:2%;
+    gap:2vw;
 }
 
 /* Style pour les rangées d'éléments */
