@@ -77,13 +77,14 @@ a {
 
 /* Style des titres des cartes */
 .card-title {
-    font-size: 1rem; /* Taille des titres des cartes */
+    font-size: 2vh; /* Taille des titres des cartes */
     margin-top: 0;
     margin-bottom: 0;
 }
 .card-txt {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 1.8vh;
 }
 
 /* Style renforcé pour affichage en gras*/
@@ -216,7 +217,7 @@ li {
     display: inline-flex;
     align-items: center;
     font-size: 1vh; /* Ajuste la taille de l'icône */
-    margin-right: 2vw; /* Espace entre l'icône et le texte*/
+    margin-right: 1vw; /* Espace entre l'icône et le texte*/
     justify-content: center;
 }
 
@@ -253,6 +254,7 @@ li {
     gap: 0.5rem; /* Espace entre les éléments du bouton */
     border: 0.125rem solid #D9D9D9; /* Bordure grise claire */
     padding: 0.25rem 1.1875rem; /* Espacement intérieur du bouton */
+    font-size: 1.5vh;
 }
 
 /***** Changement de couleur du bouton au survol ***********/
@@ -269,7 +271,6 @@ li {
 /* Conteneur pour la section Hébergements et Populaires, alignée avec Flexbox */
 .hebergements-and-populaires {
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
-    #justify-content: space-between; /* Crée de l'espace entre les sections */
     gap: 2vw;
 }
 
@@ -294,13 +295,12 @@ li {
     display: flex;
     flex-direction: column;
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
-    gap:0.5vw;
+    justify-content: space-between;
 }
 
 /* Style pour les rangées d'éléments */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    gap: 2vw;
     width: auto;
     height: 25vh;
     justify-content: space-between;
@@ -311,12 +311,14 @@ li {
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
     height: 25vh; /* Chaque carte prend 100% de la hauteur de la rangée */
     width: 16vw;
-    padding-bottom: 1vh;
-    
+}
+.rangee .card-subtitle {
+    marging:0;
+  
 }
 .rangee .card img {
     width: 100%;
-    height: 60%;
+    height: 50%;
     border-top-left-radius: 1.25rem ;
     border-top-right-radius: 1.25rem;
     object-fit: cover;
@@ -332,6 +334,7 @@ li {
     width: 32vw; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;
     flex-direction:column ;
+    justify-content: space-between;
 
 }
 
@@ -344,13 +347,13 @@ li {
 /* Style des cartes dans la section Populaires */
 .populaires-cards .card {
     display: flex; /* Aligne l'image et le texte en ligne */
-    margin-top: 1rem; /* Espace entre chaque carte */
     flex-direction: row; /* Aligne les éléments horizontalement */
     background-color: #FFF; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
     height: 16vh;
+    margin:  3vh 0;
 }
 
 /* Style des images dans les cartes Populaires */
@@ -367,6 +370,7 @@ li {
     padding-left: 1rem; /* Espace entre l'image et le texte */
     display: flex;
     flex-direction: column; /* Le texte est aligné verticalement */
+    justify-content: space-between;
 }
 
 /* Pas de marges pour le sous-titre des cartes */
@@ -374,14 +378,12 @@ li {
     margin: 0; /* Supprime les marges */
 }
 .populaires-cards .card-title {
-    margin-top: 0; /* Supprime les marges */
+    margin: 0; /* Supprime les marges */
+}
+.populaires-cards .card-txt {
+    padding-top: 0;
 }
 
-/* Espacement pour la zone de notation */
-.populaires-cards .card-rating {
-    margin-top: 6vh;
-    margin-bottom: 0.3125rem; /* Marge en bas */
-}
 
 /********************************************************************************************************/
 /* ---------------------- Section Activités à marseille -----------------------------------------------*/
@@ -412,7 +414,7 @@ li {
 
 /* Style des titres dans les cartes d'activités */
 .activites-a-marseille  h3 {
-    padding-left: 1rem; /* Espacement à gauche pour le titre */
+    padding-left: 2vh; /* Espacement à gauche pour le titre */
     align-items: center;
 }
 
@@ -436,27 +438,12 @@ li {
 /*------------------------Ecrans large et multi ecrans -----------------------------------------------*/
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
-#@media (min-width: 90.06rem) {
+@media (min-width: 90.06rem) {
+    html {
+    font-size: clamp(18px, 2vh, 24px);
+}
 
-    /* Conteneur principal centré avec une largeur maximale */
-    .main-container {
-        max-width: 90vw; /* Limite la largeur du site pour les très grands écrans */
-        margin: 0 3vw; /* Centre le contenu */
-    }
-
-    /* Les sections Hébergements et Populaires conservent leur taille */
-    #.hebergements {
-        width: 65vw; /* Section Hébergements garde 65% de la largeur */
-    }
-    #.hebergements-and-populaires {
-        gap:2vw;
-    }
-    .populaires {
-        width: 32vw; /* Section Populaires garde 32% de la largeur */
-    }
-    .rangee .card {
-        width: 16vw;
-    }
+    
 }
 
 /*------------------------Tablette -----------------------------------------------------------------------*/
