@@ -13,7 +13,7 @@
     --font-wight:700;
 }
 html {
-    font-size: clamp(1rem, 1.86vh, 1.375rem);
+    font-size: clamp(16px, 1,6vh 18px);
 
 }
 
@@ -59,7 +59,6 @@ a {
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Coins arrondis */
-    padding-bottom: 0.3125rem;
     filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */   
 }
 .card2 img {
@@ -78,14 +77,14 @@ a {
 
 /* Style des titres des cartes */
 .card-title {
-    font-size: 2vh; /* Taille des titres des cartes */
+    font-size: 1.6vh; /* Taille des titres des cartes */
     margin-top: 0;
     margin-bottom: 0;
 }
 .card-txt {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.6vh;
+    font-size: 1.4vh;
 
 }
 
@@ -162,11 +161,11 @@ li {
 
 /* Style pour la barre de recherche */
 .Search-bar {
-    width: 25vw;
+    width: 20vw;
     height:3vw;
     display: flex;
     align-items: center;
-    margin:2vh 0;
+    margin:1vw 0;
 
 }
 .search-button {
@@ -183,18 +182,17 @@ li {
 }
 .search-input {
     display: flex;
-    height:3vw;
     width: 20vw;
+    height:3vw;
     border:none;
-    padding-left: 1rem;
-    align-items: center;
-    padding-top: 1vh;
+    text-align: center;
 }
 .search-input::placeholder {
     color:#000;
     font-weight: var(--font-wight);
-    font-size:1vw;
     display: flex;
+    font-size: 1.2rem;
+
 }
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
@@ -203,7 +201,7 @@ li {
 /* Conteneur pour les filtres, utilisant Flexbox */
 .filter {
     display: flex; /* Flexbox pour aligner les éléments */
-    gap: 2vw; /* Espace de 2rem entre les éléments */
+    gap: 2vh; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
     height:4vh;
     margin-bottom: 2vh;
@@ -421,7 +419,10 @@ li {
 
 /* Style des titres dans les cartes d'activités */
 .activites-a-marseille  h3 {
+    display: flex ;
     padding-left: 1vw; /* Espacement à gauche pour le titre */
+    margin-bottom: 2vw;
+    font-size: ;
     
 }
 
@@ -446,26 +447,23 @@ li {
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
 @media (min-width: 90.06rem) {
-    html {
-    font-size: clamp(18px, 2vh, 24px);
-}
+    body {
+    font-size: clamp(22px,23px, 25px);
+    }
 
-    
 }
-
 /*------------------------Tablette -----------------------------------------------------------------------*/
 
     /*------Portrait--------*/
 
-/* Media query pour les tablettes en mode portrait (entre 768px et 1024px) 
-   Converti en rem : 48rem = 768px, 64rem = 1024px */
+/* Media query pour les tablettes en mode portrait (entre 768px et 1024px) */
 @media (min-width: 48rem)  and (max-width: 64rem) and (orientation: portrait) {
 
     /* Réduction de la taille globale de la police pour l'ensemble de la page */
     * {
         font-size: 0.8rem; /* La taille de police est réduite à 0.8rem pour tout le contenu */
     }
-    .main-container {
+    #.main-container {
         max-width: 95vw; /* Limite la largeur du site pour les très grands écrans */
     }
     .nav-element:hover {
@@ -474,8 +472,9 @@ li {
     }
     /* Les sections Hébergements et Populaires sont empilées les unes sur les autres (verticalement) */
     .hebergements-and-populaires {
+        display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires deviennent empilées en portrait */
-        gap: 3%; /* Ajoute un espace de 3% entre les sections */
+        gap: 3vh; /* Ajoute un espace de 3% entre les sections */
         width: 95vw; /* Largeur ajustée à 95% de la largeur de la fenêtre (viewport) */
         height: 60vh; /* Hauteur ajustée à 60% de la hauteur de la fenêtre */
         margin: 0 1vw;
@@ -483,10 +482,10 @@ li {
 
     /* Les sections Hébergements et Populaires prennent 85% de la largeur de l'écran */
     .hebergements  {
-        width: 90vw; /* Chaque section occupe 85% de la largeur du viewport */
+        width: 100vw; /* Chaque section occupe 85% de la largeur du viewport */
     }
     .populaires {
-        width: 90vw;
+        width: 100vw;
     }
     
 
@@ -525,7 +524,7 @@ li {
     }
     .footer ul li {
     margin-bottom: 5px; /* Vous pouvez réduire ou supprimer l'espacement entre les éléments de liste */
-}
+    }
 }
 
       /*----Landscape ---------*/
@@ -537,10 +536,6 @@ li {
     * {
         font-size: 0.8rem; /* Réduction de la taille de police à 0.8rem pour tout le contenu */
     }
-    body {
-        display: flex;
-       
-    }
     /* Conteneur principal */
     .main-container {
         max-width: 95vw; /* Le conteneur occupe 95% de la largeur de l'écran */
@@ -549,6 +544,7 @@ li {
 
     /* Section qui regroupe Hébergements et Populaires */
     .hebergements-and-populaires {
+        display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées verticalement */
         gap: 2%; /* Espace de 2% entre les sections */
         height: 70vh; /* Hauteur ajustée à 60% de la fenêtre pour bien occuper l'espace */
