@@ -467,7 +467,6 @@ li {
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
-        height: 90vw;
     }
     .populaires {
         width: 90vw;
@@ -484,6 +483,51 @@ li {
     }
     .rangee {
         height: 22vw;
+        gap: 1vw;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    .populaires-cards img {
+        width: 12vw;
+    }
+    .populaires-cards .card {
+        height: 15vw;
+    }
+    .footer {
+        width: 90vw;
+    }
+}
+/*------------------------mobiles de 30 a 47.99rem--------------------*/
+
+@media (min-width: 30rem) and (max-width: 47.99rem) {
+    body {
+        font-size: clamp(0.6rem, 0.7rem, 0.8rem);
+    }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+        height: 80vw;
+    }
+    .populaires {
+        width: 90vw;
+        #height: 20vw;
+    }
+    .activites-a-marseille {
+        gap: 3vw;
+    }
+    .hebergements {
+        width: 90vw;
+    }
+    .hebergements .card {
+        width: 25vw;
+        height: 19vw;
+    }
+    .rangee {
+        height: 20vw;
         gap: 1vw;
     }
     .populaires-cards {
