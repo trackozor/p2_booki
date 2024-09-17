@@ -410,8 +410,8 @@ li {
 
 /* Style des images dans les cartes d'activités */
 .activites-card img {
-    height: 80%; /* L'image occupe 85% de la hauteur de la carte */
-    width: 100%; /* L'image prend toute la largeur de la carte */
+    height: 20vh; /* L'image occupe 85% de la hauteur de la carte */
+    width: 20dvw; /* L'image prend toute la largeur de la carte */
     border-top-left-radius: 1rem; /* Arrondit le coin supérieur gauche */
     border-top-right-radius: 1rem; /* Arrondit le coin supérieur droit */
 }
@@ -421,6 +421,7 @@ li {
     display: flex ;
     padding-left: 1vw; /* Espacement à gauche pour le titre */
     margin-bottom: 2vw;
+    font-size: 1.2dvw;
     
 }
 
