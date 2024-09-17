@@ -83,7 +83,7 @@ a {
 
 /* Style des titres des cartes */
 .card-title {
-    font-size: 1.8dvh; /* Taille des titres des cartes */
+    font-size: 1.2dvw; /* Taille des titres des cartes */
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -335,6 +335,9 @@ li {
 .rangee .hebergement-content {
     padding: 0.5vh 1vh;
 }
+.affichez_plus a {
+    font-size: 1.5vw;
+}
 /*********************************************************************************************************/
 /*------------------------------------ Section Populaire (droite) -----------------------------------*/
 /*********************************************************************************************************/
@@ -436,10 +439,11 @@ li {
 /* Conteneur principal du footer */
 .footer {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
+    width: 85dvw;
     gap: 10vw; /* Espace entre les éléments du footer */
     background-color: #f2f2f2; /* Couleur de fond du footer */
-    padding: 1vw 0; /* Espacement intérieur du footer */
-    margin-top: 5vh;
+    padding: 0; /* Espacement intérieur du footer */
+    margin-top: 3vw;
 }
 
 /*********************************************************************************************************/
@@ -492,5 +496,8 @@ li {
     }
     .populaires-cards .card {
         height: 15vw;
+    }
+    .footer {
+        width: 90vw;
     }
 }
