@@ -58,12 +58,13 @@ a {
 }
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
+    height: 20dvh;
     border-radius: 1.25rem; /* Coins arrondis */
     filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */   
 }
 .card2 img {
-    height: 90%;
-    width: 100%;
+    height:25dvw;
+    width: 20dvw;
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
     object-fit: cover;
@@ -77,14 +78,14 @@ a {
 
 /* Style des titres des cartes */
 .card-title {
-    font-size: 1.6vh; /* Taille des titres des cartes */
+    font-size: 1.8dvh; /* Taille des titres des cartes */
     margin-top: 0;
     margin-bottom: 0;
 }
 .card-txt {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.4vh;
+    font-size: 1.6dvh;
 
 }
 
@@ -119,7 +120,7 @@ li {
 
 /* Style du logo */
 .logo img {
-    height: 3vh; /* Définit la hauteur du logo */
+    height: 2vw; /* Définit la hauteur du logo */
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
@@ -182,7 +183,7 @@ li {
 }
 .search-input {
     display: flex;
-    width: 20vw;
+    width: 15vw;
     height:3vw;
     border:none;
     text-align: center;
@@ -191,7 +192,7 @@ li {
     color:#000;
     font-weight: var(--font-wight);
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
 
 }
 /**********************************************************************************************************/
@@ -247,14 +248,14 @@ li {
 /* Style pour les boutons de filtre */
 .filter-button {
     display: flex; /* Flexbox pour aligner le contenu du bouton */
-    height:4vh; /* Hauteur du bouton */
+    height:2vw; /* Hauteur du bouton */
     border-radius: 1.5625rem; /* Bord arrondi */
     align-items: center; /* Centre verticalement le contenu */
     background-color: #FFF; /* Fond blanc */
     gap: 0.5rem; /* Espace entre les éléments du bouton */
     border: 0.125rem solid #D9D9D9; /* Bordure grise claire */
     padding: 0.25rem 1.1875rem; /* Espacement intérieur du bouton */
-    font-size: 1.5vh;
+    font-size: 1.2vw;
 }
 
 /***** Changement de couleur du bouton au survol ***********/
@@ -360,10 +361,11 @@ li {
 
 /* Style des images dans les cartes Populaires */
 .populaires-cards img {
-    width: 33%; /* L'image occupe 33% de la largeur de la carte */
+    width: 20vw; /* L'image occupe 33% de la largeur de la carte */
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
     border-top-left-radius: 1.25rem; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 1.25rem; /* Arrondit le coin inférieur gauche */
+
 }
 
 /* Contenu textuel des cartes Populaires */
@@ -373,18 +375,19 @@ li {
     display: flex;
     flex-direction: column; /* Le texte est aligné verticalement */
     justify-content: space-between;
+    margin-top: 0;
 }
 
 /* Pas de marges pour le sous-titre des cartes */
 .populaires-cards .card-subtitle {
     margin-top: 0; /* Supprime les marges */
-    margin-bottom: 2vh;
+    padding-top: 0;
 }
 .populaires-cards .card-title {
     margin: 0; /* Supprime les marges */
-    font-size:1.5rem;
-}
+    font: size 1.8dvh;
 
+}
 
 /********************************************************************************************************/
 /* ---------------------- Section Activités à marseille -----------------------------------------------*/
@@ -438,13 +441,12 @@ li {
 /*----------------------- Media queries ----------------------------------------------------------------*/
 /*********************************************************************************************************/
 
-/*------------------------Ecrans large et multi ecrans -----------------------------------------------*/
+/*------------------------Écrans large et multi écrans -----------------------------------------------*/
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
 @media (min-width: 90.06rem) {
     body {
         font-size: clamp(22px,23px, 25px);
     }
-
 }
 /*------------------------Tablette -----------------------------------------------------------------------*/
