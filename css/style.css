@@ -92,7 +92,9 @@ a {
     margin-bottom: 0;
     font-size: 1dvw;
 }
-
+.card-rating {
+    font-size: 1vw;
+}
 /* Style renforcé pour affichage en gras*/
 .bold {
     font-weight: 700; /* Met le texte en gras */
@@ -457,7 +459,6 @@ li {
     body {
         font-size: clamp(0.8rem, 0.9rem, 1rem);
     }
-   
 
     .hebergements-and-populaires {
         display: flex;
@@ -467,9 +468,8 @@ li {
     .populaires {
         width: 90vw;
     }
-    .activites-a-marseille  {
+    .activites-a-marseille {
         gap: 3vw;
-        
     }
     .hebergements {
         width: 90vw;
@@ -480,18 +480,17 @@ li {
     }
     .rangee {
         height: 22vw;
-        gap:1.vw
+        gap: 1vw;
     }
     .populaires-cards {
-        display: flex; 
+        display: flex;
         flex-direction: row;
         gap: 2vw;
-    
     }
     .populaires-cards img {
-        width: 12vw;;
+        width: 12vw;
     }
     .populaires-cards .card {
-        height:15vw ;
+        height: 15vw;
     }
 }
