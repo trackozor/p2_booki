@@ -1,551 +1,824 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <!-- Encodage des caractères (UTF-8) pour supporter tous les types de caractères -->
+        <meta charset="UTF-8" />
 
-<head>
-    <!-- Encodage des caractères (UTF-8) pour supporter tous les types de caractères -->
-    <meta charset="UTF-8"> 
+        <!-- Ajuste l'affichage pour les appareils mobiles (responsive design) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Ajuste l'affichage pour les appareils mobiles (responsive design) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Description du site pour le SEO -->
+        <meta
+            name="description"
+            content="Booki, votre plateforme de réservation d'hébergements et d'activités. Trouvez et réservez facilement des hébergements et des activités pour vos vacances de rêve."
+        />
 
-    <!-- Description du site pour le SEO -->
-    <meta name="description" content="Booki, votre plateforme de réservation d'hébergements et d'activités. Trouvez et réservez facilement des hébergements et des activités pour vos vacances de rêve.">
+        <!-- Auteur du site (optionnel, mais informatif) -->
+        <meta name="author" content="Trackozor" />
 
-    <!-- Auteur du site (optionnel, mais informatif) -->
-    <meta name="author" content="Trackozor">
+        <!-- Autorise les moteurs de recherche à indexer la page et suivre les liens -->
+        <meta name="robots" content="index, follow" />
+        <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
+        <title>Booki - Réservation d'hébergements et d'activités</title>
 
-    <!-- Autorise les moteurs de recherche à indexer la page et suivre les liens -->
-    <meta name="robots" content="index, follow">
-    <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
-    <title>Booki - Réservation d'hébergements et d'activités</title>
-    
-    <!--<link rel="stylesheet" href="./css/reset.css">
+        <!--<link rel="stylesheet" href="./css/reset.css">
 
     <!-- Pré-connexion aux polices Google pour améliorer les performances de chargement -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Importation des polices Google (Raleway) -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- Importation des polices Google (Raleway) -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Importation de FontAwesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Importation de FontAwesome pour les icônes -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <!-- Importation de la feuille de style principale -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+        <!-- Importation de la feuille de style principale -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
+    <body>
+        <!-- Titre principal caché mais accessible aux lecteurs d'écran -->
+        <h1 class="sr-only">Booki réservation d'hébergements saisonniers</h1>
 
-<body>
+        <!-- Conteneur principal de la page -->
+        <div class="main-container">
+            <!---------------------------------------------------------------------------------->
+            <!--************************ Header ( En-tête) **********************************-->
+            <!---------------------------------------------------------------------------------->
 
-    <!-- Titre principal caché mais accessible aux lecteurs d'écran -->
-    <h1 class="sr-only">Booki réservation d'hébergements saisonniers</h1>
-
-    <!-- Conteneur principal de la page -->
-    <div class="main-container">
-<!---------------------------------------------------------------------------------->
-<!--************************ Header ( En-tête) **********************************-->
-<!---------------------------------------------------------------------------------->
-
-        <header class="header">
-            <!-- logo -->
-            <div class="logo">
-                <img src="./images/logo/booki.png" alt="logo de l entreprise booki">
-            </div>
-            <!-- Section de navigation contenant les liens vers différentes sections de la page -->
-            <nav class="nav">
-                <!-- lien vers la section hébergements-->
-                <a class="nav-element" href="#hebergements">Hébergements</a>
-                <!-- lien vers la section Activités-->
-                <a  class="nav-element" href="#activites">Activités</a>
-            </nav>
-        </header>
-
-<!---------------------------------------------------------------------------------->
-<!--******************** Main Section (Section principale)************************-->
-<!---------------------------------------------------------------------------------->
-
-        <main>
-<!--##### Section contenant la barre de recherche et filtre #######-->
-            
-            <div class="research">
-                <!-- Titre de la section -->
-                <div class="research-txt">
-                    <h2>Trouvez votre logement pour des vacances de rêve</h2>
-                    <!-- complément illustrant le titre-->
-                    <p>En plein centre-ville ou en pleine nature</p>
+            <header class="header">
+                <!-- logo -->
+                <div class="logo">
+                    <img
+                        src="./images/logo/booki.png"
+                        alt="logo de l entreprise booki"
+                    />
                 </div>
-                <!-- Formulaire de recherche -->
-                <form class="Search-bar">
-                    <!-- Icône pour la localisation -->
-                    <div class="local">
-                        <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                <!-- Section de navigation contenant les liens vers différentes sections de la page -->
+                <nav class="nav">
+                    <!-- lien vers la section hébergements-->
+                    <a class="nav-element" href="#hebergements">Hébergements</a>
+                    <!-- lien vers la section Activités-->
+                    <a class="nav-element" href="#activites">Activités</a>
+                </nav>
+            </header>
+
+            <!---------------------------------------------------------------------------------->
+            <!--******************** Main Section (Section principale)************************-->
+            <!---------------------------------------------------------------------------------->
+
+            <main>
+                <!--##### Section contenant la barre de recherche et filtre #######-->
+
+                <div class="research">
+                    <!-- Titre de la section -->
+                    <div class="research-txt">
+                        <h2>
+                            Trouvez votre logement pour des vacances de rêve
+                        </h2>
+                        <!-- complément illustrant le titre-->
+                        <p>En plein centre-ville ou en pleine nature</p>
                     </div>
-                    <!-- Zone de texte ou le lieu doit être rentré-->
-                    <label for="localisation-search" class="sr-only">Saisissez un lieu</label>
-                    <input type="text" id="localisation-search" placeholder="Marseille, France" class="search-input" />
-                    <!-- Bouton pour valider-->
-                    <button type="submit" class="search-button">Rechercher</button>
-                </form>
-            </div>
+                    <!-- Formulaire de recherche -->
+                    <form class="Search-bar">
+                        <!-- Icône pour la localisation -->
+                        <div class="local">
+                            <i
+                                class="fa fa-map-marker-alt"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                        <!-- Zone de texte ou le lieu doit être rentré-->
+                        <label for="localisation-search" class="sr-only"
+                            >Saisissez un lieu</label
+                        >
+                        <input
+                            type="text"
+                            id="localisation-search"
+                            placeholder="Marseille, France"
+                            class="search-input"
+                        />
+                        <!-- Bouton pour valider-->
+                        <button type="submit" class="search-button">
+                            Rechercher
+                        </button>
+                    </form>
+                </div>
 
+                <!---------------------------------------------------------------------------------->
+                <!--#### section contenant les filtres #############-->
 
-<!---------------------------------------------------------------------------------->
-<!--#### section contenant les filtres #############-->
-            
-            <div class="filter">
-                <!-- TItres-->
-                <h3>Filtres</h3>
-                <!-- Bouton économique-->
-                <button type="button" class="filter-button">
-                    <!-- icône billet en vague-->
-                    <i class="fa fa-solid fa-money-bill-wave" aria-hidden="true"></i>
-                    <!-- titre bouton-->
-                    <span class="bold">Économique</span>
-                </button>
-                <!-- Bouton familial -->
-                <button  type="button" class="filter-button">
-                    <!-- icône femme stylisé -->
-                    <i class="fa fa-solid fa-person" aria-hidden="true"></i>
-                    <!-- Titre bouton -->
-                    <span class="bold">Familial</span>
-                </button>
-                <!-- Bouton Romantique -->
-                <button type="button" class="filter-button">
-                    <!-- icône cur -->
-                    <i class="fa fa-solid fa-heart" aria-hidden="true"></i>
-                    <!-- Titre bouton -->
-                    <span class="bold">Romantique</span>
-                </button>
-                <!-- Bouton Nos pépites -->
-                <button type="button" class="filter-button">
-                    <!-- icône flamme -->
-                    <i class="fa fa-solid fa-fire" aria-hidden="true"></i>
-                    <!-- Titre bouton -->
-                    <span class="bold">Nos pépites</span>
-                </button>
-            </div>
+                <div class="filter">
+                    <!-- TItres-->
+                    <h3>Filtres</h3>
+                    <!-- Bouton économique-->
+                    <button type="button" class="filter-button">
+                        <!-- icône billet en vague-->
+                        <i
+                            class="fa fa-solid fa-money-bill-wave"
+                            aria-hidden="true"
+                        ></i>
+                        <!-- titre bouton-->
+                        <span class="bold">Économique</span>
+                    </button>
+                    <!-- Bouton familial -->
+                    <button type="button" class="filter-button">
+                        <!-- icône femme stylisé -->
+                        <i class="fa fa-solid fa-person" aria-hidden="true"></i>
+                        <!-- Titre bouton -->
+                        <span class="bold">Familial</span>
+                    </button>
+                    <!-- Bouton Romantique -->
+                    <button type="button" class="filter-button">
+                        <!-- icône cur -->
+                        <i class="fa fa-solid fa-heart" aria-hidden="true"></i>
+                        <!-- Titre bouton -->
+                        <span class="bold">Romantique</span>
+                    </button>
+                    <!-- Bouton Nos pépites -->
+                    <button type="button" class="filter-button">
+                        <!-- icône flamme -->
+                        <i class="fa fa-solid fa-fire" aria-hidden="true"></i>
+                        <!-- Titre bouton -->
+                        <span class="bold">Nos pépites</span>
+                    </button>
+                </div>
 
-<!---------------------------------------------------------------------------------->
-<!--#### Section info avec icône ###########-->
-            
-            <!-- info avec icône -->
-            <div class="info">
-                 <!-- Icône personnalisée avec un cercle et un "i" à l'intérieur -->
-                <span class="fa-layers fa-fw">
-                    <i class="fa-solid fa-circle icon-circle" aria-hidden="true"></i>
-                    <i class="fa-solid fa-info icon-info" aria-hidden="true"></i>
-                </span>
-                <!-- texte -->
-                <p>Plus  de 500 logements sont disponibles dans cette ville</p>     
-            </div>
+                <!---------------------------------------------------------------------------------->
+                <!--#### Section info avec icône ###########-->
 
-<!---------------------------------------------------------------------------------->
-<!--#### Section contenant les hébergements et les plus populaires #####-->
-            <div class="hebergements-and-populaires">
+                <!-- info avec icône -->
+                <div class="info">
+                    <!-- Icône personnalisée avec un cercle et un "i" à l'intérieur -->
+                    <span class="fa-layers fa-fw">
+                        <i
+                            class="fa-solid fa-circle icon-circle"
+                            aria-hidden="true"
+                        ></i>
+                        <i
+                            class="fa-solid fa-info icon-info"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+                    <!-- texte -->
+                    <p>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </div>
 
+                <!---------------------------------------------------------------------------------->
+                <!--#### Section contenant les hébergements et les plus populaires #####-->
+                <div class="hebergements-and-populaires">
+                    <!--#### Section pour les hébergements #####-->
+                    <section id="hebergements" class="hebergements">
+                        <!-- titre de la section hébergements -->
+                        <h2 class="section-title">Hébergements à Marseille</h2>
 
-    <!--#### Section pour les hébergements #####-->
-                <section id="hebergements" class="hebergements">
-                    <!-- titre de la section hébergements -->
-                    <h2 class="section-title">Hébergements à Marseille</h2>
+                        <!--#### premiere rangée de cartes ####-->
+                        <div class="rangee">
+                            <!-- liens vers plus d'info carte 1-->
+                            <a href="#">
+                                <!--++++++++ premiere carte +++++++++-->
+                                <article class="card">
+                                    <!-- Image de la carte-->
+                                    <img
+                                        src="./images/hebergements/Port_hotel.webp"
+                                        alt="vue en perspective de deux lit simple avec en arrière plan une fenêtre ouverte"
+                                    />
+                                    <!--contenue de la carte-->
+                                    <div class="hebergement-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l hébergement----->
+                                            <h3 class="card-title">
+                                                Hôtel du port
+                                            </h3>
+                                            <!-- Prix de la nuitée---->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 52<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
 
-             <!--#### premiere rangée de cartes ####-->
-                    <div class="rangee">
+                            <!-- liens vers plus d'info carte 2-->
+                            <a href="#">
+                                <!--++++++++ deuxième carte ++++++++-->
+                                <article class="card">
+                                    <!-- Image de la carte-->
+                                    <img
+                                        src="./images/hebergements/Amina.webp"
+                                        alt="vue de deux lit simple sur le coté gauche avec en arrière plan une fenêtre ouverte"
+                                    />
+                                    <!--contenue de la carte-->
+                                    <div class="hebergement-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l hébergement----->
+                                            <h3 class="card-title">
+                                                Hôtel chez Amina
+                                            </h3>
+                                            <!-- Prix de la nuitée---->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 96<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
 
-                        <!-- liens vers plus d'info carte 1--> 
+                            <!-- liens vers plus d'info carte 3-->
+                            <a href="#">
+                                <!--+++++++++ troisième carte +++++++++-->
+                                <article class="card">
+                                    <!-- Image de la carte-->
+                                    <img
+                                        src="./images/hebergements/Mouettes.webp"
+                                        alt="vue d'un lit simple  avec en arrière plan une armoire avec un miroir"
+                                    />
+                                    <!--contenue de la carte-->
+                                    <div class="hebergement-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l hébergement----->
+                                            <h3 class="card-title">
+                                                Hôtel les Mouettes
+                                            </h3>
+                                            <!-- Prix de la nuitée---->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 76<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+
+                        <!--#### deuxième rangée de cartes ####-->
+                        <div class="rangee">
+                            <!-- liens vers plus d'info carte 4-->
+                            <a href="#">
+                                <!--+++++++ quatrième carte ++++++++-->
+                                <article class="card">
+                                    <!-- Image de la carte-->
+                                    <img
+                                        src="./images/hebergements/Mer.webp"
+                                        alt="vue de face  d'un lit double et au dessus une toile représentant un paysage marin "
+                                    />
+                                    <!--contenu de la carte-->
+                                    <div class="hebergement-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l hébergement----->
+                                            <h3 class="card-title">
+                                                Hôtel de la mer
+                                            </h3>
+                                            <!-- Prix de la nuitée---->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 46<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <!-- liens vers plus d'info carte 5 -->
+                            <a href="#">
+                                <!--++++++++ cinquième carte ++++++++-->
+                                <article class="card">
+                                    <!-- Image de la carte-->
+                                    <img
+                                        src="./images/hebergements/Canebiere.webp"
+                                        alt="vue de deux lit superposés  sur le coté droit avec en arrière plan une fenêtre"
+                                    />
+                                    <!--contenu de la carte-->
+                                    <div class="hebergement-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l hébergement----->
+                                            <h3 class="card-title">
+                                                Hôtel la Canebière
+                                            </h3>
+                                            <!-- Prix de la nuitée---->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 25<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <!-- liens vers plus d'info carte 6-->
+                            <a href="#">
+                                <!--+++++++++ sixième  carte +++++++++-->
+                                <article class="card">
+                                    <!-- Image de la carte-->
+                                    <img
+                                        src="./images/hebergements/Le_panier.webp"
+                                        alt="vue de deux lits superposés en bois"
+                                    />
+                                    <!--contenu de la carte-->
+                                    <div class="hebergement-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l hébergement----->
+                                            <h3 class="card-title">
+                                                Auberge le Panier
+                                            </h3>
+                                            <!-- Prix de la nuitée---->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 23<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="affichez_plus">
+                            <a href="#" class="bold">Affichez plus</a>
+                        </div>
+                    </section>
+
+                    <!---------------------------------------------------------------------------------->
+                    <!--#### Section pour les plus populaires ######-->
+
+                    <section class="populaires">
+                        <!-- Titre de la section des plus populaires -->
+                        <div class="populaires-title">
+                            <h2 class="section-title">Les plus populaires</h2>
+                            <!-- Icône représentant la popularité -->
+                            <i
+                                class="fa-solid fa-chart-line"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+
+                        <!-- Cartes des hébergements populaires -->
+                        <div class="populaires-cards">
+                            <!--lien vers plus d'info carte 1-->
+                            <a href="#">
+                                <!--++++++++ Première carte ++++++++++-->
+                                <article class="card">
+                                    <!-- Image de l'hébergement -->
+                                    <img
+                                        src="./images/hebergements/emile-guillemot.jpg"
+                                        alt="Image de la chambre d'hôtel montrant un lit"
+                                    />
+                                    <!-- Contenu de la carte -->
+                                    <div class="card-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l'hébergement -->
+                                            <h3 class="card-title">
+                                                Hôtel Le soleil du matin
+                                            </h3>
+                                            <!-- Prix de la nuitée -->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 128<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <!-- lien vers plus d'info carte 2 -->
+                            <a href="#">
+                                <!--++++++ Deuxième carte ++++++++-->
+                                <article class="card">
+                                    <!-- Image hébergement -->
+                                    <img
+                                        src="./images/hebergements/aw-creative.jpg"
+                                        alt="Image de la chambre d'hôtel montrant un lit"
+                                    />
+                                    <!-- contenu de la carte -->
+                                    <div class="card-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l 'Hébergement -->'
+                                            <h3 class="card-title">
+                                                Chambres d’hôtes Au cœur de
+                                                l’eau
+                                            </h3>
+                                            <!-- Prix de la nuitée-->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 71<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <!-- Note de l'hébergement avec des étoiles -->
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+
+                            <!-- lien vers plus d info carte 3 -->
+                            <a href="#">
+                                <!--+++++++ Troisième carte +++++++-->
+                                <article class="card">
+                                    <!-- Image hébergement-->
+                                    <img
+                                        src="./images/hebergements/febrian-zakaria2.jpg"
+                                        alt="Image de la chambre d'hôtel montrant un lit"
+                                    />
+                                    <!-- Contenu de la carte -->
+                                    <div class="card-content">
+                                        <div class="card-txt">
+                                            <!-- Titre de l 'hébergement-->'
+                                            <h3 class="card-title">
+                                                Hôtel Bleu et Blanc
+                                            </h3>
+                                            <!-- Prix de la nuitée-->
+                                            <p class="card-subtitle">
+                                                Nuit à partir de 68<span
+                                                    class="bold"
+                                                    >€</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <!-- Note de l'hébergement avec des étoiles -->
+                                        <div class="card-rating">
+                                            <!-- Quatres étoiles pleines-->
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <i
+                                                class="fa-xs fa-solid fa-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- une étoile vide -->
+                                            <i
+                                                class="fa-xs fa-solid fa-star neutral-star"
+                                                aria-hidden="true"
+                                            ></i>
+                                            <!-- Texte pour les lecteurs d'écran décrivant la  note -->
+                                            <span class="sr-only"
+                                                >Note de 4 sur 5</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+                <!---------------------------------------------------------------------------------->
+                <!--##### Section Activités a Marseille ######-->
+
+                <section id="activites" class="activites">
+                    <h2>Activités à Marseille</h2>
+
+                    <div class="activites-a-marseille">
+                        <!--lien vers plus d'info carte 1-->
                         <a href="#">
-
-                            <!--++++++++ premiere carte +++++++++-->
-                            <article class="card">
-                                <!-- Image de la carte-->
-                                <img src="./images/hebergements/Port_hotel.webp" alt="vue en perspective de deux lit simple avec en arrière plan une fenêtre ouverte">
-                                <!--contenue de la carte-->
-                                <div class="hebergement-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l hébergement----->
-                                        <h3 class="card-title">Hôtel du port</h3>
-                                        <!-- Prix de la nuitée---->
-                                        <p class="card-subtitle">Nuit à partir de 52<span class="bold">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-
-                        <!-- liens vers plus d'info carte 2--> 
-                        <a href="#">
-
-                            <!--++++++++ deuxième carte ++++++++-->
-                            <article class="card">
-                                <!-- Image de la carte-->
-                                <img src="./images/hebergements/Amina.webp" alt="vue de deux lit simple sur le coté gauche avec en arrière plan une fenêtre ouverte">
-                                <!--contenue de la carte-->
-                                <div class="hebergement-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l hébergement----->
-                                        <h3 class="card-title">Hôtel chez Amina</h3>
-                                        <!-- Prix de la nuitée---->
-                                        <p class="card-subtitle">Nuit à partir de 96<span class="bold">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-
-                        <!-- liens vers plus d'info carte 3--> 
-                        <a href="#">
-
-                            <!--+++++++++ troisième carte +++++++++-->
-                            <article class="card">
-                                <!-- Image de la carte-->
-                                <img src="./images/hebergements/Mouettes.webp" alt="vue d'un lit simple  avec en arrière plan une armoire avec un miroir">
-                                <!--contenue de la carte-->
-                                <div class="hebergement-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l hébergement----->
-                                        <h3 class="card-title">Hôtel les Mouettes</h3>
-                                        <!-- Prix de la nuitée---->
-                                        <p class="card-subtitle">Nuit à partir de 76<span class="bold">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-
-            <!--#### deuxième rangée de cartes ####-->
-                    <div class="rangee">
-
-                        <!-- liens vers plus d'info carte 4--> 
-                        <a href="#">
-
-                            <!--+++++++ quatrième carte ++++++++-->
-                            <article class="card">
-                                <!-- Image de la carte-->
-                                <img src="./images/hebergements/Mer.webp" alt="vue de face  d'un lit double et au dessus une toile représentant un paysage marin ">
-                                <!--contenu de la carte-->
-                                <div class="hebergement-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l hébergement----->
-                                        <h3 class="card-title">Hôtel de la mer</h3>
-                                        <!-- Prix de la nuitée---->
-                                        <p class="card-subtitle">Nuit à partir de 46<span class="bold">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-
-                        <!-- liens vers plus d'info carte 5 -->
-                        <a href="#">
-
-                            <!--++++++++ cinquième carte ++++++++-->
-                            <article class="card">
-                                <!-- Image de la carte-->
-                                <img src="./images/hebergements/Canebiere.webp" alt="vue de deux lit superposés  sur le coté droit avec en arrière plan une fenêtre">
-                                <!--contenu de la carte-->
-                                <div class="hebergement-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l hébergement----->
-                                        <h3 class="card-title">Hôtel la Canebière</h3>
-                                        <!-- Prix de la nuitée---->
-                                        <p class="card-subtitle">Nuit à partir de 25<span class="bold">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-
-                        <!-- liens vers plus d'info carte 6--> 
-                        <a href="#">
-
-                            <!--+++++++++ sixième  carte +++++++++-->
-                            <article class="card">
-                                <!-- Image de la carte-->
-                                <img src="./images/hebergements/Le_panier.webp" alt="vue de deux lits superposés en bois">
-                                <!--contenu de la carte-->
-                                <div class="hebergement-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l hébergement----->
-                                        <h3 class="card-title">Auberge le Panier</h3>
-                                        <!-- Prix de la nuitée---->
-                                        <p class="card-subtitle">Nuit à partir de 23<span class="bold">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                    <div class="affichez_plus">
-                        <a href="#" class="bold">Affichez plus</a>
-                    </div>
-                </section>
-
-<!---------------------------------------------------------------------------------->
-<!--#### Section pour les plus populaires ######-->
-
-                <section class="populaires">
-                    <!-- Titre de la section des plus populaires -->
-                    <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
-                        <!-- Icône représentant la popularité -->
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
-
-            <!-- Cartes des hébergements populaires -->
-                    <div class="populaires-cards">
-
-                        <!--lien vers plus d'info carte 1--> 
-                        <a href="#">
-
-                            <!--++++++++ Première carte ++++++++++-->
-                            <article class="card">
-                                <!-- Image de l'hébergement -->
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <!-- Contenu de la carte -->
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l'hébergement -->
-                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                         <!-- Prix de la nuitée -->
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="bold">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
+                            <!--+++++ Première carte ++++++-->
+                            <article class="card2">
+                                <!-- Image de la carte -->
+                                <img
+                                    src="./images/activites/Vieux_Port.webp"
+                                    alt=" image d'un port montrant des voilier amarré"
+                                />
+                                <!-- Titre -->
+                                <h3>Vieux-Port</h3>
                             </article>
                         </a>
 
                         <!-- lien vers plus d'info carte 2 -->
                         <a href="#">
-
-                            <!--++++++ Deuxième carte ++++++++-->
-                            <article class="card">
-                                <!-- Image hébergement -->
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <!-- contenu de la carte -->
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l 'Hébergement -->'
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
-                                        <!-- Prix de la nuitée-->
-                                        <p class="card-subtitle">Nuit à partir de 71<span class="bold">€</span></p>
-                                    </div>
-                                    <!-- Note de l'hébergement avec des étoiles -->
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                         <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
+                            <!--+++++ Deuxième carte ++++++-->
+                            <article class="card2">
+                                <!-- Image de la carte -->
+                                <img
+                                    src="./images/activites/Fort.webp"
+                                    alt=" image d un une vue en perspective d un fort en pierre en haut du colline rocheuse"
+                                />
+                                <!-- Titre -->
+                                <h3>Fort de Pomègues</h3>
                             </article>
                         </a>
 
-                        <!-- lien vers plus d info carte 3 -->
+                        <!-- lien vers plus d'info carte 3 -->
                         <a href="#">
+                            <!--+++++++ Troisième carte +++++-->
+                            <article class="card2">
+                                <!-- Image de la carte -->
+                                <img
+                                    src="./images/activites/Parc_national.webp"
+                                    alt="vue au loin de la mer depuis les hauteurs des calanques"
+                                />
+                                <!-- Titre -->
+                                <h3>Parc national des Calanques</h3>
+                            </article>
+                        </a>
 
-                            <!--+++++++ Troisième carte +++++++-->
-                            <article class="card">
-                                <!-- Image hébergement-->
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <!-- Contenu de la carte -->
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <!-- Titre de l 'hébergement-->'
-                                        <h3 class="card-title">Hôtel Bleu et Blanc</h3>
-                                        <!-- Prix de la nuitée-->
-                                        <p class="card-subtitle">Nuit à partir de 68<span class="bold">€</span></p>
-                                    </div>
-                                    <!-- Note de l'hébergement avec des étoiles -->
-                                    <div class="card-rating">
-                                        <!-- Quatres étoiles pleines-->
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <!-- une étoile vide -->
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <!-- Texte pour les lecteurs d'écran décrivant la  note -->
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
+                        <!-- lien vers plus d'info carte 4 -->
+                        <a href="#">
+                            <!--++++++ Quatrième carte ++++++-->
+                            <article class="card2">
+                                <!-- Image de la carte -->
+                                <img
+                                    src="./images/activites/Notre_Dame.webp"
+                                    alt=" vue d'une église au loin sur une colline"
+                                />
+                                <!-- titre  -->
+                                <h3>Notre-Dame-de-la-Garde</h3>
                             </article>
                         </a>
                     </div>
                 </section>
-            </div>
+            </main>
 
-<!---------------------------------------------------------------------------------->
-<!--##### Section Activités a Marseille ######-->
+            <!---------------------------------------------------------------------------------->
+            <!--***************************Footer (pied de page) ****************************-->
+            <!---------------------------------------------------------------------------------->
 
-            <section id="activites" class="activites">
-                <H2>Activités à Marseille</H2>
+            <footer class="footer">
+                <!-- Première liste A propos-->
+                <ul class="a_propos">
+                    <!-- Titre de la liste-->
+                    <li><div class="bold">A propos</div></li>
+                    <!-- trois liens en liste-->
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Condition générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
 
-                <div class="activites-a-marseille">
-                    <!--lien vers plus d'info carte 1-->
-                    <a href="#">
-                        <!--+++++ Première carte ++++++-->
-                        <article class="card2">
-                            <!-- Image de la carte -->
-                            <img src="./images/activites/Vieux_Port.webp" alt=" image d'un port montrant des voilier amarré">
-                            <!-- Titre -->
-                            <h3>Vieux-Port</h3>
-                        </article>
-                    </a>
+                <!-- Deuxième liste lien nos hébergements -->
+                <ul class="nos_hebergements">
+                    <!-- Titre liste -->
+                    <li><div class="bold">Nos hébergements</div></li>
+                    <!-- deux liens en liste -->
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
 
-                    <!-- lien vers plus d'info carte 2 -->
-                    <a href="#">
-
-                        <!--+++++ Deuxième carte ++++++-->
-                        <article class="card2">
-                            <!-- Image de la carte -->
-                            <img src="./images/activites/Fort.webp" alt=" image d un une vue en perspective d un fort en pierre en haut du colline rocheuse">
-                            <!-- Titre -->
-                            <h3>Fort de Pomègues</h3>
-                        </article>
-                    </a>
-
-                    <!-- lien vers plus d'info carte 3 -->
-                    <a href="#">
-
-                        <!--+++++++ Troisième carte +++++-->
-                        <article class="card2">
-                            <!-- Image de la carte -->
-                            <img src="./images/activites/Parc_national.webp" alt="vue au loin de la mer depuis les hauteurs des calanques">
-                            <!-- Titre -->
-                            <h3>Parc national des Calanques</h3>
-                        </article>
-                    </a>
-
-                    <!-- lien vers plus d'info carte 4 -->
-                    <a href="#">
-
-                        <!--++++++ Quatrième carte ++++++-->
-                        <article class="card2">
-                            <!-- Image de la carte -->
-                            <img src="./images/activites/Notre_Dame.webp" alt=" vue d'une église au loin sur une colline">
-                            <!-- titre  -->
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </article>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-<!---------------------------------------------------------------------------------->
-<!--***************************Footer (pied de page) ****************************-->
-<!---------------------------------------------------------------------------------->
-
-        <footer class="footer">
-
-            <!-- Première liste A propos-->
-            <ul class="a_propos">
-                <!-- Titre de la liste-->
-                <li><div class="bold">A propos</div></li>
-                <!-- trois liens en liste-->
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Condition générales</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-
-            <!-- Deuxième liste lien nos hébergements -->
-            <ul class="nos_hebergements">
-                <!-- Titre liste -->
-                <li><div class="bold">Nos hébergements</div></li>
-                <!-- deux liens en liste -->
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Proposer votre hôtel</a></li>
-            </ul>
-
-            <!-- Troisième liste Assistance -->
-            <ul class="assistance">
-                <!-- Titre liste -->
-                <!-- deux liens en liste -->
-                <li><div class="bold">Assistance</div></li>
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous contacter</a></li>
-            </ul>
-
-        </footer>
-    </div>
-</body>
-
+                <!-- Troisième liste Assistance -->
+                <ul class="assistance">
+                    <!-- Titre liste -->
+                    <!-- deux liens en liste -->
+                    <li><div class="bold">Assistance</div></li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
 </html>
