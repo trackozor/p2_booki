@@ -90,7 +90,7 @@ a {
 .card-txt {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.6dvh;
+    font-size: 1dvw;
 }
 
 /* Style renforcé pour affichage en gras*/
@@ -168,7 +168,6 @@ li {
     align-items: center;
     font-size: 1vw;
 }
-
 /* Style pour la barre de recherche */
 .Search-bar {
     width: 20vw;
@@ -235,13 +234,13 @@ li {
     color: white; /* Couleur du cercle */
     border: 0.2rem solid var(--main-bg-color);
     border-radius: 50%;
-    font-size: 1.5vh;
+    font-size: 1.6dvw;
 }
 
 /* Style pour le "i" */
 .icon-info {
     color: var(--main-color); /* Couleur du "i" */
-    font-size: 1vh; /* Taille du "i", plus petit que le cercle */
+    font-size: 1vw; /* Taille du "i", plus petit que le cercle */
     z-index: 1;
     position: relative;
 }
@@ -289,6 +288,7 @@ li {
     padding: 1.25vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
     height: 70vh;
+    font-feature-settings: 'tnum'; /* Force les chiffres tabulaires */
 }
 
 /*********************************************************************************************************/
@@ -453,3 +453,19 @@ li {
     }
 }
 /*------------------------Tablette -----------------------------------------------------------------------*/
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+    body {
+        font-size: clamp(14px, 15px, 16px);
+    }
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 90vw;
+    }
+    .hebergements .card {
+        width: 25vw;
+    }
+}
