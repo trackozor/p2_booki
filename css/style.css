@@ -7,19 +7,20 @@
 
 /* Déclaration de variables CSS globales pour les couleurs */
 :root {
-    --main-color: #0065FC; /* Couleur principale utilisée pour les éléments importants (ex: texte, bordures) */
-    --main-bg-color: #F2F2F2; /* Couleur de fond globale pour les sections */
-    --filter-bg-color: #DEEBFF; /* Couleur de fond spécifique pour les filtres */
-    --font-wight:700;
+    --main-color: #0065fc; /* Couleur principale utilisée pour les éléments importants (ex: texte, bordures) */
+    --main-bg-color: #f2f2f2; /* Couleur de fond globale pour les sections */
+    --filter-bg-color: #deebff; /* Couleur de fond spécifique pour les filtres */
+    --font-wight: 700;
 }
 html {
-    font-size: clamp(16px, 1,6vh 18px);
-
+    font-size: clamp(16px, 1, 6vh 18px);
 }
 
 /* Style des icônes Font Awesome */
 .fa-solid {
-    color: var(--main-color); /* Applique la couleur principale aux icônes Font Awesome */
+    color: var(
+        --main-color
+    ); /* Applique la couleur principale aux icônes Font Awesome */
 }
 
 /* Centrage horizontal du contenu dans la page entière */
@@ -31,7 +32,7 @@ body {
 
 /* Conteneur principal qui limite la largeur et gère le padding */
 .main-container {
- /* Le conteneur occupe toute la largeur de la fenêtre */
+    /* Le conteneur occupe toute la largeur de la fenêtre */
     max-width: 90vw; /* Il est limité à 90% de la largeur de la fenêtre */
     padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
     box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
@@ -46,7 +47,7 @@ a {
 /* Style des titres de section */
 .section-title {
     margin: 0; /* Supprime les marges par défaut */
-    font-size: 1.375rem; /* Taille du texte, équivaut à environ 22px */
+    font-size: 1.6vw; /* Taille du texte, équivaut à environ 22px */
 }
 
 /* Style général des cartes sur le site */
@@ -54,16 +55,20 @@ a {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Coins arrondis */
     padding: 0.3125rem; /* Espace intérieur de la carte */
-    filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */
+    filter: drop-shadow(
+        0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
+    ); /* Ajoute une ombre légère sous la carte */
 }
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
     height: 20dvh;
     border-radius: 1.25rem; /* Coins arrondis */
-    filter: drop-shadow(0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)); /* Ajoute une ombre légère sous la carte */   
+    filter: drop-shadow(
+        0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
+    ); /* Ajoute une ombre légère sous la carte */
 }
 .card2 img {
-    height:25dvw;
+    height: 25dvw;
     width: 20dvw;
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
@@ -86,23 +91,27 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.6dvh;
-
 }
 
 /* Style renforcé pour affichage en gras*/
 .bold {
     font-weight: 700; /* Met le texte en gras */
 }
-
+h2 {
+    font-size: 2vw;
+}
 /* Style pour les listes */
 li {
-     margin-bottom: 0.5rem; /* Espace entre chaque élément de liste */
+    /* Espace entre chaque élément de liste */
     list-style-type: none; /* Supprime les puces par défaut */
+    font-size: 1.2dvw;
 }
 
 /* Style pour les étoiles inactives dans les évaluations */
 .neutral-star {
-    color: var(--main-bg-color); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
+    color: var(
+        --main-bg-color
+    ); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
 }
 
 /*********************************************************************************************************/
@@ -111,7 +120,7 @@ li {
 
 /* Style du conteneur principal de l'en-tête */
 .header {
-    height: 2vh; /* Hauteur de 10% de la hauteur visible de la fenêtre */
+    height: 2vw; /* Hauteur de 10% de la hauteur visible de la fenêtre */
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
     justify-content: space-between; /* Aligne les éléments à gauche et à droite */
     align-items: center; /* Centre verticalement les éléments */
@@ -129,9 +138,10 @@ li {
     gap: 5vw; /* Crée un espace de 30% entre les éléments */
     justify-content: center; /* Centre les éléments dans la barre de navigation */
     padding: 1vw;
+    font-size: 1.5vw;
 }
 .nav-element {
-    padding-top:2vh;
+    padding-top: 2vh;
 }
 
 /* Style des éléments du menu lors du survol */
@@ -147,53 +157,49 @@ li {
 .local {
     display: flex;
     height: 3vw;
-    width:4vw;
-    border-radius: 0.8rem  0  0 0.8rem ;
+    width: 4vw;
+    border-radius: 0.8rem 0 0 0.8rem;
     background-color: var(--main-bg-color);
     align-items: center;
 }
-.local i{
+.local i {
     display: flex;
     padding-left: 1vw;
     align-items: center;
     font-size: 1vw;
-
 }
 
 /* Style pour la barre de recherche */
 .Search-bar {
     width: 20vw;
-    height:3vw;
+    height: 3vw;
     display: flex;
     align-items: center;
-    margin:1vw 0;
-
+    margin: 1vw 0;
 }
 .search-button {
-
     background-color: var(--main-color);
     font-weight: 700;
-    color: #FFF;
+    color: #fff;
     border-top-right-radius: 0.8vw; /* Bord arrondi */
-    border-bottom-right-radius:0.8vw;
+    border-bottom-right-radius: 0.8vw;
     border-color: var(--main-color);
     width: 10vw;
-    height:3vw;
+    height: 3vw;
     font-size: 1vw;
 }
 .search-input {
     display: flex;
     width: 15vw;
-    height:3vw;
-    border:none;
+    height: 3vw;
+    border: none;
     text-align: center;
 }
 .search-input::placeholder {
-    color:#000;
+    color: #000;
     font-weight: var(--font-wight);
     display: flex;
-    font-size: 1.2vw;
-
+    font-size: 1vw;
 }
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
@@ -202,10 +208,11 @@ li {
 /* Conteneur pour les filtres, utilisant Flexbox */
 .filter {
     display: flex; /* Flexbox pour aligner les éléments */
-    gap: 2vh; /* Espace de 2rem entre les éléments */
+    gap: 2vw; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
-    height:4vh;
-    margin-bottom: 2vh;
+    height: 2vw;
+    margin-bottom: 1.5vw;
+    font-size: 1vw;
 }
 
 /* Conteneur d'informations avec Flexbox */
@@ -222,7 +229,6 @@ li {
     justify-content: center;
 }
 
-
 /* Style pour le cercle */
 .icon-circle {
     position: absolute;
@@ -230,7 +236,6 @@ li {
     border: 0.2rem solid var(--main-bg-color);
     border-radius: 50%;
     font-size: 1.5vh;
-
 }
 
 /* Style pour le "i" */
@@ -239,28 +244,28 @@ li {
     font-size: 1vh; /* Taille du "i", plus petit que le cercle */
     z-index: 1;
     position: relative;
-  
 }
-
 
 /********** Bouton de filtre ********************/
 
 /* Style pour les boutons de filtre */
 .filter-button {
     display: flex; /* Flexbox pour aligner le contenu du bouton */
-    height:2vw; /* Hauteur du bouton */
+    height: 2vw; /* Hauteur du bouton */
     border-radius: 1.5625rem; /* Bord arrondi */
     align-items: center; /* Centre verticalement le contenu */
-    background-color: #FFF; /* Fond blanc */
+    background-color: #fff; /* Fond blanc */
     gap: 0.5rem; /* Espace entre les éléments du bouton */
-    border: 0.125rem solid #D9D9D9; /* Bordure grise claire */
+    border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
     padding: 0.25rem 1.1875rem; /* Espacement intérieur du bouton */
     font-size: 1.2vw;
 }
 
 /***** Changement de couleur du bouton au survol ***********/
 .filter-button:hover {
-    background-color: var(--filter-bg-color); /* Change le fond du bouton lors du survol */
+    background-color: var(
+        --filter-bg-color
+    ); /* Change le fond du bouton lors du survol */
 }
 
 /********************************************************************************************************/
@@ -277,12 +282,13 @@ li {
 
 /* Style des sections Hébergements et Populaires */
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color); /* Fond gris clair pour les sections */
+    background-color: var(
+        --main-bg-color
+    ); /* Fond gris clair pour les sections */
     border-radius: 1.25rem; /* Bords arrondis */
-    padding:1.25vw; /* Espace intérieur */
+    padding: 1.25vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
     height: 70vh;
-
 }
 
 /*********************************************************************************************************/
@@ -292,7 +298,7 @@ li {
 /****** Hébergements ***********/
 
 /* Section des hébergements, occupant 65% de la largeur */
-.hebergements  {
+.hebergements {
     display: flex;
     flex-direction: column;
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
@@ -320,12 +326,12 @@ li {
 .rangee .card img {
     width: 100%;
     height: 60%;
-    border-top-left-radius: 1rem ;
+    border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     object-fit: cover;
 }
 .rangee .hebergement-content {
-    padding:0.5vh 1vh;
+    padding: 0.5vh 1vh;
 }
 /*********************************************************************************************************/
 /*------------------------------------ Section Populaire (droite) -----------------------------------*/
@@ -336,9 +342,8 @@ li {
 .populaires {
     width: 32vw; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: space-between;
-
 }
 
 /* Titre de la section Populaires avec icône */
@@ -351,12 +356,12 @@ li {
 .populaires-cards .card {
     display: flex; /* Aligne l'image et le texte en ligne */
     flex-direction: row; /* Aligne les éléments horizontalement */
-    background-color: #FFF; /* Fond blanc pour les cartes */
+    background-color: #fff; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
     height: 16vh;
-    margin:  3vh 0;
+    margin: 3vh 0;
 }
 
 /* Style des images dans les cartes Populaires */
@@ -365,7 +370,6 @@ li {
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
     border-top-left-radius: 1.25rem; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 1.25rem; /* Arrondit le coin inférieur gauche */
-
 }
 
 /* Contenu textuel des cartes Populaires */
@@ -386,7 +390,6 @@ li {
 .populaires-cards .card-title {
     margin: 0; /* Supprime les marges */
     font: size 1.8dvh;
-
 }
 
 /********************************************************************************************************/
@@ -399,13 +402,13 @@ li {
 .activites-a-marseille {
     width: 90vw;
     display: flex; /* Utilise Flexbox pour aligner les cartes */
-    gap:1.5vw;
+    gap: 1.5vw;
 }
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
     height: 28dvw; /* Les cartes occupent toute la hauteur disponible */
-    width:20vw;
+    width: 20vw;
 }
 
 /* Style des images dans les cartes d'activités */
@@ -417,12 +420,11 @@ li {
 }
 
 /* Style des titres dans les cartes d'activités */
-.activites-a-marseille  h3 {
-    display: flex ;
+.activites-a-marseille h3 {
+    display: flex;
     padding-left: 1vw; /* Espacement à gauche pour le titre */
     margin-bottom: 2vw;
     font-size: 1.2dvw;
-    
 }
 
 /*********************************************************************************************************/
@@ -432,10 +434,10 @@ li {
 /* Conteneur principal du footer */
 .footer {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
-    gap: 15%; /* Espace entre les éléments du footer */
-    background-color: #F2F2F2; /* Couleur de fond du footer */
-    padding:1% 0; /* Espacement intérieur du footer */
-    margin-top: 2%;
+    gap: 10vw; /* Espace entre les éléments du footer */
+    background-color: #f2f2f2; /* Couleur de fond du footer */
+    padding: 1vw 0; /* Espacement intérieur du footer */
+    margin-top: 5vh;
 }
 
 /*********************************************************************************************************/
@@ -447,7 +449,7 @@ li {
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
 @media (min-width: 90.06rem) {
     body {
-        font-size: clamp(22px,23px, 25px);
+        font-size: clamp(22px, 23px, 25px);
     }
 }
 /*------------------------Tablette -----------------------------------------------------------------------*/
