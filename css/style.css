@@ -404,7 +404,7 @@ li {
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
-    height: 28vw; /* Les cartes occupent toute la hauteur disponible */
+    height: 28dvw; /* Les cartes occupent toute la hauteur disponible */
     width:20vw;
 }
 
