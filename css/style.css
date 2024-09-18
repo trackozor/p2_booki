@@ -189,7 +189,7 @@ li {
 /* Style pour la barre de recherche */
 .Search-bar {
     width: 20dvw;
-    height: 3dvw;
+    height: 3vw;
     display: flex;
     align-items: center;
     margin: 1vw 0;
@@ -225,7 +225,7 @@ li {
 /* Conteneur pour les filtres, utilisant Flexbox */
 .filter {
     display: flex; /* Flexbox pour aligner les éléments */
-    gap: 2vw; /* Espace de 2rem entre les éléments */
+    gap: 5vw; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
     height: 2vw;
     margin-bottom: 1.5vw;
@@ -242,8 +242,8 @@ li {
 .fa-layers {
     display: inline-flex;
     align-items: center;
-    font-size: 1vh; /* Ajuste la taille de l'icône */
-    margin-right: 1vh; /* Espace entre l'icône et le texte*/
+    font-size: 1vw; /* Ajuste la taille de l'icône */
+    margin-right: 1vw; /* Espace entre l'icône et le texte*/
     justify-content: center;
 }
 
@@ -272,11 +272,12 @@ li {
     height: 2vw; /* Hauteur du bouton */
     border-radius: 1.5625rem; /* Bord arrondi */
     align-items: center; /* Centre verticalement le contenu */
-    background-color: #fff; /* Fond blanc */
-    gap: 0.5vw; /* Espace entre les éléments du bouton */
+    background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
     border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
-    padding: 0.25rem 1.1875rem; /* Espacement intérieur du bouton */
+    padding: 1vw 1vw; /* Espacement intérieur du bouton */
     font-size: 1.2vw;
+    text-align: center;
+    gap: 1vw;
 }
 
 /***** Changement de couleur du bouton au survol ***********/
