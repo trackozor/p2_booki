@@ -261,7 +261,7 @@ li {
     border-radius: 1.5625rem; /* Bord arrondi */
     align-items: center; /* Centre verticalement le contenu */
     background-color: #fff; /* Fond blanc */
-    gap: 0.5rem; /* Espace entre les éléments du bouton */
+    gap: 0.5vw; /* Espace entre les éléments du bouton */
     border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
     padding: 0.25rem 1.1875rem; /* Espacement intérieur du bouton */
     font-size: 1.2vw;
@@ -557,13 +557,13 @@ li {
     }
 
     .hebergements .card {
-        width: 25vw;
-        height: 23vw; /* Taille des cartes d'hébergements */
+        width: 25vw;/* Taille des cartes d'hébergements */
+        height: 23vw;
     }
 
     .rangee {
-        height: 23vw;
-        gap: 1vw; /* Espacement entre les cartes dans une rangée */
+        height: 26vw;
+        gap: 3vw; /* Espacement entre les cartes dans une rangée */
     }
 
     .populaires-cards {
@@ -583,11 +583,11 @@ li {
     }
 
     .activites-a-marseille .card2 {
-        height: 40vw; /* Taille des cartes d'activités */
+        height: 45vw; /* Taille des cartes d'activités */
     }
 
     .activites-a-marseille .card2 img {
-        height: 35vw; /* Taille des images des cartes d'activités */
+        height: 40vw; /* Taille des images des cartes d'activités */
     }
 
     .footer {
@@ -595,3 +595,63 @@ li {
         height: 20;
     }
 }
+/*------------------------ Mobiles de moins de 30rem -----------------------------------------------*/
+@media (max-width: 30rem) {
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
+        height: 90vw; /* Ajustement de la hauteur globale */
+    }
+
+    .populaires {
+        width: 90vw; /* Utilise toute la largeur de l'écran */
+    }
+
+    .activites-a-marseille {
+        gap: 3vw; /* Espacement légèrement plus large entre les cartes d'activités */
+    }
+
+    .hebergements {
+        width: 100vw; /* La section Hébergements occupe toute la largeur disponible */
+    }
+
+    .hebergements .card {
+        width: 25vw; /* Augmentation de la taille des cartes pour une meilleure visibilité */
+        height: 20vw;
+    }
+
+    .rangee {
+        height: 25vw; /* Ajuste la hauteur de la rangée de cartes */
+        gap: 3vw; /* Espacement entre les cartes dans une rangée */
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw; /* Augmente l'espacement entre les cartes populaires */
+    }
+
+    .populaires-cards img {
+        width: 15vw; /* Taille des images des cartes populaires */
+    }
+
+    .populaires-cards .card {
+        height: 23vw;
+        width: 22vw;
+        margin-top: 2vw; /* Augmente légèrement l'espacement des cartes populaires */
+    }
+
+    .activites-a-marseille .card2 {
+        height: 60vw; /* Cartes d'activités plus grandes sur les petits écrans */
+    }
+
+    .activites-a-marseille .card2 img {
+        height: 55vw; /* Taille des images des cartes d'activités */
+    }
+
+    .footer {
+        width: 100vw; /* Le footer prend toute la largeur de l'écran */
+        height: auto; /* Hauteur automatique pour mieux s'adapter aux petits écrans */
+    }
+}
+
