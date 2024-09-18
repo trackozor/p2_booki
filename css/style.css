@@ -409,12 +409,12 @@ li {
 .activites-a-marseille {
     width: 90vw;
     display: flex; /* Utilise Flexbox pour aligner les cartes */
-    gap: 1.5vw;
+    gap: 3.2vw;
 }
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
-    height: 28vw; /* Les cartes occupent toute la hauteur disponible */
+    height: 29vw; /* Les cartes occupent toute la hauteur disponible */
     width: 20vw;
     margin-bottom: 1vh;
 }
@@ -442,7 +442,7 @@ li {
 /* Conteneur principal du footer */
 .footer {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
-    width: 85dvw;
+    width: 90vw;
     gap: 10vw; /* Espace entre les éléments du footer */
     background-color: #f2f2f2; /* Couleur de fond du footer */
     padding: 0; /* Espacement intérieur du footer */
