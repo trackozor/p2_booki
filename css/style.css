@@ -284,7 +284,9 @@ li {
 
 /* Style des sections Hébergements et Populaires */
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color); /* Fond gris clair pour les sections */
+    background-color: var(
+        --main-bg-color
+    ); /* Fond gris clair pour les sections */
     border-radius: 1.25rem; /* Bords arrondis */
     padding: 1.25vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
@@ -371,7 +373,7 @@ li {
 
 /* Style des images dans les cartes Populaires */
 .populaires-cards img {
-    width: 20vw; /* L'image occupe 33% de la largeur de la carte */
+    width: 14vw; /* L'image occupe 33% de la largeur de la carte */
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
     border-top-left-radius: 1.25rem; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 1.25rem; /* Arrondit le coin inférieur gauche */
@@ -379,7 +381,7 @@ li {
 
 /* Contenu textuel des cartes Populaires */
 .populaires-cards .card-content {
-    width: 14vw; /* Le texte occupe 67% de la carte */
+    width: 18vw; /* Le texte occupe 67% de la carte */
     padding-left: 1vw; /* Espace entre l'image et le texte */
     display: flex;
     flex-direction: column; /* Le texte est aligné verticalement */
@@ -466,14 +468,14 @@ li {
 
 /*------------------------Tablettes (entre 48rem et 64rem) --------------------------------------------*/
 @media (min-width: 48rem) and (max-width: 64rem) {
-    body {
+    #body {
         font-size: clamp(
             0.8rem,
             0.9rem,
             1rem
         ); /* Ajuste la taille de la police pour les tablettes */
     }
-    
+
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées sur les tablettes */
@@ -535,17 +537,14 @@ li {
 
 /*------------------------Mobiles entre 30rem et 47.99rem-----------------------------------------------*/
 @media (min-width: 30rem) and (max-width: 48rem) {
-
-
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
-        height: 90vw;
+        height: 95vw;
     }
 
     .populaires {
         width: 90vw; /* Ajuste la largeur des cartes populaires */
-        display: flex;
     }
 
     .activites-a-marseille {
@@ -558,11 +557,11 @@ li {
 
     .hebergements .card {
         width: 25vw;
-        height: 20vw; /* Taille des cartes d'hébergements */
+        height: 23vw; /* Taille des cartes d'hébergements */
     }
 
     .rangee {
-        height: 21vw;
+        height: 23vw;
         gap: 1vw; /* Espacement entre les cartes dans une rangée */
     }
 
@@ -577,7 +576,7 @@ li {
     }
 
     .populaires-cards .card {
-        height: 15vw;
+        height: 20vw;
         width: 25vw;
         margin-top: 1vw; /* Ajuste l'espacement des cartes populaires */
     }
@@ -592,7 +591,6 @@ li {
 
     .footer {
         width: 90vw; /* Ajuste la largeur du footer */
+        height: 20;
     }
 }
-
-/
