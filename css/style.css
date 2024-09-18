@@ -451,118 +451,212 @@ li {
 /*----------------------- Media queries ----------------------------------------------------------------*/
 /*********************************************************************************************************/
 
-/*------------------------Écrans large et multi écrans -----------------------------------------------*/
+/*------------------------Écrans large et multi-écrans -----------------------------------------------*/
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
 @media (min-width: 90.06rem) {
     body {
-        font-size: clamp(1.6rem, 1.7rem, 1.8rem);
+        font-size: clamp(
+            1.6rem,
+            1.7rem,
+            1.8rem
+        ); /* Augmente la taille de la police pour les grands écrans */
     }
 }
-/*------------------------Tablette -----------------------------------------------------------------------*/
-@media (min-width: 48rem) and (max-width: 64rem)  {
+
+/*------------------------Tablettes (entre 48rem et 64rem) --------------------------------------------*/
+@media (min-width: 48rem) and (max-width: 64rem) {
     body {
-        font-size: clamp(0.8rem, 0.9rem, 1rem);
+        font-size: clamp(
+            0.8rem,
+            0.9rem,
+            1rem
+        ); /* Ajuste la taille de la police pour les tablettes */
     }
+
     .hebergements-and-populaires {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Les sections Hébergements et Populaires sont empilées sur les tablettes */
         height: 75vw;
     }
+
     .populaires {
-        width: 90vw;
+        width: 90vw; /* Ajuste la largeur des cartes populaires */
     }
-   .activites-a-marseille .card2 {
-        height: 40vw;
+
+    .activites-a-marseille .card2 {
+        height: 40vw; /* Ajuste la hauteur des cartes d'activités */
         margin-bottom: 1vw;
     }
+
     .activites-a-marseille {
-        gap: 3vw;
+        gap: 3vw; /* Ajoute un espacement entre les cartes d'activités */
     }
+
     .activites-a-marseille .card2 img {
-        height: 30vw;
+        height: 30vw; /* Ajuste la hauteur des images d'activités */
     }
+
     .hebergements {
-         width: 90vw;
+        width: 90vw; /* Ajuste la largeur des cartes d'hébergements */
     }
+
     .hebergements .card {
         width: 25vw;
-        height: 13vw;
+        height: 13vw; /* Ajuste la taille des cartes d'hébergements */
     }
+
     .rangee {
-        gap: 1vw;
-        height: 15vw;    
+        gap: 1vw; /* Espacement entre les cartes dans une rangée */
+        height: 15vw;
     }
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        gap: 2vw;
+        gap: 2vw; /* Ajuste l'espacement entre les cartes populaires */
         margin: 0;
         padding-top: 0;
-   }
-    .populaires-cards img {
-            width: 12vw;
-   }
-    .populaires-cards .card {
-            height: 18vw;
-            margin-top: 1vw;
     }
+
+    .populaires-cards img {
+        width: 12vw; /* Ajuste la largeur des images des cartes populaires */
+    }
+
+    .populaires-cards .card {
+        height: 18vw;
+        margin-top: 1vw; /* Ajuste l'espacement vertical pour les cartes populaires */
+    }
+
     .footer {
-            width: 90vw;
+        width: 90vw; /* Ajuste la largeur du footer */
     }
 }
-    /*------------------------mobiles de 30 a 47.99rem--------------------*/
 
-    @media (min-width: 30rem) and (max-width: 48rem)  {
+/*------------------------Mobiles entre 30rem et 47.99rem-----------------------------------------------*/
+@media (min-width: 30rem) and (max-width: 48rem) {
     body {
-        font-size: clamp(0.6rem, 0.7rem, 0.8rem);
+        font-size: clamp(
+            0.6rem,
+            0.7rem,
+            0.8rem
+        ); /* Taille de la police réduite pour les petits écrans */
         display: flex;
     }
 
     .hebergements-and-populaires {
         display: flex;
-        flex-direction: column;
-        height: 85dvw;
+        flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
     }
+
     .populaires {
-        width: 90vw;
+        width: 90vw; /* Ajuste la largeur des cartes populaires */
         display: flex;
     }
+
     .activites-a-marseille {
-        gap: 3vw;
+        gap: 3vw; /* Espacement entre les cartes d'activités */
     }
+
     .hebergements {
-        width: 90vw;
+        width: 90vw; /* Ajuste la largeur des cartes d'hébergements */
     }
+
     .hebergements .card {
         width: 25vw;
-        height: 22vw;
+        height: 22vw; /* Taille des cartes d'hébergements */
     }
+
     .rangee {
         height: 21vw;
-        gap: 1vw;
+        gap: 1vw; /* Espacement entre les cartes dans une rangée */
     }
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        gap: 3vw;
+        gap: 3vw; /* Ajuste l'espacement entre les cartes populaires */
     }
+
     .populaires-cards img {
-        width: 12vw;
+        width: 12vw; /* Ajuste la taille des images des cartes populaires */
     }
+
     .populaires-cards .card {
         height: 15vw;
         width: 25vw;
-        margin-top: 1vw;
+        margin-top: 1vw; /* Ajuste l'espacement des cartes populaires */
     }
+
     .activites-a-marseille .card2 {
-        height: 40vw;
+        height: 40vw; /* Taille des cartes d'activités */
     }
+
     .activites-a-marseille .card2 img {
-        height: 35vw;
+        height: 35vw; /* Taille des images des cartes d'activités */
     }
+
     .footer {
-        width: 90vw;
+        width: 90vw; /* Ajuste la largeur du footer */
     }
 }
 
+/*---------Mobiles de moins de 30rem------*/
+@media (max-width: 30rem) {
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+        height: 70vw; /* Ajuste la hauteur des sections Hébergements et Populaires */
+    }
+
+    .populaires {
+        width: 90vw; /* Ajuste la largeur des cartes populaires */
+        display: flex;
+    }
+
+    .activites-a-marseille {
+        gap: 3vw; /* Espacement entre les cartes d'activités */
+    }
+
+    .hebergements {
+        width: 90vw; /* Ajuste la largeur des cartes d'hébergements */
+    }
+
+    .hebergements .card {
+        width: 25vw;
+        height: 22vw; /* Taille des cartes d'hébergements */
+    }
+
+    .rangee {
+        height: 21vw;
+        gap: 1vw; /* Espacement entre les cartes dans une rangée */
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw; /* Espacement entre les cartes populaires */
+    }
+
+    .populaires-cards img {
+        width: 12vw; /* Taille des images des cartes populaires */
+    }
+
+    .populaires-cards .card {
+        height: 15vw;
+        width: 25vw;
+        margin-top: 1vw; /* Ajuste l'espacement des cartes populaires */
+    }
+
+    .activites-a-marseille .card2 {
+        height: 40vw; /* Taille des cartes d'activités */
+    }
+
+    .activites-a-marseille .card2 img {
+        height: 35vw; /* Taille des images des cartes d'activités */
+    }
+
+    .footer {
+        width: 90vw; /* Ajuste la largeur du footer */
+    }
+}
