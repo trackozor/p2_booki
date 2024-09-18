@@ -115,6 +115,10 @@ li {
         --main-bg-color
     ); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
 }
+.num {
+    font-family: 'Open Sans', sans-serif;
+    #font-variant-numeric: tabular-nums;
+}
 
 /*********************************************************************************************************/
 /*---------------------------------- Header -------------------------------------------------------------*/
@@ -290,7 +294,7 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     padding: 1.25vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
-    height: 70vh;
+    height: 80vh;
     font-feature-settings: 'tnum'; /* Force les chiffres tabulaires */
 }
 
@@ -313,14 +317,13 @@ li {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
     width: auto;
     height: 25vw;
-    justify-content: space-between;
-    margin-bottom: 3vw;
-    gap: 1vw;
+    gap: 2vw;
+    align-items: center;
 }
 .rangee .card {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
-    height: 25vh; /* Chaque carte prend 100% de la hauteur de la rangée */
+    height: 14vw; /* Chaque carte prend 100% de la hauteur de la rangée */
     width: 16vw;
 }
 .rangee .card-subtitle {
@@ -350,7 +353,6 @@ li {
     width: 32vw; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 /* Titre de la section Populaires avec icône */
@@ -367,8 +369,8 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 16vh;
-    margin: 3vh 0;
+    height: 20vh;
+    margin-top: 1vw;
 }
 
 /* Style des images dans les cartes Populaires */
