@@ -460,7 +460,7 @@ li {
     }
 }
 /*------------------------Tablette -----------------------------------------------------------------------*/
-@media (min-width: 48rem) and (max-width: 63.99rem) and (orientation: portrait) {
+@media (min-width: 48rem) and (max-width: 64rem) and (orientation portrait) {
     body {
         font-size: clamp(0.8rem, 0.9rem, 1rem);
     }
@@ -470,68 +470,70 @@ li {
     }
     .populaires {
         width: 90vw;
+    }
 
-        .activites-a-marseille .card2 {
+   .activites-a-marseille .card2 {
             height: 40vw;
             margin-bottom: 1vw;
-        }
-        .activites-a-marseille {
+    }
+    .activites-a-marseille {
             gap: 3vw;
-        }
-        .activites-a-marseille .card2 img {
+    }
+    .activites-a-marseille .card2 img {
             height: 30vw;
         }
-        .hebergements {
+    .hebergements {
             width: 90vw;
-        }
-        .hebergements .card {
+    }
+    .hebergements .card {
             width: 25vw;
             height: 13vw;
-        }
-        .rangee {
+    }
+    .rangee {
             gap: 1vw;
-            height: 15vw;
-        }
-        .populaires-cards {
+            height: 15vw;    
+    }
+    .populaires-cards {
             display: flex;
             flex-direction: row;
             gap: 2vw;
             margin: 0;
             padding-top: 0;
-        }
-        .populaires-cards img {
+   }
+    .populaires-cards img {
             width: 12vw;
-        }
-        .populaires-cards .card {
+   }
+    .populaires-cards .card {
             height: 18vw;
             margin-top: 1vw;
-        }
-        .footer {
-            width: 90vw;
-        }
     }
+    .footer {
+            width: 90vw;
+    }
+}
+
     /*------------------------mobiles de 30 a 47.99rem--------------------*/
 
-    @media (min-width: 30rem) and (max-width: 48rem) {
-        body {
+    @media (min-width: 30rem) and (max-width: 48rem)  {
+    body {
             font-size: clamp(0.6rem, 0.7rem, 0.8rem);
             display: flex;
-        }
+    }
 
-        .hebergements-and-populaires {
-            display: flex;
-            flex-direction: column;
-            height: 85vw;
-        }
-        .populaires {
-            width: 90vw;
-            display: flex;
-        }
-        .activites-a-marseille {
-            gap: 3vw;
-        }
-        .hebergements {
-            width: 90vw;
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+        height: 85dvw;
+    }
+    .populaires {
+        width: 90vw;
+        display: flex;
+    }
+    .activites-a-marseille {
+        gap: 3vw;
+    }
+    .hebergements {
+        width: 90vw;
         }
         .hebergements .card {
             width: 25vw;
@@ -550,8 +552,9 @@ li {
             width: 12vw;
         }
         .populaires-cards .card {
-            height: 17vw;
+            height: 15vw;
             width: 25vw;
+            margin-top: 1vw;
         }
         .activites-a-marseille .card2 {
             height: 40vw;
