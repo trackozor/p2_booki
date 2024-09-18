@@ -294,7 +294,6 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     padding: 1.25vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
-    height: 80vh;
     font-feature-settings: 'tnum'; /* Force les chiffres tabulaires */
 }
 
@@ -309,21 +308,20 @@ li {
     display: flex;
     flex-direction: column;
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
-    justify-content: space-between;
 }
 
 /* Style pour les rangées d'éléments */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
     width: auto;
-    height: 25vw;
+    height: 20vw;
     gap: 2vw;
     align-items: center;
 }
 .rangee .card {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
-    height: 14vw; /* Chaque carte prend 100% de la hauteur de la rangée */
+    height: 18vw;
     width: 16vw;
 }
 .rangee .card-subtitle {
@@ -369,13 +367,13 @@ li {
     border-radius: 1.25rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 20vh;
+    height: 12vw;
     margin-top: 1vw;
 }
 
 /* Style des images dans les cartes Populaires */
 .populaires-cards img {
-    width: 14vw; /* L'image occupe 33% de la largeur de la carte */
+    width: 10vw; /* L'image occupe 33% de la largeur de la carte */
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
     border-top-left-radius: 1.25rem; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 1.25rem; /* Arrondit le coin inférieur gauche */
@@ -481,7 +479,6 @@ li {
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées sur les tablettes */
-        height: 75vw;
     }
 
     .populaires {
@@ -511,8 +508,8 @@ li {
     }
 
     .rangee {
-        gap: 1vw; /* Espacement entre les cartes dans une rangée */
-        height: 15vw;
+        gap: 3vw; /* Espacement entre les cartes dans une rangée */
+        height: 18vw;
     }
 
     .populaires-cards {
@@ -528,8 +525,10 @@ li {
     }
 
     .populaires-cards .card {
-        height: 18vw;
+        height: 15vw;
         margin-top: 1vw; /* Ajuste l'espacement vertical pour les cartes populaires */
+        width: 25vw;
+        gap: 2vw;
     }
 
     .footer {
