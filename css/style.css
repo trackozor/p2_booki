@@ -343,8 +343,7 @@ li {
 }
 .rangee .card-subtitle {
     margin-top: 0;
-    margin-bottom: 2vw
-;
+    margin-bottom: 2vw;
 }
 
 .rangee .card img {
@@ -489,10 +488,10 @@ li {
         height: 2vw;
     }
     /* Style des éléments du menu lors du survol */
-.nav-element:hover {
-    color: var(--main-color); /* Change la couleur de texte au survol */
-    border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
-    border-top: none; /* enlève la bordure du haut */
+    .nav-element:hover {
+        color: var(--main-color); /* Change la couleur de texte au survol */
+        border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
+        border-top: none; /* enlève la bordure du haut */
     }
 
     .hebergements-and-populaires {
@@ -560,6 +559,11 @@ li {
 
 /*------------------------Mobiles entre 30rem et 47.99rem-----------------------------------------------*/
 @media (min-width: 30rem) and (max-width: 48rem) {
+    .nav-element:hover {
+        color: var(--main-color); /* Change la couleur de texte au survol */
+        border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
+        border-top: none; /* enlève la bordure du haut */
+    }
     .filter-button {
         height: 2vw;
         width: 16vw;
@@ -571,7 +575,6 @@ li {
     }
     .rangee .card-subtitle {
         margin-bottom: 5vw;
-      
     }
     .populaires {
         width: 90vw; /* Ajuste la largeur des cartes populaires */
@@ -629,6 +632,11 @@ li {
         width: 90vw;
         padding: 0 2vw;
     }
+    .nav-element:hover {
+        color: var(--main-color); /* Change la couleur de texte au survol */
+        border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
+        border-top: none; /* enlève la bordure du haut */
+    }
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
@@ -662,7 +670,6 @@ li {
         display: flex;
         flex-direction: row;
         gap: 3vw; /* Augmente l'espacement entre les cartes populaires */
-
     }
 
     .populaires-cards img {
