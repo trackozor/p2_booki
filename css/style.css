@@ -1,3 +1,15 @@
+/*******************************************************************************************************
+   Nom du fichier : style.css
+   Auteur : Trackozor
+   Date de création : 07/09/2024
+   Description : Feuille de style principale pour le projet booki, site hébergements
+   Version : 1.0
+   -----------------------------------------------------------------------
+   Informations supplémentaires :
+   - Compatible avec les navigateurs : Chrome, Firefox, Safari, Edge
+   - Design responsive : Oui
+   - Conformité W3C : Oui
+*********************************************************************************************************/
 /****** General ***********/
 
 /* Application globale de la police 'Raleway' à tous les éléments */
@@ -187,7 +199,7 @@ li {
     color: #fff;
     border-top-right-radius: 0.8vw; /* Bord arrondi */
     border-bottom-right-radius: 0.8vw;
-    border-color: var(--main-color);
+    border: none;
     width: 10vw;
     height: 3vw;
     font-size: 1vw;
@@ -324,7 +336,7 @@ li {
     width: 16vw;
 }
 .rangee .card-subtitle {
-    margin-top: 0.5vh;
+    margin-top: 0;
 }
 
 .rangee .card img {
@@ -395,7 +407,7 @@ li {
 }
 .populaires-cards .card-title {
     margin: 0; /* Supprime les marges */
-    font: size 1.8dvh;
+    font-size: 1.9dvh;
 }
 
 /********************************************************************************************************/
@@ -431,7 +443,7 @@ li {
     display: flex;
     padding-left: 1vw; /* Espacement à gauche pour le titre */
     margin-bottom: 2vw;
-    font-size: 1.2dvw;
+    font-size: 1.2vw;
 }
 
 /*********************************************************************************************************/
@@ -591,7 +603,6 @@ li {
 
     .footer {
         width: 90vw; /* Ajuste la largeur du footer */
-        height: 20;
     }
 }
 /*------------------------ Mobiles de moins de 30rem -----------------------------------------------*/
