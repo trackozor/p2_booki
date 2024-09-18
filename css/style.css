@@ -117,7 +117,6 @@ li {
 }
 .num {
     font-family: 'Open Sans', sans-serif;
-    #font-variant-numeric: tabular-nums;
 }
 
 /*********************************************************************************************************/
@@ -224,7 +223,7 @@ li {
 .info {
     display: flex; /* Flexbox pour aligner les informations */
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .fa-layers {
@@ -468,12 +467,8 @@ li {
 
 /*------------------------Tablettes (entre 48rem et 64rem) --------------------------------------------*/
 @media (min-width: 48rem) and (max-width: 64rem) {
-    #body {
-        font-size: clamp(
-            0.8rem,
-            0.9rem,
-            1rem
-        ); /* Ajuste la taille de la police pour les tablettes */
+    .filter-button {
+        height: 2vw;
     }
 
     .hebergements-and-populaires {
@@ -538,6 +533,10 @@ li {
 
 /*------------------------Mobiles entre 30rem et 47.99rem-----------------------------------------------*/
 @media (min-width: 30rem) and (max-width: 48rem) {
+    .filter-button {
+        height: 2vw;
+        width: 16vw;
+    }
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
@@ -557,7 +556,7 @@ li {
     }
 
     .hebergements .card {
-        width: 25vw;/* Taille des cartes d'hébergements */
+        width: 25vw; /* Taille des cartes d'hébergements */
         height: 23vw;
     }
 
@@ -597,10 +596,16 @@ li {
 }
 /*------------------------ Mobiles de moins de 30rem -----------------------------------------------*/
 @media (max-width: 30rem) {
+    body {
+        width: 90vw;
+        padding: 0 2vw;
+    }
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
-        height: 90vw; /* Ajustement de la hauteur globale */
+        height: 65vw; /* Ajustement de la hauteur globale */
+        width: 90vw;
+        height: 100vw;
     }
 
     .populaires {
@@ -609,20 +614,19 @@ li {
 
     .activites-a-marseille {
         gap: 3vw; /* Espacement légèrement plus large entre les cartes d'activités */
+        width: 90vw;
     }
 
     .hebergements {
-        width: 100vw; /* La section Hébergements occupe toute la largeur disponible */
+        width: 90vw; /* La section Hébergements occupe toute la largeur disponible */
     }
 
     .hebergements .card {
         width: 25vw; /* Augmentation de la taille des cartes pour une meilleure visibilité */
-        height: 20vw;
+        height: 19vw;
     }
-
     .rangee {
-        height: 25vw; /* Ajuste la hauteur de la rangée de cartes */
-        gap: 3vw; /* Espacement entre les cartes dans une rangée */
+        height: 27vw;
     }
 
     .populaires-cards {
@@ -632,26 +636,25 @@ li {
     }
 
     .populaires-cards img {
-        width: 15vw; /* Taille des images des cartes populaires */
+        width: 12vw; /* Taille des images des cartes populaires */
     }
 
     .populaires-cards .card {
-        height: 23vw;
+        height: 19vw;
         width: 22vw;
         margin-top: 2vw; /* Augmente légèrement l'espacement des cartes populaires */
     }
 
     .activites-a-marseille .card2 {
-        height: 60vw; /* Cartes d'activités plus grandes sur les petits écrans */
+        height: 38vw; /* Cartes d'activités plus grandes sur les petits écrans */
     }
 
     .activites-a-marseille .card2 img {
-        height: 55vw; /* Taille des images des cartes d'activités */
+        height: 35vw; /* Taille des images des cartes d'activités */
     }
 
     .footer {
-        width: 100vw; /* Le footer prend toute la largeur de l'écran */
+        width: 90vw; /* Le footer prend toute la largeur de l'écran */
         height: auto; /* Hauteur automatique pour mieux s'adapter aux petits écrans */
     }
 }
-
