@@ -414,7 +414,7 @@ li {
 .activites-a-marseille .card2 {
     height: 28vw; /* Les cartes occupent toute la hauteur disponible */
     width: 20vw;
-    margin-bottom:1vh
+    margin-bottom: 1vh;
 }
 
 /* Style des images dans les cartes d'activités */
@@ -467,103 +467,100 @@ li {
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
-
     }
     .populaires {
         width: 90vw;
-        
-    .activites-a-marseille .card2 {
-        height: 40vw;
-        margin-bottom:1vw
-           
-    }
-    .activites-a-marseille {
-        gap: 3vw;
-    }
-    .activites-a-marseille .card2 img {
-        height: 30vw;
 
+        .activites-a-marseille .card2 {
+            height: 40vw;
+            margin-bottom: 1vw;
+        }
+        .activites-a-marseille {
+            gap: 3vw;
+        }
+        .activites-a-marseille .card2 img {
+            height: 30vw;
+        }
+        .hebergements {
+            width: 90vw;
+        }
+        .hebergements .card {
+            width: 25vw;
+            height: 13vw;
+        }
+        .rangee {
+            gap: 1vw;
+            height: 15vw;
+        }
+        .populaires-cards {
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+            margin: 0;
+            padding-top: 0;
+        }
+        .populaires-cards img {
+            width: 12vw;
+        }
+        .populaires-cards .card {
+            height: 18vw;
+            margin-top: 1vw;
+        }
+        .footer {
+            width: 90vw;
+        }
     }
-    .hebergements {
-        width:90vw
-    }
-    .hebergements .card {
-        width: 25vw;
-        height: 15vw;
-    }
-    .rangee {
-        gap: 1vw;
-        height: 15vw;
-    }
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 2vw;
-        margin: 0;
-        padding-top: 0;
-    }
-    .populaires-cards img {
-        width: 12vw;
-    }
-    .populaires-cards .card {
-        height: 18vw;
-        margin-top: 1vw;
-    }
-    .footer {
-        width: 90vw;
-    }
-}
-/*------------------------mobiles de 30 a 47.99rem--------------------*/
+    /*------------------------mobiles de 30 a 47.99rem--------------------*/
 
-@media (min-width: 30rem) and (max-width: 48rem) {
-    body {
-        font-size: clamp(0.6rem, 0.7rem, 0.8rem);
-        display: flex;
-    }
+    @media (min-width: 30rem) and (max-width: 48rem) {
+        body {
+            font-size: clamp(0.6rem, 0.7rem, 0.8rem);
+            display: flex;
+        }
 
-    .hebergements-and-populaires {
-        display: flex;
-        flex-direction: column;
-        height: 85vw;
-    }
-    .populaires {
-        width: 90vw;
-        display: flex;
-    }
-    .activites-a-marseille {
-        gap: 3vw;
-    }
-    .hebergements {
-        width: 90vw;
-    }
-    .hebergements .card {
-        width: 25vw;
-        height: 22vw;
-    }
-    .rangee {
-        height: 21vw;
-        gap: 1vw;
-    }
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 3vw;
-    }
-    .populaires-cards img {
-        width: 12vw;
-
-    }
-    .populaires-cards .card {
-        height: 17vw;
-        width: 25vw;
-    }
-    .activites-a-marseille .card2{
-        height: 40vw;
-    }
-    .activites-a-marseille .card2 img {
-        height: 35vw;
-    }
-    .footer {
-        width: 90vw;
+        .hebergements-and-populaires {
+            display: flex;
+            flex-direction: column;
+            height: 85vw;
+        }
+        .populaires {
+            width: 90vw;
+            display: flex;
+        }
+        .activites-a-marseille {
+            gap: 3vw;
+        }
+        .hebergements {
+            width: 90vw;
+        }
+        .hebergements .card {
+            width: 25vw;
+            height: 22vw;
+        }
+        .rangee {
+            height: 21vw;
+            gap: 1vw;
+        }
+        .populaires-cards {
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+        }
+        .populaires-cards img {
+            width: 12vw;
+        }
+        .populaires-cards .card {
+            height: 17vw;
+            width: 25vw;
+        }
+        .activites-a-marseille .card2 {
+            height: 40vw;
+        }
+        .activites-a-marseille .card2 img {
+            height: 35vw;
+        }
+        .footer {
+            width: 90vw;
+        }
     }
 }
