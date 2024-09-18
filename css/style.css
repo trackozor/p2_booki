@@ -114,6 +114,9 @@ a {
 h2 {
     font-size: 2vw;
 }
+p {
+    font-size: 1vw;
+}
 /* Style pour les listes */
 li {
     /* Espace entre chaque élément de liste */
@@ -339,6 +342,8 @@ li {
 }
 .rangee .card-subtitle {
     margin-top: 0;
+    margin-bottom: 2vw
+;
 }
 
 .rangee .card img {
@@ -349,7 +354,9 @@ li {
     object-fit: cover;
 }
 .rangee .hebergement-content {
-    padding: 0.5vh 1vh;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .affichez_plus a {
     font-size: 1.5vw;
