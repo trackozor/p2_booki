@@ -488,6 +488,12 @@ li {
     .filter-button {
         height: 2vw;
     }
+    /* Style des éléments du menu lors du survol */
+.nav-element:hover {
+    color: var(--main-color); /* Change la couleur de texte au survol */
+    border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
+    border-top: none; /* enlève la bordure du haut */
+    }
 
     .hebergements-and-populaires {
         display: flex;
