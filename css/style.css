@@ -24,9 +24,6 @@
     --filter-bg-color: #deebff; /* Couleur de fond spécifique pour les filtres */
     --font-wight: 700;
 }
-html {
-    font-size: clamp(1rem, 1.2rem, 1.6rem);
-}
 
 /* Style des icônes Font Awesome */
 .fa-solid {
@@ -65,7 +62,7 @@ a {
 /* Style général des cartes sur le site */
 .card {
     background-color: white; /* Fond blanc pour les cartes */
-    border-radius: 1.25rem; /* Coins arrondis */
+    border-radius: 1rem; /* Coins arrondis */
     padding: 0.3125rem; /* Espace intérieur de la carte */
     filter: drop-shadow(
         0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
@@ -73,8 +70,7 @@ a {
 }
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
-    height: 20dvh;
-    border-radius: 1.25rem; /* Coins arrondis */
+    border-radius: 1rem; /* Coins arrondis */
     filter: drop-shadow(
         0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
@@ -95,7 +91,7 @@ a {
 
 /* Style des titres des cartes */
 .card-title {
-    font-size: 1.2dvw; /* Taille des titres des cartes */
+    font-size: 1.2vw; /* Taille des titres des cartes */
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -112,10 +108,12 @@ a {
     font-weight: 700; /* Met le texte en gras */
 }
 h2 {
-    font-size: 2vw;
+    font-size: 1.6vw;
+    font-weight: bolder;
 }
 p {
     font-size: 1vw;
+    font-weight: 500;
 }
 /* Style pour les listes */
 li {
@@ -141,40 +139,55 @@ li {
 
 /* Style du conteneur principal de l'en-tête */
 .header {
-    height: 2vw; /* Hauteur de 10% de la hauteur visible de la fenêtre */
+    height: 3vw; /* Hauteur de 10% de la hauteur visible de la fenêtre */
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
-    justify-content: space-between; /* Aligne les éléments à gauche et à droite */
     align-items: center; /* Centre verticalement les éléments */
-    margin-top: 2vh;
+    gap: 63vw;
+    margin: 0;
+    justify-content: space-between;
+    
+    
 }
 
 /* Style du logo */
 .logo img {
-    height: 2vw; /* Définit la hauteur du logo */
+    height: 1.4vw; /* Définit la hauteur du logo */
+
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
 .nav {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
     gap: 5vw; /* Crée un espace de 30% entre les éléments */
-    justify-content: center; /* Centre les éléments dans la barre de navigation */
-    padding: 1vw;
-    font-size: 1.5vw;
+    font-size: 1vw;
+    padding: 0;
+    align-items: center;
+
 }
 .nav-element {
-    padding-top: 2vh;
+    padding:1.1vw
+
 }
 
 /* Style des éléments du menu lors du survol */
 .nav-element:hover {
     color: var(--main-color); /* Change la couleur de texte au survol */
-    border-top: 0.204rem solid var(--main-color); /* Ajoute une bordure supérieure colorée */
+    border-top: 0.104rem solid var(--main-color); /* Ajoute une bordure supérieure colorée */
+
+
+
 }
 
 /********************************************************************************************************/
 /*--------------------------------Recherche-------------------------------------------------------------*/
 /*********************************************************************************************************/
-
+.research {
+    padding:2vw 0;
+}
+.research-txt p{
+    margin-top:0;
+    
+} 
 .local {
     display: flex;
     height: 3vw;
@@ -185,17 +198,16 @@ li {
 }
 .local i {
     display: flex;
-    padding-left: 1vw;
+    padding: 0 1vw;
     align-items: center;
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 /* Style pour la barre de recherche */
 .Search-bar {
-    width: 20dvw;
+    width: 25vw;
     height: 3vw;
     display: flex;
     align-items: center;
-    margin: 1vw 0;
 }
 .search-button {
     background-color: var(--main-color);
@@ -204,9 +216,10 @@ li {
     border-top-right-radius: 0.8vw; /* Bord arrondi */
     border-bottom-right-radius: 0.8vw;
     border: none;
-    width: 10vw;
     height: 3vw;
-    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    padding:1vw ;
 }
 .search-input {
     display: flex;
@@ -214,12 +227,18 @@ li {
     height: 3vw;
     border: none;
     text-align: center;
+    padding-top:0.8vw;
 }
 .search-input::placeholder {
     color: #000;
-    font-weight: var(--font-wight);
+    font-weight: 900;
     display: flex;
-    font-size: 1dvw;
+    font-size: 1.2vw;
+    border:none;
+    height: 3vw;
+    
+
+
 }
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
@@ -228,7 +247,7 @@ li {
 /* Conteneur pour les filtres, utilisant Flexbox */
 .filter {
     display: flex; /* Flexbox pour aligner les éléments */
-    gap: 5vw; /* Espace de 2rem entre les éléments */
+    gap: 1vw; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
     height: 2vw;
     margin-bottom: 1.5vw;
@@ -256,7 +275,7 @@ li {
     color: white; /* Couleur du cercle */
     border: 0.2rem solid var(--main-bg-color);
     border-radius: 50%;
-    font-size: 1.6dvw;
+    font-size: 1.6vw;
 }
 
 /* Style pour le "i" */
@@ -272,7 +291,7 @@ li {
 /* Style pour les boutons de filtre */
 .filter-button {
     display: flex; /* Flexbox pour aligner le contenu du bouton */
-    height: 2vw; /* Hauteur du bouton */
+    height: 3vw; /* Hauteur du bouton */
     border-radius: 1.5625rem; /* Bord arrondi */
     align-items: center; /* Centre verticalement le contenu */
     background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
@@ -280,7 +299,7 @@ li {
     padding: 1vw 1vw; /* Espacement intérieur du bouton */
     font-size: 1.2vw;
     text-align: center;
-    gap: 1vw;
+    gap: 0.8vw;
 }
 
 /***** Changement de couleur du bouton au survol ***********/
@@ -309,7 +328,7 @@ li {
         --main-bg-color
     ); /* Fond gris clair pour les sections */
     border-radius: 1.25rem; /* Bords arrondis */
-    padding: 1.25vw; /* Espace intérieur */
+    padding: 1rem; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
     font-feature-settings: 'tnum'; /* Force les chiffres tabulaires */
 }
@@ -331,19 +350,20 @@ li {
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
     width: auto;
-    height: 20vw;
-    gap: 2vw;
+    height: 15vw;
+    justify-content: space-between;
+    gap:1vw;
     align-items: center;
 }
 .rangee .card {
     display: flex;
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
-    height: 18vw;
+    height: 12vw;
     width: 16vw;
 }
 .rangee .card-subtitle {
     margin-top: 0;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 }
 
 .rangee .card img {
@@ -353,7 +373,7 @@ li {
     object-fit: cover;
 }
 .rangee .hebergement-content {
-    padding: 0.5vw 0.5vw;
+    padding: 0.1vw 0.5vw;
 }
 .affichez_plus a {
     font-size: 1.5vw;
@@ -381,10 +401,10 @@ li {
     display: flex; /* Aligne l'image et le texte en ligne */
     flex-direction: row; /* Aligne les éléments horizontalement */
     background-color: #fff; /* Fond blanc pour les cartes */
-    border-radius: 1.25rem; /* Bords arrondis */
+    border-radius: 1rem; /* Bords arrondis */
     box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 12vw;
+    height: 9vw;
     margin-top: 1vw;
 }
 
@@ -392,8 +412,8 @@ li {
 .populaires-cards img {
     width: 10vw; /* L'image occupe 33% de la largeur de la carte */
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
-    border-top-left-radius: 1.25rem; /* Arrondit le coin supérieur gauche */
-    border-bottom-left-radius: 1.25rem; /* Arrondit le coin inférieur gauche */
+    border-top-left-radius: 1rem; /* Arrondit le coin supérieur gauche */
+    border-bottom-left-radius: 1rem; /* Arrondit le coin inférieur gauche */
 }
 
 /* Contenu textuel des cartes Populaires */
@@ -461,7 +481,7 @@ li {
     width: 90vw;
     gap: 10vw; /* Espace entre les éléments du footer */
     background-color: #f2f2f2; /* Couleur de fond du footer */
-    padding: 0; /* Espacement intérieur du footer */
+
     margin-top: 3vw;
 }
 
@@ -473,27 +493,43 @@ li {
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
 @media (min-width: 90.06rem) {
-    #body {
-        font-size: clamp(
-            1.6rem,
-            1.7rem,
-            1.8rem
-        ); /* Augmente la taille de la police pour les grands écrans */
+    body {
+        width: 90vw;
+        padding: 0 3vw;
+        font-size: clamp(1rem,2vw,1.5rem);
+        
     }
+        
 }
-
 /*------------------------Tablettes (entre 48rem et 64rem) --------------------------------------------*/
-@media (min-width: 48rem) and (max-width: 64rem) {
-    .filter-button {
-        height: 2vw;
-    }
-    /* Style des éléments du menu lors du survol */
-    .nav-element:hover {
-        color: var(--main-color); /* Change la couleur de texte au survol */
-        border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
-        border-top: none; /* enlève la bordure du haut */
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: flex;
+        padding-top: 0;
+        font-size: clamp(1.3rem,3vw,2.5rem);
+        height:100vh
 
+        
+    }
+    .header  {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        align-content: center;
+        padding:0;
+    }
+    .nav-element {
+        display: flex;
+        align-items: center;
+        }
+    .nav-element:hover {
+        margin: 0;
+    }
+        
+    
+    .filter-button {
+        height: 3vw;
+    }
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées sur les tablettes */
@@ -504,7 +540,7 @@ li {
     }
 
     .activites-a-marseille .card2 {
-        height: 40vw; /* Ajuste la hauteur des cartes d'activités */
+        height: 15vw; /* Ajuste la hauteur des cartes d'activités */
         margin-bottom: 1vw;
     }
 
@@ -513,7 +549,7 @@ li {
     }
 
     .activites-a-marseille .card2 img {
-        height: 30vw; /* Ajuste la hauteur des images d'activités */
+        height: 20vw; /* Ajuste la hauteur des images d'activités */
     }
 
     .hebergements {
@@ -521,8 +557,8 @@ li {
     }
 
     .hebergements .card {
-        width: 25vw;
-        height: 15vw; /* Ajuste la taille des cartes d'hébergements */
+        width: 24vw;
+        height: 16vw; /* Ajuste la taille des cartes d'hébergements */
     }
     .hebergement .card-rating {
         margin-top: 12vw;
@@ -530,7 +566,7 @@ li {
 
     .rangee {
         gap: 3vw; /* Espacement entre les cartes dans une rangée */
-        height: 18vw;
+        height: 20vw;
     }
 
     .populaires-cards {
@@ -546,7 +582,7 @@ li {
     }
 
     .populaires-cards .card {
-        height: 15vw;
+        height: 10vw;
         margin-top: 1vw; /* Ajuste l'espacement vertical pour les cartes populaires */
         width: 25vw;
         gap: 2vw;
@@ -556,142 +592,36 @@ li {
         width: 90vw; /* Ajuste la largeur du footer */
     }
 }
+/*------------------------Mobile moins de 48rem --------------------------------------------*/
 
-/*------------------------Mobiles entre 30rem et 47.99rem-----------------------------------------------*/
-@media (min-width: 30rem) and (max-width: 48rem) {
-    .nav-element:hover {
-        color: var(--main-color); /* Change la couleur de texte au survol */
-        border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
-        border-top: none; /* enlève la bordure du haut */
-    }
-    .filter-button {
-        height: 2vw;
-        width: 16vw;
-    }
-    .hebergements-and-populaires {
+@media (max-width: 767px) {
+    .header {
         display: flex;
-        flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
-        height: 95vw;
-    }
-    .rangee .card-subtitle {
-        margin-bottom: 5vw;
-    }
-    .populaires {
-        width: 90vw; /* Ajuste la largeur des cartes populaires */
-    }
-
-    .activites-a-marseille {
-        gap: 3vw; /* Espacement entre les cartes d'activités */
-    }
-
-    .hebergements {
-        width: 90vw; /* Ajuste la largeur des cartes d'hébergements */
-    }
-
-    .hebergements .card {
-        width: 25vw; /* Taille des cartes d'hébergements */
-        height: 23vw;
-    }
-
-    .rangee {
-        height: 26vw;
-        gap: 3vw; /* Espacement entre les cartes dans une rangée */
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 3vw; /* Ajuste l'espacement entre les cartes populaires */
-    }
-
-    .populaires-cards img {
-        width: 12vw; /* Ajuste la taille des images des cartes populaires */
-    }
-
-    .populaires-cards .card {
+        flex-direction: column;
         height: 20vw;
-        width: 25vw;
-        margin-top: 1vw; /* Ajuste l'espacement des cartes populaires */
+        
     }
+    .header img {
+        height:5vw;
+        padding:2vw
+    }
+    .header .nav {
+        font-size: 4vw;
+        display: flex;
+        justify-content: space-between;
+        gap:25vw
 
-    .activites-a-marseille .card2 {
-        height: 45vw; /* Taille des cartes d'activités */
     }
-
-    .activites-a-marseille .card2 img {
-        height: 40vw; /* Taille des images des cartes d'activités */
+    .nav-element {
+        padding-bottom: 2vw;;
     }
-
-    .footer {
-        width: 90vw; /* Ajuste la largeur du footer */
-    }
-}
-/*------------------------ Mobiles de moins de 30rem -----------------------------------------------*/
-@media (max-width: 30rem) {
-    body {
-        width: 90vw;
-        padding: 0 2vw;
-    }
+    
+      /* Style des éléments du menu lors du survol */
     .nav-element:hover {
         color: var(--main-color); /* Change la couleur de texte au survol */
         border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
         border-top: none; /* enlève la bordure du haut */
     }
-    .hebergements-and-populaires {
-        display: flex;
-        flex-direction: column; /* Les sections Hébergements et Populaires sont empilées */
-        height: 65vw; /* Ajustement de la hauteur globale */
-        width: 90vw;
-        height: 70vw;
-    }
 
-    .populaires {
-        width: 90vw; /* Utilise toute la largeur de l'écran */
-    }
-
-    .activites-a-marseille {
-        gap: 3vw; /* Espacement légèrement plus large entre les cartes d'activités */
-        width: 90vw;
-    }
-
-    .hebergements {
-        width: 90vw; /* La section Hébergements occupe toute la largeur disponible */
-    }
-
-    .hebergements .card {
-        width: 25vw; /* Augmentation de la taille des cartes pour une meilleure visibilité */
-        height: 15vw;
-    }
-    .rangee {
-        height: 18vw;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 3vw; /* Augmente l'espacement entre les cartes populaires */
-    }
-
-    .populaires-cards img {
-        width: 12vw; /* Taille des images des cartes populaires */
-    }
-
-    .populaires-cards .card {
-        height: 12vw;
-        width: 24vw;
-        margin-top: 2vw; /* Augmente légèrement l'espacement des cartes populaires */
-    }
-
-    .activites-a-marseille .card2 {
-        height: 38vw; /* Cartes d'activités plus grandes sur les petits écrans */
-    }
-
-    .activites-a-marseille .card2 img {
-        height: 35vw; /* Taille des images des cartes d'activités */
-    }
-
-    .footer {
-        width: 90vw; /* Le footer prend toute la largeur de l'écran */
-        height: auto; /* Hauteur automatique pour mieux s'adapter aux petits écrans */
-    }
 }
+  
