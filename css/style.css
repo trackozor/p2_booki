@@ -501,6 +501,7 @@ li {
         align-items: center;
         padding: 0 50vw; 
         font-size: 2vw;
+        width:1440px;
     }
      
     
@@ -608,7 +609,7 @@ li {
 }
 /*------------------------Mobile moins de 48rem --------------------------------------------*/
 
-@media (min-width: 10rem) and (max-width: 47.99rem){
+@media  (max-width: 47.99rem)and (orientation:portrait) {
   /* Style pour tout le corps de la page */
     body {
         display: block; /* Change de flex à block pour un alignement vertical en mobile */
@@ -625,7 +626,7 @@ li {
         padding:  0.5vw; /* Réduction du padding pour mobile */
     
     }
-    /* Header */
+    /*--------------------------------- Header -------------------------------------------*/
     .header {
         flex-direction: column;
         height:auto;
@@ -667,7 +668,7 @@ li {
     justify-content: center;
     
     }
-    /* Recherche */
+    /*---------------------------- Recherche------------------------------------------------ */
     .research {
         padding: 0 auto; /* Réduction du padding pour mobile */
         margin: 0 auto;
@@ -825,4 +826,16 @@ li {
         flex-direction: column;
         gap: 1vh; /* Espacement réduit pour mobile */
   }
+}
+/*--------------------------------------------------------------------------------------------------------*/
+@media  (max-width: 47.99rem) and (orientation:landscape) {
+    .nav-element:hover {
+    color: var(--main-color); /* Change la couleur de texte au survol */
+    border-bottom: 0.204rem solid var(--main-color);  
+    border-top: none;
+    padding-bottom: 1vh ;
+    display: flex;
+    justify-content: center;
+    
+    }
 }
