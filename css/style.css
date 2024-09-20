@@ -37,6 +37,9 @@ body {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
     align-items: center;
+    max-width: 1440px;
+    min-width:15rem;
+    box-sizing: border-box;
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
@@ -44,7 +47,6 @@ body {
     /* Le conteneur occupe toute la largeur de la fenêtre */
     max-width: 90vw; /* Il est limité à 90% de la largeur de la fenêtre */
     padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
-    box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
 }
 
 /* Liens : suppression de la décoration par défaut */
@@ -107,19 +109,13 @@ a {
 .bold {
     font-weight: 700; /* Met le texte en gras */
 }
-h2 {
-    font-size: 1.6vw;
-    font-weight: bolder;
-}
-p {
-    font-size: 1vw;
-    font-weight: 500;
-}
+
+
 /* Style pour les listes */
 li {
-    /* Espace entre chaque élément de liste */
+    padding:0.5vw;/* Espace entre chaque élément de liste */
     list-style-type: none; /* Supprime les puces par défaut */
-    font-size: 1.2dvw;
+
 }
 
 /* Style pour les étoiles inactives dans les évaluations */
@@ -130,7 +126,7 @@ li {
 }
 .num {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+
 }
 
 /*********************************************************************************************************/
@@ -139,10 +135,10 @@ li {
 
 /* Style du conteneur principal de l'en-tête */
 .header {
-    height: 3vw; /* Hauteur de 10% de la hauteur visible de la fenêtre */
+    height: 4vw; /* Hauteur de 10% de la hauteur visible de la fenêtre */
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
     align-items: center; /* Centre verticalement les éléments */
-    gap: 63vw;
+    gap: 20vw;
     margin: 0;
     justify-content: space-between;
     
@@ -151,28 +147,27 @@ li {
 
 /* Style du logo */
 .logo img {
-    height: 1.4vw; /* Définit la hauteur du logo */
+    height: 2vw; /* Définit la hauteur du logo */
 
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
 .nav {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    gap: 5vw; /* Crée un espace de 30% entre les éléments */
-    font-size: 1vw;
+    gap: 3vw; /* Crée un espace de 30% entre les éléments */
     padding: 0;
     align-items: center;
 
 }
 .nav-element {
-    padding:1.1vw
+    padding-top:1.4vw
 
 }
 
 /* Style des éléments du menu lors du survol */
 .nav-element:hover {
     color: var(--main-color); /* Change la couleur de texte au survol */
-    border-top: 0.104rem solid var(--main-color); /* Ajoute une bordure supérieure colorée */
+    border-top: 0.204rem solid var(--main-color); /* Ajoute une bordure supérieure colorée */
 
 
 
@@ -300,6 +295,14 @@ li {
     font-size: 1.2vw;
     text-align: center;
     gap: 0.8vw;
+}
+/* Affichage par défaut : texte visible, icône masquée */
+.search-icon {
+    display: none; /* L'icône est masquée par défaut */
+}
+
+.search-text {
+    display: inline; /* Le texte est visible par défaut */
 }
 
 /***** Changement de couleur du bouton au survol ***********/
@@ -481,7 +484,6 @@ li {
     width: 90vw;
     gap: 10vw; /* Espace entre les éléments du footer */
     background-color: #f2f2f2; /* Couleur de fond du footer */
-
     margin-top: 3vw;
 }
 
@@ -492,22 +494,25 @@ li {
 /*------------------------Écrans large et multi-écrans -----------------------------------------------*/
 
 /* Media query pour les très grands écrans (au-dessus de 1440px) */
-@media (min-width: 90.06rem) {
-    body {
-        width: 90vw;
-        padding: 0 3vw;
-        font-size: clamp(1rem,2vw,1.5rem);
-        
+@media (min-width:90rem) {
+     body {    
+        margin: 0 auto; /* Centrer le contenu en laissant les marges se créer automatiquement */
+        align-items: center;
+        padding: 0 50vw; 
+        font-size: 2vw;
     }
-        
+     
+    
 }
 /*------------------------Tablettes (entre 48rem et 64rem) --------------------------------------------*/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 48rem) and (max-width: 64rem) {
     body {
         display: flex;
         padding-top: 0;
-        font-size: clamp(1.3rem,3vw,2.5rem);
-        height:100vh
+        font-size: clamp(1rem,2vw,1.2rem);
+        height:auto;
+        width: auto;
+        margin-top:0.5vw;
 
         
     }
@@ -515,15 +520,17 @@ li {
         display: flex;
         align-items: center;
         margin: 0;
-        align-content: center;
         padding:0;
     }
     .nav-element {
         display: flex;
         align-items: center;
+        margin:0;
+        padding:1.1vw 0;
         }
     .nav-element:hover {
-        margin: 0;
+        margin:0;
+
     }
         
     
@@ -538,10 +545,12 @@ li {
     .populaires {
         width: 90vw; /* Ajuste la largeur des cartes populaires */
     }
-
+    .populaires i {
+        font-size: 1.5vw;
+    }
     .activites-a-marseille .card2 {
-        height: 15vw; /* Ajuste la hauteur des cartes d'activités */
-        margin-bottom: 1vw;
+        height: 18vw; /* Ajuste la hauteur des cartes d'activités */
+        margin-bottom: 5vw;
     }
 
     .activites-a-marseille {
@@ -553,28 +562,32 @@ li {
     }
 
     .hebergements {
-        width: 90vw; /* Ajuste la largeur des cartes d'hébergements */
+        width: 87vw; /* Ajuste la largeur des cartes d'hébergements */
     }
 
     .hebergements .card {
         width: 24vw;
-        height: 16vw; /* Ajuste la taille des cartes d'hébergements */
+        height: 18vw;
+        display: flex;
+        justify-content: space-between; /* Ajuste la taille des cartes d'hébergements */
     }
     .hebergement .card-rating {
-        margin-top: 12vw;
+        margin-top: 5vw;
     }
 
     .rangee {
-        gap: 3vw; /* Espacement entre les cartes dans une rangée */
-        height: 20vw;
+        height: 21vw;
+        display: flex;
+        justify-content: space-between;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        gap: 2vw; /* Ajuste l'espacement entre les cartes populaires */
+        gap: 3vw; /* Ajuste l'espacement entre les cartes populaires */
         margin: 0;
         padding-top: 0;
+        
     }
 
     .populaires-cards img {
@@ -585,7 +598,6 @@ li {
         height: 10vw;
         margin-top: 1vw; /* Ajuste l'espacement vertical pour les cartes populaires */
         width: 25vw;
-        gap: 2vw;
     }
 
     .footer {
@@ -594,34 +606,203 @@ li {
 }
 /*------------------------Mobile moins de 48rem --------------------------------------------*/
 
-@media (max-width: 767px) {
+@media (min-width: 10rem) and (max-width: 47.99rem){
+  /* Style pour tout le corps de la page */
+    body {
+        display: block; /* Change de flex à block pour un alignement vertical en mobile */
+        padding: 0 2vh;
+        margin: 0;
+        width: 100%; /* Le corps prend toute la largeur de l'écran mobile */
+        font-size: 2vh;
+
+    }
+    /* Conteneur principal */
+    .main-container {
+        max-width: 100vw; /* Utilisation de toute la largeur de l'écran */
+        padding:  0.5vw; /* Réduction du padding pour mobile */
+    }
+    /* Header */
     .header {
-        display: flex;
         flex-direction: column;
-        height: 20vw;
+        height:auto;
+        gap:0.5vh;
+
+    }
+
+    .logo img {
+        height: 3vh; /* Ajustement de la taille du logo */
+        margin: 2vh;
+
+    }
+
+    .nav {
+        display: flex; /* Réduction de l'espacement entre les éléments de navigation */
+        flex-direction: row;
+        gap:25vw;
+        padding:0 auto;
+    }
+
+    .nav-element {
+        display: flex; /* Réduction du padding pour mobile */
+        font-size: 4vw;
+    }
+
+    /* Recherche */
+    .research {
+        padding: 0 auto; /* Réduction du padding pour mobile */
+        margin: 0 auto;
+        width: 100%;
+    }
+    .research-txt p,h2 {
+        margin: 0.5vh  ;
+    }
+
+    .Search-bar {
+        width: 100%; /* Barre de recherche occupe toute la largeur */
+        height: 4vh;
+        margin: 3vh auto;
+
+    }
+    .local  {
+        height:4vh;
+        margin:0 auto;
+        padding:0 auto;
+        width: 3vh;
         
     }
-    .header img {
-        height:5vw;
-        padding:2vw
+    .local i {
+        font-size: 2vh;
     }
-    .header .nav {
-        font-size: 4vw;
-        display: flex;
-        justify-content: space-between;
-        gap:25vw
-
+    .search-input {
+    display: flex;
+    height: 4vh;
+    width: 100%;
+    border: none;
+    text-align: center;
+    
     }
-    .nav-element {
-        padding-bottom: 2vw;;
+    .search-input::placeholder {
+    font-weight: 900;
+    display: flex;
+    font-size: 1.7vh;
+    border:none;
+    height: 4vh;
+    
     }
     
-      /* Style des éléments du menu lors du survol */
-    .nav-element:hover {
-        color: var(--main-color); /* Change la couleur de texte au survol */
-        border-bottom: 0.204rem solid var(--main-color); /* Ajoute une bordure inférieur colorée */
-        border-top: none; /* enlève la bordure du haut */
+    .search-button .search-icon{
+        display: inline;
+        color: #f2f2f2;
+        padding:0 auto ;
+        margin: 0 auto;
+    
+    }
+    .search-button .search-txt {
+        display: none; /* Cache le texte sur mobile */
+    }
+    .search-button {
+        padding: 0 auto; /* Ajustement du padding */
+        height:4vh;
+        margin:0 auto;
+        border-radius: 1vh;
+        width:5vh;
     }
 
+     /* Cartes */
+    .card  {
+    width: 100%; /* Les cartes prennent toute la largeur de l'écran */
+    }
+    
+    .rangee {
+        display: block;
+        height: auto;
+    
+    }
+    
+    .rangee .card {
+    width: 100%; /* Les cartes prennent toute la largeur de la rangée */
+    height: 22vh;
+    gap: 1.2vh;
+    margin:1.5vh 0;
+    }
+    .hebergement-content .card-title {
+    font-size: 2vh; /* Taille du titre (un peu plus grand que le texte normal) */
+
+    }
+    .hebergements-and-populaires h2 {
+        font-size: 2.2vh;
+    }
+
+    .hebergement-content .card-subtitle {
+    font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+    font-weight: 500; /* Semi-gras pour le sous-titre */
+    }
+    .hebergement-content .card-rating {
+        font-size: 1.4vh;
+    }
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .populaires {
+    width: 100%; /* Section populaire prend toute la largeur */
+    }
+    .affichez_plus a{
+        font-size: 2vh;
+
+    }
+    .populaires-cards .card {
+        height: 16vh;
+        margin:2vh 0;
+        
+    }
+    .populaires-cards .card-content {
+        width: 18vh; /* Le texte occupe 67% de la carte */
+        padding-left: 1vh; /* Espace entre l'image et le texte */
+        display: flex;
+        flex-direction: column; /* Le texte est aligné verticalement */
+        justify-content: space-between;
+        margin-top: 0;
+    }   
+
+    .populaires-cards .card-title {
+        font-size: 1.6vh;
+        
+    }
+    .populaires-cards .card-subtitle {
+        font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+        font-weight: 500; /* Semi-gras pour le sous-titre */
+    }
+    .populaires-cards .card-rating {
+        font-size: 1.4vh;
+    }
+    .populaires-cards img {
+        width:35vw
+    }
+    .hebergements {
+        width: 100%;
+    }
+  /* Activités */
+    .activites-a-marseille {
+        flex-direction: column;
+        gap: 4vw; /* Espacement réduit pour mobile */
+        width: 100%;
+        padding: 0 1vw;
+    }
+    .activites-a-marseille .card2 h3 {
+        font-size: 2vh;
+    }
+    .activites-a-marseille .card2 {
+        width: 100%; /* Les cartes d'activités prennent toute la largeur */
+        height: 40vh;
+    }
+    .activites-a-marseille .card2 img {
+            width: 100%; /* Ajuste la hauteur des images d'activités */
+            height:80%
+        }
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        gap: 1vh; /* Espacement réduit pour mobile */
+  }
 }
-  
