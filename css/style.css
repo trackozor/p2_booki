@@ -607,7 +607,10 @@ li {
         width: 90vw; /* Ajuste la largeur du footer */
     }
 }
+
+/*------------------------------------------------------------------------------------------*/
 /*------------------------Mobile moins de 48rem --------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
 
 @media  (max-width: 47.99rem)and (orientation:portrait) {
   /* Style pour tout le corps de la page */
@@ -615,12 +618,11 @@ li {
         display: block; /* Change de flex à block pour un alignement vertical en mobile */
         padding: 0 auto;
         margin: 0 auto;
-         /* Le corps prend toute la largeur de l'écran mobile */
         font-size: 2vh;
         height: auto;
 
     }
-    /* Conteneur principal */
+    /*------------------------- Conteneur principal--------------------------------------- */
     .main-container {
         max-width: 100%; /* Utilisation de toute la largeur de l'écran */
         padding:  0.5vw; /* Réduction du padding pour mobile */
@@ -631,16 +633,14 @@ li {
         flex-direction: column;
         height:auto;
         gap:0.5vh;
-
-
     }
 
     .logo img {
         height: 3vh; /* Ajustement de la taille du logo */
         margin: 2vh;
-
     }
-
+    /*------------------ Barre de navigation ( hebergement/activités)-------------------*/
+    /*-- conteneur parent --*/
     .nav {
         display: flex; /* Réduction de l'espacement entre les éléments de navigation */
         flex-direction: row;
@@ -729,15 +729,13 @@ li {
         width:5vh;
     }
 
-     /* Cartes */
-    .card  {
-    width: 100%; /* Les cartes prennent toute la largeur de l'écran */
+    /*--------Section hébergements ----------------------------------*/    
+    .hebergements {
+        width: 100%;
     }
-    
     .rangee {
         display: block;
         height: auto;
-    
     }
     
     .rangee .card {
@@ -765,6 +763,7 @@ li {
         display: flex;
         flex-direction:column-reverse;
     }
+    /*----------------------- Section Populaires --------------------*/
     .populaires {
     width: 100%; /* Section populaire prend toute la largeur */
     }
@@ -800,31 +799,30 @@ li {
     .populaires-cards img {
         width:35vw
     }
-    .hebergements {
-        width: 100%;
-    }
-  /* Activités */
+
+  /*-------------- Activités -------------------------------------*/
     .activites-a-marseille {
         flex-direction: column;
         gap: 4vw; /* Espacement réduit pour mobile */
         width: 100%;
-        padding: 0 1vw;
+        padding: 0 2vw;
     }
     .activites-a-marseille .card2 h3 {
         font-size: 2vh;
     }
     .activites-a-marseille .card2 {
         width: 100%; /* Les cartes d'activités prennent toute la largeur */
-        height: 40vh;
+        height: 30vh;
     }
     .activites-a-marseille .card2 img {
             width: 100%; /* Ajuste la hauteur des images d'activités */
-            height:80%
+            height:72%;
         }
-    /* Footer */
+    /*----------------------------- Footer --------------------------------------------------------------- */
     .footer {
         flex-direction: column;
-        gap: 1vh; /* Espacement réduit pour mobile */
+        gap: 2vh; /* Espacement réduit pour mobile */
+        width: 100%;
   }
 }
 /*--------------------------------------------------------------------------------------------------------*/
