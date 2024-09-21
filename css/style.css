@@ -754,18 +754,24 @@ li {
     /*--------Section hébergements ----------------------------------*/    
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
+        gap: 1vh;
+        display: column;
+        padding: 0;
     }
 
     .rangee {
         display: block; /* Affichage en bloc */
-        height: auto; /* Hauteur ajustée automatiquement */
+        height: auto; 
+        justify-content: space-between;/* Hauteur ajustée automatiquement */
+        width: 98%;
+        padding:0;
     }
 
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
-        height: 24vh; /* Hauteur des cartes */
-        margin: 0.6vh 0; /* Espacement vertical autour des cartes */
-        padding: 0;
+        height: 23vh; /* Hauteur des cartes */
+        margin-top: 3vh ; /* Espacement vertical autour des cartes */
+        padding-bottom:1vh
     }
 
     .hebergement-content .card-title {
@@ -806,7 +812,7 @@ li {
     .populaires-cards .card {
         height: 16vh; /* Hauteur des cartes */
         margin: 2vh 0; /* Espacement vertical autour des cartes */
-        width:95%
+        width:98%
         
     }
 
