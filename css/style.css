@@ -1197,25 +1197,25 @@ li {
     /**/
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
-        height: 23vh; /* Hauteur des cartes */
-        margin-top: 3vh ; /* Espacement vertical autour des cartes */
-        padding-bottom:1vh
+        height: 35vw; /* Hauteur des cartes */
+        margin-top: 3vw ; /* Espacement vertical autour des cartes */
+        padding-bottom:1vw
     }
 
     /**/
     .hebergement-content .card-title {
-        font-size: 2vh; /* Taille du titre des cartes */
+        font-size: 2vw; /* Taille du titre des cartes */
     }
 
     /**/
     .hebergements-and-populaires h2 {
-        font-size: 2.2vh; /* Taille des titres de section */
-        padding-left:0.5vh ;
+        font-size: 2.2vw; /* Taille des titres de section */
+        padding-left:0.5vw ;
     }
 
     /**/
     .hebergement-content .card-subtitle {
-        font-size: 1.4vh; /* Taille du sous-titre des cartes */
+        font-size: 1.4vw; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
         display:column;
         justify-content: space-between;
@@ -1224,7 +1224,7 @@ li {
 
     /**/
     .hebergement-content .card-rating {
-        font-size: 1.4vh; /* Taille de la notation */
+        font-size: 1.4vw; /* Taille de la notation */
     }
 
     /**/
@@ -1232,6 +1232,10 @@ li {
         display: flex; /* Flexbox pour aligner les sections */
         flex-direction: column-reverse; /* Affiche les sections en ordre inverse */
     }
+    .affichez_plus a {
+        font-size: 2vw; /* Taille du texte de "affichez plus" */
+    }
+
     /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
     /*--------------------------------------------------------------*/
@@ -1239,60 +1243,67 @@ li {
     /**/
     .populaires {
         width: 100%; /* Prend toute la largeur de l'écran */
+        
     }
 
     .affichez_plus a {
-        font-size: 2vh; /* Taille du texte de "affichez plus" */
+        font-size: 2vw; /* Taille du texte de "affichez plus" */
     }
 
     .populaires-cards .card {
-        height: 16vh; /* Hauteur des cartes */
-        margin: 2vh 0; /* Espacement vertical autour des cartes */
-        width:98%
+        height: 20vw; /* Hauteur des cartes */
+        margin: 2vw 0; /* Espacement vertical autour des cartes */
+        width:90vw;
         
     }
 
     .populaires-cards .card-content {
         width: 60%; /* Largeur du contenu texte des cartes */
-        padding-left: 1vh; /* Espace entre l'image et le texte */
+        padding-left: 1vw; /* Espace entre l'image et le texte */
         display: flex; /* Flexbox pour aligner les éléments */
     }
 
     .populaires-cards .card-title {
-        font-size: 2vh; /* Taille du titre des cartes populaires */
+        font-size: 2vw; /* Taille du titre des cartes populaires */
     }
-
+    .populaires-cards {
+        display: block;
+        padding:0 2.2vw;
+    }
     .populaires-cards .card-subtitle {
-        font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+        font-size: 1.4vw; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
     }
 
     .populaires-cards .card-rating {
-        font-size: 2vh; /* Taille de la notation des cartes populaires */
+        font-size: 2vw; /* Taille de la notation des cartes populaires */
     }
 
     .populaires-cards img {
       width: 35%; /* Taille des images dans les cartes populaires */
     }
 
+    /*--------------------------------------------------------------*/
     /*-------------- Activités -------------------------------------*/
+    /*--------------------------------------------------------------*/
+
     .activites-a-marseille {
         display: flex; /* Flexbox pour aligner les cartes */
         flex-direction: column; /* Aligne les cartes verticalement */
-        gap: 4vw; /* Espacement entre les cartes */
+        gap: 3vw; /* Espacement entre les cartes */
         width: 100%; /* Les cartes occupent toute la largeur */
-        padding: 0 ; /* Espacement intérieur autour des cartes */
+        padding: 2vw0 ; /* Espacement intérieur autour des cartes */
         align-items: center;
     }
 
     .activites-a-marseille .card2 h3 {
-        font-size: 2vh; /* Taille des titres des cartes d'activités */
-        padding-left: 2vh;
+        font-size: 2vw; /* Taille des titres des cartes d'activités */
+        padding-left: 2vw;
     }
 
     .activites-a-marseille .card2 {
         width: 93vw; /* Prend toute la largeur */
-        height: 30vh; /* Hauteur des cartes d'activités */
+        height: 30vw; /* Hauteur des cartes d'activités */
     }
 
     .activites-a-marseille .card2 img {
