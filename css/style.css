@@ -546,12 +546,6 @@ li {
         width: 100%;
     }
 
-    .populaires {
-        width: 100%; /* Ajuste la largeur des cartes populaires */
-    }
-    .populaires i {
-        font-size: 1.5vw;
-    }
     .activites-a-marseille .card2 {
         height: 18vw; /* Ajuste la hauteur des cartes d'activités */
         margin-bottom: 5vw;
@@ -564,6 +558,10 @@ li {
     .activites-a-marseille .card2 img {
         height: 20vw; /* Ajuste la hauteur des images d'activités */
     }
+
+    /*---------------------------------------------------------------------------------*/
+    /*---------------------Section hébergements----------------------------------------*/
+    /*---------------------------------------------------------------------------------*/
 
     .hebergements {
         width: 100%; /* Ajuste la largeur des cartes d'hébergements */
@@ -585,6 +583,17 @@ li {
         justify-content: space-between;
     }
 
+    /*---------------------------------------------------------------------------------*/
+    /*--------------Section populaire-------------------------------------------------*/
+    /*---------------------------------------------------------------------------------*/
+
+    .populaires {
+        width: 100%; /* Ajuste la largeur des cartes populaires */
+    }
+    .populaires i {
+        font-size: 1.5vw;
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -603,15 +612,17 @@ li {
         margin-top: 1vw; /* Ajuste l'espacement vertical pour les cartes populaires */
         width: 25vw;
     }
-/*-----------------------Footer ----------------------------------------------------------*/
 
+    /*---------------------------------------------------------------------------------*/
+    /*-----------------------Footer ----------------------------------------------------------*/
+    /*---------------------------------------------------------------------------------*/
     .footer {
         width: 90vw; /* Ajuste la largeur du footer */
     }
 }
 
 /*------------------------------------------------------------------------------------------*/
-/*------------------------Mobile moins de 48rem --------------------------------------------*/
+/*------------------------Mobile moins de 48rem en mode portrait--------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
 
 
@@ -625,17 +636,18 @@ li {
         height: auto; /* Hauteur ajustée automatiquement */
     }
 
+    /*---------------------------------------------------------------------------------*/
     /*------------------------- Conteneur principal--------------------------------------- */
-
+    /*---------------------------------------------------------------------------------*/
 
     .main-container {
         max-width: 100%; /* Prend toute la largeur de l'écran */
         padding:0; /* Pas de padding pour assurer que l'élément occupe toute la largeur */
         margin: 0 auto; /* Centrer le conteneur principal */
     }
-
+    /*---------------------------------------------------------------------------------*/
     /*--------------------------------- Header -------------------------------------------*/
-
+    /*---------------------------------------------------------------------------------*/
 
     .header {
         display: flex;
@@ -651,8 +663,9 @@ li {
         margin: 2vh; /* Espace autour du logo */
     }
 
+    /*---------------------------------------------------------------------------------*/
     /*------------------ Barre de navigation (hébergement/activités)-------------------*/
-
+    /*---------------------------------------------------------------------------------*/
 
     /*-- conteneur parent --*/
     .nav {
@@ -686,8 +699,9 @@ li {
         width:50%
     }
 
-    /*---------------------------- Recherche------------------------------------------------ */
-
+    /*--------------------------------------------------------------*/
+    /*---------------------------- Recherche---------------------- */
+    /*--------------------------------------------------------------*/
 
     .research {
         margin: 0 auto; /* Centre la barre de recherche horizontalement */
@@ -753,11 +767,10 @@ li {
         justify-content: center; /* Centre horizontalement l'icône */
     }
 
-
-
-
+    /*--------------------------------------------------------------*/
     /*------------- Filtres ------------------------------------------*/
-    /* Conteneur pour les filtres, utilisant Flexbox */
+    /*--------------------------------------------------------------*/
+
     .filter {
         display: block; /* Flexbox pour aligner les éléments */
         gap: 1vw; /* Espace de 2rem entre les éléments */
@@ -768,7 +781,7 @@ li {
 
 
 
-/*--------------------------------------------------------------------*/
+    /*--------------------------------------------------------------------*/
     /* Conteneur d'informations avec Flexbox */
     .info {
         display: flex; /* Flexbox pour aligner les informations */
@@ -792,8 +805,11 @@ li {
         border-radius: 50%;
         font-size: 1.6vw;
     }
-    /*--------Section hébergements ----------------------------------*/  
-    
+
+    /*--------------------------------------------------------------*/
+    /*--------Section hébergements ----------------------------------*/     
+    /*--------------------------------------------------------------*/
+
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
         gap: 1vh;
@@ -813,9 +829,7 @@ li {
         width: 100%; /* Chaque carte prend toute la largeur */
         height: 23vh; /* Hauteur des cartes */
         margin-top: 3vh ; /* Espacement vertical autour des cartes */
-        padding-bottom:1vh
     }
-
     .hebergement-content .card-title {
         font-size: 2vh; /* Taille du titre des cartes */
     }
@@ -842,7 +856,10 @@ li {
         flex-direction: column-reverse; /* Affiche les sections en ordre inverse */
     }
 
+    /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
+    /*--------------------------------------------------------------*/
+
     .populaires {
         width: 100%; /* Prend toute la largeur de l'écran */
     }
@@ -882,7 +899,10 @@ li {
       width: 35%; /* Taille des images dans les cartes populaires */
     }
 
-    /*-------------- Activités -------------------------------------*/
+    /*-------------------------------------------------------------*/
+    /*----------------------- Activités -----------------------------*/
+    /*--------------------------------------------------------------*/
+    
     .activites-a-marseille {
         display: flex; /* Flexbox pour aligner les cartes */
         flex-direction: column; /* Aligne les cartes verticalement */
@@ -906,8 +926,10 @@ li {
         width: 100%; /* Images des cartes prennent toute la largeur */
         height: 72%; /* Hauteur des images ajustée */
         }
-
+    /*-----------------------------------------------------------------------------------------------------*/
     /*----------------------------- Footer --------------------------------------------------------------- */
+    /*-----------------------------------------------------------------------------------------------------*/
+    
     .footer {
         display: flex;
         flex-direction: column; /* Aligne les éléments du footer verticalement */
@@ -915,7 +937,11 @@ li {
         width: 100%; /* Le footer prend toute la largeur */
     }
 }
-/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------Mobile moins de 48 rem en mode landscape------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
 @media (min-height: 15rem) and (max-height: 47.99rem) and (orientation: landscape) {
     /* Style pour le corps de la page */
     body {
@@ -986,7 +1012,6 @@ li {
         border-top:none;
         align-items: center; /* Centre verticalement */
         justify-content: center;
-        width:50%;
     }
 
     /*---------------------------- Recherche------------------------------------------------ */
