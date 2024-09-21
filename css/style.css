@@ -84,7 +84,7 @@ a {
     ); /* Ajoute une ombre légère sous la carte */
 }
 
-/*/
+/* Style de base des images cartes d 'activités*/
 .card2 img {
     height: 25dvw;
     width: 20dvw;
@@ -113,7 +113,7 @@ a {
     font-size: 1dvw;
 }
 
-/**/
+/* Style des étoiles de notation*/
 .card-rating {
     font-size: 1vw;
 }
@@ -169,7 +169,7 @@ li {
     align-items: center;
 }
 
-/**/
+/* Style les elements de la barre de navigation*/
 .nav-element {
     padding-top:1.4vw
 }
