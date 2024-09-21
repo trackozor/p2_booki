@@ -6,7 +6,7 @@
    Version : 1.0
    -----------------------------------------------------------------------
    Informations supplémentaires :
-   - Compatible avec les navigateurs : Chrome, Firefox, Safari, Edge
+   - Compatible avec les navigateurs : Chrome, Firefox, Edge
    - Design responsive : Oui
    - Conformité W3C : Oui
 *********************************************************************************************************/
@@ -71,6 +71,8 @@ a {
         0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
 }
+
+/**/
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1rem; /* Coins arrondis */
@@ -78,6 +80,8 @@ a {
         0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
 }
+
+/*/
 .card2 img {
     height: 25dvw;
     width: 20dvw;
@@ -98,25 +102,28 @@ a {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/**/
 .card-txt {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1dvw;
 }
+
+/**/
 .card-rating {
     font-size: 1vw;
 }
+
 /* Style renforcé pour affichage en gras*/
 .bold {
     font-weight: 700; /* Met le texte en gras */
 }
 
-
 /* Style pour les listes */
 li {
     padding:0.5vw;/* Espace entre chaque élément de liste */
     list-style-type: none; /* Supprime les puces par défaut */
-
 }
 
 /* Style pour les étoiles inactives dans les évaluations */
@@ -125,6 +132,8 @@ li {
         --main-bg-color
     ); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
 }
+
+/* Style pour les chiffres*/
 .num {
     font-family: 'Open Sans', sans-serif;
 
@@ -147,7 +156,6 @@ li {
 /* Style du logo */
 .logo img {
     height: 3vw; /* Définit la hauteur du logo */
-
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
@@ -156,11 +164,11 @@ li {
     gap: 3vw; /* Crée un espace de 30% entre les éléments */
     padding: 0;
     align-items: center;
-
 }
+
+/**/
 .nav-element {
     padding-top:1.4vw
-
 }
 
 /* Style des éléments du menu lors du survol */
@@ -172,13 +180,19 @@ li {
 /********************************************************************************************************/
 /*--------------------------------Recherche-------------------------------------------------------------*/
 /*********************************************************************************************************/
+
+/**/
 .research {
     padding:2vw 0;
 }
+
+/**/
 .research-txt p{
     margin-top:0;
     
-} 
+}
+
+/**/
 .local {
     display: flex;
     height: 3vw;
@@ -187,12 +201,15 @@ li {
     background-color: var(--main-bg-color);
     align-items: center;
 }
+
+/**/
 .local i {
     display: flex;
     padding: 0 1vw;
     align-items: center;
     font-size: 1.3vw;
 }
+
 /* Style pour la barre de recherche */
 .Search-bar {
     width: 25vw;
@@ -202,6 +219,8 @@ li {
     border:#d9d9d9 solid 0.1vw;
     border-radius: 1rem;
 }
+
+/**/
 .search-button {
     background-color: var(--main-color);
     font-weight: 700;
@@ -214,6 +233,8 @@ li {
     align-items: center;
     font-size: 1.2vw;
 }
+
+/**/
 .search-input {
     display: flex;
     width: 15vw;
@@ -221,8 +242,9 @@ li {
     border: none;
     text-align: center;
     align-items: center;
-
 }
+
+/**/
 .search-input::placeholder {
     color: #000;
     font-weight: 900;
@@ -232,6 +254,7 @@ li {
     height: 2.8vw;
     align-items: center;
 }
+
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
 /*********************************************************************************************************/
