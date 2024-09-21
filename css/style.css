@@ -806,15 +806,14 @@ li {
     .populaires-cards .card {
         height: 16vh; /* Hauteur des cartes */
         margin: 2vh 0; /* Espacement vertical autour des cartes */
+        width:95%
         
     }
 
     .populaires-cards .card-content {
-        width: 25vh; /* Largeur du contenu texte des cartes */
+        width: 60%; /* Largeur du contenu texte des cartes */
         padding-left: 1vh; /* Espace entre l'image et le texte */
         display: flex; /* Flexbox pour aligner les éléments */
-        flex-direction: ; /* Aligne le texte verticalement */
-        justify-content: space-between; /* Distribution de l'espace entre les éléments */
     }
 
     .populaires-cards .card-title {
@@ -828,11 +827,11 @@ li {
 
     .populaires-cards .card-rating {
         font-size: 2vh; /* Taille de la notation des cartes populaires */
-        
+
     }
 
     .populaires-cards img {
-      width: 30vw; /* Taille des images dans les cartes populaires */
+      width: 35%; /* Taille des images dans les cartes populaires */
     }
 
     /*-------------- Activités -------------------------------------*/
