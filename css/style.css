@@ -10,14 +10,17 @@
    - Design responsive : Oui
    - Conformité W3C : Oui
 *********************************************************************************************************/
-/****** General ***********/
+
+/*-------------------------------------------------------------------------------*/
+/*--------------------- Général -------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
 
 /* Application globale de la police 'Raleway' à tous les éléments */
 * {
     font-family: 'Raleway', sans-serif; /* Définit la police Raleway pour tout le document */
 }
 
-/* Déclaration de variables CSS globales pour les couleurs */
+/* Déclaration de variables CSS globales pour les couleurs  et le contraste*/
 :root {
     --main-color: #0065fc; /* Couleur principale utilisée pour les éléments importants (ex: texte, bordures) */
     --main-bg-color: #f2f2f2; /* Couleur de fond globale pour les sections */
@@ -72,7 +75,7 @@ a {
     ); /* Ajoute une ombre légère sous la carte */
 }
 
-/**/
+/* style 2 base pour les cartes activités*/
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1rem; /* Coins arrondis */
