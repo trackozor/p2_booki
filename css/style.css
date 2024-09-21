@@ -980,7 +980,9 @@ li {
         height: auto; /* Hauteur ajustée automatiquement */
     }
 
-    /*------------------------- Conteneur principal--------------------------------------- */
+    /*--------------------------------------------------------------*/
+    /*----------- Conteneur principal----------------------------- */
+    /*--------------------------------------------------------------*/
 
     /**/    
     .main-container {
@@ -989,14 +991,16 @@ li {
         margin: 0 auto; /* Centrer le conteneur principal */
     }
 
-    /*--------------------------------- Header -------------------------------------------*/
+    /*--------------------------------------------------------------*/
+    /*----------------- Header -------------------------------------*/
+    /*--------------------------------------------------------------*/
 
     /**/
     .header {
         display: flex;
         flex-direction: column; /* Aligne les éléments du header verticalement */
         height:auto; /* Ajuste la hauteur automatiquement */
-        gap: 0.5vw; /* Petit espace entre les éléments du header */
+        gap: 1vw; /* Petit espace entre les éléments du header */
         justify-content: center; /* Centre verticalement les éléments */
         align-items: center; /* Centre horizontalement les éléments */
         width: 100%;
@@ -1008,8 +1012,9 @@ li {
         margin: 3vw; /* Espace autour du logo */
     }
 
-    /*------------------ Barre de navigation (hébergement/activités)-------------------*/
-
+    /*--------------------------------------------------------------*/
+    /*-------- Barre de navigation (hébergement/activités)---------*/
+    /*--------------------------------------------------------------*/
 
     /*-- conteneur parent --*/
     .nav {
@@ -1018,7 +1023,7 @@ li {
         justify-content: center; /* Centre les éléments de navigation horizontalement */
         width: 100%; /* Prend toute la largeur de l'écran */
         margin: 0 auto; /* Centrage du conteneur de navigation */
-        gap: 2vh; /* Espacement horizontal entre les éléments de navigation */
+        gap: 2vw; /* Espacement horizontal entre les éléments de navigation */
         margin-bottom: 0.5vw; /* Espace sous la navigation */
         align-items: center; /* Centre les éléments verticalement */
         height: 2vw; /* Hauteur de la barre de navigation */
@@ -1039,17 +1044,19 @@ li {
     .nav-element:hover {
         color: var(--main-color); /* Change la couleur du texte au survol */
         border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
-        padding-bottom: 0.9vh; /* Ajuste l'espace en bas lors du survol */
+        padding-bottom: 0.9vw; /* Ajuste l'espace en bas lors du survol */
         border-top:none;
         align-items: center; /* Centre verticalement */
         justify-content: center;
     }
 
-    /*---------------------------- Recherche------------------------------------------------ */
+    /*--------------------------------------------------------------*/
+    /*---------------------------- Recherche---------------------- */
+    /*--------------------------------------------------------------*/
 
     /**/
     .research {
-        margin: 0 auto; /* Centre la barre de recherche horizontalement */
+        margin: 2vw auto; /* Centre la barre de recherche horizontalement */
         width: 100%; /* Prend toute la largeur de l'écran */
         display: block;
         justify-content: center;
@@ -1063,9 +1070,9 @@ li {
 
     /**/
     .Search-bar {
-        width: 80%; /* La barre de recherche prend toute la largeur */
+        width: 70%; /* La barre de recherche prend toute la largeur */
         height: 4vw; /* Hauteur de la barre de recherche */
-        margin: 3vw auto; /* Espace vertical autour de la barre */
+        margin: 4vw auto; /* Espace vertical autour de la barre */
         display: flex; /* Flexbox pour aligner les éléments à l'intérieur */
     }
 
@@ -1118,17 +1125,17 @@ li {
         margin: 0 auto; /* Centre le bouton horizontalement */
         border-radius: 1vw; /* Coins arrondis du bouton */
         width: 5vw; /* Largeur du bouton */
-        filter: drop-shadow(0 0.1875rem 2vh rgba(235, 3, 3, 0.1)); /* Ombre portée */
+        filter: drop-shadow(0 0.1875vw 2vw rgba(235, 3, 3, 0.1)); /* Ombre portée */
         display: flex; /* Flexbox pour centrer l'icône à l'intérieur du bouton */
         align-items: center; /* Centre verticalement l'icône */
         justify-content: center; /* Centre horizontalement l'icône */
     }
 
-
-
-
+    /*--------------------------------------------------------------*/
     /*------------- Filtres ------------------------------------------*/
-    /* Conteneur pour les filtres, utilisant Flexbox */
+    /*--------------------------------------------------------------*/
+    
+    /**/
     .filter {
         display: block; /* Flexbox pour aligner les éléments */
         gap: 1vw; /* Espace de 2rem entre les éléments */
@@ -1137,16 +1144,18 @@ li {
         font-size: 1vw;
     }
 
-
-
-/*--------------------------------------------------------------------*/
-    /* Conteneur d'informations avec Flexbox */
+    /*--------------------------------------------------------------*/
+    /*------------- section infos -----------------------------------*/
+    /*--------------------------------------------------------------------*/
+    
+    /**/
     .info {
         display: flex; /* Flexbox pour aligner les informations */
         align-items: center;
         font-size: 1vw;
     }
 
+    /**/
     .fa-layers {
         display: inline-flex;
         align-items: center;
@@ -1163,23 +1172,29 @@ li {
         border-radius: 50%;
         font-size: 1.6vw;
     }
+
+    /*--------------------------------------------------------------*/
     /*--------Section hébergements ----------------------------------*/  
-    
+    /*--------------------------------------------------------------*/
+
+    /**/
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
-        gap: 1vh;
+        gap: 1vw;
         display: column;
         padding: 0;
     }
 
+    /**/
     .rangee {
         display: block; /* Affichage en bloc */
         height: auto; 
         justify-content: space-between;/* Hauteur ajustée automatiquement */
-        width: 98%;
+        width: 100%;
         padding:0;
     }
 
+    /**/
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
         height: 23vh; /* Hauteur des cartes */
@@ -1187,15 +1202,18 @@ li {
         padding-bottom:1vh
     }
 
+    /**/
     .hebergement-content .card-title {
         font-size: 2vh; /* Taille du titre des cartes */
     }
 
+    /**/
     .hebergements-and-populaires h2 {
         font-size: 2.2vh; /* Taille des titres de section */
         padding-left:0.5vh ;
     }
 
+    /**/
     .hebergement-content .card-subtitle {
         font-size: 1.4vh; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
@@ -1204,16 +1222,21 @@ li {
         padding-left: 0.5vh;
     }
 
+    /**/
     .hebergement-content .card-rating {
         font-size: 1.4vh; /* Taille de la notation */
     }
 
+    /**/
     .hebergements-and-populaires {
         display: flex; /* Flexbox pour aligner les sections */
         flex-direction: column-reverse; /* Affiche les sections en ordre inverse */
     }
-
+    /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
+    /*--------------------------------------------------------------*/
+    
+    /**/
     .populaires {
         width: 100%; /* Prend toute la largeur de l'écran */
     }
