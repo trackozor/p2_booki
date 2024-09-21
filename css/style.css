@@ -623,7 +623,7 @@ li {
     /* Style pour le corps de la page */
     body {
         display: block; /* Alignement vertical des éléments dans la disposition en bloc */
-        padding: 0; /* Pas de padding nécessaire */
+        padding: 0 0.1vh; /* Pas de padding nécessaire */
         margin: 0 auto; /* Centrer le corps horizontalement */
         font-size: 2vh; /* Police adaptée en fonction de la hauteur de la fenêtre */
         height: auto; /* Hauteur ajustée automatiquement */
@@ -632,7 +632,7 @@ li {
     /*------------------------- Conteneur principal--------------------------------------- */
     .main-container {
         max-width: 100%; /* Prend toute la largeur de l'écran */
-        padding: 0; /* Pas de padding pour assurer que l'élément occupe toute la largeur */
+        padding:0; /* Pas de padding pour assurer que l'élément occupe toute la largeur */
         margin: 0 auto; /* Centrer le conteneur principal */
     }
 
@@ -660,7 +660,7 @@ li {
         width: 100%; /* Prend toute la largeur de l'écran */
         margin: 0 auto; /* Centrage du conteneur de navigation */
         gap: 9vw; /* Espacement horizontal entre les éléments de navigation */
-        margin-bottom: 1vh; /* Espace sous la navigation */
+        margin-bottom: 0.5vh; /* Espace sous la navigation */
         align-items: center; /* Centre les éléments verticalement */
         height: 5vh; /* Hauteur de la barre de navigation */
     }
@@ -669,7 +669,7 @@ li {
         display: flex; /* Flexbox pour aligner les éléments de la navigation */
         font-size: 4vw; /* Taille de la police dépendant de la largeur de la fenêtre */
         justify-content: space-between; /* Distribution des éléments sur toute la largeur */
-        padding: 0 5vh; /* Espacement horizontal autour de chaque élément */
+        padding: 1.2vh 5vh; /* Espacement horizontal autour de chaque élément */
         align-items: center; /* Centre verticalement les éléments dans la navigation */
         margin-bottom: 0.56vh; /* Petit espace sous chaque élément de navigation */
     }
@@ -678,9 +678,11 @@ li {
         color: var(--main-color); /* Change la couleur du texte au survol */
         border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
         padding-bottom: 0.9vh; /* Ajuste l'espace en bas lors du survol */
+        border-top:none;
         display: flex; /* Flexbox pour maintenir l'alignement */
         justify-content: center; /* Centre les éléments */
         align-items: center; /* Centre verticalement */
+        width: 50vw;
     }
 
     /*---------------------------- Recherche------------------------------------------------ */
@@ -761,9 +763,9 @@ li {
 
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
-        height: 22vh; /* Hauteur des cartes */
-        gap: 1.2vh; /* Espacement entre les cartes */
-        margin: 1.5vh 0; /* Espacement vertical autour des cartes */
+        height: 24vh; /* Hauteur des cartes */
+        margin: 0.6vh 0; /* Espacement vertical autour des cartes */
+        padding: 0;
     }
 
     .hebergement-content .card-title {
@@ -772,11 +774,15 @@ li {
 
     .hebergements-and-populaires h2 {
         font-size: 2.2vh; /* Taille des titres de section */
+        padding-left:0.5vh ;
     }
 
     .hebergement-content .card-subtitle {
         font-size: 1.4vh; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
+        display:column;
+        justify-content: space-between;
+        padding-left: 0.5vh;
     }
 
     .hebergement-content .card-rating {
@@ -800,18 +806,19 @@ li {
     .populaires-cards .card {
         height: 16vh; /* Hauteur des cartes */
         margin: 2vh 0; /* Espacement vertical autour des cartes */
+        
     }
 
     .populaires-cards .card-content {
-        width: 18vh; /* Largeur du contenu texte des cartes */
+        width: 25vh; /* Largeur du contenu texte des cartes */
         padding-left: 1vh; /* Espace entre l'image et le texte */
         display: flex; /* Flexbox pour aligner les éléments */
-        flex-direction: column; /* Aligne le texte verticalement */
+        flex-direction: ; /* Aligne le texte verticalement */
         justify-content: space-between; /* Distribution de l'espace entre les éléments */
     }
 
     .populaires-cards .card-title {
-        font-size: 1.6vh; /* Taille du titre des cartes populaires */
+        font-size: 2vh; /* Taille du titre des cartes populaires */
     }
 
     .populaires-cards .card-subtitle {
@@ -820,11 +827,12 @@ li {
     }
 
     .populaires-cards .card-rating {
-        font-size: 1.4vh; /* Taille de la notation des cartes populaires */
+        font-size: 2vh; /* Taille de la notation des cartes populaires */
+        
     }
 
     .populaires-cards img {
-      width: 35vw; /* Taille des images dans les cartes populaires */
+      width: 30vw; /* Taille des images dans les cartes populaires */
     }
 
     /*-------------- Activités -------------------------------------*/
@@ -833,15 +841,17 @@ li {
         flex-direction: column; /* Aligne les cartes verticalement */
         gap: 4vw; /* Espacement entre les cartes */
         width: 100%; /* Les cartes occupent toute la largeur */
-        padding: 0 2vw; /* Espacement intérieur autour des cartes */
+        padding: 0 ; /* Espacement intérieur autour des cartes */
+        align-items: center;
     }
 
     .activites-a-marseille .card2 h3 {
         font-size: 2vh; /* Taille des titres des cartes d'activités */
+        padding-left: 2vh;
     }
 
     .activites-a-marseille .card2 {
-        width: 100%; /* Prend toute la largeur */
+        width: 93vw; /* Prend toute la largeur */
         height: 30vh; /* Hauteur des cartes d'activités */
     }
 
