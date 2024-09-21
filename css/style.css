@@ -141,9 +141,7 @@ li {
     align-items: center; /* Centre verticalement les éléments */
     gap: 20vw;
     margin: 0;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;   
 }
 
 /* Style du logo */
@@ -169,9 +167,6 @@ li {
 .nav-element:hover {
     color: var(--main-color); /* Change la couleur de texte au survol */
     border-top: 0.204rem solid var(--main-color); /* Ajoute une bordure supérieure colorée */
-
-
-
 }
 
 /********************************************************************************************************/
@@ -619,6 +614,7 @@ li {
 /*------------------------Mobile moins de 48rem --------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
 
+
 @media (min-width: 15rem) and (max-width: 47.99rem) and (orientation: portrait) {
     /* Style pour le corps de la page */
     body {
@@ -630,6 +626,8 @@ li {
     }
 
     /*------------------------- Conteneur principal--------------------------------------- */
+
+
     .main-container {
         max-width: 100%; /* Prend toute la largeur de l'écran */
         padding:0; /* Pas de padding pour assurer que l'élément occupe toute la largeur */
@@ -637,6 +635,8 @@ li {
     }
 
     /*--------------------------------- Header -------------------------------------------*/
+
+
     .header {
         display: flex;
         flex-direction: column; /* Aligne les éléments du header verticalement */
@@ -652,6 +652,8 @@ li {
     }
 
     /*------------------ Barre de navigation (hébergement/activités)-------------------*/
+
+
     /*-- conteneur parent --*/
     .nav {
         display: flex; /* Mise en page flexible pour les éléments de navigation */
@@ -679,14 +681,14 @@ li {
         border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
         padding-bottom: 0.9vh; /* Ajuste l'espace en bas lors du survol */
         border-top:none;
-        #display: flex; /* Flexbox pour maintenir l'alignement */
-        #justify-content: center; /* Centre les éléments */
         align-items: center; /* Centre verticalement */
         justify-content: space-between;
         width:50%
     }
 
     /*---------------------------- Recherche------------------------------------------------ */
+
+
     .research {
         margin: 0 auto; /* Centre la barre de recherche horizontalement */
         width: 100%; /* Prend toute la largeur de l'écran */
@@ -752,7 +754,47 @@ li {
         justify-content: center; /* Centre horizontalement l'icône */
     }
 
-    /*--------Section hébergements ----------------------------------*/    
+
+
+
+    /*------------- Filtres ------------------------------------------*/
+    /* Conteneur pour les filtres, utilisant Flexbox */
+    .filter {
+        display: block; /* Flexbox pour aligner les éléments */
+        gap: 1vw; /* Espace de 2rem entre les éléments */
+        align-items: center; /* Centre verticalement les éléments */
+        margin-bottom: 1.5vw;
+        font-size: 1vw;
+    }
+
+
+    
+/*--------------------------------------------------------------------*/
+    /* Conteneur d'informations avec Flexbox */
+    .info {
+        display: flex; /* Flexbox pour aligner les informations */
+        align-items: center;
+        font-size: 1vw;
+    }
+
+    .fa-layers {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1vw; /* Ajuste la taille de l'icône */
+        margin-right: 1vw; /* Espace entre l'icône et le texte*/
+        justify-content: center;
+    }
+
+    /* Style pour le cercle */
+    .icon-circle {
+        position: absolute;
+        color: white; /* Couleur du cercle */
+        border: 0.2rem solid var(--main-bg-color);
+        border-radius: 50%;
+        font-size: 1.6vw;
+    }
+    /*--------Section hébergements ----------------------------------*/  
+    
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
         gap: 1vh;
