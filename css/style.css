@@ -241,21 +241,18 @@ li {
 .search-input {
     display: flex;
     width: 15vw;
-    height: 3vw;
+    height: 2.8vw;
     border: none;
-    text-align: center;
-    align-items: center;
+    text-align: center;    
 }
 
-/**/
+/* Style du */
 .search-input::placeholder {
     color: #000;
     font-weight: 900;
-    display: flex;
-    font-size: 1.2vw;
+    font-size: 1vw;
     border:none;
-    height: 3vw;
-    align-items: center;
+    height: 2.8vw;
 }
 
 /**********************************************************************************************************/
@@ -276,7 +273,7 @@ li {
 .info {
     display: flex; /* Flexbox pour aligner les informations */
     align-items: center;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 /**/
@@ -292,7 +289,7 @@ li {
 .icon-circle {
     position: absolute;
     color: white; /* Couleur du cercle */
-    border: 0.2rem solid var(--main-bg-color);
+    border: 0.2vw solid var(--filter-bg-color);
     border-radius: 50%;
     font-size: 1.6vw;
 }
