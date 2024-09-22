@@ -223,7 +223,7 @@ li {
     border-radius: 1vw;
 }
 
-/**/
+/* Style bouton */
 .search-button {
     background-color: var(--main-color);
     font-weight: 700;
@@ -237,7 +237,7 @@ li {
     font-size: 1.2vw;
 }
 
-/**/
+/* Style */
 .search-input {
     display: flex;
     width: 15vw;
@@ -246,11 +246,11 @@ li {
     text-align: center;    
 }
 
-/* Style du */
+/* Style du placeholder */
 .search-input::placeholder {
     color: #000;
     font-weight: 900;
-    font-size: 1vw;
+    font-size: 1.2vw;
     border:none;
     height: 2.8vw;
 }
