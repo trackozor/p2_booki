@@ -493,9 +493,9 @@ li {
 
 /* Style des titres dans les cartes d'activités */
 .activites-a-marseille h3 {
-    display: flex;
+    display: flex;/* Utilise Flexbox pour aligner les éléments */
     padding-left: 1vw; /* Espacement à gauche pour le titre */
-    margin-bottom: 2vw;
+    margin-bottom: 2vw; /* marge au dessus correspondant a 2% de la largeur de l'écran */
     font-size: 1.2vw;
 }
 
@@ -505,10 +505,10 @@ li {
 /* Conteneur principal du footer */
 .footer {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
-    width: 90vw;
+    width: 90vw; /*utilise 95 % de la largeur du viewport*/
     gap: 10vw; /* Espace entre les éléments du footer */
     background-color: #f2f2f2; /* Couleur de fond du footer */
-    margin-top: 3vw;
+    margin-top: 3vw; /*marge au dessus correspond a 3% de la largeur de l 'écran*/
 }
 
 /*********************************************************************************************************/
@@ -518,8 +518,6 @@ li {
 /*-------------------------------------------------------------------------------*/
 /*------------------------Écrans large et multi-écrans ---------------------------*/
 /*-------------------------------------------------------------------------------*/
-
-/* Media query pour les très grands écrans (au-dessus de 1440px) */
 @media (min-width:90rem) {
     body {    
         margin: 0 auto; /* Centrer le contenu en laissant les marges se créer automatiquement */
