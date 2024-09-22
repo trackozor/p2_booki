@@ -40,8 +40,6 @@ body {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
     align-items: center;
-    max-width: 90rem;
-    min-width:15rem;
     box-sizing: border-box;
     font-size: 1vw;
 }
@@ -478,9 +476,9 @@ li {
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
-    height: 29vw; /* Les cartes occupent toute la hauteur disponible */
-    width: 20vw;
-    margin-bottom: 1vh;
+    height: 29vw; /* La hauteur des cartes correspondent à 29 % de la largeur de l'écran*/ 
+    width: 20vw; /* la largeur des cartes correspondent à 20 % de la largeur de l'écran */
+    margin-bottom: 1vh; /* marge au dess
 }
 
 /* Style des images dans les cartes d'activités */
@@ -496,7 +494,7 @@ li {
     display: flex;/* Utilise Flexbox pour aligner les éléments */
     padding-left: 1vw; /* Espacement à gauche pour le titre */
     margin-bottom: 2vw; /* marge au dessus correspondant a 2% de la largeur de l'écran */
-    font-size: 1.2vw;
+    font-size: 1.2vw; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
 }
 
 /*********************************************************************************************************/
@@ -524,6 +522,7 @@ li {
         align-items: center; 
         font-size: 1.4vw;
         width:1440px;
+        padding:0
         }  
 
 }
@@ -1305,5 +1304,4 @@ li {
         width: 100%; /* Images des cartes prennent toute la largeur */
         height: 72%; /* Hauteur des images ajustée */
     }
-}
 }
