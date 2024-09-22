@@ -40,10 +40,10 @@ body {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
     align-items: center;
-    max-width: 1440px;
+    max-width: 90rem;
     min-width:15rem;
     box-sizing: border-box;
-    font-size: 1.6vw;
+    font-size: 1vw;
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
@@ -62,7 +62,7 @@ a {
 /* Style des titres de section */
 .section-title {
     margin: 0; /* Supprime les marges par défaut */
-    font-size: 1.6vw; /* Taille du texte, équivaut à environ 22px */
+    font-size: 1.3vw; /* Taille du texte, équivaut à environ 22px */
 }
 
 /* Style général des cartes sur le site */
@@ -526,11 +526,11 @@ li {
 @media (min-width:90rem) {
     body {    
         margin: 0 auto; /* Centrer le contenu en laissant les marges se créer automatiquement */
-        align-items: center;
-        padding: 0 50vw; 
-        font-size: 2vw;
+        align-items: center; 
+        font-size: 1.4vw;
         width:1440px;
-        }   
+        }  
+
 }
 /*------------------------------------------------------------------------------------------*/
 /*------------------------Tablettes (entre 48rem et 64rem) ---------------------------------*/
