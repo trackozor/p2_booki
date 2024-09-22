@@ -200,7 +200,7 @@ li {
     display: flex;
     height: 3vw;
     width: 4vw;
-    border-radius: 0.8rem 0 0 0.8rem;
+    border-radius: 1vw 0 0 1vw;
     background-color: var(--main-bg-color);
     align-items: center;
 }
@@ -220,7 +220,7 @@ li {
     display: flex;
     align-items: center;
     border:#d9d9d9 solid 0.1vw;
-    border-radius: 1rem;
+    border-radius: 1vw;
 }
 
 /**/
@@ -228,8 +228,8 @@ li {
     background-color: var(--main-color);
     font-weight: 700;
     color: #fff;
-    border-top-right-radius: 0.8vw; /* Bord arrondi */
-    border-bottom-right-radius: 0.8vw;
+    border-top-right-radius: 1vw; /* Bord arrondi */
+    border-bottom-right-radius: 1vw;
     border: none;
     height: 3vw;
     display: flex;
@@ -241,7 +241,7 @@ li {
 .search-input {
     display: flex;
     width: 15vw;
-    height: vw;
+    height: 3vw;
     border: none;
     text-align: center;
     align-items: center;
@@ -254,7 +254,7 @@ li {
     display: flex;
     font-size: 1.2vw;
     border:none;
-    height: 2.8vw;
+    height: 3vw;
     align-items: center;
 }
 
@@ -297,7 +297,7 @@ li {
     font-size: 1.6vw;
 }
 
-/* Style pour le "i" */
+/* Style pour le "" */
 .icon-info {
     color: var(--main-color); /* Couleur du "i" */
     font-size: 1vw; /* Taille du "i", plus petit que le cercle */
@@ -316,26 +316,26 @@ li {
     background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
     border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
     padding: 1vw 1vw; /* Espacement intérieur du bouton */
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-align: center;
     gap: 0.8vw;
 }
 
-/**/
+/*Affichzge icône : masqué */
 .search-icon {
     display: none; /* L'icône est masquée par défaut */
 }
 
-/**/
+/*Style texte: visible*/
 .search-text {
     display: inline; /* Le texte est visible par défaut */
 }
 
-/***** Changement de couleur du bouton au survol ***********/
+/*Changement de couleur du bouton au survol */
 .filter-button:hover {
     background-color: var(
         --filter-bg-color
-    ); /* Change le fond du bouton lors du survol */
+    ); /* change la couleur du bouton au survol*/
 }
 
 /********************************************************************************************************/
