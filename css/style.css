@@ -657,16 +657,16 @@ li {
 
     /* Conteneur des filtres */
     .filter {
-        display: flex;
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
         flex-direction: column; /* Place les éléments en colonne */
         align-items: flex-start; /* Aligne les boutons à gauche */
     }
     /**/
     .filter-buttons  {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        display:flex;/* Utilise flexbox pour aligner */
+        flex-direction: row;/*alignement en ligne*/
+        flex-wrap: wrap;/*permet de pouvoir revenir à la ligne*/
+        justify-content: flex-start;/*Aligne les elements au debut du conteneur(gauche)*/
         gap: 2vw; /* espace entre les boutons */
         margin-bottom:2.5vw ;
     }
