@@ -67,7 +67,7 @@ a {
 .card {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1vw; /* Coins arrondis */
-    padding: 0.3125vw; /* Espace intérieur de la carte */
+    padding: 0.4125vw; /* Espace intérieur de la carte */
     filter: drop-shadow(
         0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
@@ -210,7 +210,7 @@ li {
     border-radius: 1vw 0 0 1vw; /*Coin arrondis haut gauche et bas gauche correspond a 1% de la largeur de la fenêtre*/
     background-color: var(--main-bg-color);/* Couleur du fond */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
-    justify-content: center;
+    justify-content: center;/* Centre les éléments enfants horizontalement avec des espaces égaux */
 }
 
 /* Style icône localisation */
@@ -228,7 +228,7 @@ li {
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     border:#d9d9d9 solid 0.1vw;/* bordure correspondant à 0.1% de la largeur de l'écran */
-    border-radius: 1.25vw;/*coins arrondis dont le rayon correspond à 1% de la largeur de l'écran*/
+    border-radius: 1vw;/*coins arrondis dont le rayon correspond à 1% de la largeur de l'écran*/
 }
 
 /* Style bouton */
@@ -236,8 +236,8 @@ li {
     background-color: var(--main-color);/* Couleur de fond */
     font-weight: 700;/*contrôle de la mise en gras du texte*/
     color: #fff;/*couleur du texte*/
-    border-top-right-radius: 1.25vw; /* Bord haut droit arrondi */
-    border-bottom-right-radius: 1.25vw;/*bord haut gauche arrondi*/
+    border-top-right-radius: 1vw; /* Bord haut droit arrondi */
+    border-bottom-right-radius: 1vw;/*bord haut gauche arrondi*/
     border: none;/*pas de bordure*/
     height: 3vw;/* Hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
@@ -280,46 +280,12 @@ li {
     font-size: 1vw;/* Taille de la police du mot filtre*/
 }
 
-/* Conteneur d'informations */
-.info {
-    display: flex; /* Flexbox pour aligner les informations */
-    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
-    font-size: 1.2vw;/* Taille de la police */
-}
-
-/* Style calque icône info personnalisé */
-.fa-layers {
-    display: inline-flex;/* Affiche l'élément en tant qu'élément flex en ligne, permettant un alignement horizontal des enfants */
-    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
-    font-size: 1vw; /* Ajuste la taille de l'icône */
-    margin-right: 1vw; /* Espace entre l'icône et le texte*/
-    justify-content: center;/* Centre les éléments  horizontalement . */
-}
-
-/* Style pour le cercle */
-.icon-circle {
-    position: absolute; /* Positionne l'élément et le retire du flux pour permettre de pouvoir positionner un autre élément  */
-    color: white; /* Couleur du cercle */
-    border: 0.2vw solid var(--filter-bg-color);/*bordure grise*/
-    border-radius: 50%;/* bordure circulaire */
-    font-size: 1.6vw;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
-}
-
-/* Style pour le "" */
-.icon-info {
-    color: var(--main-color); /* Couleur du "i" */
-    font-size: 1vw; /* Taille du "i", plus petit que le cercle */
-    z-index: 1; /* L'élément sera au-dessus du cercle*/
-    position: relative;/*positionne l’élément mais reste dans le flux*/
-}
-
 /********** Bouton de filtre ********************/
-
 /* Style pour les boutons de filtre */
 .filter-button {
     display: flex; /* Flexbox pour aligner le contenu du bouton */
     height: 3vw; /* Hauteur du bouton */
-    border-radius: 1.5625rem; /* Bord arrondi */
+    border-radius: 1.5625vw; /* Bord arrondi */
     align-items: center; /* Centre verticalement le contenu */
     background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
     border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
@@ -344,6 +310,43 @@ li {
     background-color: var(
         --filter-bg-color
     ); /* change la couleur du bouton au survol*/
+}
+/********************************************************************************************************/
+/*-----------------------------Zone de texte avec icône entre filtre et section hebergement-----------------------------------------------------*/
+/******************************************************************************************************/
+
+/* Conteneur d'informations */
+.info {
+    display: flex; /* Flexbox pour aligner les informations */
+    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
+    font-size: 1vw;/* Taille de la police */
+    margin-bottom: 1vw;/* Espace entre le conteneur et la section hebergement correspondant à 1% de la largeur de l'écran */
+}
+
+/* Style calque icône info personnalisé */
+.fa-layers {
+    display: inline-flex;/* Affiche l'élément en tant qu'élément flex en ligne, permettant un alignement horizontal des enfants */
+    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
+    font-size: 1vw; /* Ajuste la taille de l'icône */
+    margin-right: 1vw; /* Espace entre l'icône et le texte*/
+    justify-content: center;/* Centre les éléments  horizontalement . */
+}
+
+/* Style pour le cercle */
+.icon-circle {
+    position: absolute; /* Positionne l'élément et le retire du flux pour permettre de pouvoir positionner un autre élément  */
+    color: white; /* Couleur du cercle */
+    border: 0.2vw solid var(--filter-bg-color);/*bordure grise*/
+    border-radius: 50%;/* bordure circulaire */
+    font-size: 1.6vw;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
+}
+
+/* Style pour le "I" */
+.icon-info {
+    color: var(--main-color); /* Couleur du "i" */
+    font-size: 1vw; /* Taille du "i", plus petit que le cercle */
+    z-index: 1; /* L'élément sera au-dessus du cercle*/
+    position: relative;/*positionne l’élément mais reste dans le flux*/
 }
 
 /********************************************************************************************************/
@@ -420,15 +423,14 @@ li {
 
 /*Contenu des cartes */
 .rangee .hebergement-content {
-    padding: 0.1vw 0.5vw;/* espace intérieur haut/bas et gauche droite respectivement égale à 0.1%et 0.5% de la largeur de l'écran */
+    padding: 0.5vw;/* espace intérieur égale 0.5% de la largeur de l'écran */
 }
 
 /* Lien affichez plus */
 .affichez_plus a {
     font-size: 1.2vw;/* Taille de la police correspondant à 1.5% de la largeur de l'écran*/
-    padding-left: 1vw;
-    margin-top:2vw
-    
+    padding-left: 1vw;/* Espace intérieur gauche correspondant à 1vw de la largeur de l'écran*/
+    margin-top:2vw;/* Espace bas correspondant à 2% de la largeur de l'écran*/
 }
 /*********************************************************************************************************/
 /*------------------------------------ Section Populaire (droite) -----------------------------------*/
@@ -439,12 +441,14 @@ li {
     width: 32vw; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Titre de la section Populaires avec icône */
 .populaires-title {
     display: flex; /* Aligne l'icône et le texte horizontalement */
     justify-content: space-between; /* Espace le texte et l'icône */
+    padding-top: 0.5vw;/**/;
 }
 
 /* Style des cartes dans la section Populaires */
