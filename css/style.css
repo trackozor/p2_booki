@@ -660,13 +660,8 @@ li {
         display: flex;
         flex-direction: column; /* Place les éléments en colonne */
         align-items: flex-start; /* Aligne les boutons à gauche */
-        }
-    .filter h3 {
-        padding: 0;
-        margin:0;
     }
-
-    /*Ajustement de la taille des boutons et du rayon des bords arrondis*/
+    /**/
     .filter-buttons  {
         display:flex;
         flex-direction: row;
