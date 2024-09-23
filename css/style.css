@@ -3,7 +3,7 @@
    Auteur : Trackozor
    Date de création : 07/09/2024
    Description : Feuille de style principale pour le projet booki, site hébergements
-   Version : 1.0
+   Version : 2.0
    -----------------------------------------------------------------------
    Informations supplémentaires :
    - Compatible avec les navigateurs : Chrome, Firefox, Edge
@@ -67,9 +67,9 @@ a {
 .card {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1vw; /* Coins arrondis */
-    padding: 0.3125rem; /* Espace intérieur de la carte */
+    padding: 0.3125vw; /* Espace intérieur de la carte */
     filter: drop-shadow(
-        0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
+        0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
 }
 
@@ -78,7 +78,7 @@ a {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1vw; /* Coins arrondis */
     filter: drop-shadow(
-        0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
+        0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
 }
 
@@ -91,7 +91,6 @@ a {
     object-fit: cover; /* Redimensionne l'élément pour couvrir entièrement le conteneur tout en préservant les proportions de l'image. */
     overflow: hidden;  /* L'image remplit son conteneur sans être déformée */
 }
-
 
 /* Assure que les images des cartes conservent leurs proportions et remplissent bien l'espace */
 .card img {
@@ -115,6 +114,7 @@ a {
 /* Style des étoiles de notation*/
 .card-rating {
     font-size: 1vw; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
+    padding-bottom: 0.5vw;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
 }
 
 /* Style renforcé pour affichage en gras*/
@@ -194,9 +194,14 @@ li {
 /* Style pour la zone de texte*/
 .research-txt p{
     margin-top:0; /* Suppression de la marge haute*/
+    font-size: 1vw;
+    margin-bottom: 2vw;
     
 }
-
+.research-txt h2{
+    margin-bottom: 0.5vw; /* Suppression de la marge basse*/
+    font-size: 1.5vw; /* taille de la police correspondant a 1.5% de la largeur de l'écran*/
+}
 /* Conteneur parent pour l'icône localisation*/
 .local {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
@@ -223,7 +228,7 @@ li {
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     border:#d9d9d9 solid 0.1vw;/* bordure correspondant à 0.1% de la largeur de l'écran */
-    border-radius: 1vw;/*coins arrondis dont le rayon correspond à 1% de la largeur de l'écran*/
+    border-radius: 1.25vw;/*coins arrondis dont le rayon correspond à 1% de la largeur de l'écran*/
 }
 
 /* Style bouton */
@@ -231,14 +236,15 @@ li {
     background-color: var(--main-color);/* Couleur de fond */
     font-weight: 700;/*contrôle de la mise en gras du texte*/
     color: #fff;/*couleur du texte*/
-    border-top-right-radius: 1vw; /* Bord haut droit arrondi */
-    border-bottom-right-radius: 1vw;/*bord haut gauche arrondi*/
+    border-top-right-radius: 1.25vw; /* Bord haut droit arrondi */
+    border-bottom-right-radius: 1.25vw;/*bord haut gauche arrondi*/
     border: none;/*pas de bordure*/
     height: 3vw;/* Hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
-
-    font-size: 1.2vw;
+    font-size: 1.2vw;/*Taile de la police*/
+    width: 10vw;/* Largeur corespondent a 10% de la largeur de l'écran*/
+    padding-left: 0.6vw;/* espace intérieur gauche correspondant a00.6% de la largeur de l'écran*/
 }
 
 /* Style pour la zone de saisie */
@@ -356,11 +362,13 @@ li {
     background-color: var(
         --main-bg-color
     ); /* Fond gris clair pour les sections */
-    border-radius: 1.25rem; /* Bords arrondis */
-    padding: 1rem; /* Espace intérieur */
+    border-radius: 1vw; /* Bords arrondis */
+    padding: 1vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
     font-feature-settings: 'tnum'; /* Force les chiffres tabulaires */
+    gap: 1vw;
 }
+
 
 /*********************************************************************************************************/
 /*--------------------------------Section Hébergement à Marseille (gauche)---------------------------------*/
@@ -373,6 +381,11 @@ li {
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
 }
 
+/*Stule titre section hébergement*/
+.hebergements h2 {
+    padding-left: 0.5vw;/* Espace intérieur gauche correspondant à 0.5% de la largeur de l'écran*/
+}
+
 /* Style pour les rangées */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
@@ -380,15 +393,15 @@ li {
     height: 14vw;/*hauteur correspondant 15% de la largeur du viewport*/
     justify-content: space-between;/*espacement répartis également*/
     align-items: center;/*centrage des éléments dans la hauteur*/
-    padding:0 1vw;/* espace intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
+    padding:0 0.5vw;/* espace intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
 }
 
 /*Style des cartes hébergements*/
 .rangee .card {
     display: flex;/*Flexbox pour aligner les éléments*/
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
-    height: 12vw;/* hauteur de la carte correspondant a 12% de la largeur de l'écran*/
-    width: 16.5vw;/*largeur des cartes correspondant à 16.5% de la largeur de l'écran*/
+    height: 13vw;/* hauteur de la carte correspondant a 12% de la largeur de l'écran*/
+    width: 16vw;/*largeur des cartes correspondant à 16.5% de la largeur de l'écran*/
 }
 
 /* ligne tarifaire */
@@ -400,19 +413,22 @@ li {
 /* Images */
 .rangee .card img {
     height: 60%;/* L'image prend 60% de la hauteur de la carte*/
-    border-top-left-radius: 1vw;
-    border-top-right-radius: 1vw;
+    border-top-left-radius: 0.8vw;
+    border-top-right-radius: 0.8vw;
     object-fit: cover;
 }
 
-/**/
+/*Contenu des cartes */
 .rangee .hebergement-content {
-    padding: 0.1vw 0.5vw;
+    padding: 0.1vw 0.5vw;/* espace intérieur haut/bas et gauche droite respectivement égale à 0.1%et 0.5% de la largeur de l'écran */
 }
 
-/**/
+/* Lien affichez plus */
 .affichez_plus a {
-    font-size: 1.5vw;
+    font-size: 1.2vw;/* Taille de la police correspondant à 1.5% de la largeur de l'écran*/
+    padding-left: 1vw;
+    margin-top:2vw
+    
 }
 /*********************************************************************************************************/
 /*------------------------------------ Section Populaire (droite) -----------------------------------*/
