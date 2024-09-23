@@ -661,29 +661,30 @@ li {
         flex-direction: column; /* Place les éléments en colonne */
         align-items: flex-start; /* Aligne les boutons à gauche */
     }
-    /**/
+    /*Conteneur parent des boutons*/
     .filter-buttons  {
         display:flex;/* Utilise flexbox pour aligner */
         flex-direction: row;/*alignement en ligne*/
         flex-wrap: wrap;/*permet de pouvoir revenir à la ligne*/
         justify-content: flex-start;/*Aligne les elements au debut du conteneur(gauche)*/
         gap: 2vw; /* espace entre les boutons */
-        margin-bottom:2.5vw ;
-    }
-    /* Style général pour les boutons de filtres */
-    .filter-button {
-        display: flex;
-        align-items: center;
-        background-color: #fff;
+        margin-bottom:2.5vw ;/*Espace bas correspondant à 2.5% de la largeur de l'écran*/
     }
 
+    /*effet lors du clique sur le bouton*/
     .filter-button:active {
         background-color: var(
             --filter-bg-color
         ); /* change la couleur du bouton au survol*/
     }
+
+    /*----------------------------------------------------------------------------------------*/
+    /*-------------------------------zone info -----------------------------------------------*/
+    /*----------------------------------------------------------------------------------------*/
+
+    /*Adaptation espace conteneur*/
     .info {
-        margin-top: 5vw;
+        margin-top: 3.5vw;/* Espace haut correspondant à 3.5% de la largeur de l'écran*/
     }
     /*-------------------------------------------------------------------------------*/
     /*--------------------- Conteneur Hebergemment et populaires --------------------*/
@@ -748,28 +749,71 @@ li {
     .populaires {
         width: 100%; /* Ajuste la largeur des cartes populaires */
     }
-    .populaires i {
-        font-size: 1.5vw;
-    }
+    
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
         gap: 3vw; /* Ajuste l'espacement entre les cartes populaires */
-        margin: 0;
-        padding-top: 0;
+        margin: 0 2vw;
+        padding: 0;
+        justify-content: space-between;
         
     }
 
     .populaires-cards img {
-        width: 12vw; /* Ajuste la largeur des images des cartes populaires */
+        width: 10vw; /* Ajuste la largeur des images des cartes populaires */
     }
 
     .populaires-cards .card {
-        height: 10vw;
+        height: 15vw;
         margin-top: 1vw; /* Ajuste l'espacement vertical pour les cartes populaires */
-        width: 25vw;
+        width: 26vw;
     }
+
+    .populaires-cards .card-content {
+    width: 20vw; /* Le texte occupe 67% de la carte */
+    display: flex;/* Utilise flexbox pour aligner les éléments*/
+    flex-direction: column; /* Le texte est aligné verticalement */
+    margin: 0; /* Supprime les marges*/
+    justify-content: space space-between;/* aligne les éléments au centre dans la hauteur*/
+}
+
+    /* Conteneur parent comprenant le titre et le sous-titre*/
+    .populaires-cards .card-txt{
+        padding:0;/*Suppression des espaces intérieurs*/
+        margin-left: 0.5vw;/* Espace intérieur gauche correspondant à 0.5% de la largeur total*/
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
+        flex-direction: column;/* alignement en colonne */
+    }
+
+    /* Style des sous titre pour les titre sur deux lignes */
+    .populaires-cards .card-subtitle {
+        margin-top:0;/* Supression de la marge haute*/
+        margin-bottom:4vw;/* espace bas correspondant à 2% de la largeur de l'écran*/
+        padding:0; /*suppression des espaces intérieurs*/
+    }
+
+    /*Style des titres sur deux lignes*/
+    .populaires-cards .card-title {
+        margin: 0; /* Supprime les marges */
+        padding:0;  /*Supprime les espaces intérieurs*/
+    }
+
+    /* Style pour les étoiles*/
+    .populaires-cards .card-rating {
+        margin:0.;2vw
+    }
+
+    /* Style pour les titres sur une lignes*/
+    .populaires-cards .card-title1 {
+        margin-top:0.2vw; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
+    }
+
+    /* Style pour les sous-titres des titres sur une lignes */
+    .populaires-cards .card-subtitle1 {
+        margin-top:0;/* suppression de la marge haute*/
+        margin-bottom:7.5vw;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
 
     /*---------------------------------------------------------------------------------*/
     /*-----------------------Footer ----------------------------------------------------------*/
