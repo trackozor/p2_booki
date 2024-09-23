@@ -618,7 +618,7 @@ li {
     }
 
     /*-----------------------------------------------------------------------------------------*/
-    /*----------------------------- Header et navigation --------------------------------------*/
+    /*----------------------------- Navigation --------------------------------------*/
     /*----------------------------------------------------------------------------------------*/
 
     /*barre de navigation*/ 
@@ -630,14 +630,27 @@ li {
         font-size: 1.2vh;/* taille de la police */
     }
 
+    /*  survol  barre de navigation*/
     .nav-element:hover {
-        margin-top:1.8vw;
+        margin-top:1.8vw;/* espace supérieur correspondant à 1.8% de la larguer de l'écran*/
     } 
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*---------------------------- section recherche--------------------------------------------*/
+    /*----------------------------------------------------------------------------------------*/
+
+    .Search-bar, .local, .search-button{
+        height: 4vw;
+    }
+
     /*----------------------------------------------------------------------------------------*/
     /*------------------------------------- Filtres-------------------------------------------*/
     /*----------------------------------------------------------------------------------------*/
-    .filter-button {
-        height: 4vw;
+
+    /*Ajustement de la taille des boutons et du rayon des bords arrondis*/
+    .filter-button  {
+        height: 4vw;/* hauteur correspondant à 4% de la largeur de l'écran*/
+        border-radius: 2vw;/* coins arrondis*/
     }
     /*-------------------------------------------------------------------------------*/
     /*--------------------- Conteneur Hebergemment et populaires --------------------*/
@@ -665,7 +678,7 @@ li {
 
     /* Ajustement de la police du titre h2 de la section activités*/
     .activites h2 {
-    font-size: 1.5vw;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
+        font-size: 1.5vw;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
     }
     
 
