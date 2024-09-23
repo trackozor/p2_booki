@@ -303,8 +303,8 @@ li {
 .icon-info {
     color: var(--main-color); /* Couleur du "i" */
     font-size: 1vw; /* Taille du "i", plus petit que le cercle */
-    z-index: 1;
-    position: relative;
+    z-index: 1; /* L'élément sera au-dessus du cercle*/
+    position: relative;/*positionne l’élément mais reste dans le flux*/
 }
 
 /********** Bouton de filtre ********************/
@@ -318,12 +318,12 @@ li {
     background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
     border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
     padding: 1vw 1vw; /* Espacement intérieur du bouton */
-    font-size: 1.2vw;
-    text-align: center;
-    gap: 0.8vw;
+    font-size: 1.2vw;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
+    text-align: center;/* Centre le texte horizontalement. */
+    gap: 0.8vw;/*Espace entre chaque éléments*/
 }
 
-/*Affichzge icône : masqué */
+/*Affichage icône : masqué */
 .search-icon {
     display: none; /* L'icône est masquée par défaut */
 }
@@ -347,8 +347,8 @@ li {
 /* Conteneur pour la section Hébergements et Populaires, alignée avec Flexbox */
 .hebergements-and-populaires {
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
-    gap: 2vw;
-    flex-direction: row;
+    gap: 2vw;/*Espacement correspondant à 2% de la largeur de l'écran*/
+    flex-direction: row;/*alignement sur une ligne de gauche a droite*/
 }
 
 /* Style des sections Hébergements et Populaires */
@@ -368,27 +368,27 @@ li {
 
 /* Section des hébergements, occupant 65% de la largeur */
 .hebergements {
-    display: flex;
-    flex-direction: column;
+    display: flex;/* Flexbox pour aligner les éléments */
+    flex-direction: column;/*alignement en colonne*/
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
 }
 
-/* Style pour les rangées d'éléments */
+/* Style pour les rangées */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    width: auto;
-    height: 15vw;
-    justify-content: space-between;
-    gap:1vw;
-    align-items: center;
+    width: auto;/* Largeur automatique pour prendre toute la largeur disponible*/
+    height: 14vw;/*hauteur correspondant 15% de la largeur du viewport*/
+    justify-content: space-between;/*espacement répartis également*/
+    align-items: center;/*centrage des éléments dans la hauteur*/
+    padding:0 1vw;/* espace intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
 }
 
-/**/
+/*Style des cartes hébergements*/
 .rangee .card {
-    display: flex;
+    display: flex;/*Flexbox pour aligner les éléments*/
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
-    height: 12vw;
-    width: 16vw;
+    height: 12vw;/* hauteur de la carte correspondant a 12% de la largeur de l'écran*/
+    width: 16.5vw;/*largaur des cartes correspondant à 16.5% de la largeur de l'écran*/
 }
 
 /**/
