@@ -199,7 +199,7 @@ li {
 .research-txt p{
     margin-top:0; /* Suppression de la marge haute*/
     font-size: 1vw;/* Taille de la police*/
-    margin-bottom: 2vw;/* Espace bas correspondant à 2% de la largeur de l'ecran*/
+    margin-bottom: 2vw;/* Espace bas correspondant à 2% de la largeur de l’écran*/
     
 }
 
@@ -632,10 +632,16 @@ li {
 
     .nav-element:hover {
         margin-top:1.8vw;
-    }
+    } 
+    /*----------------------------------------------------------------------------------------*/
+    /*------------------------------------- Filtres-------------------------------------------*/
+    /*----------------------------------------------------------------------------------------*/
+
         
+        
+    
     .filter-button {
-        height: 3vw;
+        height: 4vw;
     }
     /*-------------------------------------------------------------------------------*/
     /*--------------------- Conteneur Hebergemment et populaires --------------------*/
