@@ -483,7 +483,7 @@ li {
 /* Contenu textuel des cartes Populaires */
 .populaires-cards .card-content {
     width: 18vw; /* Le texte occupe 67% de la carte */
-    padding: 0.2vw 1vw; /* Espace entre l'image et le texte */
+    #padding: 0.2vw 1vw; /* Espace entre l'image et le texte */
     display: flex;/* Utilise flexbox pour aligner les éléments*/
     flex-direction: column; /* Le texte est aligné verticalement */
     margin-top: 0;
@@ -493,19 +493,19 @@ li {
 
 .populaires-cards .card-txt{
     margin: 0;
-    padding: 0 ;
+    padding: 0.5vw 1vw ;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    #justify-content: space-between;
+    gap:0.2vw;
 }
 /* Pas de marges pour le sous-titre des cartes */
 .populaires-cards .card-subtitle {
-    margin-top: 0.2vw; /* Supprime les marges */
-    margin-bottom: 3vw;
+    margin-top: 0; /* Supprime les marges */
+    margin-bottom: 0;
 }
 .populaires-cards .card-title {
-    margin: 0; /* Supprime les marges */
+    margin- top: 0; /* Supprime les marges */
     padding:0;
 }
 
