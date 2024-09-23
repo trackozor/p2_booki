@@ -105,7 +105,7 @@ a {
     margin-bottom: 0; /* Suppression marge basse */
 }
 
-/**/
+/*Style du text a l intérieur de la carte*/
 .card-txt {
     margin-top: 0; /* Suppression marge haute*/
     margin-bottom: 0; /* Supression marge basse */
@@ -201,40 +201,39 @@ li {
 .local {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
     height: 3vw; /* hauteur correspondant à 3% de la largeur du viewport*/
-    width: 4vw; /**/
-    border-radius: 1vw 0 0 1vw;
-    background-color: var(--main-bg-color);
-    align-items: center;
+    width: 4vw; /* Largeur correspondant à 4 % de la largeur de l'écran*/
+    border-radius: 1vw 0 0 1vw; /*Coin arrondis haut gauche et bas gauche correspond a 1% de la largeur de la fenêtre*/
+    background-color: var(--main-bg-color);/* Couleur du fond */
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
 }
 
-/**/
+/* Style icône localisation */
 .local i {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    padding: 0 1vw;
+    padding: 0 1vw; /* espacement intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
-    font-size: 1.3vw;
+    font-size: 1.3vw; /*taille icône correspondant à 1% de la largeur de l'écran*/
 }
 
 /* Style pour la barre de recherche */
 .Search-bar {
-    width: 25vw;
-    height: 3vw;
+    width: 25vw; /*largeur correspondant à 25 % de la largeur de l'écran*/
+    height: 3vw; /*hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
-
-    border:#d9d9d9 solid 0.1vw;
-    border-radius: 1vw;
+    border:#d9d9d9 solid 0.1vw;/* bordure correspondant à 0.1% de la largeur de l'écran */
+    border-radius: 1vw;/*coins arrondis dont le rayon correspond à 1% de la largeur de l'écran*/
 }
 
 /* Style bouton */
 .search-button {
-    background-color: var(--main-color);
-    font-weight: 700;
-    color: #fff;
-    border-top-right-radius: 1vw; /* Bord arrondi */
-    border-bottom-right-radius: 1vw;
-    border: none;
-    height: 3vw;
+    background-color: var(--main-color);/* Couleur de fond */
+    font-weight: 700;/*contrôle de la mise en gras du texte*/
+    color: #fff;/*couleur du texte*/
+    border-top-right-radius: 1vw; /* Bord haut droit arrondi */
+    border-bottom-right-radius: 1vw;/*bord haut gauche arrondi*/
+    border: none;/*pas de bordure*/
+    height: 3vw;/* Hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
 
@@ -484,7 +483,7 @@ li {
 .activites-a-marseille .card2 {
     height: 29vw; /* La hauteur des cartes correspondent à 29 % de la largeur de l'écran*/ 
     width: 20vw; /* la largeur des cartes correspondent à 20 % de la largeur de l'écran */
-    margin-bottom: 1vh; /* marge au dess
+    margin-bottom: 1vw; /* marge au dess*/
 }
 
 /* Style des images dans les cartes d'activités */
@@ -1310,5 +1309,4 @@ li {
         width: 100%; /* Images des cartes prennent toute la largeur */
         height: 72%; /* Hauteur des images ajustée */
     }
-}
 }
