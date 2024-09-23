@@ -113,7 +113,7 @@ a {
 
 /* Style renforcé pour affichage en gras*/
 .bold {
-    font-weight: 700; /* Met le texte en gras */
+    font-weight: 900; /* Met le texte en gras */
 }
 
 /* style des titres des cartes */
@@ -121,13 +121,13 @@ h3 {
   
     display: block;
     margin: 0;/*Suppression des marges*/
-
 }
 
 /* Style pour les listes */
 li {
     padding:0.5vw;/* Espace entre chaque élément de liste */
     list-style-type: none; /* Supprime les puces par défaut */
+    font-weight: 500;
 }
 
 /* Style pour les étoiles inactives dans les évaluations */
@@ -160,7 +160,8 @@ li {
 
 /* Style du logo */
 .logo img {
-    height: 3vw; /* Définit la hauteur du logo */
+    height: 1.5vw; /* Définit la hauteur du logo */
+    margin-top: 3vw;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
@@ -169,6 +170,7 @@ li {
     gap: 3vw; /* Crée un espace de 30% entre les éléments */
     padding: 0; /* Supprime tout espacement intérieur autour de l'élément. */
     align-items: center; /* Aligne les éléments enfants au centre dans la hauteur */
+    margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l'écran*/
 
 }
 
@@ -494,6 +496,7 @@ li {
     margin: 0; /* Supprime les marges*/
     justify-content: center;/* aligne les éléments au centre dans la hauteur*/
 }
+
 /* Conteneur parent comprenant le titre et le sous-titre*/
 .populaires-cards .card-txt{
     padding:0;/*Suppression des espaces intérieurs*/
@@ -501,12 +504,14 @@ li {
     display: flex;/* Utilise flexbox pour aligner les éléments*/
     flex-direction: column;/* alignement en colonne */
 }
+
 /* Style des sous titre pour les titre sur deux lignes */
 .populaires-cards .card-subtitle {
     margin-top:0;/* Supression de la marge haute*/
     margin-bottom:2vw;/* espace bas correspondant à 2% de la largeur de l'écran*/
     padding:0; /*suppression des espaces intérieurs*/
 }
+
 /*Style des titres sur deux lignes*/
 .populaires-cards .card-title {
     margin: 0; /* Supprime les marges */
@@ -524,10 +529,10 @@ li {
 }
 
 /* Style pour les sous-titres des titres sur une lignes */
- .populaires-cards .card-subtitle1 {
+.populaires-cards .card-subtitle1 {
     margin-top:0;/* suppression de la marge haute*/
     margin-bottom:3.5vw;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
- }
+}
 /********************************************************************************************************/
 /* ---------------------- Section Activités à marseille -----------------------------------------------*/
 /*******************************************************************************************************/
@@ -536,14 +541,21 @@ li {
 .activites-a-marseille {
     width: 90vw;
     display: flex; /* Utilise Flexbox pour aligner les cartes */
-    gap: 3.2vw;
+    justify-content: center;/*aligne a partir du centre*/
+    gap: 2vw/* espace entre les cartes correspondant à 2% de la largeur de l'écran*/
+}
+
+/* Titre de la section Activités à Marseille */
+.activites h2{
+    padding-left: 2vw;/* espace intérieur gauche correspondant à 2% de la largeur de l'écran*/
+    margin-top: 3vw;/*espace supérieur correspondant à 3% de la largeur de l'écran*/
+    margin-bottom:2vw;/*espace inférieur correspondant à 2% de la largeur de l'écran*/
 }
 
 /* Style des cartes d'activités */
 .activites-a-marseille .card2 {
-    height: 29vw; /* La hauteur des cartes correspondent à 29 % de la largeur de l'écran*/ 
+    height: 30vw; /* La hauteur des cartes correspondent à 29 % de la largeur de l'écran*/ 
     width: 20vw; /* la largeur des cartes correspondent à 20 % de la largeur de l'écran */
-    margin-bottom: 1vw; /* marge au dess*/
 }
 
 /* Style des images dans les cartes d'activités */
@@ -558,7 +570,7 @@ li {
 .activites-a-marseille h3 {
     display: flex;/* Utilise Flexbox pour aligner les éléments */
     padding-left: 1vw; /* Espacement à gauche pour le titre */
-    margin-bottom: 2vw; /* marge au dessus correspondant a 2% de la largeur de l'écran */
+    margin-top: 1vw; /* marge au dessus correspondant a 2% de la largeur de l'écran */
     font-size: 1.2vw; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
 }
 
@@ -587,42 +599,41 @@ li {
         align-items: center; 
         font-size: 1.4vw;
         width:1440px;
-        padding:0
+        
         }  
 
 }
 /*------------------------------------------------------------------------------------------*/
 /*------------------------Tablettes (entre 48rem et 64rem) ---------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
-@media (min-width: 48rem) and (max-width: 63.99rem) {
+@media (min-width: 48rem) and (max-width: 63.99rem) { 
+    /*Style du corps adaptation des valeurs par défaut*/
     body {
-        display: flex;
-        padding-top: 0;
-        font-size: clamp(1rem,2vw,1.2rem);
-        height:auto;
-        width: auto;
-        margin-top:0.5vh;
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
+        font-size: clamp(1rem,2vw,1.2rem);/* Définit la taille du texte de façon responsive : - 1rem comme taille minimale,- 2vw pour une taille fluide en fonction de la largeur de la fenêtre,- 1.2rem comme taille maximale. */
+        height:auto;/* hauteur ajusté automatiquement*/
+        width: auto;/*largeur ajusté automatiquement*/  
+        margin:0;/*suppression de marges*/
+        padding:0;/*suppression espaces intérieur*/     
+    }
 
-        
-    }
-    .header  {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding:0;
-    }
+    /*-----------------------------------------------------------------------------------------*/
+    /*----------------------------- Header et navigation --------------------------------------*/
+    /*----------------------------------------------------------------------------------------*/
+
+    /*barre de navigation*/ 
     .nav-element {
-        display: flex;
-        align-items: center;
-        margin:0;
-        padding:1.1vw 0;
-        }
-    .nav-element:hover {
-        margin:0;
+        display: flex;/* utilise flexbox pour aligner les*/
+        align-items: center;/* Aligne les éléments enfants au centre de l'axe vertical  */
+        margin-top:1.8vw;/*espace supérieur correspondant à 1.8% de la largeur de l'écran*/
+        padding: 1vw 0;/*espace intérieur haut et bas correspondant à 1% de la largeur de l'écran*/ 
+        font-size: 1.2vh;/* taille de la police */
+    }
 
+    .nav-element:hover {
+        margin-top:1.8vw;
     }
         
-    
     .filter-button {
         height: 3vw;
     }
