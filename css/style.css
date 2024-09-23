@@ -25,7 +25,7 @@
     --main-color: #0065fc; /* Couleur principale utilisée pour les éléments importants (ex: texte, bordures) */
     --main-bg-color: #f2f2f2; /* Couleur de fond globale pour les sections */
     --filter-bg-color: #deebff; /* Couleur de fond spécifique pour les filtres */
-    --font-weight: 700; /*
+    --font-weight: 700; /* épaisseur de la police*/
 }
 
 /* Style des icônes Font Awesome */
@@ -39,9 +39,9 @@
 body {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
-    align-items: center;
-    box-sizing: border-box;
-    font-size: 1vw;
+    align-items: center; /* alignement du contenu dans la hauteur */
+    box-sizing: border-box; /* Utilise la méthode de calcul de la taille de la boîte pour inclure le padding et la bordure dans la largeur et la hauteur totales de l'élément. */
+    font-size: 1vw; /* taille de la police equivalent à 1% de la largeur du viewport */
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
@@ -84,13 +84,14 @@ a {
 
 /* Style de base des images cartes d 'activités*/
 .card2 img {
-    height: 25dvw;
-    width: 20dvw;
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-    object-fit: cover;
-    overflow: hidden;
+    height: 25vw; /*hauteur de base des images */
+    width: 20vw; /* largeur des images correspondant à 20 % de la largeur du viewport*/
+    border-top-left-radius: 1vw; /* coin  haut gauche arrondi correspondant à 1% de la largeur de l'écran*/
+    border-top-right-radius: 1vw; /*coin haut droit arrondi correspondant a 1% de la largeur de l'écran*/
+    object-fit: cover; /* Redimensionne l'élément pour couvrir entièrement le conteneur tout en préservant les proportions de l'image. */
+    overflow: hidden;  /* L'image remplit son conteneur sans être déformée */
 }
+
 
 /* Assure que les images des cartes conservent leurs proportions et remplissent bien l'espace */
 .card img {
@@ -100,20 +101,20 @@ a {
 /* Style des titres des cartes */
 .card-title {
     font-size: 1.2vw; /* Taille des titres des cartes */
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0; /* Suppression marge haute */
+    margin-bottom: 0; /* Suppression marge basse */
 }
 
 /**/
 .card-txt {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1dvw;
+    margin-top: 0; /* Suppression marge haute*/
+    margin-bottom: 0; /* Supression marge basse */
+    font-size: 1vw; /* taille de la police correspondant a 1% de la largeur de l'écran*/
 }
 
 /* Style des étoiles de notation*/
 .card-rating {
-    font-size: 1vw;
+    font-size: 1vw; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
 }
 
 /* Style renforcé pour affichage en gras*/
@@ -149,9 +150,10 @@ li {
     height: 4vw; /* Hauteur de 10% de la hauteur visible de la fenêtre */
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
     align-items: center; /* Centre verticalement les éléments */
-    gap: 20vw;
-    margin: 0;
-    justify-content: space-between;   
+    gap: 20vw; /* Définit un espacement de 20% de la largeur de la fenêtre entre les éléments dans un conteneur. */
+    margin: 0; /* Suppression de toutes les marges */
+    justify-content: space-between;  /* Aligne les éléments sur la ligne, avec un espace égal entre eux, poussant le premier et le dernier élément aux extrémités du conteneur. */
+
 }
 
 /* Style du logo */
@@ -163,13 +165,14 @@ li {
 .nav {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
     gap: 3vw; /* Crée un espace de 30% entre les éléments */
-    padding: 0;
-    align-items: center;
+    padding: 0; /* Supprime tout espacement intérieur autour de l'élément. */
+    align-items: center; /* Aligne les éléments enfants au centre dans la hauteur */
+
 }
 
 /* Style les elements de la barre de navigation*/
 .nav-element {
-    padding-top:1.4vw
+    padding-top:1.4vw /* Espacement intérieur haut correspondant  1.4% de la largeur de l'écran*/
 }
 
 /* Style des éléments du menu lors du survol */
@@ -182,22 +185,23 @@ li {
 /*--------------------------------Recherche-------------------------------------------------------------*/
 /*********************************************************************************************************/
 
-/**/
+/* Conteneur parent*/
 .research {
-    padding:2vw 0;
+    padding:2vw 0; /* Applique un remplissage de 2vw en haut et en bas, et aucun à gauche et à droite. */
+
 }
 
-/**/
+/* Style pour la zone de texte*/
 .research-txt p{
-    margin-top:0;
+    margin-top:0; /* Suppression de la marge haute*/
     
 }
 
-/**/
+/* Conteneur parent pour l'icône localisation*/
 .local {
-    display: flex;
-    height: 3vw;
-    width: 4vw;
+    display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
+    height: 3vw; /* hauteur correspondant à 3% de la largeur du viewport*/
+    width: 4vw; /**/
     border-radius: 1vw 0 0 1vw;
     background-color: var(--main-bg-color);
     align-items: center;
@@ -205,9 +209,9 @@ li {
 
 /**/
 .local i {
-    display: flex;
+    display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
     padding: 0 1vw;
-    align-items: center;
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     font-size: 1.3vw;
 }
 
@@ -215,8 +219,9 @@ li {
 .Search-bar {
     width: 25vw;
     height: 3vw;
-    display: flex;
-    align-items: center;
+    display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
+
     border:#d9d9d9 solid 0.1vw;
     border-radius: 1vw;
 }
@@ -230,14 +235,15 @@ li {
     border-bottom-right-radius: 1vw;
     border: none;
     height: 3vw;
-    display: flex;
-    align-items: center;
+    display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
+
     font-size: 1.2vw;
 }
 
 /* Style */
 .search-input {
-    display: flex;
+    display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     width: 15vw;
     height: 2.8vw;
     border: none;
@@ -1304,4 +1310,5 @@ li {
         width: 100%; /* Images des cartes prennent toute la largeur */
         height: 72%; /* Hauteur des images ajustée */
     }
+}
 }
