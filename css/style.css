@@ -636,10 +636,6 @@ li {
     /*----------------------------------------------------------------------------------------*/
     /*------------------------------------- Filtres-------------------------------------------*/
     /*----------------------------------------------------------------------------------------*/
-
-        
-        
-    
     .filter-button {
         height: 4vw;
     }
@@ -656,36 +652,43 @@ li {
     /*-------------------------------------------------------------------------------*/
     
     .activites-a-marseille .card2 {
-        height: 18vw; /* Ajuste la hauteur des cartes d'activités */
-        margin-bottom: 5vw;
+        height: 22vw; /* Ajuste la hauteur des cartes d'activités */
+        margin-bottom: 5vw;/*espace inférieur correspondant à 5% de la largeur de l 'écran */
+        filter: drop-shadow(
+        0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
+        );/* ajoute une ombre avec un décalage horizontale de 0, un décalage vertical de 1.8% , un flou de 0.9375 et une couleur noire avec une opacité de 10% */
     }
 
     .activites-a-marseille {
-        gap: 3vw; /* Ajoute un espacement entre les cartes d'activités */
+        gap: 2vw; /* Ajoute un espacement entre les cartes d'activités */
     }
 
-    .activites-a-marseille .card2 img {
-        height: 20vw; /* Ajuste la hauteur des images d'activités */
+    /* Ajustement de la police du titre h2 de la section activités*/
+    .activites h2 {
+    font-size: 1.5vw;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
     }
+    
 
     /*---------------------------------------------------------------------------------*/
     /*---------------------Section hébergements----------------------------------------*/
     /*---------------------------------------------------------------------------------*/
 
+    /*Conteneur hébergement*/
     .hebergements {
         width: 100%; /* Ajuste la largeur des cartes d'hébergements */
+        padding-top:2vw;/*Espace intérieur  haut correspondant à 2% de la largeur de l'écran*/
     }
 
+    /*Ajustement des cartes*/
     .hebergements .card {
-        width: 24vw;
-        height: 18vw;
-        display: flex;
-        justify-content: space-between; /* Ajuste la taille des cartes d'hébergements */
-    }
-    .hebergement .card-rating {
-        margin-top: 5vw;
+        width: 27vw;/* Longueur des cartes correspondant a 27% de la largeur de l'écran*/
+        height: 19vw;/* hauteur des cartes correspondant à 19 % de la hauteur de l'écran*/
     }
 
+    /*ajustement  des images*/
+    .hebergements .card img {
+        height: 70%; /* Ajuste la hauteur des images des cartes d'hébergements */
+    }
     .rangee {
         height: 21vw;
         display: flex;
