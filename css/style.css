@@ -260,7 +260,7 @@ li {
     height: 1.6vw; /* hauteur correspondant à 1.6%de la largeur de la fenêtre*/
     border: none;/* Pas de bordure*/
     text-align: center;  /* Alignement du texte dans la largeur de son conteneur*/
-    padding-top: 0.6vw;  /* Espacement intérieur haut correspondant à 0.6% de la largeur de l'écran*/
+    padding-bottom: 0.4vw;  /* Espacement intérieur haut correspondant à 0.6% de la largeur de l'écran*/
 }
 
 /* Style du placeholder */
@@ -656,24 +656,23 @@ li {
 
     /* Conteneur des filtres */
     .filter {
+        display: flex;
+        flex-direction: column; /* Place les éléments en colonne */
+        align-items: flex-start; /* Aligne les boutons à gauche */
+        }
+        .filter h3 {
+            padding: 0;
+            margin:0;
+        }
 
-    display: flex;
-    flex-direction: column; /* Place les éléments en colonne */
-    align-items: flex-start; /* Aligne les boutons à gauche */
-    }
-
-    .filter h3{
-        margin-bottom:1vw;
-    }
     /*Ajustement de la taille des boutons et du rayon des bords arrondis*/
     .filter-buttons  {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-
-        gap: 0.5vw; /* espace entre les boutons */
-        padding:0;
+        gap: 2vw; /* espace entre les boutons */
+        margin-bottom:2.5vw ;
     }
     /* Style général pour les boutons de filtres */
     .filter-button {
@@ -681,7 +680,10 @@ li {
         align-items: center;
         background-color: #fff;
     }
-    
+    .info {
+        margin-top: 5vw;
+    }
+
     /*-------------------------------------------------------------------------------*/
     /*--------------------- Conteneur Hebergemment et populaires --------------------*/
     /*-------------------------------------------------------------------------------*/
