@@ -471,9 +471,9 @@ li {
     border-radius: 1vw; /* Bords arrondis */
     box-shadow: 0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 9vw; /* hauteur de la carte */
-    padding: 0;
-    margin:0;
+    height: 9vw; /* hauteur de la carte correspondant 9 % de la largeur de l'écran */
+    padding: 0; /* supprime les espaces intérieurs*/
+    margin:0;/* supprime les marges */
     
 }
 
@@ -483,7 +483,7 @@ li {
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
     border-top-left-radius: 0.8vw; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 0.8vw; /* Arrondit le coin inférieur gauche */
-    margin:0.4vw;
+    margin:0.4vw; /*espace intérieur correspondant à 4% de la largeur de l'écran */
 }
 
 /* Contenu textuel des cartes Populaires */
@@ -491,38 +491,42 @@ li {
     width: 20vw; /* Le texte occupe 67% de la carte */
     display: flex;/* Utilise flexbox pour aligner les éléments*/
     flex-direction: column; /* Le texte est aligné verticalement */
-    margin: 0;
-    justify-content: center;
-
-    
-
+    margin: 0; /* Supprime les marges*/
+    justify-content: center;/* aligne les éléments au centre dans la hauteur*/
 }
-
+/* Conteneur parent comprenant le titre et le sous-titre*/
 .populaires-cards .card-txt{
-    padding:0;
-    margin-left: 0.5vw;
-    display: flex;
-    flex-direction: column;
+    padding:0;/*Suppression des espaces intérieurs*/
+    margin-left: 0.5vw;/* Espace intérieur gauche correspondant à 0.5% de la largeur total*/
+    display: flex;/* Utilise flexbox pour aligner les éléments*/
+    flex-direction: column;/* alignement en colonne */
 }
-/* Pas de marges pour le sous-titre des cartes */
+/* Style des sous titre pour les titre sur deux lignes */
 .populaires-cards .card-subtitle {
-    margin-top:0;
-    margin-bottom:2vw;
-    padding:0
+    margin-top:0;/* Supression de la marge haute*/
+    margin-bottom:2vw;/* espace bas correspondant à 2% de la largeur de l'écran*/
+    padding:0; /*suppression des espaces intérieurs*/
 }
+/*Style des titres sur deux lignes*/
 .populaires-cards .card-title {
     margin: 0; /* Supprime les marges */
-    padding:0;
-}.populaires-cards .card-rating {
-    margin:0.5vw
+    padding:0;  /*Supprime les espaces intérieurs*/
+}
 
+/* Style pour les étoiles*/
+.populaires-cards .card-rating {
+    margin:0.5vw;/*espace correspondant a 0.5% de la largeur de l'écran*/
 }
+
+/* Style pour les titres sur une lignes*/
 .populaires-cards .card-title1 {
-    margin-top:0.7vw
+    margin-top:0.7vw; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
 }
+
+/* Style pour les sous-titres des titres sur une lignes */
  .populaires-cards .card-subtitle1 {
-    margin-top:0;
-    margin-bottom:3.5vw;
+    margin-top:0;/* suppression de la marge haute*/
+    margin-bottom:3.5vw;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
  }
 /********************************************************************************************************/
 /* ---------------------- Section Activités à marseille -----------------------------------------------*/
