@@ -66,7 +66,7 @@ a {
 /* Style général des cartes sur le site */
 .card {
     background-color: white; /* Fond blanc pour les cartes */
-    border-radius: 1vw; /* Coins arrondis */
+    border-radius: 1.25vw; /* Coins arrondis */
     padding: 0.4125vw; /* Espace intérieur de la carte */
     filter: drop-shadow(
         0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
@@ -76,7 +76,7 @@ a {
 /* style 2 base pour les cartes activités*/
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
-    border-radius: 1vw; /* Coins arrondis */
+    border-radius: 1.25vw; /* Coins arrondis */
     filter: drop-shadow(
         0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
@@ -86,8 +86,8 @@ a {
 .card2 img {
     height: 25vw; /*hauteur de base des images */
     width: 20vw; /* largeur des images correspondant à 20 % de la largeur du viewport*/
-    border-top-left-radius: 1vw; /* coin  haut gauche arrondi correspondant à 1% de la largeur de l'écran*/
-    border-top-right-radius: 1vw; /*coin haut droit arrondi correspondant a 1% de la largeur de l'écran*/
+    border-top-left-radius: 1.25vw; /* coin  haut gauche arrondi correspondant à 1% de la largeur de l'écran*/
+    border-top-right-radius: 1.25vw; /*coin haut droit arrondi correspondant a 1% de la largeur de l'écran*/
     object-fit: cover; /* Redimensionne l'élément pour couvrir entièrement le conteneur tout en préservant les proportions de l'image. */
     overflow: hidden;  /* L'image remplit son conteneur sans être déformée */
 }
@@ -619,8 +619,6 @@ li {
         margin:0;/*suppression de marges*/
         padding:0;/*suppression espaces intérieur*/     
     }
-
-    
     /*-----------------------------------------------------------------------------------------*/
     /*----------------------------- Navigation --------------------------------------*/
     /*----------------------------------------------------------------------------------------*/
@@ -634,8 +632,8 @@ li {
         font-size: 1.2vh;/* taille de la police */
     }
 
-    /*  survol  barre de navigation*/
-    .nav-element:hover {
+    /*  active  barre de navigation*/
+    .nav-element:active {
         margin-top:1.8vw;/* espace supérieur correspondant à 1.8% de la larguer de l'écran*/
     } 
 
@@ -647,9 +645,12 @@ li {
     .Search-bar, .local, .search-button{
         height: 3.5vw;/* hauteur correspondant à 4 % de la largeur de l'écran*/
     }
+
+    /*ajustement zone de texte*/
     .search-input{
-        margin-bottom: 0.5vw;
+        margin-bottom: 0.2vw;/*espace supérieur correspondant à 0.5% de la largeur de l'écran*/
     }
+
     /*----------------------------------------------------------------------------------------*/
     /*------------------------------------- Filtres-------------------------------------------*/
     /*----------------------------------------------------------------------------------------*/
@@ -660,10 +661,10 @@ li {
         flex-direction: column; /* Place les éléments en colonne */
         align-items: flex-start; /* Aligne les boutons à gauche */
         }
-        .filter h3 {
-            padding: 0;
-            margin:0;
-        }
+    .filter h3 {
+        padding: 0;
+        margin:0;
+    }
 
     /*Ajustement de la taille des boutons et du rayon des bords arrondis*/
     .filter-buttons  {
@@ -680,10 +681,15 @@ li {
         align-items: center;
         background-color: #fff;
     }
+
+    .filter-button:active {
+        background-color: var(
+            --filter-bg-color
+        ); /* change la couleur du bouton au survol*/
+    }
     .info {
         margin-top: 5vw;
     }
-
     /*-------------------------------------------------------------------------------*/
     /*--------------------- Conteneur Hebergemment et populaires --------------------*/
     /*-------------------------------------------------------------------------------*/
