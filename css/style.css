@@ -471,8 +471,8 @@ li {
     border-radius: 1vw; /* Bords arrondis */
     box-shadow: 0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 9vw;
-    padding: 0 0.2vw;
+    height: 9vw; /* hauteur de la carte */
+    padding: 0;
     margin:0;
     
 }
@@ -483,7 +483,7 @@ li {
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
     border-top-left-radius: 0.8vw; /* Arrondit le coin supérieur gauche */
     border-bottom-left-radius: 0.8vw; /* Arrondit le coin inférieur gauche */
-    margin:0.2vw;
+    margin:0.4vw;
 }
 
 /* Contenu textuel des cartes Populaires */
@@ -518,11 +518,11 @@ li {
 
 }
 .populaires-cards .card-title1 {
-    margin-top:0.5vw
+    margin-top:0.7vw
 }
  .populaires-cards .card-subtitle1 {
-    margin-top: 0;
-    margin-bottom:3vw;
+    margin-top:0;
+    margin-bottom:3.5vw;
  }
 /********************************************************************************************************/
 /* ---------------------- Section Activités à marseille -----------------------------------------------*/
