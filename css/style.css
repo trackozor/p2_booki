@@ -205,6 +205,7 @@ li {
     border-radius: 1vw 0 0 1vw; /*Coin arrondis haut gauche et bas gauche correspond a 1% de la largeur de la fenêtre*/
     background-color: var(--main-bg-color);/* Couleur du fond */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
+    justify-content: center;
 }
 
 /* Style icône localisation */
@@ -240,22 +241,23 @@ li {
     font-size: 1.2vw;
 }
 
-/* Style */
+/* Style pour la zone de saisie */
 .search-input {
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
-    width: 15vw;
-    height: 2.8vw;
-    border: none;
-    text-align: center;    
+    width: 17vw; /*Largeur correspondant à 17% de la largeur de l'écran  */
+    height: 1.6vw; /* hauteur correspondant à 1.6%de la largeur de la fenêtre*/
+    border: none;/* Pas de bordure*/
+    text-align: center;  /* Alignement du texte dans la largeur de son conteneur*/
+    padding-top: 0.6vw;  /* Espacement intérieur haut correspondant à 0.6% de la largeur de l'écran*/
 }
 
 /* Style du placeholder */
 .search-input::placeholder {
-    color: #000;
-    font-weight: 900;
-    font-size: 1.2vw;
-    border:none;
-    height: 2.8vw;
+    color: #000;/*Couleur du texte*/
+    font-weight: 900;/* Mise en gras*/
+    font-size: 1.2vw;/* Taille de la police du texte*/
+    border:none;/*pas de bordure*/
+    height: 2.8vw;/* hauteur de la zone de texte*/
 }
 
 /**********************************************************************************************************/
@@ -267,34 +269,34 @@ li {
     display: flex; /* Flexbox pour aligner les éléments */
     gap: 1vw; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
-    height: 2vw;
-    margin-bottom: 1.5vw;
-    font-size: 1vw;
+    height: 2vw;/* Hauteur correspondant à 2% de la largeur de l'écran*/
+    margin-bottom: 1.5vw; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
+    font-size: 1vw;/* Taille de la police du mot filtre*/
 }
 
-/* Conteneur d'informations avec Flexbox */
+/* Conteneur d'informations */
 .info {
     display: flex; /* Flexbox pour aligner les informations */
-    align-items: center;
-    font-size: 1.2vw;
+    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
+    font-size: 1.2vw;/* Taille de la police */
 }
 
-/**/
+/* Style calque icône info personnalisé */
 .fa-layers {
-    display: inline-flex;
-    align-items: center;
+    display: inline-flex;/* Affiche l'élément en tant qu'élément flex en ligne, permettant un alignement horizontal des enfants */
+    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
     font-size: 1vw; /* Ajuste la taille de l'icône */
     margin-right: 1vw; /* Espace entre l'icône et le texte*/
-    justify-content: center;
+    justify-content: center;/* Centre les éléments  horizontalement . */
 }
 
 /* Style pour le cercle */
 .icon-circle {
-    position: absolute;
+    position: absolute; /* Positionne l'élément et le retire du flux pour permettre de pouvoir positionner un autre élément  */
     color: white; /* Couleur du cercle */
-    border: 0.2vw solid var(--filter-bg-color);
-    border-radius: 50%;
-    font-size: 1.6vw;
+    border: 0.2vw solid var(--filter-bg-color);/*bordure grise*/
+    border-radius: 50%;/* bordure circulaire */
+    font-size: 1.6vw;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
 }
 
 /* Style pour le "" */
