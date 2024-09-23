@@ -99,9 +99,10 @@ a {
 
 /* Style des titres des cartes */
 .card-title {
-    font-size: 1.2vw; /* Taille des titres des cartes */
+    font-size: 1.vw; /* Taille des titres des cartes */
     margin-top: 0; /* Suppression marge haute */
     margin-bottom: 0; /* Suppression marge basse */
+    font-size: 1.2vw;
 }
 
 /*Style du text a l intérieur de la carte*/
@@ -198,6 +199,8 @@ li {
     margin-bottom: 2vw;/**/
     
 }
+
+/* Style pour la zone de recherche*/
 .research-txt h2{
     margin-bottom: 0.5vw; /* Suppression de la marge basse*/
     font-size: 1.5vw; /* taille de la police correspondant a 1.5% de la largeur de l'écran*/
@@ -439,56 +442,73 @@ li {
 /* Section Populaires occupant 32% de la largeur */
 .populaires {
     width: 32vw; /* La section Populaires occupe 32% de la largeur de son parent */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;/* Utilise flexbox pour aligner les éléments*/
+    flex-direction: column;/* alignement en colonne*/
+    justify-content: space-between; /* Repartis également l 'espace entre ls éléments*/
 }
-
 /* Titre de la section Populaires avec icône */
 .populaires-title {
     display: flex; /* Aligne l'icône et le texte horizontalement */
     justify-content: space-between; /* Espace le texte et l'icône */
-    padding-top: 0.5vw;/**/;
+    padding-top: 0.2vw;/* Espace intérieur haut correspondant à 0.5% de la largeur de l'écran */;
 }
 
 /* Style des cartes dans la section Populaires */
+.populaires-cards{
+    display: flex;/* utilise flexbox pour aligner les éléments*/
+    flex-direction: column;/* Alignement en colonne */
+    gap: 1vw;/* Espace entre les cartes */
+    padding:0.2vw;/* Espace intérieur correspondant à 0.2% de la largeur total de l'écran*/  
+}
+
+/* Style de l intérieur cartes dans la section Populaires */
 .populaires-cards .card {
     display: flex; /* Aligne l'image et le texte en ligne */
     flex-direction: row; /* Aligne les éléments horizontalement */
     background-color: #fff; /* Fond blanc pour les cartes */
-    border-radius: 1rem; /* Bords arrondis */
-    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
+    border-radius: 1vw; /* Bords arrondis */
+    box-shadow: 0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
     height: 9vw;
-    margin-top: 1vw;
 }
 
 /* Style des images dans les cartes Populaires */
 .populaires-cards img {
     width: 10vw; /* L'image occupe 33% de la largeur de la carte */
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
-    border-top-left-radius: 1rem; /* Arrondit le coin supérieur gauche */
-    border-bottom-left-radius: 1rem; /* Arrondit le coin inférieur gauche */
+    border-top-left-radius: 0.8vw; /* Arrondit le coin supérieur gauche */
+    border-bottom-left-radius: 0.8vw; /* Arrondit le coin inférieur gauche */
 }
 
 /* Contenu textuel des cartes Populaires */
 .populaires-cards .card-content {
     width: 18vw; /* Le texte occupe 67% de la carte */
-    padding-left: 1vw; /* Espace entre l'image et le texte */
-    display: flex;
+    padding: 0.2vw 1vw; /* Espace entre l'image et le texte */
+    display: flex;/* Utilise flexbox pour aligner les éléments*/
     flex-direction: column; /* Le texte est aligné verticalement */
-    justify-content: space-between;
     margin-top: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 
+.populaires-cards .card-txt{
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
 /* Pas de marges pour le sous-titre des cartes */
 .populaires-cards .card-subtitle {
-    margin-top: 0; /* Supprime les marges */
-    padding-top: 0;
+    margin-top: 0.2vw; /* Supprime les marges */
+    margin-bottom: 3vw;
 }
 .populaires-cards .card-title {
     margin: 0; /* Supprime les marges */
+    padding:0;
 }
+
 
 /********************************************************************************************************/
 /* ---------------------- Section Activités à marseille -----------------------------------------------*/
