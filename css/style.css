@@ -526,16 +526,19 @@ li {
     margin:0.5vw;/*espace correspondant a 0.5% de la largeur de l'écran*/
 }
 
-/* Style pour les titres sur une lignes*/
-.populaires-cards .card-title1 {
-    margin-top:0.7vw; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
-}
 
+.populaires-cards .card-title1 {
+    margin-top:1.5vw; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
+    padding:0
+
+}
 /* Style pour les sous-titres des titres sur une lignes */
 .populaires-cards .card-subtitle1 {
     margin-top:0;/* suppression de la marge haute*/
-    margin-bottom:3.5vw;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
+    margin-bottom:2.5vw;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
 }
+
+
 /********************************************************************************************************/
 /* ---------------------- Section Activités à marseille -----------------------------------------------*/
 /*******************************************************************************************************/
@@ -631,11 +634,6 @@ li {
         padding: 1vw 0;/*espace intérieur haut et bas correspondant à 1% de la largeur de l'écran*/ 
         font-size: 1.2vh;/* taille de la police */
     }
-
-    /*  active  barre de navigation*/
-    .nav-element:active {
-        margin-top:1.8vw;/* espace supérieur correspondant à 1.8% de la larguer de l'écran*/
-    } 
 
     /*-----------------------------------------------------------------------------------------*/
     /*---------------------------- section recherche--------------------------------------------*/
@@ -746,39 +744,43 @@ li {
     /*--------------Section populaire-------------------------------------------------*/
     /*---------------------------------------------------------------------------------*/
 
+    /* Conteneur principale*/
     .populaires {
-        width: 100%; /* Ajuste la largeur des cartes populaires */
+        width: 100%; /* prend 100% de l'espace du conteneur parent*/
     }
     
-
+    /* Ajustement du conteneur des cartes*/
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 3vw; /* Ajuste l'espacement entre les cartes populaires */
-        margin: 0 2vw;
-        padding: 0;
-        justify-content: space-between;
-        
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
+        flex-direction: row;/* Aligenement en ligne*/ 
+        justify-content: space-between;/*Alignement avec espaces égaux des espaces*/  
+        padding:0 0.5vw;/*espace intérieur gauche et droite correspondant à 2% de la larger de l'écran */     
     }
 
+    /*Images*/
     .populaires-cards img {
         width: 10vw; /* Ajuste la largeur des images des cartes populaires */
     }
 
+    /* Cartes */
     .populaires-cards .card {
-        height: 15vw;
-        margin-top: 1vw; /* Ajuste l'espacement vertical pour les cartes populaires */
-        width: 26vw;
+        height: 14vw;/*Ajustement de la hauteur correspondant à 14 % de la largeur de l'écran*/
+        margin: 1.5vw 0; /* espace haut et bas correspondant à 1.5 de la largeur de l'écran */
+        width: 27vw;/* largeur correspondant à 27% de la largeur de l'écran*/
+    }
+    
+    /*Contenu de la carte a coté de l'image*/
+    .populaires-cards .card-content {
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
+        justify-content: space-between;/* aligne les éléments au centre dans la hauteur*/
     }
 
-    .populaires-cards .card-content {
-    width: 20vw; /* Le texte occupe 67% de la carte */
-    display: flex;/* Utilise flexbox pour aligner les éléments*/
-    flex-direction: column; /* Le texte est aligné verticalement */
-    margin: 0; /* Supprime les marges*/
-    justify-content: space space-between;/* aligne les éléments au centre dans la hauteur*/
-}
-
+    /*titres des sections hebergements et populaires*/
+    .populaires h2, .hebergements h2{
+        margin-top:1vw;/* Espace haut et bas correspondant à 1% de la largeur de l'écran*/
+        padding-left: 1vw;/*espace intérieur gauche correspondant à 1% de la largeur de l'écran*/
+        font-size: 1.6vw;/* Ajustement de la police correspondant à 1.6% de la largeur de l'écran*/
+    }
     /* Conteneur parent comprenant le titre et le sous-titre*/
     .populaires-cards .card-txt{
         padding:0;/*Suppression des espaces intérieurs*/
@@ -789,7 +791,7 @@ li {
 
     /* Style des sous titre pour les titre sur deux lignes */
     .populaires-cards .card-subtitle {
-        margin-top:0;/* Supression de la marge haute*/
+        margin-top:0.5vw;/* Supression de la marge haute*/
         margin-bottom:4vw;/* espace bas correspondant à 2% de la largeur de l'écran*/
         padding:0; /*suppression des espaces intérieurs*/
     }
@@ -802,26 +804,29 @@ li {
 
     /* Style pour les étoiles*/
     .populaires-cards .card-rating {
-        margin:0.;2vw
+        margin:0.2vw;
     }
 
     /* Style pour les titres sur une lignes*/
     .populaires-cards .card-title1 {
-        margin-top:0.2vw; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
+        margin-top:1.2vw; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
     }
 
     /* Style pour les sous-titres des titres sur une lignes */
     .populaires-cards .card-subtitle1 {
-        margin-top:0;/* suppression de la marge haute*/
-        margin-bottom:7.5vw;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
+        margin-top:0.5vw;/* suppression de la marge haute*/
+        margin-bottom:4.5vw;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
+    }
 
     /*---------------------------------------------------------------------------------*/
     /*-----------------------Footer ----------------------------------------------------------*/
     /*---------------------------------------------------------------------------------*/
     .footer {
         width: 90vw; /* Ajuste la largeur du footer */
+        font-size: 1vw;/*Ajustement de la police*/
+        gap:15vw;/* Ajustement de l'espace entre  les listes*/
     }
-    }
+}   
 /*------------------------------------------------------------------------------------------*/
 /*------------------------Mobile moins de 48rem en mode portrait----------------------------*/
 /*------------------------------------------------------------------------------------------*/
@@ -848,6 +853,7 @@ li {
     /*--------------------------------- Header -------------------------------------------*/
     /*---------------------------------------------------------------------------------*/
 
+    /*ajustement direction header*/
     .header {
         display: flex;
         flex-direction: column; /* Aligne les éléments du header verticalement */
@@ -857,6 +863,7 @@ li {
         align-items: center; /* Centre horizontalement les éléments */
     }
 
+    /* Ajustement logo*/
     .logo img {
         height: 3vh; /* Taille du logo ajustée en fonction de la hauteur de la fenêtre */
         margin: 2vh; /* Espace autour du logo */
@@ -879,6 +886,7 @@ li {
         height: 5vh; /* Hauteur de la barre de navigation */
     }
 
+    /* Style des éléments de la navigation */
     .nav-element {
         display: flex; /* Flexbox pour aligner les éléments de la navigation */
         font-size: 4vw; /* Taille de la police dépendant de la largeur de la fenêtre */
@@ -1420,9 +1428,9 @@ li {
     }
 
     .populaires-cards .card {
-        height: 20vw; /* Hauteur des cartes */
+        height: 2vh; /* Hauteur des cartes */
         margin: 2vw 0; /* Espacement vertical autour des cartes */
-        width:90vw;
+        width:8vw;
         
     }
 
