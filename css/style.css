@@ -194,8 +194,8 @@ li {
 /* Style pour la zone de texte*/
 .research-txt p{
     margin-top:0; /* Suppression de la marge haute*/
-    font-size: 1vw;
-    margin-bottom: 2vw;
+    font-size: 1vw;/* Taille de la police*/
+    margin-bottom: 2vw;/**/
     
 }
 .research-txt h2{
