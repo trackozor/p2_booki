@@ -66,7 +66,7 @@ a {
 /* Style général des cartes sur le site */
 .card {
     background-color: white; /* Fond blanc pour les cartes */
-    border-radius: 1rem; /* Coins arrondis */
+    border-radius: 1vw; /* Coins arrondis */
     padding: 0.3125rem; /* Espace intérieur de la carte */
     filter: drop-shadow(
         0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
@@ -76,7 +76,7 @@ a {
 /* style 2 base pour les cartes activités*/
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
-    border-radius: 1rem; /* Coins arrondis */
+    border-radius: 1vw; /* Coins arrondis */
     filter: drop-shadow(
         0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
     ); /* Ajoute une ombre légère sous la carte */
@@ -388,20 +388,20 @@ li {
     display: flex;/*Flexbox pour aligner les éléments*/
     flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
     height: 12vw;/* hauteur de la carte correspondant a 12% de la largeur de l'écran*/
-    width: 16.5vw;/*largaur des cartes correspondant à 16.5% de la largeur de l'écran*/
+    width: 16.5vw;/*largeur des cartes correspondant à 16.5% de la largeur de l'écran*/
 }
 
-/**/
+/* ligne tarifaire */
 .rangee .card-subtitle {
-    margin-top: 0;
-    margin-bottom: 1vw;
+    margin-top: 0;/*supprime la marge haute*/
+    margin-bottom: 1vw;/*marge basse correspondant a 1% de la largeur de la fenêtre*/
 }
 
-/**/
+/* Images */
 .rangee .card img {
-    height: 60%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    height: 60%;/* L'image prend 60% de la hauteur de la carte*/
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
     object-fit: cover;
 }
 
