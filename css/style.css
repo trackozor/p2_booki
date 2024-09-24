@@ -690,12 +690,13 @@ li {
     .hebergements-and-populaires {
         display: flex;/* Utilise flexbox pour aligner les éléments */
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées sur les tablettes */
-        width: 100%;/* largeur egale a la totalité du conteneur parent*/
+        width: 100%;/* largeur égale a la totalité du conteneur parent*/
     }
     /*-------------------------------------------------------------------------------*/
     /*------------------Section activités -------------------------------------------*/
     /*-------------------------------------------------------------------------------*/
     
+    /* Cartes*/
     .activites-a-marseille .card2 {
         height: 30vw; /* Ajuste la hauteur des cartes d'activités */
         margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l 'écran */
@@ -704,6 +705,7 @@ li {
         );/* ajoute une ombre avec un décalage horizontale de 0, un décalage vertical de 1.8% , un flou de 0.9375 et une couleur noire avec une opacité de 10% */
     }
 
+    /*ajustement conteneur parent*/
     .activites-a-marseille {
         gap: 2vw; /* Ajoute un espacement entre les cartes d'activités */
     }
@@ -713,7 +715,6 @@ li {
         font-size: 1.5vw;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
     }
     
-
     /*---------------------------------------------------------------------------------*/
     /*---------------------Section hébergements----------------------------------------*/
     /*---------------------------------------------------------------------------------*/
@@ -738,8 +739,8 @@ li {
     /*Ajustement des conteneur parent des cartes*/
     .rangee {
         height: 21vw;/* hauteur correspondant à 21 % de la largeur de l'écran*/
-        display: flex;
-        justify-content: space-between;
+        display: flex;/* Utilise flexbox pour aligner les éléments */
+        justify-content: space-between;/*repartis également les espaces*/
     }
 
     /*---------------------------------------------------------------------------------*/
@@ -846,6 +847,7 @@ li {
     /*------------------------- Conteneur principal--------------------------------------- */
     /*---------------------------------------------------------------------------------*/
 
+    /*Section principale*/
     .main-container {
         max-width: 100%; /* Prend toute la largeur de l'écran */
         padding:0; /* Pas de padding pour assurer que l'élément occupe toute la largeur */
@@ -857,7 +859,7 @@ li {
 
     /*ajustement direction header*/
     .header {
-        display: flex;
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
         flex-direction: column; /* Aligne les éléments du header verticalement */
         height: auto; /* Ajuste la hauteur automatiquement */
         gap: 0.5vh; /* Petit espace entre les éléments du header */
@@ -895,9 +897,10 @@ li {
         padding:0 5vh; /* Espacement horizontal autour de chaque élément */
         align-items: center; /* Centre verticalement les éléments dans la navigation */
         margin-bottom: 0.56vh; /* Petit espace sous chaque élément de navigation */
-        width: 50%;
+        width: 50%;/*l'élément prend la moitié du conteneur parent*/
     }
 
+    /* Ajustement barre survol*/
     .nav-element:hover {
         color: var(--main-color); /* Change la couleur du texte au survol */
         border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
@@ -912,13 +915,23 @@ li {
     /*---------------------------- Recherche---------------------- */
     /*--------------------------------------------------------------*/
 
+    /*conteneur parent*/
     .research {
-        margin: 0 auto; /* Centre la barre de recherche horizontalement */
+        display: block;
         width: 100%; /* Prend toute la largeur de l'écran */
     }
 
-    .research-txt p, h2 {
+    .research p {
         margin: 0.5vh; /* Marges pour les éléments de texte */
+        font-size: 1.6vh;
+        padding:0 4.5vh
+        }
+     
+    /**/
+    .research h2 {
+        font-size: 2vh;
+        display: flex;
+        text-align: center;
     }
 
     .Search-bar {
