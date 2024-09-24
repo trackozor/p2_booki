@@ -835,7 +835,7 @@ li {
 /*------------------------------------------------------------------------------------------*/
 /*------------------------Mobile moins de 48rem en mode portrait----------------------------*/
 /*------------------------------------------------------------------------------------------*/
-@media (min-width: 15rem) and (max-width: 47.99rem) {
+@media (min-width: 15rem) and (max-width: 47.99rem) and (orientation: portrait) {
     /* Style pour le corps de la page */
     body {
         padding: 0 0.1vh; /* Pas de padding nécessaire */
@@ -1241,21 +1241,34 @@ li {
     .activites-a-marseille .card2 {
         width: 35vh; /* Prend toute la largeur */
         height: 20vh; /* Hauteur des cartes d'activités */
+        border-radius: 2vh;/*ajustement des coins arrondis*/
     }
 
     /*Image*/
     .activites-a-marseille .card2 img {
+
         width: 100%; /* Images des cartes prennent toute la largeur */
         height: 75%; /* Hauteur des images ajustée */
-        }
+        border-radius: 2vh  2vh 0 0;/* Ajustement des coins arrondis*/
+    }
+
     /*-----------------------------------------------------------------------------------------------------*/
     /*----------------------------- Footer --------------------------------------------------------------- */
     /*-----------------------------------------------------------------------------------------------------*/
     
+    /*conteneur*/
     .footer {
         display: flex;
         flex-direction: column; /* Aligne les éléments du footer verticalement */
-        gap: 2vh; /* Espacement entre les éléments du footer */
+        gap: 1vh; /* Espacement entre les éléments du footer */
         width: 100%; /* Le footer prend toute la largeur */
+        margin-top: 5vh;
+    }
+    .footer ul {
+        padding:0;
+        margin-left:3vh
+    }
+    .footer ul li {
+        padding:0.5vh 0;;
     }
 }
