@@ -1518,8 +1518,8 @@ li {
     }
     /* Conteneur principale (section)*/
     .hebergements {
-        width: 100%; /* Prend toute la largeur disponible */
-        gap: 1vh;/*espace entre les éléments correspondant à 1% de la hauteur de l'écran*/
+        width: 100vw; /* Prend toute la largeur disponible */
+        gap: 1vw;/*espace entre les éléments correspondant à 1% de la hauteur de l'écran*/
         background-color: white;/*couleur de fond blanc*/
         
     }
@@ -1528,44 +1528,44 @@ li {
     .rangee {
         display: block; /* Affichage en bloc */
         height: auto; /* Ajustement de la hauteur automatiquement*/
-        width: 90%;/* Prend 902% de la largeur de son conteneur parent*/
-        padding:0 2vh;/* espace intérieur gauche et droite correspondant à 2% de la hauteur */
+        width: 95vw;/* Prend 90% de la largeur de son conteneur parent*/
+        padding:0 2vw;/* espace intérieur gauche et droite correspondant à 2% de la hauteur */
     }
 
     /*Cartes*/
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
-        height: 23vh; /* Hauteur des cartes */
-        margin-top: 1vh ; /* marge entre le titre et la première carte */
-        border-radius: 2vh;/* Ajustement des coins arrondis*/
+        height: 40vw; /* Hauteur des cartes */
+        margin-top: 1vw ; /* marge entre le titre et la première carte */
+        border-radius: 2vw;/* Ajustement des coins arrondis*/
     }
 
     /*Image*/
     .rangee .card img {
-        padding:0.5vh;/* Ajustemant espace intérieur*/
-        border-top-left-radius:1.8vh ;/* ajustement du coins arrondis haut gauche*/
-        border-top-right-radius: 1.8vh;/* ajustement du coin arrondis haut droit*/
+        padding:0.5vw;/* Ajustemant espace intérieur*/
+        border-top-left-radius:1.8vw ;/* ajustement du coins arrondis haut gauche*/
+        border-top-right-radius: 1.8vw;/* ajustement du coin arrondis haut droit*/
     }
 
     /*Titres*/
     .hebergement-content .card-title {
-        font-size: 2vh; /* Taille du titre des cartes */
-        padding-left: 0.5vh;/*Espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+        font-size: 2vw; /* Taille du titre des cartes */
+        padding-left: 0.5vw;/*Espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
     }   
 
     /* titre section */
     .hebergements-and-populaires h2 {
-        font-size: 2.2vh; /* Taille des titres de section */
-        padding-left:2vh ;/*espace intérieur gauche correspondant à 2% de la hauteur de l'écran*/
-        margin-top:2vh;/* marge supérieur correspondant à 2% de la hauteur de l'écran*/
+        font-size: 2.2vw; /* Taille des titres de section */
+        padding-left:2vw ;/*espace intérieur gauche correspondant à 2% de la hauteur de l'écran*/
+        margin-top:2vw;/* marge supérieur correspondant à 2% de la hauteur de l'écran*/
     }
 
     /*Sous-titres*/
     .hebergement-content .card-subtitle {
-        font-size: 1.4vh; /* Taille du sous-titre des cartes */
+        font-size: 1.4vw; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
-        padding-left: 0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
-        margin-bottom: 1.5vh;/*marge basse correspondant à 1.5% de la hauteur de l'écran*/
+        padding-left: 0.5vw;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+        margin-bottom: 1.5vw;/*marge basse correspondant à 1.5% de la hauteur de l'écran*/
     }
 
     /* Etoiles*/
@@ -1595,15 +1595,10 @@ li {
 
     /*icône statistique*/
     .custom-icon {
-        padding-right: 1vw;/*espace intérieur droit correspondant à 2% de la hauteur*/
-        padding-top: 1vw;/*espace supérieur correspondant à 2% de la hauteur*/
+        padding-right: 2vw;/*espace intérieur droit correspondant à 2% de la largeur*/
+        padding-top: 1vw;/*espace supérieur correspondant à 1% de la largeur*/
     }
-    /*conteneur des cartes*/
-    .populaires-cards{
-        display: flex;/*Utilise flexbox pour aligner les éléments*/
-        align-items: center;/*aligne a partir du centre*/
-    }
-
+    
     /*carte*/
     .populaires-cards .card {
         height: 16vw; /* Hauteur des cartes */
@@ -1640,16 +1635,19 @@ li {
 
     /*Etoiles*/
     .populaires-cards .card-rating {
-        font-size: 2vh; /* Taille de la notation des cartes populaires */
+        font-size: 2vw; /* Taille de la notation des cartes populaires */
     }
 
     /*image des cartes populaires*/
     .populaires-cards img {
-      width: 35%; /* Taille des images dans les cartes populaires */
-      padding: 0.4vh;/*espace intérieur correspondant à 0.4% de la hauteur de l'écran*/
-      border-radius: 1.6vh 0 0 1.6vh ;/*Ajustement visuel des coins arrondis*/
+        width: 40%; /* Taille des images dans les cartes populaires */
+        padding: 0.2vw;/*espace intérieur correspondant à 0.2% de la largeur de l'écran*/
+        border-radius: 1.6vw 0 0 1.6vw ;/*Ajustement visuel des coins arrondis*/
     }
-
+    .populaires h2{
+        font-size: 2vw;
+        padding-left: 2vw;
+    }
     /*-------------------------------------------------------------*/
     /*----------------------- Activités -----------------------------*/
     /*--------------------------------------------------------------*/
@@ -1658,35 +1656,36 @@ li {
     .activites-a-marseille {
         display: flex; /* Flexbox pour aligner les cartes */
         flex-direction: column; /* Aligne les cartes verticalement */
-        gap: 4vh; /* Espacement entre les cartes */
+        gap: 4vw; /* Espacement entre les cartes */
         width: 100%; /* Les cartes occupent toute la largeur */
         align-items: center;/*aligne les éléments depuis le centre */
     }
     /*titre section*/
     .activites h2{
-        font-size: 2.2vh; /* Taille des titres de section */
-        padding-left: 3vh;
-        margin-bottom:3vh
+        font-size: 2.2vw; /* Taille des titres de section */
+        padding-left: 3vw;/*espace intérieur gauche correspondant à 3% de la largeur de l'écran*/
+        margin-bottom:3vw;/*espace intérieur bas correspondant à 3% de la largeur de l'écran*/
     }
     /*titre carte*/
     .activites-a-marseille .card2 h3 {
-        font-size: 2vh; /* Taille des titres des cartes d'activités */
-        padding-left: 2vh;
+        font-size: 1.6vw; /* Taille des titres des cartes d'activités */
+        padding-left: 2vw;/*espace intérieur gauche correspondant à 2% de la largeur de l'écran*/
+        padding-top: 1vw;/*espace intérieur haute correspondant à 1% de la largeur de l'écran*/
     }
 
     /* carte*/
     .activites-a-marseille .card2 {
-        width: 35vh; /* Prend toute la largeur */
-        height: 20vh; /* Hauteur des cartes d'activités */
-        border-radius: 2vh;/*ajustement des coins arrondis*/
+        width: 90vw; /* Prend 90% de la largeur de l'écran */
+        height: 35vw; /* Hauteur des cartes d'activités */
+        border-radius: 2vw;/*ajustement des coins arrondis*/
     }
 
     /*Image*/
     .activites-a-marseille .card2 img {
 
         width: 100%; /* Images des cartes prennent toute la largeur */
-        height: 75%; /* Hauteur des images ajustée */
-        border-radius: 2vh  2vh 0 0;/* Ajustement des coins arrondis*/
+        height: 80%; /* Hauteur des images ajustée */
+        border-radius: 2vw  2vw 0 0;/* Ajustement des coins arrondis*/
     }
 
     /*-----------------------------------------------------------------------------------------------------*/
