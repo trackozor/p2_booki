@@ -1074,6 +1074,11 @@ li {
     /*--------Section hébergements ----------------------------------*/     
     /*--------------------------------------------------------------*/
     
+    /*section englobant section hébergement et populaires*/
+    .hebergements-and-populaires {
+        display: flex; /* Flexbox pour aligner les sections */
+        flex-direction: column-reverse; /* Affiche les sections en ordre inverse */
+    }
     /* Conteneur principale (section)*/
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
@@ -1095,13 +1100,16 @@ li {
         width: 100%; /* Chaque carte prend toute la largeur */
         height: 23vh; /* Hauteur des cartes */
         margin-top: 1vh ; /* marge entre le titre et la première carte */
-        border-radius: 1.5vh;/* Ajustement des coins arrondis*/
+        border-radius: 2vh;/* Ajustement des coins arrondis*/
     }
+
+    /*Image*/
     .rangee .card img {
         padding:0.5vh;/* Ajustemant espace intérieur*/
-        border-top-left-radius:1.3vh ;/* ajustement du coins arrondis haut gauche*/
-        border-top-right-radius: 1.3vh;/* ajustement du coin arrondis haut droit*/
+        border-top-left-radius:1.8vh ;/* ajustement du coins arrondis haut gauche*/
+        border-top-right-radius: 1.8vh;/* ajustement du coin arrondis haut droit*/
     }
+
     /*Titres*/
     .hebergement-content .card-title {
         font-size: 2vh; /* Taille du titre des cartes */
@@ -1112,7 +1120,7 @@ li {
     .hebergements-and-populaires h2 {
         font-size: 2.2vh; /* Taille des titres de section */
         padding-left:2vh ;/*espace intérieur gauche correspondant à 2% de la hauteur de l'écran*/
-        margin-top:2vh;
+        margin-top:2vh;/* marge supérieur correspondant à 2% de la hauteur de l'écran*/
     }
 
     /*Sous-titres*/
@@ -1120,38 +1128,46 @@ li {
         font-size: 1.4vh; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
         padding-left: 0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
-        margin-bottom: 1.5vh;
+        margin-bottom: 1.5vh;/*marge basse correspondant à 1.5% de la hauteur de l'écran*/
     }
 
+    /* Etoiles*/
     .hebergement-content .card-rating {
         font-size: 1.4vh; /* Taille de la notation */
-        padding-left:0.5vh;/**/
+        padding-left:0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
     }
 
-    .hebergements-and-populaires {
-        display: flex; /* Flexbox pour aligner les sections */
-        flex-direction: column-reverse; /* Affiche les sections en ordre inverse */
+    /*conteneur lien*/
+    .affichez_plus {
+        margin:2vh;/*marge Supérieure correspondant à 2% de la hauteur de l'écran */
+        font-size: 2vh; /* Taille du texte de "affichez plus" */
     }
 
-        .affichez_plus {
-            margin:2vh/*marge */
-        }
+    /*lien*/
+    .affichez_plus a {
+        font-size: 2vh; /* Taille du texte de "affichez plus" */
+    }
     /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
     /*--------------------------------------------------------------*/
 
+    /*Section*/
     .populaires {
         width: 100%; /* Prend toute la largeur de l'écran */
     }
 
-    .affichez_plus a {
-        font-size: 2vh; /* Taille du texte de "affichez plus" */
+    /*conteneur des cartes*/
+    .populaires-cards{
+        display: flex;/*Utilise flexbox pour aligner les éléments*/
+        align-items: center;/*aligne a partir du centre*/
     }
 
+    /*Contenu de la carte*/
     .populaires-cards .card {
         height: 16vh; /* Hauteur des cartes */
-        margin: 2vh 0; /* Espacement vertical autour des cartes */
-        width:98%
+        margin: 1vh 0; /* Espacement vertical autour des cartes */
+        width: 40vh;
+        border-radius: 2vh;
         
     }
 
