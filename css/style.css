@@ -946,18 +946,16 @@ li {
 
     /*conteneur icône localisation*/
     .local {
-        height: 5vh; /* Hauteur de l'icône de localisation */
-        margin: 0 auto; /* Centre horizontalement */
-        width: 4vh; /* Largeur de l'icône */
-        display: flex; /* Flexbox pour aligner l'icône */
-        align-items: center; /* Centre verticalement l'icône */
-        justify-content: center; /* Centre horizontalement l'icône */
+        height: 5vh; /* Hauteur correspondant à 5% de la hauteur de l'écran */
+        width: 6vh; /* Largeur de l'icône */
+        display: flex; /* Flexbox pour aligner */
+        align-items: center; /* Centre verticalement  */
+        justify-content: center; /* Centre horizontalement l icône */
     }
 
     /* icône localisation*/
     .local i {
         font-size: 2vh; /* Taille de l'icône */
-        padding: 0.5vh; /*espace intérieur gauche correspondant à 0.5 % de la hauteur de l'écran*/
     }
     /* Zone de saisie*/
     .search-input {
@@ -1013,8 +1011,14 @@ li {
         font-size: 1.6vh;
         height: auto;
     }
+    
+    .filter h3 {
+        margin-bottom: 2vh;
+        padding-left:2.5vh
+    }
+    
     .filter-button {
-        width: 17vh;
+        width: 18vh;
         height: 5vh; /* Hauteur du bouton */
         border-radius: 2.5vh; /* Bord arrondi */
         align-items: center; /* Centre verticalement le contenu */
@@ -1024,7 +1028,6 @@ li {
         font-size: 1.8vh;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
         gap: 1vh;/*Espace entre chaque éléments*/
         justify-content: center;
-        margin-bottom: ;
     }
     .filter-buttons {
         display: flex; /* Flexbox pour aligner les boutons de filtre */
