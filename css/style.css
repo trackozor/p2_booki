@@ -1359,7 +1359,7 @@ li {
 
     /*conteneur parent*/
     .research {
-        width: 100%; /* Prend toute la largeur de l'écran */
+        width: 95vw; /* Prend toute la largeur de l'écran */
     }
 
     /*Zone de texte*/
@@ -1367,12 +1367,14 @@ li {
         margin: 0.5vw ; /* Marges pour les éléments de texte */
         font-size: 1.6vw;/*ajustement de la police */
         display: block;/*alignement en bloc*/
+        padding-left: 1.5vw;
         }
 
     /* Titre */
     .research h2 {
         font-size: 2vw;/* Ajustement de la police correspondant à 2% de la largeur de l'écran*/
         display: flex;/* Utilise flexbox pour aligner les éléments*/
+        padding-left: 2vw;/*espace intérieur gauche correspondant à 2% de la largeur de l'écran*/
     }
 
     /*Conteneur de la barre de recherche*/
@@ -1535,7 +1537,7 @@ li {
     /*Cartes*/
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
-        height: 40vw; /* Hauteur des cartes */
+        height: 38vw; /* Hauteur des cartes */
         margin-top: 1vw ; /* marge entre le titre et la première carte */
         border-radius: 2vw;/* Ajustement des coins arrondis*/
     }
@@ -1565,24 +1567,24 @@ li {
         font-size: 1.4vw; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
         padding-left: 0.5vw;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
-        margin-bottom: 1.5vw;/*marge basse correspondant à 1.5% de la hauteur de l'écran*/
+        margin-bottom: 3vw;/*marge basse correspondant à 1.5% de la hauteur de l'écran*/
     }
 
     /* Etoiles*/
     .hebergement-content .card-rating {
-        font-size: 1.4vh; /* Taille de la notation */
-        padding-left:0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+        font-size: 1.4vw; /* Taille de la notation */
+        padding-left:0.5vw;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
     }
 
     /*conteneur lien*/
     .affichez_plus {
-        margin:2vh;/*marge Supérieure correspondant à 2% de la hauteur de l'écran */
-        font-size: 2vh; /* Taille du texte de "affichez plus" */
+        margin:2vw;/*marge Supérieure correspondant à 2% de la hauteur de l'écran */
+        font-size: 2vw; /* Taille du texte de "affichez plus" */
     }
 
     /*lien*/
     .affichez_plus a {
-        font-size: 2vh; /* Taille du texte de "affichez plus" */
+        font-size: 2vw; /* Taille du texte de "affichez plus" */
     }
     /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
@@ -1663,7 +1665,7 @@ li {
     /*titre section*/
     .activites h2{
         font-size: 2.2vw; /* Taille des titres de section */
-        padding-left: 3vw;/*espace intérieur gauche correspondant à 3% de la largeur de l'écran*/
+        padding-left: 4vw;/*espace intérieur gauche correspondant à 4% de la largeur de l'écran*/
         margin-bottom:3vw;/*espace intérieur bas correspondant à 3% de la largeur de l'écran*/
     }
     /*titre carte*/
@@ -1695,20 +1697,20 @@ li {
     /*conteneur*/
     .footer {
         display: flex;
-        flex-direction: column; /* Aligne les éléments du footer verticalement */
-        gap: 1vh; /* Espacement entre les éléments du footer */
+        flex-direction: row; /* Aligne les éléments du footer verticalement */
+        gap: 20vw; /* Espacement entre les éléments du footer */
         width: 100%; /* Le footer prend toute la largeur */
-        margin-top: 5vh;/*marge supérieur correspondant à 5% de la hauteur de l'écran*/
+        margin-top: 5vw;/*marge supérieur correspondant à 5% de la hauteur de l'écran*/
     }
 
     /*liste*/
     .footer ul {
         padding:0;
-        margin-left:3vh
+        margin-left:3vw
     }
 
     /*lien liste*/
     .footer ul li {
-        padding:0.5vh 0;;
+        padding:0.5vw 0;
     }
 }
