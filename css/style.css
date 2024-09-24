@@ -371,7 +371,7 @@ li {
 
 /* Style des sections Hébergements et Populaires */
 .hebergements-and-populaires section {
-    background-color: var(
+    /*background-color: var(
         --main-bg-color
     ); /* Fond gris clair pour les sections */
     border-radius: 1vw; /* Bords arrondis */
@@ -391,6 +391,9 @@ li {
     display: flex;/* Flexbox pour aligner les éléments */
     flex-direction: column;/*alignement en colonne*/
     width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
+    background-color: var(
+        --main-bg-color
+    ); /* Fond gris clair pour les sections */
 }
 
 /*Stule titre section hébergement*/
@@ -1028,56 +1031,63 @@ li {
         gap: 1vh;/*Espace entre chaque éléments*/
         justify-content: center;
     }
+
+    /*conteneur des boutons*/
     .filter-buttons {
         display: flex; /* Flexbox pour aligner les boutons de filtre */
         flex-wrap: wrap;/*- Permet aux éléments flex de passer à une nouvelle ligne si l'espace horizontal est insuffisant.*/
         gap:3vh;/*espace entre les boutons correspondant à 3% de la hauteur de l'écran*/
         justify-content: center;/*aligne les element a partir du centre*/
     }
+
     /*--------------------------------------------------------------------*/
     /*------------- Section Info -----------------------------------------*/
     /*--------------------------------------------------------------------*/
 
+    /* Conteneur parent pour les informations */
     .info {
         display: flex; /* Flexbox pour aligner les informations */
-        font-size: 1.4vh;
-        padding-left: 1vh;
+        font-size: 1.4vh;/* Ajustement de la taille de police*/
+        padding-left: 1vh;/**/
     }
 
+    /*ajustement du calque*/
     .fa-layers {
-        display: inline-flex;
-        align-items: center;
         font-size: 3vh; /* Ajuste la taille de l'icône */
         margin-right: 1vh; /* Espace entre l'icône et le texte*/
-        justify-content: center;
     }
 
     /* Style pour le cercle */
     .icon-circle {
-        position: absolute;
-        color: white; /* Couleur du cercle */
-        border: 0.1vh solid grey;
-        border-radius: 50%;
-        font-size: 2vh;
+        font-size: 2vh;/*Ajustement de la taille du cercle*/
     }
+
+    /* Icône*/
     .icon-info {
         font-size: 1vh; /* Taille du "i", plus petit que le cercle*/
     }
 
+    /* Texte*/
     .info p{
-        width:30vh;
-        display: block;
-        flex-wrap: wrap;
+        width:30vh;/*largeur du bloc*/
+        display: block;/*défini l’élément comme un bloc*/
+        flex-wrap: wrap;/*permet de passer à la ligne*/
     }
     /*--------------------------------------------------------------*/
     /*--------Section hébergements ----------------------------------*/     
     /*--------------------------------------------------------------*/
+    
+    /* Conteneur principale (section)*/
+    .hebergements-and-populaires section {
+        background-color: white;/* enlève le fond gris*/
+    }
 
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
         gap: 1vh;
         display: column;
         padding: 0;
+        
     }
 
     .rangee {
@@ -1122,9 +1132,12 @@ li {
     /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
     /*--------------------------------------------------------------*/
-
+    .populaires {
+        background-color: red;
+    }
     .populaires {
         width: 100%; /* Prend toute la largeur de l'écran */
+        display: block;
     }
 
     .affichez_plus a {
@@ -1410,6 +1423,10 @@ li {
     /*--------Section hébergements ----------------------------------*/  
     /*--------------------------------------------------------------*/
 
+    /**/
+    .hebergements-and-populaires section {
+        background-color: red;
+    }
     /**/
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
