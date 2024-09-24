@@ -1158,8 +1158,8 @@ li {
 
     /*icône statistique*/
     .custom-icon {
-        padding-right: 2vh;
-        padding-top: 2vh;
+        padding-right: 2vh;/*espace intérieur droit correspondant à 2% de la hauteur*/
+        padding-top: 2vh;/*espace supérieur correspondant à 2% de la hauteur*/
     }
     /*conteneur des cartes*/
     .populaires-cards{
@@ -1167,13 +1167,12 @@ li {
         align-items: center;/*aligne a partir du centre*/
     }
 
-    /*Contenu de la carte*/
+    /*carte*/
     .populaires-cards .card {
         height: 16vh; /* Hauteur des cartes */
-        margin: 1vh 0; /* Espacement vertical autour des cartes */
-        width: 40vh;
-        border-radius: 2vh;
-        
+        margin: 1vh ; /* Espacement vertical autour des cartes */
+        width: 38vh;/* largeur du contenu correspondant à 38% de la hauteur de l'écran  */
+        border-radius: 2vh;/* Ajustement visuel des coins arrondis*/
     }
 
     /*partie texte*/
@@ -1183,57 +1182,71 @@ li {
         display: flex; /* Flexbox pour aligner les éléments */
     }
 
+    /*titres*/
     .populaires-cards .card-title, .populaires-cards .card-title1, .populaires-cards .card-title2  {
-        font-size: 2vh; /* Taille du titre des cartes populaires */
+        font-size: 2vh; /* Taille du titre des cartes populaires correspondant à 2% de la hauteur de l'écran */
     }
 
+    /*Style 1 sous-titres*/
     .populaires-cards .card-subtitle {
         font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
-        margin-bottom: 4vh;
+        margin-bottom: 4vh;/* marge inférieur correspondant à 4% de la hauteur de l'écran*/
     }
 
+    /*Style 2 sous-titres*/
     .populaires-cards .card-subtitle1 {
         font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
-        margin-bottom: 6vh;
+        margin-bottom: 6vh;/*marge inférieur correspondant à 6% de la hauteur de l'écran*/
     }
+
+    /*Etoiles*/
     .populaires-cards .card-rating {
         font-size: 2vh; /* Taille de la notation des cartes populaires */
     }
 
+    /*image des cartes populaires*/
     .populaires-cards img {
       width: 35%; /* Taille des images dans les cartes populaires */
-      padding: 0.4vh;
-      border-radius: 1.6vh 0 0 1.6vh ;
+      padding: 0.4vh;/*espace intérieur correspondant à 0.4% de la hauteur de l'écran*/
+      border-radius: 1.6vh 0 0 1.6vh ;/*Ajustement visuel des coins arrondis*/
     }
 
     /*-------------------------------------------------------------*/
     /*----------------------- Activités -----------------------------*/
     /*--------------------------------------------------------------*/
     
+    /*Section*/
     .activites-a-marseille {
         display: flex; /* Flexbox pour aligner les cartes */
         flex-direction: column; /* Aligne les cartes verticalement */
-        gap: 4vw; /* Espacement entre les cartes */
+        gap: 4vh; /* Espacement entre les cartes */
         width: 100%; /* Les cartes occupent toute la largeur */
-        padding: 0 ; /* Espacement intérieur autour des cartes */
-        align-items: center;
+        align-items: center;/*aligne les éléments depuis le centre */
     }
-
+    /*titre section*/
+    .activites h2{
+        font-size: 2.2vh; /* Taille des titres de section */
+        padding-left: 3vh;
+        margin-bottom:3vh
+    }
+    /*titre carte*/
     .activites-a-marseille .card2 h3 {
         font-size: 2vh; /* Taille des titres des cartes d'activités */
         padding-left: 2vh;
     }
 
+    /* carte*/
     .activites-a-marseille .card2 {
-        width: 93vw; /* Prend toute la largeur */
-        height: 30vh; /* Hauteur des cartes d'activités */
+        width: 35vh; /* Prend toute la largeur */
+        height: 20vh; /* Hauteur des cartes d'activités */
     }
 
+    /*Image*/
     .activites-a-marseille .card2 img {
         width: 100%; /* Images des cartes prennent toute la largeur */
-        height: 72%; /* Hauteur des images ajustée */
+        height: 75%; /* Hauteur des images ajustée */
         }
     /*-----------------------------------------------------------------------------------------------------*/
     /*----------------------------- Footer --------------------------------------------------------------- */
