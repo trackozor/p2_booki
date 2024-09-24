@@ -1156,6 +1156,11 @@ li {
         width: 100%; /* Prend toute la largeur de l'écran */
     }
 
+    /*icône statistique*/
+    .custom-icon {
+        padding-right: 2vh;
+        padding-top: 2vh;
+    }
     /*conteneur des cartes*/
     .populaires-cards{
         display: flex;/*Utilise flexbox pour aligner les éléments*/
@@ -1171,28 +1176,36 @@ li {
         
     }
 
+    /*partie texte*/
     .populaires-cards .card-content {
         width: 60%; /* Largeur du contenu texte des cartes */
         padding-left: 1vh; /* Espace entre l'image et le texte */
         display: flex; /* Flexbox pour aligner les éléments */
     }
 
-    .populaires-cards .card-title {
+    .populaires-cards .card-title, .populaires-cards .card-title1, .populaires-cards .card-title2  {
         font-size: 2vh; /* Taille du titre des cartes populaires */
     }
 
     .populaires-cards .card-subtitle {
         font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
+        margin-bottom: 4vh;
     }
 
+    .populaires-cards .card-subtitle1 {
+        font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+        font-weight: 500; /* Semi-gras pour le sous-titre */
+        margin-bottom: 6vh;
+    }
     .populaires-cards .card-rating {
         font-size: 2vh; /* Taille de la notation des cartes populaires */
-
     }
 
     .populaires-cards img {
       width: 35%; /* Taille des images dans les cartes populaires */
+      padding: 0.4vh;
+      border-radius: 1.6vh 0 0 1.6vh ;
     }
 
     /*-------------------------------------------------------------*/
