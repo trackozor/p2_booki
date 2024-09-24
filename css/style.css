@@ -1262,12 +1262,456 @@ li {
         flex-direction: column; /* Aligne les éléments du footer verticalement */
         gap: 1vh; /* Espacement entre les éléments du footer */
         width: 100%; /* Le footer prend toute la largeur */
-        margin-top: 5vh;
+        margin-top: 5vh;/*marge supérieur correspondant à 5% de la hauteur de l'écran*/
     }
+
+    /*liste*/
     .footer ul {
         padding:0;
         margin-left:3vh
     }
+
+    /*lien liste*/
+    .footer ul li {
+        padding:0.5vh 0;;
+    }
+}
+/*------------------------------------------------------------------------------------------*/
+/*------------------------Mobile moins de 48rem en mode paysage----------------------------*/
+/*------------------------------------------------------------------------------------------*/
+@media (min-height: 15rem) and (max-height: 47.99rem) and (orientation: landscape) {
+    /* Style pour le corps de la page */
+    body {
+        padding: 0 0.1vw; /* Pas de padding nécessaire */
+        margin: 0 auto; /* Centrer le corps horizontalement */
+        font-size: 2vw; /* Police adaptée en fonction de la hauteur de la fenêtre */
+        height: auto; /* Hauteur ajustée automatiquement */
+    }
+    /*---------------------------------------------------------------------------------*/
+    /*------------------------- Conteneur principal--------------------------------------- */
+    /*---------------------------------------------------------------------------------*/
+
+    /*Section principale*/
+    .main-container {
+        max-width: 90vw; /* Prend toute la largeur de l'écran */
+        padding:0; /* Pas de padding pour assurer que l'élément occupe toute la largeur */
+        margin: 0 auto; /* Centrer le conteneur principal */
+    }
+    /*---------------------------------------------------------------------------------*/
+    /*--------------------------------- Header -------------------------------------------*/
+    /*---------------------------------------------------------------------------------*/
+
+    /*ajustement direction header*/
+    .header {
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
+        flex-direction: column; /* Aligne les éléments du header verticalement */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        gap: 2vw; /* Petit espace entre les éléments du header */
+        justify-content: center; /* Centre verticalement les éléments */
+        align-items: center; /* Centre horizontalement les éléments */
+    }
+
+    /* Ajustement logo*/
+    .logo img {
+        height: 5vw; /* Taille du logo ajustée en fonction de la hauteur de la fenêtre */
+        margin: 2vw; /* Espace autour du logo */
+    }
+
+    /*---------------------------------------------------------------------------------*/
+    /*------------------ Barre de navigation (hébergement/activités)-------------------*/
+    /*---------------------------------------------------------------------------------*/
+
+    /*-- conteneur parent --*/
+    .nav {
+        display: flex; /* Mise en page flexible pour les éléments de navigation */
+        flex-direction: row; /* Aligne les éléments de navigation en ligne */
+        justify-content: center; /* Centre les éléments de navigation horizontalement */
+        width: 100%; /* Prend toute la largeur de l'écran */
+        margin: 0 auto; /* Centrage du conteneur de navigation */
+        gap: 28vw; /* Espacement horizontal entre les éléments de navigation */
+        margin-bottom: 0.5vw; /* Espace sous la navigation */
+        align-items: center; /* Centre les éléments verticalement */
+        height: 5vh; /* Hauteur de la barre de navigation */
+    }
+
+    /* Style des éléments de la navigation */
+    .nav-element {
+        display: flex; /* Flexbox pour aligner les éléments de la navigation */
+        font-size: 3vw; /* Taille de la police dépendant de la largeur de la fenêtre */
+        padding:0 5vw; /* Espacement horizontal autour de chaque élément */
+        align-items: center; /* Centre verticalement les éléments dans la navigation */
+        margin-bottom: 0.5vw; /* Petit espace sous chaque élément de navigation */
+    }
+
+    /* Ajustement barre survol*/
+    .nav-element:hover {
+        color: var(--main-color); /* Change la couleur du texte au survol */
+        border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
+        padding-bottom: 0.9vh; /* Ajuste l'espace en bas lors du survol */
+        border-top:none;/*Supprssion bordure haute*/
+        align-items: center; /* Centre verticalement */
+        justify-content: space-between;/*répartis également les espaces*/
+    }
+
+    /*--------------------------------------------------------------*/
+    /*---------------------------- Recherche---------------------- */
+    /*--------------------------------------------------------------*/
+
+    /*conteneur parent*/
+    .research {
+        width: 100%; /* Prend toute la largeur de l'écran */
+    }
+
+    /*Zone de texte*/
+    .research p {
+        margin: 0.5vw ; /* Marges pour les éléments de texte */
+        font-size: 1.6vw;/*ajustement de la police */
+        display: block;/*alignement en bloc*/
+        }
+
+    /* Titre */
+    .research h2 {
+        font-size: 2vw;/* Ajustement de la police correspondant à 2% de la hauteur de l'écran*/
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
+    }
+
+    /*Conteneur de la barre de recherche*/
+    .Search-bar {
+        width: 90%; /* La barre de recherche prend toute la largeur */
+        height: 5vh; /* Hauteur de la barre de recherche */
+        margin: 3vh auto; /* Espace vertical autour de la barre */
+        display: flex; /* Flexbox pour aligner les éléments à l'intérieur */
+        border-radius: 1.25vh;/* ajustement des coins arrondis*/
+    }
+
+    /*conteneur icône localisation*/
+    .local {
+        height: 5vh; /* Hauteur correspondant à 5% de la hauteur de l'écran */
+        width: 6vh; /* Largeur de l'icône */
+        display: flex; /* Flexbox pour aligner */
+        align-items: center; /* Centre verticalement  */
+        justify-content: center; /* Centre horizontalement l icône */
+    }
+
+    /* icône localisation*/
+    .local i {
+        font-size: 2vh; /* Taille de l'icône */
+    }
+    /* Zone de saisie*/
+    .search-input {
+        display: flex; /* Flexbox pour aligner le champ de saisie */
+        height: 3vh; /* Hauteur du champ de saisie */
+        width: 100%; /* Prend toute la largeur disponible */
+        border: none; /* Pas de bordure */
+        text-align: center; /* Centre le texte dans le champ de saisie */
+    }
+
+    /* placeholder*/
+    .search-input::placeholder {
+        font-weight: 900; /* Texte en gras dans le placeholder */
+        font-size: 1.7vh; /* Taille du placeholder */
+        border: none; /* Pas de bordure pour le placeholder */
+        height: 4vh; /* Hauteur du texte du placeholder */
+    }
+
+    /* Affichage icône loupe*/
+    .search-button .search-icon {
+        display: inline; /* Affiche l'icône de recherche */
+        color: #f2f2f2; /* Couleur de l'icône */
+        font-size: 1.5vh; /* Taille de l'icône */
+        padding-left:0.5vh/*espace intérieur gauche correspondant à 1.5% de la hauteur de l’écran*/
+    }
+
+    /* désactivation texte*/
+    .search-button .search-txt {
+        display: none; /* Cache le texte sur mobile */
+    }
+
+    /* Style du bouton de recherche*/
+    .search-button {
+        height: 5vh; /* Hauteur du bouton */
+        margin: 0 auto; /* Centre le bouton horizontalement */
+        border-radius: 1.25vh; /* Coins arrondis du bouton */
+        width: 6vh; /* Largeur du bouton */
+        filter: drop-shadow(0 0.1875rem 2vh rgba(8, 8, 8, 0.2)); /* Ombre portée */
+        display: flex; /* Flexbox pour centrer l'icône à l'intérieur du bouton */
+        align-items: center; /* Centre verticalement l'icône */
+        justify-content: center; /* Centre horizontalement l'icône */
+    }
+
+    /*--------------------------------------------------------------*/
+    /*------------- Filtres ------------------------------------------*/
+    /*--------------------------------------------------------------*/
+
+    /*conteneur parent*/
+    .filter {
+        display: block; /* Flexbox pour aligner les éléments */
+        gap: 10vh; /* Espace entre les éléments correspondant à 10% de la hauteur de l'écran */
+        margin-bottom: 2.5vh;/*espace inférieur correspondant à 2.5% de la hauteur de l'écran*/
+        font-size: 1.6vh;/* Ajustement de la taille d ela police*/
+        height: auto;/*hauteur ajusté automatiquement*/
+    }
+    
+    /* Titre*/
+    .filter h3 {
+        margin-bottom: 2vh;/* marge inférieur correspondant à 2% de la hauteur de l'écran*/
+        padding-left:2.5vh;/*espace intérieur gauche correspondant à 2.5% la hauteur de l'écran */
+    }
+    
+    /* Bouton de filtre*/
+    .filter-button {
+        width: 18vh;/*largeur correspondant à 18% de la hauteur de l'écran*/
+        height: 5vh; /* Hauteur correspondant à 5% de la hauteur de l'écran */
+        border-radius: 2.5vh; /*  ajustement Bord arrondi */
+        padding: 0.5vh 0.5vh; /* Espacement intérieur du bouton */
+        font-size: 1.8vh;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
+        gap: 1vh;/*Espace entre chaque éléments*/
+        justify-content: center;
+    }
+
+    /*conteneur des boutons*/
+    .filter-buttons {
+        display: flex; /* Flexbox pour aligner les boutons de filtre */
+        flex-wrap: wrap;/*- Permet aux éléments flex de passer à une nouvelle ligne si l'espace horizontal est insuffisant.*/
+        gap:3vh;/*espace entre les boutons correspondant à 3% de la hauteur de l'écran*/
+        justify-content: center;/*aligne les element a partir du centre*/
+    }
+
+    /*--------------------------------------------------------------------*/
+    /*------------- Section Info -----------------------------------------*/
+    /*--------------------------------------------------------------------*/
+
+    /* Conteneur parent pour les informations */
+    .info {
+        display: flex; /* Flexbox pour aligner les informations */
+        font-size: 1.4vh;/* Ajustement de la taille de police*/
+        padding-left: 1vh;/*espace intérieur gauche correspondant à 1% de la hauteur de l'écran*/
+    }
+
+    /*ajustement du calque*/
+    .fa-layers {
+        font-size: 3vh; /* Ajuste la taille de l'icône */
+        margin-right: 1vh; /* Espace entre l'icône et le texte*/
+    }
+
+    /* Style pour le cercle */
+    .icon-circle {
+        font-size: 1.8vh;/*Ajustement de la taille du cercle*/
+    }
+
+    /* Icône*/
+    .icon-info {
+        font-size: 1vh; /* Taille du "i", plus petit que le cercle*/
+    }
+
+    /* Texte*/
+    .info p{
+        width:30vh;/*largeur du bloc*/
+        display: block;/*défini l’élément comme un bloc*/
+        flex-wrap: wrap;/*permet de passer à la ligne*/
+    }
+    /*--------------------------------------------------------------*/
+    /*--------Section hébergements ----------------------------------*/     
+    /*--------------------------------------------------------------*/
+    
+    /*section englobant section hébergement et populaires*/
+    .hebergements-and-populaires {
+        display: flex; /* Flexbox pour aligner les sections */
+        flex-direction: column-reverse; /* Affiche les sections en ordre inverse */
+    }
+    /* Conteneur principale (section)*/
+    .hebergements {
+        width: 100%; /* Prend toute la largeur disponible */
+        gap: 1vh;/*espace entre les éléments correspondant à 1% de la hauteur de l'écran*/
+        background-color: white;/*couleur de fond blanc*/
+        
+    }
+
+    /*conteneur parent contenant les cartes*/
+    .rangee {
+        display: block; /* Affichage en bloc */
+        height: auto; /* Ajustement de la hauteur automatiquement*/
+        width: 90%;/* Prend 902% de la largeur de son conteneur parent*/
+        padding:0 2vh;/* espace intérieur gauche et droite correspondant à 2% de la hauteur */
+    }
+
+    /*Cartes*/
+    .rangee .card {
+        width: 100%; /* Chaque carte prend toute la largeur */
+        height: 23vh; /* Hauteur des cartes */
+        margin-top: 1vh ; /* marge entre le titre et la première carte */
+        border-radius: 2vh;/* Ajustement des coins arrondis*/
+    }
+
+    /*Image*/
+    .rangee .card img {
+        padding:0.5vh;/* Ajustemant espace intérieur*/
+        border-top-left-radius:1.8vh ;/* ajustement du coins arrondis haut gauche*/
+        border-top-right-radius: 1.8vh;/* ajustement du coin arrondis haut droit*/
+    }
+
+    /*Titres*/
+    .hebergement-content .card-title {
+        font-size: 2vh; /* Taille du titre des cartes */
+        padding-left: 0.5vh;/*Espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+    }   
+
+    /* titre section */
+    .hebergements-and-populaires h2 {
+        font-size: 2.2vh; /* Taille des titres de section */
+        padding-left:2vh ;/*espace intérieur gauche correspondant à 2% de la hauteur de l'écran*/
+        margin-top:2vh;/* marge supérieur correspondant à 2% de la hauteur de l'écran*/
+    }
+
+    /*Sous-titres*/
+    .hebergement-content .card-subtitle {
+        font-size: 1.4vh; /* Taille du sous-titre des cartes */
+        font-weight: 500; /* Semi-gras pour les sous-titres */
+        padding-left: 0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+        margin-bottom: 1.5vh;/*marge basse correspondant à 1.5% de la hauteur de l'écran*/
+    }
+
+    /* Etoiles*/
+    .hebergement-content .card-rating {
+        font-size: 1.4vh; /* Taille de la notation */
+        padding-left:0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+    }
+
+    /*conteneur lien*/
+    .affichez_plus {
+        margin:2vh;/*marge Supérieure correspondant à 2% de la hauteur de l'écran */
+        font-size: 2vh; /* Taille du texte de "affichez plus" */
+    }
+
+    /*lien*/
+    .affichez_plus a {
+        font-size: 2vh; /* Taille du texte de "affichez plus" */
+    }
+    /*--------------------------------------------------------------*/
+    /*----------------------- Section Populaires --------------------*/
+    /*--------------------------------------------------------------*/
+
+    /*Section*/
+    .populaires {
+        width: 100%; /* Prend toute la largeur de l'écran */
+    }
+
+    /*icône statistique*/
+    .custom-icon {
+        padding-right: 2vh;/*espace intérieur droit correspondant à 2% de la hauteur*/
+        padding-top: 2vh;/*espace supérieur correspondant à 2% de la hauteur*/
+    }
+    /*conteneur des cartes*/
+    .populaires-cards{
+        display: flex;/*Utilise flexbox pour aligner les éléments*/
+        align-items: center;/*aligne a partir du centre*/
+    }
+
+    /*carte*/
+    .populaires-cards .card {
+        height: 16vh; /* Hauteur des cartes */
+        margin: 1vh ; /* Espacement vertical autour des cartes */
+        width: 38vh;/* largeur du contenu correspondant à 38% de la hauteur de l'écran  */
+        border-radius: 2vh;/* Ajustement visuel des coins arrondis*/
+    }
+
+    /*partie texte*/
+    .populaires-cards .card-content {
+        width: 60%; /* Largeur du contenu texte des cartes */
+        padding-left: 1vh; /* Espace entre l'image et le texte */
+        display: flex; /* Flexbox pour aligner les éléments */
+    }
+
+    /*titres*/
+    .populaires-cards .card-title, .populaires-cards .card-title1, .populaires-cards .card-title2  {
+        font-size: 2vh; /* Taille du titre des cartes populaires correspondant à 2% de la hauteur de l'écran */
+    }
+
+    /*Style 1 sous-titres*/
+    .populaires-cards .card-subtitle {
+        font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+        font-weight: 500; /* Semi-gras pour le sous-titre */
+        margin-bottom: 4vh;/* marge inférieur correspondant à 4% de la hauteur de l'écran*/
+    }
+
+    /*Style 2 sous-titres*/
+    .populaires-cards .card-subtitle1 {
+        font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+        font-weight: 500; /* Semi-gras pour le sous-titre */
+        margin-bottom: 6vh;/*marge inférieur correspondant à 6% de la hauteur de l'écran*/
+    }
+
+    /*Etoiles*/
+    .populaires-cards .card-rating {
+        font-size: 2vh; /* Taille de la notation des cartes populaires */
+    }
+
+    /*image des cartes populaires*/
+    .populaires-cards img {
+      width: 35%; /* Taille des images dans les cartes populaires */
+      padding: 0.4vh;/*espace intérieur correspondant à 0.4% de la hauteur de l'écran*/
+      border-radius: 1.6vh 0 0 1.6vh ;/*Ajustement visuel des coins arrondis*/
+    }
+
+    /*-------------------------------------------------------------*/
+    /*----------------------- Activités -----------------------------*/
+    /*--------------------------------------------------------------*/
+    
+    /*Section*/
+    .activites-a-marseille {
+        display: flex; /* Flexbox pour aligner les cartes */
+        flex-direction: column; /* Aligne les cartes verticalement */
+        gap: 4vh; /* Espacement entre les cartes */
+        width: 100%; /* Les cartes occupent toute la largeur */
+        align-items: center;/*aligne les éléments depuis le centre */
+    }
+    /*titre section*/
+    .activites h2{
+        font-size: 2.2vh; /* Taille des titres de section */
+        padding-left: 3vh;
+        margin-bottom:3vh
+    }
+    /*titre carte*/
+    .activites-a-marseille .card2 h3 {
+        font-size: 2vh; /* Taille des titres des cartes d'activités */
+        padding-left: 2vh;
+    }
+
+    /* carte*/
+    .activites-a-marseille .card2 {
+        width: 35vh; /* Prend toute la largeur */
+        height: 20vh; /* Hauteur des cartes d'activités */
+        border-radius: 2vh;/*ajustement des coins arrondis*/
+    }
+
+    /*Image*/
+    .activites-a-marseille .card2 img {
+
+        width: 100%; /* Images des cartes prennent toute la largeur */
+        height: 75%; /* Hauteur des images ajustée */
+        border-radius: 2vh  2vh 0 0;/* Ajustement des coins arrondis*/
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*----------------------------- Footer --------------------------------------------------------------- */
+    /*-----------------------------------------------------------------------------------------------------*/
+    
+    /*conteneur*/
+    .footer {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments du footer verticalement */
+        gap: 1vh; /* Espacement entre les éléments du footer */
+        width: 100%; /* Le footer prend toute la largeur */
+        margin-top: 5vh;/*marge supérieur correspondant à 5% de la hauteur de l'écran*/
+    }
+
+    /*liste*/
+    .footer ul {
+        padding:0;
+        margin-left:3vh
+    }
+
+    /*lien liste*/
     .footer ul li {
         padding:0.5vh 0;;
     }
