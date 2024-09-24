@@ -921,9 +921,10 @@ li {
 
     /*Zone de texte*/
     .research p {
-        margin: 0.5vh; /* Marges pour les éléments de texte */
+        margin: 0.5vh ; /* Marges pour les éléments de texte */
         font-size: 1.6vh;/*ajustement de la police */
-        padding:0 4.5vh;/* Espace intérieur gauche et droite correspondant à 4.5% de la hauteur de l'écran*/
+        display: block;/*alignement en bloc*/
+        text-align: center;/* Alignement du texte  (prise de liberté)*/
         }
 
 
@@ -934,15 +935,16 @@ li {
         text-align: center;/* Prise de liberté pour aligner les deux lignes à partir du centre*/
     }
 
-    /**/
+    /*Conteneur de la barre de recherche*/
     .Search-bar {
         width: 90%; /* La barre de recherche prend toute la largeur */
         height: 5vh; /* Hauteur de la barre de recherche */
         margin: 3vh auto; /* Espace vertical autour de la barre */
         display: flex; /* Flexbox pour aligner les éléments à l'intérieur */
-        border-radius: 1.25vh;
+        border-radius: 1.25vh;/* ajustement des coins arrondis*/
     }
 
+    /*conteneur icône localisation*/
     .local {
         height: 5vh; /* Hauteur de l'icône de localisation */
         margin: 0 auto; /* Centre horizontalement */
@@ -952,11 +954,12 @@ li {
         justify-content: center; /* Centre horizontalement l'icône */
     }
 
+    /* icône localisation*/
     .local i {
         font-size: 2vh; /* Taille de l'icône */
-        padding: 0.5vh;
+        padding: 0.5vh; /*espace intérieur gauche correspondant à 0.5 % de la hauteur de l'écran*/
     }
-
+    /* Zone de saisie*/
     .search-input {
         display: flex; /* Flexbox pour aligner le champ de saisie */
         height: 3vh; /* Hauteur du champ de saisie */
@@ -965,12 +968,15 @@ li {
         text-align: center; /* Centre le texte dans le champ de saisie */
     }
 
+    /* placeholder*/
     .search-input::placeholder {
         font-weight: 900; /* Texte en gras dans le placeholder */
         font-size: 1.7vh; /* Taille du placeholder */
         border: none; /* Pas de bordure pour le placeholder */
         height: 4vh; /* Hauteur du texte du placeholder */
     }
+
+    /* Affichage icône loupe*/
     .search-button .search-icon {
         display: inline; /* Affiche l'icône de recherche */
         color: #f2f2f2; /* Couleur de l'icône */
@@ -978,10 +984,12 @@ li {
         padding-left:0.5vh/*espace intérieur gauche correspondant à 1.5% de la hauteur de l’écran*/
     }
 
+    /* désactivation texte*/
     .search-button .search-txt {
         display: none; /* Cache le texte sur mobile */
     }
 
+    /* Style du bouton de recherche*/
     .search-button {
         height: 5vh; /* Hauteur du bouton */
         margin: 0 auto; /* Centre le bouton horizontalement */
@@ -999,12 +1007,32 @@ li {
 
     .filter {
         display: block; /* Flexbox pour aligner les éléments */
-        gap: 1vw; /* Espace de 2rem entre les éléments */
-        align-items: center; /* Centre verticalement les éléments */
-        margin-bottom: 1.5vw;
-        font-size: 1vw;
+        flex-direction: c;
+        gap: 10vh; /* Espace de 2rem entre les éléments */
+        margin-bottom: 2.5vh;
+        font-size: 1.6vh;
+        height: auto;
     }
-
+    .filter-button {
+        width: 17vh;
+        height: 5vh; /* Hauteur du bouton */
+        border-radius: 2.5vh; /* Bord arrondi */
+        align-items: center; /* Centre verticalement le contenu */
+        background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
+        border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
+        padding: 0.5vh 0.5vh; /* Espacement intérieur du bouton */
+        font-size: 1.8vh;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
+        gap: 1vh;/*Espace entre chaque éléments*/
+        justify-content: center;
+        margin-bottom: ;
+    }
+    .filter-buttons {
+        display: flex; /* Flexbox pour aligner les boutons de filtre */
+        flex-wrap: wrap;
+        gap:3vh;
+        justify-content: center;
+        margin-bottom: auto;
+    }
     /*--------------------------------------------------------------------*/
     /*------------- Section Info -----------------------------------------*/
     /*--------------------------------------------------------------------*/
@@ -1012,7 +1040,7 @@ li {
     .info {
         display: flex; /* Flexbox pour aligner les informations */
         align-items: center;
-        font-size: 1vw;
+        font-size: 1vh;
     }
 
     .fa-layers {
