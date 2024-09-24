@@ -688,17 +688,17 @@ li {
     /*--------------------- Conteneur Hebergemment et populaires --------------------*/
     /*-------------------------------------------------------------------------------*/
     .hebergements-and-populaires {
-        display: flex;
+        display: flex;/* Utilise flexbox pour aligner les éléments */
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées sur les tablettes */
-        width: 100%;
+        width: 100%;/* largeur egale a la totalité du conteneur parent*/
     }
     /*-------------------------------------------------------------------------------*/
     /*------------------Section activités -------------------------------------------*/
     /*-------------------------------------------------------------------------------*/
     
     .activites-a-marseille .card2 {
-        height: 22vw; /* Ajuste la hauteur des cartes d'activités */
-        margin-bottom: 5vw;/*espace inférieur correspondant à 5% de la largeur de l 'écran */
+        height: 30vw; /* Ajuste la hauteur des cartes d'activités */
+        margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l 'écran */
         filter: drop-shadow(
         0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
         );/* ajoute une ombre avec un décalage horizontale de 0, un décalage vertical de 1.8% , un flou de 0.9375 et une couleur noire avec une opacité de 10% */
@@ -734,8 +734,10 @@ li {
     .hebergements .card img {
         height: 70%; /* Ajuste la hauteur des images des cartes d'hébergements */
     }
+
+    /*Ajustement des conteneur parent des cartes*/
     .rangee {
-        height: 21vw;
+        height: 21vw;/* hauteur correspondant à 21 % de la largeur de l'écran*/
         display: flex;
         justify-content: space-between;
     }
