@@ -1076,28 +1076,27 @@ li {
     /*--------------------------------------------------------------*/
     
     /* Conteneur principale (section)*/
-    
-
     .hebergements {
         width: 100%; /* Prend toute la largeur disponible */
-        gap: 1vh;
-        padding: 0;
-        background-color: white;
+        gap: 1vh;/*espace entre les éléments correspondant à 1% de la hauteur de l'écran*/
+        background-color: white;/*couleur de fond blanc*/
         
     }
 
+    /*conteneur parent contenant les cartes*/
     .rangee {
         display: block; /* Affichage en bloc */
-        height: auto; 
-        justify-content: space-between;/* Hauteur ajustée automatiquement */
-        width: 98%;
-        padding:0;
+        height: auto; /* Ajustement de la hauteur automatiquement*/
+        width: 90%;/* Prend 902% de la largeur de son conteneur parent*/
+        padding:0 2vh;/* espace intérieur gauche et droite correspondant à 2% de la hauteur */
     }
 
+    
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
         height: 23vh; /* Hauteur des cartes */
         margin-top: 3vh ; /* Espacement vertical autour des cartes */
+        border-radius: 1.25vh;
     }
     .hebergement-content .card-title {
         font-size: 2vh; /* Taille du titre des cartes */
