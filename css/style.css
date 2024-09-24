@@ -345,7 +345,7 @@ li {
 .icon-circle {
     position: absolute; /* Positionne l'élément et le retire du flux pour permettre de pouvoir positionner un autre élément  */
     color: white; /* Couleur du cercle */
-    border: 0.2vw solid var(--filter-bg-color);/*bordure grise*/
+    border: 0.2vw solid gray;/*bordure grise*/
     border-radius: 50%;/* bordure circulaire */
     font-size: 1.6vw;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
 }
@@ -612,7 +612,7 @@ li {
 /*------------------------------------------------------------------------------------------*/
 /*------------------------Tablettes (entre 48rem et 64rem) ---------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
-@media (min-width: 48rem) and (max-width: 63.99rem) { 
+@media (min-width: 48rem) and (max-width: 63.99rem)  { 
     /*Style du corps adaptation des valeurs par défaut*/
     body {
         display: flex;/* Utilise flexbox pour aligner les éléments*/
@@ -1003,27 +1003,26 @@ li {
     /*------------- Filtres ------------------------------------------*/
     /*--------------------------------------------------------------*/
 
+    /*conteneur parent*/
     .filter {
         display: block; /* Flexbox pour aligner les éléments */
-        flex-direction: c;
-        gap: 10vh; /* Espace de 2rem entre les éléments */
-        margin-bottom: 2.5vh;
-        font-size: 1.6vh;
-        height: auto;
+        gap: 10vh; /* Espace entre les éléments correspondant à 10% de la hauteur de l'écran */
+        margin-bottom: 2.5vh;/*espace inférieur correspondant à 2.5% de la hauteur de l'écran*/
+        font-size: 1.6vh;/* Ajustement de la taille d ela police*/
+        height: auto;/*hauteur ajusté automatiquement*/
     }
     
+    /* Titre*/
     .filter h3 {
-        margin-bottom: 2vh;
-        padding-left:2.5vh
+        margin-bottom: 2vh;/* marge inférieur correspondant à 2% de la hauteur de l'écran*/
+        padding-left:2.5vh;/*espace intérieur gauche correspondant à 2.5% la hauteur de l'écran */
     }
     
+    /* Bouton de filtre*/
     .filter-button {
-        width: 18vh;
-        height: 5vh; /* Hauteur du bouton */
-        border-radius: 2.5vh; /* Bord arrondi */
-        align-items: center; /* Centre verticalement le contenu */
-        background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
-        border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
+        width: 18vh;/*largeur correspondant à 18% de la hauteur de l'écran*/
+        height: 5vh; /* Hauteur correspondant à 5% de la hauteur de l'écran */
+        border-radius: 2.5vh; /*  ajustement Bord arrondi */
         padding: 0.5vh 0.5vh; /* Espacement intérieur du bouton */
         font-size: 1.8vh;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
         gap: 1vh;/*Espace entre chaque éléments*/
@@ -1031,10 +1030,9 @@ li {
     }
     .filter-buttons {
         display: flex; /* Flexbox pour aligner les boutons de filtre */
-        flex-wrap: wrap;
-        gap:3vh;
-        justify-content: center;
-        margin-bottom: auto;
+        flex-wrap: wrap;/*- Permet aux éléments flex de passer à une nouvelle ligne si l'espace horizontal est insuffisant.*/
+        gap:3vh;/*espace entre les boutons correspondant à 3% de la hauteur de l'écran*/
+        justify-content: center;/*aligne les element a partir du centre*/
     }
     /*--------------------------------------------------------------------*/
     /*------------- Section Info -----------------------------------------*/
@@ -1042,15 +1040,15 @@ li {
 
     .info {
         display: flex; /* Flexbox pour aligner les informations */
-        align-items: center;
-        font-size: 1vh;
+        font-size: 1.4vh;
+        padding-left: 1vh;
     }
 
     .fa-layers {
         display: inline-flex;
         align-items: center;
-        font-size: 1vw; /* Ajuste la taille de l'icône */
-        margin-right: 1vw; /* Espace entre l'icône et le texte*/
+        font-size: 3vh; /* Ajuste la taille de l'icône */
+        margin-right: 1vh; /* Espace entre l'icône et le texte*/
         justify-content: center;
     }
 
@@ -1058,11 +1056,19 @@ li {
     .icon-circle {
         position: absolute;
         color: white; /* Couleur du cercle */
-        border: 0.2rem solid var(--main-bg-color);
+        border: 0.1vh solid grey;
         border-radius: 50%;
-        font-size: 1.6vw;
+        font-size: 2vh;
+    }
+    .icon-info {
+        font-size: 1vh; /* Taille du "i", plus petit que le cercle*/
     }
 
+    .info p{
+        width:30vh;
+        display: block;
+        flex-wrap: wrap;
+    }
     /*--------------------------------------------------------------*/
     /*--------Section hébergements ----------------------------------*/     
     /*--------------------------------------------------------------*/
