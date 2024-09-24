@@ -905,10 +905,9 @@ li {
         color: var(--main-color); /* Change la couleur du texte au survol */
         border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
         padding-bottom: 0.9vh; /* Ajuste l'espace en bas lors du survol */
-        border-top:none;
+        border-top:none;/*Supprssion bordure haute*/
         align-items: center; /* Centre verticalement */
-        justify-content: space-between;
-        width:50%
+        justify-content: space-between;/*répartis également les espaces*/
     }
 
     /*--------------------------------------------------------------*/
@@ -917,32 +916,35 @@ li {
 
     /*conteneur parent*/
     .research {
-        display: block;
         width: 100%; /* Prend toute la largeur de l'écran */
     }
 
+    /*Zone de texte*/
     .research p {
         margin: 0.5vh; /* Marges pour les éléments de texte */
-        font-size: 1.6vh;
-        padding:0 4.5vh
+        font-size: 1.6vh;/*ajustement de la police */
+        padding:0 4.5vh;/* Espace intérieur gauche et droite correspondant à 4.5% de la hauteur de l'écran*/
         }
-     
-    /**/
+
+
+    /* Titre */
     .research h2 {
-        font-size: 2vh;
-        display: flex;
-        text-align: center;
+        font-size: 2vh;/* Ajustement de la police correspondant à 2% de la hauteur de l'écran*/
+        display: flex;/* Utilise flexbox pour aligner les éléments*/
+        text-align: center;/* Prise de liberté pour aligner les deux lignes à partir du centre*/
     }
 
+    /**/
     .Search-bar {
-        width: 80%; /* La barre de recherche prend toute la largeur */
-        height: 4vh; /* Hauteur de la barre de recherche */
+        width: 90%; /* La barre de recherche prend toute la largeur */
+        height: 5vh; /* Hauteur de la barre de recherche */
         margin: 3vh auto; /* Espace vertical autour de la barre */
         display: flex; /* Flexbox pour aligner les éléments à l'intérieur */
+        border-radius: 1.25vh;
     }
 
     .local {
-        height: 4vh; /* Hauteur de l'icône de localisation */
+        height: 5vh; /* Hauteur de l'icône de localisation */
         margin: 0 auto; /* Centre horizontalement */
         width: 4vh; /* Largeur de l'icône */
         display: flex; /* Flexbox pour aligner l'icône */
@@ -952,6 +954,7 @@ li {
 
     .local i {
         font-size: 2vh; /* Taille de l'icône */
+        padding: 0.5vh;
     }
 
     .search-input {
@@ -972,6 +975,7 @@ li {
         display: inline; /* Affiche l'icône de recherche */
         color: #f2f2f2; /* Couleur de l'icône */
         font-size: 1.5vh; /* Taille de l'icône */
+        padding-left:0.5vh/*espace intérieur gauche correspondant à 1.5% de la hauteur de l’écran*/
     }
 
     .search-button .search-txt {
@@ -979,11 +983,11 @@ li {
     }
 
     .search-button {
-        height: 4vh; /* Hauteur du bouton */
+        height: 5vh; /* Hauteur du bouton */
         margin: 0 auto; /* Centre le bouton horizontalement */
-        border-radius: 1vh; /* Coins arrondis du bouton */
-        width: 5vh; /* Largeur du bouton */
-        filter: drop-shadow(0 0.1875rem 2vh rgba(235, 3, 3, 0.1)); /* Ombre portée */
+        border-radius: 1.25vh; /* Coins arrondis du bouton */
+        width: 6vh; /* Largeur du bouton */
+        filter: drop-shadow(0 0.1875rem 2vh rgba(8, 8, 8, 0.2)); /* Ombre portée */
         display: flex; /* Flexbox pour centrer l'icône à l'intérieur du bouton */
         align-items: center; /* Centre verticalement l'icône */
         justify-content: center; /* Centre horizontalement l'icône */
