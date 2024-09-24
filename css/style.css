@@ -843,7 +843,6 @@ li {
         font-size: 2vh; /* Police adaptée en fonction de la hauteur de la fenêtre */
         height: auto; /* Hauteur ajustée automatiquement */
     }
-
     /*---------------------------------------------------------------------------------*/
     /*------------------------- Conteneur principal--------------------------------------- */
     /*---------------------------------------------------------------------------------*/
@@ -1091,32 +1090,42 @@ li {
         padding:0 2vh;/* espace intérieur gauche et droite correspondant à 2% de la hauteur */
     }
 
-    
+    /*Cartes*/
     .rangee .card {
         width: 100%; /* Chaque carte prend toute la largeur */
         height: 23vh; /* Hauteur des cartes */
-        margin-top: 3vh ; /* Espacement vertical autour des cartes */
-        border-radius: 1.25vh;
+        margin-top: 1vh ; /* marge entre le titre et la première carte */
+        border-radius: 1.5vh;/* Ajustement des coins arrondis*/
     }
+    .rangee .card img {
+        padding:0.5vh;/* Ajustemant espace intérieur*/
+        border-top-left-radius:1.3vh ;/* ajustement du coins arrondis haut gauche*/
+        border-top-right-radius: 1.3vh;/* ajustement du coin arrondis haut droit*/
+    }
+    /*Titres*/
     .hebergement-content .card-title {
         font-size: 2vh; /* Taille du titre des cartes */
-    }
+        padding-left: 0.5vh;/*Espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+    }   
 
+    /* titre section */
     .hebergements-and-populaires h2 {
         font-size: 2.2vh; /* Taille des titres de section */
-        padding-left:0.5vh ;
+        padding-left:2vh ;/*espace intérieur gauche correspondant à 2% de la hauteur de l'écran*/
+        margin-top:2vh;
     }
 
+    /*Sous-titres*/
     .hebergement-content .card-subtitle {
         font-size: 1.4vh; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
-        display:column;
-        justify-content: space-between;
-        padding-left: 0.5vh;
+        padding-left: 0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
+        margin-bottom: 1.5vh;
     }
 
     .hebergement-content .card-rating {
         font-size: 1.4vh; /* Taille de la notation */
+        padding-left:0.5vh;/**/
     }
 
     .hebergements-and-populaires {
@@ -1124,6 +1133,9 @@ li {
         flex-direction: column-reverse; /* Affiche les sections en ordre inverse */
     }
 
+        .affichez_plus {
+            margin:2vh/*marge */
+        }
     /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
     /*--------------------------------------------------------------*/
