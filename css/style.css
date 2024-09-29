@@ -171,6 +171,7 @@ li {
     padding: 0; /* Supprime tout espacement intérieur autour de l'élément. */
     align-items: center; /* Aligne les éléments enfants au centre dans la hauteur */
     margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l'écran*/
+    justify-content: center;
 
 }
 
@@ -260,7 +261,7 @@ li {
     height: 1.6vw; /* hauteur correspondant à 1.6%de la largeur de la fenêtre*/
     border: none;/* Pas de bordure*/
     text-align: center;  /* Alignement du texte dans la largeur de son conteneur*/
-    padding-bottom: 0.4vw;  /* Espacement intérieur haut correspondant à 0.6% de la largeur de l'écran*/
+    align-items: center;
 }
 
 /* Style du placeholder */
@@ -269,9 +270,18 @@ li {
     font-weight: 900;/* Mise en gras*/
     font-size: 1.2vw;/* Taille de la police du texte*/
     border:none;/*pas de bordure*/
-    height: 2.8vw;/* hauteur de la zone de texte*/
+    display: flex;
+    align-content: center;
 }
-
+.localisation-search {
+    display:flex;
+    align-items: center;
+    align-content: center;
+}
+.search-txt {
+    display: flex;
+    align-content: center;
+}
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
 /*********************************************************************************************************/
