@@ -42,6 +42,7 @@ body {
     align-items: center; /* alignement du contenu dans la hauteur */
     box-sizing: border-box; /* Utilise la méthode de calcul de la taille de la boîte pour inclure le padding et la bordure dans la largeur et la hauteur totales de l'élément. */
     font-size: 1vw; /* taille de la police equivalent à 1% de la largeur du viewport */
+    background-color: white;
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
