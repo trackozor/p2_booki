@@ -102,7 +102,7 @@ a {
 /*Style du text a l intérieur de la carte*/
 .card-txt {
     margin-top: 0; /* Suppression marge haute*/
-    margin-bottom: 0; /* Supression marge basse */
+    margin-bottom: 0; /* Suppression marge basse */
     font-size: 1vw; /* taille de la police correspondant a 1% de la largeur de l'écran*/
 }
 
@@ -250,7 +250,7 @@ li {
     height: 3vw;/* Hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
-    font-size: 1.2vw;/*Taile de la police*/
+    font-size: 1.2vw;/*Taille de la police*/
     width: 10vw;/* Largeur corespondent a 10% de la largeur de l'écran*/
     padding-left: 0.6vw;/* espace intérieur gauche correspondant a00.6% de la largeur de l'écran*/
 }
@@ -404,7 +404,7 @@ li {
     ); /* Fond gris clair pour la section hebergement*/
 }
 
-/*Stule titre section hébergement*/
+/*Style titre section hébergement*/
 .hebergements h2 {
     padding-left: 0.5vw;/* Espace intérieur gauche correspondant à 0.5% de la largeur de l'écran*/
 }
@@ -523,7 +523,7 @@ li {
 
 /* Style des sous titre pour les titre sur deux lignes */
 .populaires-cards .card-subtitle {
-    margin-top:0;/* Supression de la marge haute*/
+    margin-top:0;/* Suppression de la marge haute*/
     margin-bottom:2vw;/* espace bas correspondant à 2% de la largeur de l'écran*/
     padding:0; /*suppression des espaces intérieurs*/
 }
@@ -698,7 +698,7 @@ li {
         margin-top: 3.5vw;/* Espace haut correspondant à 3.5% de la largeur de l'écran*/
     }
     /*-------------------------------------------------------------------------------*/
-    /*--------------------- Conteneur Hebergemment et populaires --------------------*/
+    /*--------------------- Conteneur Hebergement et populaires --------------------*/
     /*-------------------------------------------------------------------------------*/
     .hebergements-and-populaires {
         display: flex;/* Utilise flexbox pour aligner les éléments */
@@ -768,7 +768,7 @@ li {
     /* Ajustement du conteneur des cartes*/
     .populaires-cards {
         display: flex;/* Utilise flexbox pour aligner les éléments*/
-        flex-direction: row;/* Aligenement en ligne*/ 
+        flex-direction: row;/* Alignement en ligne*/ 
         justify-content: space-between;/*Alignement avec espaces égaux des espaces*/  
         padding:0 0.5vw;/*espace intérieur gauche et droite correspondant à 2% de la larger de l'écran */     
     }
@@ -807,7 +807,7 @@ li {
 
     /* Style des sous titre pour les titre sur deux lignes */
     .populaires-cards .card-subtitle {
-        margin-top:0.5vw;/* Supression de la marge haute*/
+        margin-top:0.5vw;/* Suppression de la marge haute*/
         margin-bottom:4vw;/* espace bas correspondant à 2% de la largeur de l'écran*/
         padding:0; /*suppression des espaces intérieurs*/
     }
@@ -916,7 +916,7 @@ li {
         color: var(--main-color); /* Change la couleur du texte au survol */
         border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
         padding-bottom: 0.9vh; /* Ajuste l'espace en bas lors du survol */
-        border-top:none;/*Supprssion bordure haute*/
+        border-top:none;/*Suppression bordure haute*/
         align-items: center; /* Centre verticalement */
         justify-content: space-between;/*répartis également les espaces*/
     }
@@ -1116,7 +1116,7 @@ li {
 
     /*Image*/
     .rangee .card img {
-        padding:0.5vh;/* Ajustemant espace intérieur*/
+        padding:0.5vh;/* Ajustement espace intérieur*/
         border-top-left-radius:1.8vh ;/* ajustement du coins arrondis haut gauche*/
         border-top-right-radius: 1.8vh;/* ajustement du coin arrondis haut droit*/
     }
@@ -1359,7 +1359,7 @@ li {
         color: var(--main-color); /* Change la couleur du texte au survol */
         border-bottom: 0.204vw solid var(--main-color); /* Bordure inférieure lors du survol */
         padding-bottom: 0.9vw; /* Ajuste l'espace en bas lors du survol */
-        border-top:none;/*Supprssion bordure haute*/
+        border-top:none;/*Suppression bordure haute*/
         align-items: center; /* Centre verticalement */
         justify-content: space-between;/*répartis également les espaces*/
     }
@@ -1555,7 +1555,7 @@ li {
 
     /*Image*/
     .rangee .card img {
-        padding:0.5vw;/* Ajustemant espace intérieur*/
+        padding:0.5vw;/* Ajustement espace intérieur*/
         border-top-left-radius:1.8vw ;/* ajustement du coins arrondis haut gauche*/
         border-top-right-radius: 1.8vw;/* ajustement du coin arrondis haut droit*/
     }
