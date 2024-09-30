@@ -42,7 +42,7 @@ body {
     align-items: center; /* alignement du contenu dans la hauteur */
     box-sizing: border-box; /* Utilise la méthode de calcul de la taille de la boîte pour inclure le padding et la bordure dans la largeur et la hauteur totales de l'élément. */
     font-size: 1vw; /* taille de la police equivalent à 1% de la largeur du viewport */
-    background-color: white;
+    background-color: white;/*Couleur de fond*/
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
@@ -269,7 +269,7 @@ li {
 .search-input::placeholder {
     color: #000;/*Couleur du texte*/
     font-weight: 900;/* Mise en gras*/
-    font-size: 1.2vw;/* Taille de la police du texte*/
+    font-size: 1vw;/* Taille de la police du texte*/
     border:none;/*pas de bordure*/
     display: flex;
     align-content: center;
