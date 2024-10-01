@@ -118,8 +118,7 @@ a {
 }
 
 /* style des titres des cartes */
-h3 {
-  
+h3 { 
     display: block;
     margin: 0;/*Suppression des marges*/
 }
