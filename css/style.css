@@ -77,7 +77,6 @@ a {
 /* style 2 base pour les cartes activités*/
 .card2 {
     background-color: white; /* Fond blanc pour les cartes */
-    width: 100%;
     border-radius: 1.25vw; /* Coins arrondis */
     filter: drop-shadow(
         0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
@@ -1251,8 +1250,8 @@ li {
 
     /* carte*/
     .activites-a-marseille .card2 {
-        width: 35vh; /* Prend toute la largeur */
-        height: 20vh; /* Hauteur des cartes d'activités */
+        width: 38vh; /* Prend toute la largeur */
+        height: 22vh; /* Hauteur des cartes d'activités */
         border-radius: 2vh;/*ajustement des coins arrondis*/
     }
 
@@ -1362,7 +1361,6 @@ li {
         border-bottom: 0.204vw solid var(--main-color); /* Bordure inférieure lors du survol */
         padding-bottom: 0.9vw; /* Ajuste l'espace en bas lors du survol */
         border-top:none;/*Suppression bordure haute*/
-        display:flex;
         align-items: center; /* Centre verticalement */
         justify-content: space-between;/*répartis également les espaces*/
     }
@@ -1607,6 +1605,8 @@ li {
     /*Section*/
     .populaires {
         width: 100%; /* Prend toute la largeur de l'écran */
+        margin: 0;
+        padding: 0;
     }
 
     /*icône statistique*/
@@ -1618,9 +1618,10 @@ li {
     /*carte*/
     .populaires-cards .card {
         height: 16vw; /* Hauteur des cartes */
-        margin: 1vw ; /* Espacement vertical autour des cartes */
-        width: 27vw;/* largeur du contenu correspondant à 38% de la hauteur de l'écran  */
+        margin: 0.2vw ; /* Espacement vertical autour des cartes */
+        width: 100%;/* prend toute la largeur disponible*/
         border-radius: 2vw;/* Ajustement visuel des coins arrondis*/
+        padding: 0;
     }
 
     /*partie texte*/
