@@ -1,45 +1,34 @@
-<!--****************************************************************************************************
-   Nom du fichier : index.html
-   Auteur : Trackozor
-   Date de création : 07/09/2024
-   Description : contenu html, site hébergements booki
-   Version : 2.0
-   -----------------------------------------------------------------------
-   Informations supplémentaires :
-   - Compatible avec les navigateurs : Chrome, Firefox, Edge
-   - Design responsive : Oui
-   - Conformité W3C : Oui
-*********************************************************************************************************-->
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <!-- Encodage des caractères (UTF-8) pour supporter tous les types de caractères -->
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8" >
 
         <!-- Ajuste l'affichage pour les appareils mobiles (responsive design) -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
         <!-- Description du site pour le SEO -->
-        <meta name="description" content="Booki, votre plateforme de réservation d'hébergements et d'activités. Trouvez et réservez facilement des hébergements et des activités pour vos vacances de rêve."/>
+        <meta name="description" content="Booki, votre plateforme de réservation d'hébergements et d'activités. Trouvez et réservez facilement des hébergements et des activités pour vos vacances de rêve.">
 
         <!-- Auteur du site (optionnel, mais informatif) -->
-        <meta name="author" content="Trackozor" />
+        <meta name="author" content="Trackozor" >
 
         <!-- Autorise les moteurs de recherche à indexer la page et suivre les liens -->
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow" >
         <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
         <title>Booki - Réservation d'hébergements et d'activités</title>
-        <!--<link rel="stylesheet" href="./css/reset.css">
+
 
         <!-- Pré-connexion aux polices Google pour améliorer les performances de chargement -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
 
         <!-- Importation des polices Google (Raleway) -->
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
             rel="stylesheet"
-        />
+        >
 
         <!-- Importation de FontAwesome pour les icônes -->
         <link
@@ -48,10 +37,10 @@
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
-        />
+        >
 
         <!-- Importation de la feuille de style principale -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" >
     </head>
 
     <body>
@@ -60,9 +49,9 @@
 
         <!-- Conteneur principal de la page -->
         <div class="main-container">
-            <!---------------------------------------------------------------------------------->
-            <!--************************ Header ( En-tête) **********************************-->
-            <!---------------------------------------------------------------------------------->
+            <!-- ***************************************************************************** -->
+            <!--************************ Header ( En-tête) ********************************** -->
+            <!-- ***************************************************************************** -->
 
             <header class="header">
                 <!-- logo -->
@@ -70,7 +59,7 @@
                     <img
                         src="./images/logo/Booki@3x.webp"
                         alt="logo de l entreprise booki"
-                    />
+                    >
                 </div>
                 <!-- Section de navigation contenant les liens vers différentes sections de la page -->
                 <nav class="nav">
@@ -81,9 +70,9 @@
                 </nav>
             </header>
 
-            <!---------------------------------------------------------------------------------->
-            <!--******************** Main Section (Section principale)************************-->
-            <!---------------------------------------------------------------------------------->
+            <!-- ***************************************************************************** -->
+            <!--******************** Main Section (Section principale)************************ -->
+            <!-- ***************************************************************************** -->
 
             <main>
                 <!--##### Section contenant la barre de recherche et filtre #######-->
@@ -115,7 +104,7 @@
                             id="localisation-search"
                             placeholder="Marseille, France"
                             class="search-input"
-                        />
+                        >
                         <!-- Bouton pour valider-->
                         <button type="submit" class="search-button">
                             <span class="search-txt">Rechercher</span>
@@ -124,7 +113,7 @@
                     </form>
                 </div>
 
-                <!---------------------------------------------------------------------------------->
+                <!--***************************************************************************** -->
                 <!--#### section contenant les filtres #############-->
                 <!-- TItres-->
                 <div class="filter">
@@ -165,7 +154,7 @@
                 </div>
                     </div>
 
-                <!---------------------------------------------------------------------------------->
+                <!-- ***************************************************************************** -->
                 <!--#### Section info avec icône ###########-->
 
                 <!-- info avec icône -->
@@ -187,33 +176,33 @@
                     </p>
                 </div>
 
-                <!---------------------------------------------------------------------------------->
-                <!--#### Section contenant les hébergements et les plus populaires #####-->
+                <!-- ***************************************************************************** -->
+                <!-- #### Section contenant les hébergements et les plus populaires #####-->
                 <div class="hebergements-and-populaires">
-                    <!--#### Section pour les hébergements #####-->
+                    <!-- #### Section pour les hébergements #####-->
                     <section id="hebergements" class="hebergements">
                         <!-- titre de la section hébergements -->
                         <h2 class="section-title">Hébergements à Marseille</h2>
 
-                        <!--#### premiere rangée de cartes ####-->
+                        <!-- #### premiere rangée de cartes ####-->
                         <div class="rangee">
                             <!-- liens vers plus d'info carte 1-->
                             <a href="#">
-                                <!--++++++++ premiere carte +++++++++-->
+                                <!-- ++++++++ premiere carte +++++++++ -->
                                 <article class="card">
                                     <!-- Image de la carte-->
                                     <img
                                         src="./images/hebergements/Port_hotel.webp"
                                         alt="vue en perspective de deux lit simple avec en arrière plan une fenêtre ouverte"
-                                    />
+                                    >
                                     <!--contenue de la carte-->
                                     <div class="hebergement-content">
                                         <div class="card-txt">
-                                            <!-- Titre de l hébergement----->
+                                            <!-- Titre de l hébergement -->
                                             <h3 class="card-title">
                                                 Hôtel du port
                                             </h3>
-                                            <!-- Prix de la nuitée---->
+                                            <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">52 </span><span
                                                     class="bold"
@@ -222,7 +211,7 @@
                                             </p>
                                         </div>
                                         <div class="card-rating">
-                                            <!-- Quatres étoiles pleines-->
+                                            <!-- Quatres étoiles pleines -->
                                             <i
                                                 class="fa-xs fa-solid fa-star"
                                                 aria-hidden="true"
@@ -255,21 +244,21 @@
 
                             <!-- liens vers plus d'info carte 2-->
                             <a href="#">
-                                <!--++++++++ deuxième carte ++++++++-->
+                                <!-- ++++++++ deuxième carte ++++++++ -->
                                 <article class="card">
                                     <!-- Image de la carte-->
                                     <img
                                         src="./images/hebergements/Amina.webp"
                                         alt="vue de deux lit simple sur le coté gauche avec en arrière plan une fenêtre ouverte"
-                                    />
-                                    <!--contenue de la carte-->
+                                    >
+                                    <!-- contenu de la carte -->
                                     <div class="hebergement-content">
                                         <div class="card-txt">
-                                            <!-- Titre de l hébergement----->
+                                            <!-- Titre de l hébergement -->
                                             <h3 class="card-title">
                                                 Hôtel chez Amina
                                             </h3>
-                                            <!-- Prix de la nuitée---->
+                                            <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">96 </span><span
                                                     class="bold"
@@ -278,7 +267,7 @@
                                             </p>
                                         </div>
                                         <div class="card-rating">
-                                            <!-- Quatres étoiles pleines-->
+                                            <!-- Quatres étoiles pleines -->
                                             <i
                                                 class="fa-xs fa-solid fa-star"
                                                 aria-hidden="true"
@@ -309,23 +298,23 @@
                                 </article>
                             </a>
 
-                            <!-- liens vers plus d'info carte 3-->
+                            <!-- liens vers plus d'info carte 3 -->
                             <a href="#">
-                                <!--+++++++++ troisième carte +++++++++-->
+                                <!-- +++++++++ troisième carte +++++++++ -->
                                 <article class="card">
-                                    <!-- Image de la carte-->
+                                    <!-- Image de la carte -->
                                     <img
                                         src="./images/hebergements/Mouettes.webp"
                                         alt="vue d'un lit simple  avec en arrière plan une armoire avec un miroir"
-                                    />
-                                    <!--contenue de la carte-->
+                                    >
+                                    <!-- contenue de la carte -->
                                     <div class="hebergement-content">
                                         <div class="card-txt">
-                                            <!-- Titre de l hébergement----->
+                                            <!-- Titre de l hébergement  -->
                                             <h3 class="card-title">
                                                 Hôtel les Mouettes
                                             </h3>
-                                            <!-- Prix de la nuitée---->
+                                            <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">76 </span><span
                                                     class="bold"
@@ -334,7 +323,7 @@
                                             </p>
                                         </div>
                                         <div class="card-rating">
-                                            <!-- Quatres étoiles pleines-->
+                                            <!-- Quatres étoiles pleines -->
                                             <i
                                                 class="fa-xs fa-solid fa-star"
                                                 aria-hidden="true"
@@ -366,25 +355,25 @@
                             </a>
                         </div>
 
-                        <!--#### deuxième rangée de cartes ####-->
+                        <!-- #### deuxième rangée de cartes #### -->
                         <div class="rangee">
-                            <!-- liens vers plus d'info carte 4-->
+                            <!-- liens vers plus d'info carte 4 -->
                             <a href="#">
-                                <!--+++++++ quatrième carte ++++++++-->
+                                <!-- +++++++ quatrième carte ++++++++ -->
                                 <article class="card">
                                     <!-- Image de la carte-->
                                     <img
                                         src="./images/hebergements/Mer.webp"
                                         alt="vue de face  d'un lit double et au dessus une toile représentant un paysage marin "
-                                    />
-                                    <!--contenu de la carte-->
+                                    >
+                                    <!-- contenu de la carte -->
                                     <div class="hebergement-content">
                                         <div class="card-txt">
-                                            <!-- Titre de l hébergement----->
+                                            <!-- Titre de l hébergement -->
                                             <h3 class="card-title">
                                                 Hôtel de la mer
                                             </h3>
-                                            <!-- Prix de la nuitée---->
+                                            <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">46 </span><span
                                                     class="bold"
@@ -393,7 +382,7 @@
                                             </p>
                                         </div>
                                         <div class="card-rating">
-                                            <!-- Quatres étoiles pleines-->
+                                            <!-- Quatres étoiles pleines -->
                                             <i
                                                 class="fa-xs fa-solid fa-star"
                                                 aria-hidden="true"
@@ -426,19 +415,19 @@
 
                             <!-- liens vers plus d'info carte 5 -->
                             <a href="#">
-                                <!--++++++++ cinquième carte ++++++++-->
+                                <!-- ++++++++ cinquième carte ++++++++ -->
                                 <article class="card">
                                     <!-- Image de la carte-->
                                     <img
                                         src="./images/hebergements/Canebiere.webp"
                                         alt="vue de deux lit superposés  sur le coté droit avec en arrière plan une fenêtre"
-                                    />
+                                    >
                                     <!--contenu de la carte-->
                                     <div class="hebergement-content">
                                         <div class="card-txt">
-                                            <!-- Titre de l hébergement----->
+                                            <!-- Titre de l hébergement -->
                                             <h3 class="card-title"> Auberge la Canebière</h3>
-                                            <!-- Prix de la nuitée---->
+                                            <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                             Nuit à partir de <span class="num">25 </span><span class="bold">€</span>
                                             </p>
@@ -477,21 +466,21 @@
 
                             <!-- liens vers plus d'info carte 6-->
                             <a href="#">
-                                <!--+++++++++ sixième  carte +++++++++-->
+                                <!-- +++++++++ sixième  carte +++++++++ -->
                                 <article class="card">
                                     <!-- Image de la carte-->
                                     <img
                                         src="./images/hebergements/Le_panier.webp"
                                         alt="vue de deux lits superposés en bois"
-                                    />
+                                    >
                                     <!--contenu de la carte-->
                                     <div class="hebergement-content">
                                         <div class="card-txt">
-                                            <!-- Titre de l hébergement----->
+                                            <!-- Titre de l hébergement -->
                                             <h3 class="card-title">
                                                 Auberge le Panier
                                             </h3>
-                                            <!-- Prix de la nuitée---->
+                                            <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">23 </span><span
                                                     class="bold"
@@ -500,7 +489,7 @@
                                             </p>
                                         </div>
                                         <div class="card-rating">
-                                            <!-- Quatres étoiles pleines-->
+                                            <!-- Quatres étoiles pleines -->
                                             <i
                                                 class="fa-xs fa-solid fa-star"
                                                 aria-hidden="true"
@@ -536,8 +525,8 @@
                         </div>
                     </section>
 
-                    <!---------------------------------------------------------------------------------->
-                    <!--#### Section pour les plus populaires ######-->
+                    <!-- ***************************************************************************** -->
+                    <!-- #### Section pour les plus populaires ###### -->
 
                     <section class="populaires">
                         <!-- Titre de la section des plus populaires -->
@@ -552,15 +541,15 @@
 
                         <!-- Cartes des hébergements populaires -->
                         <div class="populaires-cards">
-                            <!--lien vers plus d'info carte 1-->
+                            <!--lien vers plus d'info carte 1 -->
                             <a href="#">
-                                <!--++++++++ Première carte ++++++++++-->
+                                <!--++++++++ Première carte ++++++++++ -->
                                 <article class="card">
                                     <!-- Image de l'hébergement -->
                                     <img
                                         src="./images/hebergements/le_soleil_du_matin.webp"
                                         alt="Image de la chambre d'hôtel montrant un lit"
-                                    />
+                                    >
                                     <!-- Contenu de la carte -->
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -577,7 +566,7 @@
                                             </p>
                                         </div>
                                         <div class="card-rating">
-                                            <!-- Quatres étoiles pleines-->
+                                            <!-- Quatres étoiles pleines -->
                                             <i
                                                 class="fa-xs fa-solid fa-star"
                                                 aria-hidden="true"
@@ -609,13 +598,13 @@
 
                             <!-- lien vers plus d'info carte 2 -->
                             <a href="#">
-                                <!--++++++ Deuxième carte ++++++++-->
+                                <!-- ++++++ Deuxième carte ++++++++ -->
                                 <article class="card">
                                     <!-- Image hébergement -->
                                     <img
                                         src="./images/hebergements/au_coeur_de_l_eau.webp"
                                         alt="Image de la chambre d'hôtel montrant un lit"
-                                    />
+                                    >
                                     <!-- contenu de la carte -->
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -623,7 +612,7 @@
                                             <h3 class="card-title">Chambres d’hôtes Au cœur de
                                                 l’eau
                                             </h3>
-                                            <!-- Prix de la nuitée-->
+                                            <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">71 </span> <span class="bold">€</span>
                                             </p>
@@ -663,13 +652,13 @@
 
                             <!-- lien vers plus d info carte 3 -->
                             <a href="#">
-                                <!--+++++++ Troisième carte +++++++-->
+                                <!-- +++++++ Troisième carte +++++++ -->
                                 <article class="card">
                                     <!-- Image hébergement-->
                                     <img
                                         src="./images/hebergements/bleu_et_blanc.webp"
                                         alt="Image de la chambre d'hôtel montrant un lit"
-                                    />
+                                    >
                                     <!-- Contenu de la carte -->
                                     <div class="card-content">
                                         <div class="card-txt">
