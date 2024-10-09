@@ -379,7 +379,7 @@ li {
 
 /* Style des sections Hébergements et Populaires */
 .hebergements-and-populaires section {
-    border-radius: 1vw; /* Bords arrondis */
+    border-radius: 1rem; /* Bords arrondis */
     padding: 1vw; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
     font-feature-settings: 'tnum'; /* Force les chiffres tabulaires */
@@ -433,8 +433,8 @@ li {
 /* Images */
 .rangee .card img {
     height: 60%;/* L'image prend 60% de la hauteur de la carte*/
-    border-top-left-radius: 0.8vw;
-    border-top-right-radius: 0.8vw;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
     object-fit: cover;
 }
 
@@ -445,7 +445,7 @@ li {
 
 /* Lien affichez plus */
 .affichez_plus a {
-    font-size: 1.2vw;/* Taille de la police correspondant à 1.5% de la largeur de l'écran*/
+    font-size: 1.2rem;/* Taille de la police correspondant à 1.5% de la largeur de l'écran*/
     padding-left: 1vw;/* Espace intérieur gauche correspondant à 1vw de la largeur de l'écran*/
     margin-top:2vw;/* Espace bas correspondant à 2% de la largeur de l'écran*/
 }
@@ -483,8 +483,8 @@ li {
     display: flex; /* Aligne l'image et le texte en ligne */
     flex-direction: row; /* Aligne les éléments horizontalement */
     background-color: #fff; /* Fond blanc pour les cartes */
-    border-radius: 1vw; /* Bords arrondis */
-    box-shadow: 0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
+    border-radius: 1rem; /* Bords arrondis */
+    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
     overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
     height: 9vw; /* hauteur de la carte correspondant 9 % de la largeur de l'écran */
     padding: 0; /* supprime les espaces intérieurs*/
@@ -496,8 +496,8 @@ li {
 .populaires-cards img {
     width: 10vw; /* L'image occupe 33% de la largeur de la carte */
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
-    border-top-left-radius: 0.8vw; /* Arrondit le coin supérieur gauche */
-    border-bottom-left-radius: 0.8vw; /* Arrondit le coin inférieur gauche */
+    border-top-left-radius: 0.8rem; /* Arrondit le coin supérieur gauche */
+    border-bottom-left-radius: 0.8rem; /* Arrondit le coin inférieur gauche */
     margin:0.4vw; /*espace intérieur correspondant à 4% de la largeur de l'écran */
 }
 
@@ -577,7 +577,7 @@ li {
 /* Style des images dans les cartes d'activités */
 .activites-card img {
     height: 20vh; /* L'image occupe 85% de la hauteur de la carte */
-    width: 20dvw; /* L'image prend toute la largeur de la carte */
+    width: 20vw; /* L'image prend toute la largeur de la carte */
     border-top-left-radius: 1rem; /* Arrondit le coin supérieur gauche */
     border-top-right-radius: 1rem; /* Arrondit le coin supérieur droit */
 }
@@ -587,7 +587,7 @@ li {
     display: flex;/* Utilise Flexbox pour aligner les éléments */
     padding-left: 1vw; /* Espacement à gauche pour le titre */
     margin-top: 1vw; /* marge au dessus correspondant a 2% de la largeur de l'écran */
-    font-size: 1.2vw; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
+    font-size: 1.2rem; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
 }
 
 /*********************************************************************************************************/
@@ -613,7 +613,7 @@ li {
     body {    
         margin: 0 auto; /* Centrer le contenu en laissant les marges se créer automatiquement */
         align-items: center; 
-        font-size: 1.4vw;
+        font-size: 1.4rem;
         max-width: 1040px;
         justify-content: center;
         margin: 0 auto;
@@ -622,13 +622,13 @@ li {
 
 }
 /*------------------------------------------------------------------------------------------*/
-/*------------------------Tablettes (entre 48rem et 64rem) ---------------------------------*/
+/*------------------------Tablettes (entre 768px et 1024px) ---------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1023px) { 
     /*Style du corps adaptation des valeurs par défaut*/
     body {
         display: flex;/* Utilise flexbox pour aligner les éléments*/
-        font-size: clamp(1rem,2vw,2rem);/* Définit la taille du texte de façon responsive : - 1rem comme taille minimale,- 2vw pour une taille fluide en fonction de la largeur de la fenêtre,- 2rem comme taille maximale. */
+        font-size: clamp(1rem,1.5rem,2rem);/* Définit la taille du texte de façon responsive : - 1rem comme taille minimale,- 2vw pour une taille fluide en fonction de la largeur de la fenêtre,- 2rem comme taille maximale. */
         height:auto;/* hauteur ajusté automatiquement*/
         width: auto;/*largeur ajusté automatiquement*/  
         margin:0;/*suppression de marges*/
@@ -644,7 +644,7 @@ li {
         align-items: center;/* Aligne les éléments enfants au centre de l'axe vertical  */
         margin-top:1.8vw;/*espace supérieur correspondant à 1.8% de la largeur de l'écran*/
         padding: 1vw 0;/*espace intérieur haut et bas correspondant à 1% de la largeur de l'écran*/ 
-        font-size: 1.2vh;/* taille de la police */
+        font-size: 1.2rem;/* taille de la police */
     }
 
     /*-----------------------------------------------------------------------------------------*/
@@ -713,7 +713,7 @@ li {
         height: 30vw; /* Ajuste la hauteur des cartes d'activités */
         margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l 'écran */
         filter: drop-shadow(
-        0 0.1875vw 0.9375vw rgba(0, 0, 0, 0.1)
+        0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
         );/* ajoute une ombre avec un décalage horizontale de 0, un décalage vertical de 1.8% , un flou de 0.9375 et une couleur noire avec une opacité de 10% */
     }
 
@@ -724,7 +724,7 @@ li {
 
     /* Ajustement de la police du titre h2 de la section activités*/
     .activites h2 {
-        font-size: 1.5vw;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
+        font-size: 1.5rem;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
     }
     
     /*---------------------------------------------------------------------------------*/
@@ -794,7 +794,7 @@ li {
     .populaires h2, .hebergements h2{
         margin-top:1vw;/* Espace haut et bas correspondant à 1% de la largeur de l'écran*/
         padding-left: 1vw;/*espace intérieur gauche correspondant à 1% de la largeur de l'écran*/
-        font-size: 1.6vw;/* Ajustement de la police correspondant à 1.6% de la largeur de l'écran*/
+        font-size: 1.6rem;/* Ajustement de la police correspondant à 1.6% de la largeur de l'écran*/
     }
     /* Conteneur parent comprenant le titre et le sous-titre*/
     .populaires-cards .card-txt{
@@ -834,16 +834,16 @@ li {
     }
 
     /*---------------------------------------------------------------------------------*/
-    /*-----------------------Footer ----------------------------------------------------------*/
+    /*-----------------------Footer ----------------------------------------------------*/
     /*---------------------------------------------------------------------------------*/
     .footer {
         width: 90vw; /* Ajuste la largeur du footer */
-        font-size: 1vw;/*Ajustement de la police*/
+        font-size: 1rem;/*Ajustement de la police*/
         gap:15vw;/* Ajustement de l'espace entre  les listes*/
     }
 }   
 /*------------------------------------------------------------------------------------------*/
-/*------------------------Mobile moins de 48rem en mode portrait----------------------------*/
+/*------------------------Mobile moins de 768 px --------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
 @media (min-width: 300px) and (max-width: 767px)  {
     /* Style pour le corps de la page */
@@ -903,7 +903,7 @@ li {
     /* Style des éléments de la navigation */
     .nav-element {
         display: flex; /* Flexbox pour aligner les éléments de la navigation */
-        font-size: 4vw; /* Taille de la police dépendant de la largeur de la fenêtre */
+        font-size: 4rem; /* Taille de la police dépendant de la largeur de la fenêtre */
         padding:0 5vh; /* Espacement horizontal autour de chaque élément */
         align-items: center; /* Centre verticalement les éléments dans la navigation */
         margin-bottom: 0.56vh; /* Petit espace sous chaque élément de navigation */
@@ -913,7 +913,7 @@ li {
     /* Ajustement barre survol*/
     .nav-element:hover {
         color: var(--main-color); /* Change la couleur du texte au survol */
-        border-bottom: 0.204vh solid var(--main-color); /* Bordure inférieure lors du survol */
+        border-bottom: 0.204rem solid var(--main-color); /* Bordure inférieure lors du survol */
         padding-bottom: 0.9vh; /* Ajuste l'espace en bas lors du survol */
         border-top:none;/*Suppression bordure haute*/
         align-items: center; /* Centre verticalement */
@@ -932,7 +932,7 @@ li {
     /*Zone de texte*/
     .research p {
         margin: 0.5vh ; /* Marges pour les éléments de texte */
-        font-size: 1.6vh;/*ajustement de la police */
+        font-size: 1.6rem;/*ajustement de la police */
         display: block;/*alignement en bloc*/
         text-align: center;/* Alignement du texte  (prise de liberté)*/
         }
@@ -940,7 +940,7 @@ li {
 
     /* Titre */
     .research h2 {
-        font-size: 2vh;/* Ajustement de la police correspondant à 2% de la hauteur de l'écran*/
+        font-size: 2rem;/* Ajustement de la police correspondant à 2% de la hauteur de l'écran*/
         display: flex;/* Utilise flexbox pour aligner les éléments*/
         text-align: center;/* Prise de liberté pour aligner les deux lignes à partir du centre*/
     }
@@ -951,7 +951,7 @@ li {
         height: 5vh; /* Hauteur de la barre de recherche */
         margin: 3vh auto; /* Espace vertical autour de la barre */
         display: flex; /* Flexbox pour aligner les éléments à l'intérieur */
-        border-radius: 1.25vh;/* ajustement des coins arrondis*/
+        border-radius: 1.25rem;/* ajustement des coins arrondis*/
     }
 
     /*conteneur icône localisation*/
@@ -965,7 +965,7 @@ li {
 
     /* icône localisation*/
     .local i {
-        font-size: 2vh; /* Taille de l'icône */
+        font-size: 2rem; /* Taille de l'icône */
     }
     /* Zone de saisie*/
     .search-input {
@@ -979,7 +979,7 @@ li {
     /* placeholder*/
     .search-input::placeholder {
         font-weight: 900; /* Texte en gras dans le placeholder */
-        font-size: 1.7vh; /* Taille du placeholder */
+        font-size: 1.7rem; /* Taille du placeholder */
         border: none; /* Pas de bordure pour le placeholder */
         height: 4vh; /* Hauteur du texte du placeholder */
     }
@@ -988,7 +988,7 @@ li {
     .search-button .search-icon {
         display: inline; /* Affiche l'icône de recherche */
         color: #f2f2f2; /* Couleur de l'icône */
-        font-size: 1.5vh; /* Taille de l'icône */
+        font-size: 1.5rem; /* Taille de l'icône */
         padding-left:0.5vh/*espace intérieur gauche correspondant à 1.5% de la hauteur de l’écran*/
     }
 
@@ -1001,9 +1001,9 @@ li {
     .search-button {
         height: 5vh; /* Hauteur du bouton */
         margin: 0 auto; /* Centre le bouton horizontalement */
-        border-radius: 1.25vh; /* Coins arrondis du bouton */
+        border-radius: 1.25rem; /* Coins arrondis du bouton */
         width: 6vh; /* Largeur du bouton */
-        filter: drop-shadow(0 0.1875rem 2vh rgba(8, 8, 8, 0.2)); /* Ombre portée */
+        filter: drop-shadow(0 0.1875rem 2rem rgba(8, 8, 8, 0.2)); /* Ombre portée */
         display: flex; /* Flexbox pour centrer l'icône à l'intérieur du bouton */
         align-items: center; /* Centre verticalement l'icône */
         justify-content: center; /* Centre horizontalement l'icône */
@@ -1018,7 +1018,7 @@ li {
         display: block; /* Flexbox pour aligner les éléments */
         gap: 10vh; /* Espace entre les éléments correspondant à 10% de la hauteur de l'écran */
         margin-bottom: 2.5vh;/*espace inférieur correspondant à 2.5% de la hauteur de l'écran*/
-        font-size: 1.6vh;/* Ajustement de la taille d ela police*/
+        font-size: 1.6rem;/* Ajustement de la taille d ela police*/
         height: auto;/*hauteur ajusté automatiquement*/
     }
     
@@ -1034,7 +1034,7 @@ li {
         height: 5vh; /* Hauteur correspondant à 5% de la hauteur de l'écran */
         border-radius: 2.5vh; /*  ajustement Bord arrondi */
         padding: 0.5vh 0.5vh; /* Espacement intérieur du bouton */
-        font-size: 1.8vh;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
+        font-size: 1.8rem;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
         gap: 1vh;/*Espace entre chaque éléments*/
         justify-content: center;
     }
@@ -1054,24 +1054,24 @@ li {
     /* Conteneur parent pour les informations */
     .info {
         display: flex; /* Flexbox pour aligner les informations */
-        font-size: 1.4vh;/* Ajustement de la taille de police*/
+        font-size: 1.4rem;/* Ajustement de la taille de police*/
         padding-left: 1vh;/*espace intérieur gauche correspondant à 1% de la hauteur de l'écran*/
     }
 
     /*ajustement du calque*/
     .fa-layers {
-        font-size: 3vh; /* Ajuste la taille de l'icône */
+        font-size: 3rem; /* Ajuste la taille de l'icône */
         margin-right: 1vh; /* Espace entre l'icône et le texte*/
     }
 
     /* Style pour le cercle */
     .icon-circle {
-        font-size: 1.8vh;/*Ajustement de la taille du cercle*/
+        font-size: 1.8rem;/*Ajustement de la taille du cercle*/
     }
 
     /* Icône*/
     .icon-info {
-        font-size: 1vh; /* Taille du "i", plus petit que le cercle*/
+        font-size: 1rem; /* Taille du "i", plus petit que le cercle*/
     }
 
     /* Texte*/
@@ -1110,32 +1110,32 @@ li {
         width: 100%; /* Chaque carte prend toute la largeur */
         height: 23vh; /* Hauteur des cartes */
         margin-top: 1vh ; /* marge entre le titre et la première carte */
-        border-radius: 2vh;/* Ajustement des coins arrondis*/
+        border-radius: 2rem;/* Ajustement des coins arrondis*/
     }
 
     /*Image*/
     .rangee .card img {
         padding:0.5vh;/* Ajustement espace intérieur*/
-        border-top-left-radius:1.8vh ;/* ajustement du coins arrondis haut gauche*/
-        border-top-right-radius: 1.8vh;/* ajustement du coin arrondis haut droit*/
+        border-top-left-radius:1.8rem ;/* ajustement du coins arrondis haut gauche*/
+        border-top-right-radius: 1.8rem;/* ajustement du coin arrondis haut droit*/
     }
 
     /*Titres*/
     .hebergement-content .card-title {
-        font-size: 2vh; /* Taille du titre des cartes */
+        font-size: 2rem; /* Taille du titre des cartes */
         padding-left: 0.5vh;/*Espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
     }   
 
     /* titre section */
     .hebergements-and-populaires h2 {
-        font-size: 2.2vh; /* Taille des titres de section */
+        font-size: 2.2rem; /* Taille des titres de section */
         padding-left:2vh ;/*espace intérieur gauche correspondant à 2% de la hauteur de l'écran*/
         margin-top:2vh;/* marge supérieur correspondant à 2% de la hauteur de l'écran*/
     }
 
     /*Sous-titres*/
     .hebergement-content .card-subtitle {
-        font-size: 1.4vh; /* Taille du sous-titre des cartes */
+        font-size: 1.4rem; /* Taille du sous-titre des cartes */
         font-weight: 500; /* Semi-gras pour les sous-titres */
         padding-left: 0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
         margin-bottom: 1.5vh;/*marge basse correspondant à 1.5% de la hauteur de l'écran*/
@@ -1143,19 +1143,19 @@ li {
 
     /* Etoiles*/
     .hebergement-content .card-rating {
-        font-size: 1.4vh; /* Taille de la notation */
+        font-size: 1.4rem; /* Taille de la notation */
         padding-left:0.5vh;/*espace intérieur gauche correspondant à 0.5% de la hauteur de l'écran*/
     }
 
     /*conteneur lien*/
     .affichez_plus {
         margin:2vh;/*marge Supérieure correspondant à 2% de la hauteur de l'écran */
-        font-size: 2vh; /* Taille du texte de "affichez plus" */
+        font-size: 2rem; /* Taille du texte de "affichez plus" */
     }
 
     /*lien*/
     .affichez_plus a {
-        font-size: 2vh; /* Taille du texte de "affichez plus" */
+        font-size: 2rem; /* Taille du texte de "affichez plus" */
     }
     /*--------------------------------------------------------------*/
     /*----------------------- Section Populaires --------------------*/
@@ -1182,7 +1182,7 @@ li {
         height: 16vh; /* Hauteur des cartes */
         margin: 1vh ; /* Espacement vertical autour des cartes */
         width: 38vh;/* largeur du contenu correspondant à 38% de la hauteur de l'écran  */
-        border-radius: 2vh;/* Ajustement visuel des coins arrondis*/
+        border-radius: 2rem;/* Ajustement visuel des coins arrondis*/
     }
 
     /*partie texte*/
@@ -1194,33 +1194,33 @@ li {
 
     /*titres*/
     .populaires-cards .card-title, .populaires-cards .card-title1, .populaires-cards .card-title2  {
-        font-size: 2vh; /* Taille du titre des cartes populaires correspondant à 2% de la hauteur de l'écran */
+        font-size: 2rem; /* Taille du titre des cartes populaires correspondant à 2% de la hauteur de l'écran */
     }
 
     /*Style 1 sous-titres*/
     .populaires-cards .card-subtitle {
-        font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+        font-size: 1.4rem; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
         margin-bottom: 4vh;/* marge inférieur correspondant à 4% de la hauteur de l'écran*/
     }
 
     /*Style 2 sous-titres*/
     .populaires-cards .card-subtitle1 {
-        font-size: 1.4vh; /* Taille légèrement plus petite pour le sous-titre */
+        font-size: 1.4rem; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
         margin-bottom: 6vh;/*marge inférieur correspondant à 6% de la hauteur de l'écran*/
     }
 
     /*Etoiles*/
     .populaires-cards .card-rating {
-        font-size: 2vh; /* Taille de la notation des cartes populaires */
+        font-size: 2rem; /* Taille de la notation des cartes populaires */
     }
 
     /*image des cartes populaires*/
     .populaires-cards img {
-      width: 35%; /* Taille des images dans les cartes populaires */
-      padding: 0.4vh;/*espace intérieur correspondant à 0.4% de la hauteur de l'écran*/
-      border-radius: 1.6vh 0 0 1.6vh ;/*Ajustement visuel des coins arrondis*/
+        width: 35%; /* Taille des images dans les cartes populaires */
+        padding: 0.4vh;/*espace intérieur correspondant à 0.4% de la hauteur de l'écran*/
+        border-radius: 1.6rem 0 0 1.6rem ;/*Ajustement visuel des coins arrondis*/
     }
 
     /*-------------------------------------------------------------*/
@@ -1237,13 +1237,13 @@ li {
     }
     /*titre section*/
     .activites h2{
-        font-size: 2.2vh; /* Taille des titres de section */
+        font-size: 2.2rem; /* Taille des titres de section */
         padding-left: 3vh;
         margin-bottom:3vh
     }
     /*titre carte*/
     .activites-a-marseille .card2 h3 {
-        font-size: 2vh; /* Taille des titres des cartes d'activités */
+        font-size: 2rem; /* Taille des titres des cartes d'activités */
         padding-left: 2vh;
     }
 
@@ -1251,7 +1251,7 @@ li {
     .activites-a-marseille .card2 {
         width: 38vh; /* Prend toute la largeur */
         height: 22vh; /* Hauteur des cartes d'activités */
-        border-radius: 2vh;/*ajustement des coins arrondis*/
+        border-radius: 2rem;/*ajustement des coins arrondis*/
     }
 
     /*Image*/
@@ -1259,7 +1259,7 @@ li {
 
         width: 100%; /* Images des cartes prennent toute la largeur */
         height: 75%; /* Hauteur des images ajustée */
-        border-radius: 2vh  2vh 0 0;/* Ajustement des coins arrondis*/
+        border-radius: 2rem  2rem 0 0;/* Ajustement des coins arrondis*/
     }
 
     /*-----------------------------------------------------------------------------------------------------*/
