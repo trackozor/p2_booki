@@ -43,6 +43,7 @@ body {
     box-sizing: border-box; /* Utilise la méthode de calcul de la taille de la boîte pour inclure le padding et la bordure dans la largeur et la hauteur totales de l'élément. */
     font-size: 1rem; /* taille de la police equivalent à 1% de la largeur du viewport */
     background-color: white;/*Couleur de fond*/
+    max-width: 1024px;;
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
@@ -103,13 +104,13 @@ a {
 .card-txt {
     margin-top: 0; /* Suppression marge haute*/
     margin-bottom: 0; /* Suppression marge basse */
-    font-size: 1rem; /* taille de la police correspondant a 1% de la largeur de l'écran*/
+    font-size: 0.6rem; /* taille de la police correspondant a 1% de la largeur de l'écran*/
 }
 
 /* Style des étoiles de notation*/
 .card-rating {
-    font-size: 1rem; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
-    padding-bottom: 0.5rem;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
+    font-size: 0.8rem; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
+    padding-bottom: 0.2rem;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
 }
 
 /* Style renforcé pour affichage en gras*/
@@ -160,7 +161,7 @@ li {
 
 /* Style du logo */
 .logo img {
-    height: 1.5vw; /* Définit la hauteur du logo */
+    height: 3vw; /* Définit la hauteur du logo */
     margin-top: 3vw;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
 }
 
@@ -172,6 +173,7 @@ li {
     align-items: center; /* Aligne les éléments enfants au centre dans la hauteur */
     margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l'écran*/
     justify-content: center;
+    font-size: 1rem;
 
 }
 
@@ -199,7 +201,7 @@ li {
 /* Style pour la zone de texte*/
 .research-txt p{
     margin-top:0; /* Suppression de la marge haute*/
-    font-size: 1rem;/* Taille de la police*/
+    font-size: 0.8rem;/* Taille de la police*/
     margin-bottom: 2vw;/* Espace bas correspondant à 2% de la largeur de l’écran*/
     
 }
@@ -207,7 +209,7 @@ li {
 /* Style pour la zone de recherche*/
 .research-txt h2{
     margin-bottom: 0.5vw; /* Suppression de la marge basse*/
-    font-size: 1.5rem; /* taille de la police correspondant a 1.5% de la largeur de l'écran*/
+    font-size: 1rem; /* taille de la police correspondant a 1.5% de la largeur de l'écran*/
 }
 /* Conteneur parent pour l'icône localisation*/
 .local {
@@ -225,7 +227,7 @@ li {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
     padding: 0 1vw; /* espacement intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
-    font-size: 1.3rem; /*taille icône correspondant à 1% de la largeur de l'écran*/
+    font-size: 1rem; /*taille icône correspondant à 1% de la largeur de l'écran*/
 }
 
 /* Style pour la barre de recherche */
@@ -249,7 +251,7 @@ li {
     height: 3vw;/* Hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
-    font-size: 1.2rem;/*Taille de la police*/
+    font-size: 0.8rem;/*Taille de la police*/
     width: 10vw;/* Largeur corespondent a 10% de la largeur de l'écran*/
     padding-left: 0.6vw;/* espace intérieur gauche correspondant a00.6% de la largeur de l'écran*/
 }
@@ -268,7 +270,7 @@ li {
 .search-input::placeholder {
     color: #000;/*Couleur du texte*/
     font-weight: 900;/* Mise en gras*/
-    font-size: 1rem;/* Taille de la police du texte*/
+    font-size: 0.8rem;/* Taille de la police du texte*/
     border:none;/*pas de bordure*/
     display: flex;
     align-content: center;
@@ -293,7 +295,7 @@ li {
     align-items: center; /* Centre verticalement les éléments */
     height: 2vw;/* Hauteur correspondant à 2% de la largeur de l'écran*/
     margin-bottom: 1.5vw; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
-    font-size: 1rem;/* Taille de la police du mot filtre*/
+    font-size: 0.8rem;/* Taille de la police du mot filtre*/
 }
 
 /********** Bouton de filtre ********************/
@@ -306,7 +308,7 @@ li {
     background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
     border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
     padding: 1vw 1vw; /* Espacement intérieur du bouton */
-    font-size: 1.2rem;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
+    font-size: 0.9rem;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
     text-align: center;/* Centre le texte horizontalement. */
     gap: 0.8vw;/*Espace entre chaque éléments*/
 }
@@ -355,13 +357,13 @@ li {
     color: white; /* Couleur du cercle */
     border: 0.2rem solid gray;/*bordure grise*/
     border-radius: 50%;/* bordure circulaire */
-    font-size: 1.6rem;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
+    font-size: 1.2rem;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
 }
 
 /* Style pour le "I" */
 .icon-info {
     color: var(--main-color); /* Couleur du "i" */
-    font-size: 1rem; /* Taille du "i", plus petit que le cercle */
+    font-size: 0.8rem; /* Taille du "i", plus petit que le cercle */
     z-index: 1; /* L'élément sera au-dessus du cercle*/
     position: relative;/*positionne l’élément mais reste dans le flux*/
 }
@@ -445,7 +447,7 @@ li {
 
 /* Lien affichez plus */
 .affichez_plus a {
-    font-size: 1.2rem;/* Taille de la police correspondant à 1.5% de la largeur de l'écran*/
+    font-size: 0.8rem;/* Taille de la police correspondant à 1.5% de la largeur de l'écran*/
     padding-left: 1vw;/* Espace intérieur gauche correspondant à 1vw de la largeur de l'écran*/
     margin-top:2vw;/* Espace bas correspondant à 2% de la largeur de l'écran*/
 }
@@ -587,7 +589,7 @@ li {
     display: flex;/* Utilise Flexbox pour aligner les éléments */
     padding-left: 1vw; /* Espacement à gauche pour le titre */
     margin-top: 1vw; /* marge au dessus correspondant a 2% de la largeur de l'écran */
-    font-size: 1.2rem; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
+    font-size: 1rem; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
 }
 
 /*********************************************************************************************************/
@@ -600,7 +602,13 @@ li {
     gap: 10vw; /* Espace entre les éléments du footer */
     background-color: #f2f2f2; /* Couleur de fond du footer */
     margin-top: 3vw; /*marge au dessus correspond a 3% de la largeur de l 'écran*/
+    font-size: 0.8rem;
 }
+
+
+/*******************************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
 
 /*********************************************************************************************************/
 /*----------------------- Media queries ----------------------------------------------------------------*/
@@ -610,17 +618,37 @@ li {
 /*------------------------Écrans large et multi-écrans ---------------------------*/
 /*-------------------------------------------------------------------------------*/
 @media (min-width:1440px) {
-    body {    
+    body {  
+        display: flex;  
         margin: 0 auto; /* Centrer le contenu en laissant les marges se créer automatiquement */
         align-items: center; 
-        font-size: 1.4rem;
-        max-width: 1040px;
+        font-size: 1.5rem;
+        max-width: 1440px;
         justify-content: center;
         margin: 0 auto;
+        width: 80%;
+
         
-        }  
+    }
+    
+    header,  footer {
+        max-width:1440px;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .logo img {
+        height:2rem;
+    }
+    
 
 }
+/***************************************************************************************************************************************************************************/
+/***************************************************************************************************************************************************************************/
+/***************************************************************************************************************************************************************************/
+
+
 /*------------------------------------------------------------------------------------------*/
 /*------------------------Tablettes (entre 768px et 1024px) ---------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
@@ -842,6 +870,10 @@ li {
         gap:15vw;/* Ajustement de l'espace entre  les listes*/
     }
 }   
+
+
+
+
 /*------------------------------------------------------------------------------------------*/
 /*------------------------Mobile moins de 768 px --------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
