@@ -37,20 +37,21 @@
 
 /* Centrage horizontal du contenu dans la page entière */
 body {
+    min-width: 300px;
+    max-width: 1240px;
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
     align-items: center; /* alignement du contenu dans la hauteur */
     box-sizing: border-box; /* Utilise la méthode de calcul de la taille de la boîte pour inclure le padding et la bordure dans la largeur et la hauteur totales de l'élément. */
     font-size: 1rem; /* taille de la police equivalent à 1% de la largeur du viewport */
-    background-color: white;/*Couleur de fond*/
-    max-width: 1024px;;
+    background-color: white;/*Couleur de fond*/;
 }
 
 /* Conteneur principal qui limite la largeur et gère le padding */
 .main-container {
     /* Le conteneur occupe toute la largeur de la fenêtre */
-    max-width: 90vw; /* Il est limité à 90% de la largeur de la fenêtre */
-    padding: 0 3vw; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
+    max-width: 90%; /* Il est limité à 90% de la largeur de la fenêtre */
+    padding: 0 3rem; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
 }
 
 /* Liens : suppression de la décoration par défaut */
@@ -62,7 +63,7 @@ a {
 /* Style des titres de section */
 .section-title {
     margin: 0; /* Supprime les marges par défaut */
-    font-size: 1.3rem; /* Taille du texte, équivaut à environ 22px */
+    font-size: 1.2rem; /* Taille du texte, équivaut à environ 22px */
 }
 
 /* Style général des cartes sur le site */
@@ -86,8 +87,8 @@ a {
 
 /* Style de base des images cartes d 'activités*/
 .card2 img {
-    height: 25vw; /*hauteur de base des images */
-    width: 20vw; /* largeur des images correspondant à 20 % de la largeur du viewport*/
+    height: 80%; /*hauteur de base des images */
+    width: 100%; /* largeur des images correspondant à 20 % de la largeur du viewport*/
     border-top-left-radius: 1.25rem; /* coin  haut gauche arrondi correspondant à 1% de la largeur de l'écran*/
     border-top-right-radius: 1.25rem; /*coin haut droit arrondi correspondant a 1% de la largeur de l'écran*/
     object-fit: cover; /* Redimensionne l'élément pour couvrir entièrement le conteneur tout en préservant les proportions de l'image. */
@@ -126,7 +127,7 @@ h3 {
 
 /* Style pour les listes */
 li {
-    padding:0.5rem;/* Espace entre chaque élément de liste */
+    padding:1rem;/* Espace entre chaque élément de liste */
     list-style-type: none; /* Supprime les puces par défaut */
     font-weight: 500;
 }
@@ -150,10 +151,9 @@ li {
 
 /* Style du conteneur principal de l'en-tête */
 .header {
-    height: 4vw; /* Hauteur de 10% de la hauteur visible de la fenêtre */
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
     align-items: center; /* Centre verticalement les éléments */
-    gap: 20vw; /* Définit un espacement de 20% de la largeur de la fenêtre entre les éléments dans un conteneur. */
+    gap: 20%; /* Définit un espacement de 20% de la largeur de la fenêtre entre les éléments dans un conteneur. */
     margin: 0; /* Suppression de toutes les marges */
     justify-content: space-between;  /* Aligne les éléments sur la ligne, avec un espace égal entre eux, poussant le premier et le dernier élément aux extrémités du conteneur. */
 
@@ -161,25 +161,25 @@ li {
 
 /* Style du logo */
 .logo img {
-    height: 3vw; /* Définit la hauteur du logo */
-    margin-top: 3vw;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
+    height: 2rem; /* Définit la hauteur du logo */
+    margin-top: 1rem;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
 .nav {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    gap: 3vw; /* Crée un espace de 30% entre les éléments */
+    gap: 3rem; /* Crée un espace de 30% entre les éléments */
     padding: 0; /* Supprime tout espacement intérieur autour de l'élément. */
     align-items: center; /* Aligne les éléments enfants au centre dans la hauteur */
-    margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l'écran*/
-    justify-content: center;
+    margin-bottom: 1rem;/*espace inférieur correspondant à 1% de la largeur de l'écran*/
+    justify-content: space-between;
     font-size: 1rem;
 
 }
 
 /* Style les elements de la barre de navigation*/
 .nav-element {
-    padding-top:1.4vw /* Espacement intérieur haut correspondant  1.4% de la largeur de l'écran*/
+    padding-top:1.4rem /* Espacement intérieur haut correspondant  1.4% de la largeur de l'écran*/
 }
 
 /* Style des éléments du menu lors du survol */
@@ -194,7 +194,7 @@ li {
 
 /* Conteneur parent*/
 .research {
-    padding:2vw 0; /* Applique un remplissage de 2vw en haut et en bas, et aucun à gauche et à droite. */
+    padding:3% 0; /* Applique un remplissage de 2vw en haut et en bas, et aucun à gauche et à droite. */
 
 }
 
@@ -202,21 +202,21 @@ li {
 .research-txt p{
     margin-top:0; /* Suppression de la marge haute*/
     font-size: 0.8rem;/* Taille de la police*/
-    margin-bottom: 2vw;/* Espace bas correspondant à 2% de la largeur de l’écran*/
+    margin-bottom: 2%;/* Espace bas correspondant à 2% de la largeur de l’écran*/
     
 }
 
 /* Style pour la zone de recherche*/
 .research-txt h2{
-    margin-bottom: 0.5vw; /* Suppression de la marge basse*/
+    margin-bottom: 0.5%; /* Suppression de la marge basse*/
     font-size: 1rem; /* taille de la police correspondant a 1.5% de la largeur de l'écran*/
 }
 /* Conteneur parent pour l'icône localisation*/
 .local {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    height: 3vw; /* hauteur correspondant à 3% de la largeur du viewport*/
-    width: 4vw; /* Largeur correspondant à 4 % de la largeur de l'écran*/
-    border-radius: 1vw 0 0 1vw; /*Coin arrondis haut gauche et bas gauche correspond a 1% de la largeur de la fenêtre*/
+    height: 2rem; /* hauteur correspondant à 3% de la largeur du viewport*/
+    width: 30%; /* Largeur correspondant à 4 % de la largeur de l'écran*/
+    border-radius: 1rem 0 0 1rem; /*Coin arrondis haut gauche et bas gauche correspond a 1% de la largeur de la fenêtre*/
     background-color: var(--main-bg-color);/* Couleur du fond */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     justify-content: center;/* Centre les éléments enfants horizontalement avec des espaces égaux */
@@ -225,15 +225,16 @@ li {
 /* Style icône localisation */
 .local i {
     display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    padding: 0 1vw; /* espacement intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
+    padding: 0 1%; /* espacement intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     font-size: 1rem; /*taille icône correspondant à 1% de la largeur de l'écran*/
+    justify-content: center;
 }
 
 /* Style pour la barre de recherche */
 .Search-bar {
-    width: 25vw; /*largeur correspondant à 25 % de la largeur de l'écran*/
-    height: 3vw; /*hauteur correspondant à 3% de la largeur de l'écran*/
+    width: 30%; /*largeur correspondant à 25 % de la largeur de l'écran*/
+    height: 3%; /*hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     border:#d9d9d9 solid 0.1rem;/* bordure correspondant à 0.1% de la largeur de l'écran */
@@ -248,12 +249,12 @@ li {
     border-top-right-radius: 1rem; /* Bord haut droit arrondi */
     border-bottom-right-radius: 1rem;/*bord haut gauche arrondi*/
     border: none;/*pas de bordure*/
-    height: 3vw;/* Hauteur correspondant à 3% de la largeur de l'écran*/
+    height: 2rem;/* Hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     font-size: 0.8rem;/*Taille de la police*/
-    width: 10vw;/* Largeur corespondent a 10% de la largeur de l'écran*/
-    padding-left: 0.6vw;/* espace intérieur gauche correspondant a00.6% de la largeur de l'écran*/
+    width: 100%;/* Largeur corespondent a 10% de la largeur de l'écran*/
+    justify-content: center;
 }
 
 /* Style pour la zone de saisie */
@@ -291,10 +292,10 @@ li {
 /* Conteneur pour les filtres, utilisant Flexbox */
 .filter {
     display: flex; /* Flexbox pour aligner les éléments */
-    gap: 1vw; /* Espace de 2rem entre les éléments */
+    gap: 1%; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
     height: 2vw;/* Hauteur correspondant à 2% de la largeur de l'écran*/
-    margin-bottom: 1.5vw; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
+    margin-bottom: 1.5%; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
     font-size: 0.8rem;/* Taille de la police du mot filtre*/
 }
 
@@ -302,19 +303,19 @@ li {
 /* Style pour les boutons de filtre */
 .filter-button {
     display: flex; /* Flexbox pour aligner le contenu du bouton */
-    height: 3vw; /* Hauteur du bouton */
+    height: 3%; /* Hauteur du bouton */
     border-radius: 1.5625rem; /* Bord arrondi */
     align-items: center; /* Centre verticalement le contenu */
     background-color: #fff; /* Fond blanc */ /* Espace entre les éléments du bouton */
     border: 0.125rem solid #d9d9d9; /* Bordure grise claire */
-    padding: 1vw 1vw; /* Espacement intérieur du bouton */
+    padding: 1% 1rem; /* Espacement intérieur du bouton */
     font-size: 0.9rem;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
     text-align: center;/* Centre le texte horizontalement. */
-    gap: 0.8vw;/*Espace entre chaque éléments*/
+    gap: 0.8rem;/*Espace entre chaque éléments*/
 }
 .filter-buttons {
     display: flex; /* Flexbox pour aligner les boutons de filtre */
-    gap: 0.8vw; /* Espace entre chaque boutons de filtre */
+    gap: 0.8rem; /* Espace entre chaque boutons de filtre */
 }
 /*Affichage icône : masqué */
 .search-icon {
@@ -340,14 +341,14 @@ li {
 .info {
     display: flex; /* Flexbox pour aligner les informations */
     align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
-    margin-bottom: 1vw;/* Espace entre le conteneur et la section hebergement correspondant à 1% de la largeur de l'écran */
+    margin-bottom: 1%;/* Espace entre le conteneur et la section hebergement correspondant à 1% de la largeur de l'écran */
 }
 
 /* Style calque icône info personnalisé */
 .fa-layers {
     display: inline-flex;/* Affiche l'élément en tant qu'élément flex en ligne, permettant un alignement horizontal des enfants */
     align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
-    margin-right: 1vw; /* Espace entre l'icône et le texte*/
+    margin-right: 1%; /* Espace entre l'icône et le texte*/
     justify-content: center;/* Centre les éléments  horizontalement . */
 }
 
@@ -375,17 +376,16 @@ li {
 /* Conteneur pour la section Hébergements et Populaires, alignée avec Flexbox */
 .hebergements-and-populaires {
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
-    gap: 2vw;/*Espacement correspondant à 2% de la largeur de l'écran*/
+    gap: 2%;/*Espacement correspondant à 2% de la largeur de l'écran*/
     flex-direction: row;/*alignement sur une ligne de gauche a droite*/
 }
 
 /* Style des sections Hébergements et Populaires */
 .hebergements-and-populaires section {
     border-radius: 1rem; /* Bords arrondis */
-    padding: 1vw; /* Espace intérieur */
+    padding: 1%; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
     font-feature-settings: 'tnum'; /* Force les chiffres tabulaires */
-    gap: 1vw;
 }
 
 
@@ -397,7 +397,7 @@ li {
 .hebergements {
     display: flex;/* Flexbox pour aligner les éléments */
     flex-direction: column;/*alignement en colonne*/
-    width: 65vw; /* La section hébergements occupe 65% de la largeur de son parent */
+    width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
     background-color: var(
         --main-bg-color
     ); /* Fond gris clair pour la section hebergement*/
@@ -617,25 +617,23 @@ li {
 /*-------------------------------------------------------------------------------*/
 /*------------------------Écrans large et multi-écrans ---------------------------*/
 /*-------------------------------------------------------------------------------*/
-@media (min-width:1440px) {
+@media (min-width:1240px) {
     body {  
         display: flex;  
-        margin: 0 auto; /* Centrer le contenu en laissant les marges se créer automatiquement */
-        align-items: center; 
+
         font-size: 1.5rem;
-        max-width: 1440px;
-        justify-content: center;
-        margin: 0 auto;
-        width: 80%;
+        max-width: 1240px;
+        padding:0;
+
 
         
     }
     
-    header,  footer {
-        max-width:1440px;
-        justify-content: center;
-        width: 100%;
+    header,  footer,.research, .filter, .info, .activites, .activites-a-marseille, .card2  {
+        max-width:1240px;
+
         margin: 0 auto;
+        width: 1440px;
     }
     
     .logo img {
