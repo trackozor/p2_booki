@@ -357,15 +357,15 @@ li {
 .icon-circle {
     position: absolute; /* Positionne l'élément et le retire du flux pour permettre de pouvoir positionner un autre élément  */
     color: white; /* Couleur du cercle */
-    border: 0.2rem solid gray;/*bordure grise*/
+    border: 2px solid gray;/*bordure grise*/
     border-radius: 50%;/* bordure circulaire */
-    font-size: 1.2rem;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
+    font-size: 1rem;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
 }
 
 /* Style pour le "I" */
 .icon-info {
     color: var(--main-color); /* Couleur du "i" */
-    font-size: 0.8rem; /* Taille du "i", plus petit que le cercle */
+    font-size: 0.5rem; /* Taille du "i", plus petit que le cercle */
     z-index: 1; /* L'élément sera au-dessus du cercle*/
     position: relative;/*positionne l’élément mais reste dans le flux*/
 }
@@ -643,7 +643,7 @@ li {
         height:2rem;
     }
     .hebergements-and-populaires section  {
-        height:35rem;
+        height:37rem;
     }
     
     .activites-a-marseille .card2 {
@@ -662,6 +662,8 @@ li {
         }
         h3 {
             font-size: 1.1rem;
+            margin-bottom: 2%;
+            padding-top: 1%;
         }
 
     }
@@ -670,18 +672,37 @@ li {
         height: 65%;
     }
 
+    .rangee .card-subtitle {
+        font-size: 0.9rem;
+        margin-top: 3%;
+        margin-bottom: 1.5%;
+    }
 
+    .rangee .card-rating {
+        font-size: 1.2rem;
+    }
     /*--------------------------------------------------------------------------------------------------*/
     /*-------------populaires -----------------------*/
     .populaires-cards {
         .card{
-        height: 9.5rem;
+        height: 10rem;
         }
 
         h3{
             font-size: 1.2rem;
         }
-}
+    }
+
+    .populaires-cards .card-rating {
+        font-size: 1.2rem;
+        padding-left: 2%;
+        margin-top: 6%;
+    }
+
+    .populaires-cards .card-subtitle, .card-subtitle1 {
+        font-size: 0.9rem;
+        padding-top: 1.5%;
+    } 
 }
 /***************************************************************************************************************************************************************************/
 /***************************************************************************************************************************************************************************/
@@ -695,11 +716,15 @@ li {
     /*Style du corps adaptation des valeurs par défaut*/
     body {
         display: flex;/* Utilise flexbox pour aligner les éléments*/
-        font-size: clamp(1rem,1.5rem,2rem);/* Définit la taille du texte de façon responsive : - 1rem comme taille minimale,- 2vw pour une taille fluide en fonction de la largeur de la fenêtre,- 2rem comme taille maximale. */
+        font-size: 1rem;/* Définit la taille du texte de façon responsive : - 1rem comme taille minimale,- 2vw pour une taille fluide en fonction de la largeur de la fenêtre,- 2rem comme taille maximale. */
         height:auto;/* hauteur ajusté automatiquement*/
         width: auto;/*largeur ajusté automatiquement*/  
         margin:0;/*suppression de marges*/
         padding:0;/*suppression espaces intérieur*/     
+    }
+
+    .logo img {
+        height:1rem;
     }
     /*-----------------------------------------------------------------------------------------*/
     /*----------------------------- Navigation --------------------------------------*/
@@ -709,9 +734,9 @@ li {
     .nav-element {
         display: flex;/* utilise flexbox pour aligner les*/
         align-items: center;/* Aligne les éléments enfants au centre de l'axe vertical  */
-        margin-top:1.8vw;/*espace supérieur correspondant à 1.8% de la largeur de l'écran*/
-        padding: 1vw 0;/*espace intérieur haut et bas correspondant à 1% de la largeur de l'écran*/ 
-        font-size: 1.2rem;/* taille de la police */
+        margin-top:3%;/*espace supérieur correspondant à 1.8% de la largeur de l'écran*/
+        padding: 2.8% 0;/*espace intérieur haut et bas correspondant à 1% de la largeur de l'écran*/ 
+        font-size: 0.9rem;/* taille de la police */
     }
 
     /*-----------------------------------------------------------------------------------------*/
@@ -720,12 +745,15 @@ li {
 
     /*Ajustement de la taille de la barre de recherche*/
     .Search-bar, .local, .search-button{
-        height: 3.5vw;/* hauteur correspondant à 4 % de la largeur de l'écran*/
+        height: 4vh/* hauteur correspondant à 4 % de la largeur de l'écran*/
     }
-
+    .Search-bar {
+        width: 40%;
+        margin:-top 2%;
+    }
     /*ajustement zone de texte*/
     .search-input{
-        margin-bottom: 0.2vw;/*espace supérieur correspondant à 0.5% de la largeur de l'écran*/
+        margin-bottom: 0.2%;/*espace supérieur correspondant à 0.5% de la largeur de l'écran*/
     }
 
     /*----------------------------------------------------------------------------------------*/
@@ -737,6 +765,12 @@ li {
         display: flex;/* Utilise flexbox pour aligner les éléments*/
         flex-direction: column; /* Place les éléments en colonne */
         align-items: flex-start; /* Aligne les boutons à gauche */
+        height: auto;
+    }
+
+    .filter h3 {
+        font-size: 1rem;
+        margin:1% 0;
     }
     /*Conteneur parent des boutons*/
     .filter-buttons  {
@@ -744,15 +778,15 @@ li {
         flex-direction: row;/*alignement en ligne*/
         flex-wrap: wrap;/*permet de pouvoir revenir à la ligne*/
         justify-content: flex-start;/*Aligne les elements au debut du conteneur(gauche)*/
-        gap: 2vw; /* espace entre les boutons */
-        margin-bottom:2.5vw ;/*Espace bas correspondant à 2.5% de la largeur de l'écran*/
+        gap: 1vw; /* espace entre les boutons */
+        margin-top: 1%;
     }
+    .filter-button{
+        height: 2.2rem; /* hauteur correspondant à 4% de la largeur de l'écran*/
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-between;
 
-    /*effet lors du clique sur le bouton*/
-    .filter-button:active {
-        background-color: var(
-            --filter-bg-color
-        ); /* change la couleur du bouton au survol*/
     }
 
     /*----------------------------------------------------------------------------------------*/
@@ -760,8 +794,13 @@ li {
     /*----------------------------------------------------------------------------------------*/
 
     /*Adaptation espace conteneur*/
-    .info {
-        margin-top: 3.5vw;/* Espace haut correspondant à 3.5% de la largeur de l'écran*/
+
+    .icon-circle {
+        height:1rem;
+    }
+
+    .icon-info {
+        font-size: 0.5rem;
     }
     /*-------------------------------------------------------------------------------*/
     /*--------------------- Conteneur Hebergement et populaires --------------------*/
@@ -771,14 +810,17 @@ li {
         flex-direction: column; /* Les sections Hébergements et Populaires sont empilées sur les tablettes */
         width: 100%;/* largeur égale a la totalité du conteneur parent*/
     }
+    .hebergements-and-populaires .section-title {
+        font-size: 1.2rem;
+    }
     /*-------------------------------------------------------------------------------*/
     /*------------------Section activités -------------------------------------------*/
     /*-------------------------------------------------------------------------------*/
     
     /* Cartes*/
     .activites-a-marseille .card2 {
-        height: 30vw; /* Ajuste la hauteur des cartes d'activités */
-        margin-bottom: 1vw;/*espace inférieur correspondant à 1% de la largeur de l 'écran */
+        height: 35vh; /* Ajuste la hauteur des cartes d'activités */
+        margin-bottom: 1vh;/*espace inférieur correspondant à 1% de la largeur de l 'écran */
         filter: drop-shadow(
         0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1)
         );/* ajoute une ombre avec un décalage horizontale de 0, un décalage vertical de 1.8% , un flou de 0.9375 et une couleur noire avec une opacité de 10% */
@@ -786,12 +828,13 @@ li {
 
     /*ajustement conteneur parent*/
     .activites-a-marseille {
-        gap: 2vw; /* Ajoute un espacement entre les cartes d'activités */
+        height: auto;
+        gap: 2%; /* Ajoute un espacement entre les cartes d'activités */
     }
 
     /* Ajustement de la police du titre h2 de la section activités*/
     .activites h2 {
-        font-size: 1.5rem;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
+        font-size: 1.2rem;/*ajustement de la police correspondant à 1.4% de la largeur de l'écran*/
     }
     
     /*---------------------------------------------------------------------------------*/
@@ -802,24 +845,26 @@ li {
     .hebergements {
         width: 100%; /* Ajuste la largeur des cartes d'hébergements */
         padding-top:2vw;/*Espace intérieur  haut correspondant à 2% de la largeur de l'écran*/
+        margin-top: 1vh;
     }
 
     /*Ajustement des cartes*/
     .hebergements .card {
-        width: 27vw;/* Longueur des cartes correspondant a 27% de la largeur de l'écran*/
+        width: 25vw;/* Longueur des cartes correspondant a 27% de la largeur de l'écran*/
         height: 19vw;/* hauteur des cartes correspondant à 19 % de la hauteur de l'écran*/
     }
 
     /*ajustement  des images*/
     .hebergements .card img {
-        height: 70%; /* Ajuste la hauteur des images des cartes d'hébergements */
+        height: 60%; /* Ajuste la hauteur des images des cartes d'hébergements */
     }
 
     /*Ajustement des conteneur parent des cartes*/
     .rangee {
-        height: 21vw;/* hauteur correspondant à 21 % de la largeur de l'écran*/
+        height: 20%;
         display: flex;/* Utilise flexbox pour aligner les éléments */
         justify-content: space-between;/*repartis également les espaces*/
+        margin:2% 0;
     }
 
     /*---------------------------------------------------------------------------------*/
@@ -829,6 +874,7 @@ li {
     /* Conteneur principale*/
     .populaires {
         width: 100%; /* prend 100% de l'espace du conteneur parent*/
+        margin-top: 5%;
     }
     
     /* Ajustement du conteneur des cartes*/
