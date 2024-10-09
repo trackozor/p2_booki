@@ -1019,6 +1019,7 @@ h3 {
         padding: 2% 10%; /* Centrage du conteneur de navigation */;
         align-items: center; /* Centre les éléments verticalement */
         height: 5vh; /* Hauteur de la barre de navigation */
+        gap: 20%;
     }
 
 
@@ -1028,9 +1029,12 @@ h3 {
         color: var(--main-color); /* Change la couleur du texte au survol */
         border-bottom: 0.204rem solid var(--main-color); /* Bordure inférieure lors du survol */ /* Ajuste l'espace en bas lors du survol */
         border-top:none;
-        justify-content: space-between;
-        padding:0 12%;
-        padding-top:10%;
+        justify-content: center;
+        padding:0 20%;
+        padding-bottom:5%;
+        width: 100%;
+        margin-top: 20%;
+        gap: 1%;
     }
 
     /*--------------------------------------------------------------*/
