@@ -856,7 +856,7 @@ h3 {
 
     /*Ajustement des cartes*/
     .hebergements .card {
-        width: 25vw;/* Longueur des cartes correspondant a 27% de la largeur de l'écran*/
+        width: 24vw;/* Longueur des cartes correspondant a 27% de la largeur de l'écran*/
         height: 19vw;/* hauteur des cartes correspondant à 19 % de la hauteur de l'écran*/
     }
 
@@ -878,7 +878,7 @@ h3 {
 
     /* Conteneur principale*/
     .populaires {
-        width: 100%; /* prend 100% de l'espace du conteneur parent*/
+        width: 90vw; /* prend 100% de l'espace du conteneur parent*/
         margin-top: 5%;
     }
     
@@ -898,7 +898,7 @@ h3 {
     .populaires-cards .card {
         height: 14vw;/*Ajustement de la hauteur correspondant à 14 % de la largeur de l'écran*/
         margin: 1.5vw 0; /* espace haut et bas correspondant à 1.5 de la largeur de l'écran */
-        width: 24vw;/* largeur correspondant à 27% de la largeur de l'écran*/
+        width: 28vw;/* largeur correspondant à 27% de la largeur de l'écran*/
     }
     
     /*Contenu de la carte a coté de l'image*/
