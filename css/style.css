@@ -11,29 +11,73 @@
 /*   - Conformité W3C : Oui                                                                             */
 /**********************************************************************************************************/
 
-/*-------------------------------------------------------------------------------*/
-/*--------------------- Général -------------------------------------------------*/
-/*-------------------------------------------------------------------------------*/
+/**********************************************************************************************************/
+/*                                 Styles Généraux                                                        */
+/**********************************************************************************************************/
 
+/*==================================================================*/
+/*                               Style police                       */
+/*==================================================================*/                        
+
+/*-----Style des polices ----------*/
 /* Application globale de la police 'Raleway' à tous les éléments */
 * {
     font-family: 'Raleway', sans-serif; /* Définit la police Raleway pour tout le document */
 }
 
-/* Déclaration de variables CSS globales pour les couleurs  et le contraste*/
+/* Police pour les chiffres*/
+.num {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*------- Taille des polices-------*/
+/*titre*/
+h2 {
+    font-size:1.3rem;
+}
+/*Titres cartes*/
+h3 {
+    font-size: 1rem;
+    font-weight:900;
+}
+/*autres textes*/
+p {
+    font-size: 0.9rem;
+}
+
+/*----- Déclaration de variables CSS globales pour les couleurs  et le contraste------------*/
 :root {
     --main-color: #0065fc; /* Couleur principale utilisée pour les éléments importants (ex: texte, bordures) */
     --main-bg-color: #f2f2f2; /* Couleur de fond globale pour les sections */
     --filter-bg-color: #deebff; /* Couleur de fond spécifique pour les filtres */
 }
 
-/* Style des icônes Font Awesome */
-.fa-solid {
-    color: var(
-        --main-color
-    ); /* Applique la couleur principale aux icônes Font Awesome */
+/* Style renforcé pour affichage en gras*/
+.bold {
+    font-weight: 900; /* Met le texte en gras */
 }
 
+/*------- Style des Icônes -------*/
+/* Style des étoiles de notation*/
+.card-rating {
+    font-size: 0.8rem; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
+    padding-bottom: 0.2rem;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
+}
+
+/* Style pour les étoiles inactives dans les évaluations */
+.neutral-star {
+    color: var(--main-bg-color); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
+}
+
+/* Style des icônes Font Awesome */
+.fa-solid {
+    color: var(--main-color); /* Applique la couleur principale aux icônes Font Awesome */
+}
+
+/*==================================================================*/
+/*                     Positionnement général                       */
+/*==================================================================*/  
+/*-------------------------------------------------------------------------------*/
 /* Centrage horizontal du contenu dans la page entière */
 body {
     min-width: 300px;
@@ -44,8 +88,9 @@ body {
     box-sizing: border-box; /* Utilise la méthode de calcul de la taille de la boîte pour inclure le padding et la bordure dans la largeur et la hauteur totales de l'élément. */
     font-size: 1rem; /* taille de la police equivalent à 1% de la largeur du viewport */
     background-color: white;/*Couleur de fond*/;
-}
 
+}
+/*----------------------------------------------------------------------------------*/
 /* Conteneur principal qui limite la largeur et gère le padding */
 .main-container {
     /* Le conteneur occupe toute la largeur de la fenêtre */
@@ -53,17 +98,22 @@ body {
     padding: 0 3rem; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
 }
 
+/*==================================================================*/
+/*                     désactivation des styles héritées            */
+/*==================================================================*/  
 /* Liens : suppression de la décoration par défaut */
 a {
     color: inherit; /* Hérite de la couleur du parent */
     text-decoration: none; /* Supprime le soulignement par défaut des liens */
 }
 
-/* Style des titres de section */
-.section-title {
-    margin: 0; /* Supprime les marges par défaut */
-    font-size: 1.2rem; /* Taille du texte, équivaut à environ 22px */
+/* Style pour les listes */
+ul {
+    list-style-type: none; /* Supprime les puces par défaut */
 }
+
+
+/*----------------------------------------------------------------------------------*/
 
 /* Style général des cartes sur le site */
 .card {
@@ -84,6 +134,7 @@ a {
     ); /* Ajoute une ombre légère sous la carte */
 }
 
+/*----------------------------------------------------------------------*/
 /* Style de base des images cartes d 'activités*/
 .card2 img {
     height: 80%; /*hauteur de base des images */
@@ -100,47 +151,12 @@ a {
     overflow: hidden; /* L'image remplit son conteneur sans être déformée */
     width: 100%; /* largeur des images correspondant à 20 % de la largeur du viewport*/
 }
-
-
-/*Style du text a l intérieur de la carte*/
-.card-txt {
-    margin-top: 1%; /* Suppression marge haute*/
-    margin-bottom:0; /* Suppression marge basse */
-    font-size: 0.6rem; /* taille de la police correspondant a 1% de la largeur de l'écran*/
-}
-.card-title {
-    font-weight: 900;
-    font-size: 0.9rem;
-}
 /* Style des étoiles de notation*/
 .card-rating {
     font-size: 0.8rem; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
     padding-bottom: 0.2rem;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
 }
-
-/* Style renforcé pour affichage en gras*/
-.bold {
-    font-weight: 900; /* Met le texte en gras */
-}
-
-
-/* Style pour les listes */
-ul {
-    list-style-type: none; /* Supprime les puces par défaut */
-}
-
-/* Style pour les étoiles inactives dans les évaluations */
-.neutral-star {
-    color: var(
-        --main-bg-color
-    ); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
-}
-
-/* Style pour les chiffres*/
-.num {
-    font-family: 'Open Sans', sans-serif;
-
-}
+/*-----------------------------------------------------------------------------------------*/
 
 /* Texte pour les lecteurs d'écran */
 .sr-only {
@@ -216,21 +232,19 @@ ul {
 /*********************************************************************************************************/
 /* Conteneur principal de la recherche */
 .research {
-    padding: 2rem 0; /* Applique un remplissage de 2rem en haut et en bas, et aucun à gauche et à droite */
+    display: flex;
+    flex-direction: column;;
+    padding: 3% 0; /* Applique un remplissage de 2rem en haut et en bas, et aucun à gauche et à droite */
+}
+.research h2 {
+    margin:0;
+
+}
+.research p{
+    margin-top: 0;
+    margin-bottom: 2%;
 }
 
-/* Style pour la zone de texte */
-.research-txt p {
-    margin-top: 0; /* Suppression de la marge haute */
-    font-size: 0.875rem; /* Taille de la police */
-    margin-bottom: 1rem; /* Espace bas de 1rem */
-}
-
-/* Style pour le titre de la recherche */
-.research-txt h2 {
-    margin-bottom: 1rem; /* Marge basse de 1rem */
-    font-size: 1.5rem; /* Taille de la police du titre */
-}
 
 /* Conteneur parent pour l'icône localisation */
 .local {
@@ -294,8 +308,9 @@ ul {
 
 /* Style du placeholder */
 .search-input::placeholder {
-    color: black;;
+    color: black;
     font-weight: 900; /* Poids plus léger pour le placeholder */
+    border:none;
 }
 
 /* Autres classes supplémentaires */
@@ -496,14 +511,6 @@ ul {
     height: 15rem; /* L'image occupe 85% de la hauteur de la carte */
     border-top-left-radius: 1rem; /* Arrondit le coin supérieur gauche */
     border-top-right-radius: 1rem; /* Arrondit le coin supérieur droit */
-}
-
-/* Style des titres dans les cartes d'activités */
-.activites-a-marseille h3 {
-    display: flex;/* Utilise Flexbox pour aligner les éléments */
-    padding: 5%; /* Espacement à gauche pour le titre */
-    font-size: 0.7rem; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
-    font-weight: 900;
 }
 
 /*********************************************************************************************************/
