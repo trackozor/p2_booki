@@ -97,6 +97,8 @@ a {
 /* Assure que les images des cartes conservent leurs proportions et remplissent bien l'espace */
 .card img {
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
+    overflow: hidden; /* L'image remplit son conteneur sans être déformée */
+    width: 100%; /* largeur des images correspondant à 20 % de la largeur du viewport*/
 }
 
 
@@ -386,6 +388,7 @@ ul {
 
 /* Conteneur pour la section Hébergements et Populaires, alignée avec Flexbox */
 .hebergements-and-populaires {
+    width: 100%;
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
     gap: 2%;/*Espacement correspondant à 2% de la largeur de l'écran*/
     flex-direction: row;/*alignement sur une ligne de gauche a droite*/
@@ -393,6 +396,7 @@ ul {
 
 /* Style des sections Hébergements et Populaires */
 .hebergements-and-populaires section {
+    height:auto;
     border-radius: 1rem; /* Bords arrondis */
     padding: 1%; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
@@ -408,55 +412,37 @@ ul {
 /* Section des hébergements, occupant 65% de la largeur */
 .hebergements {
     display: flex;/* Flexbox pour aligner les éléments */
-    flex-direction: column;/*alignement en colonne*/
-    width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
+    flex-direction: column;
+    justify-content: space-around
+    ;/*alignement en colonne*/
+    
+    width: 70%; /* La section hébergements occupe 65% de la largeur de son parent */
     background-color: var(
         --main-bg-color
     ); /* Fond gris clair pour la section hebergement*/
 }
-.hebergements .card {
-    width: 15%;
-}
 /*Style titre section hébergement*/
-.hebergements h3, h2 {
-    font-size: 1rem;
+.hebergements h3 {
+    font-size: 0.9rem;
     padding-left: 0.5%;/* Espace intérieur gauche correspondant à 0.5% de la largeur de l'écran*/
-    margin-bottom: 4%;
     font-weight: 900;
 }
 
 /* Style pour les rangées */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    width: auto;/* Largeur automatique pour prendre toute la largeur disponible*/
-    justify-content: space-between;/*espacement répartis également*/
-    align-items: center;/*centrage des éléments dans la hauteur*/
-    padding:0 0.5%;/* espace intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
+    flex-direction: row;
+    justify-content: space-around;
+    height:22vh;   
 }
-
-/*Style des cartes hébergements*/
-.rangee .card {
-    display: flex;/*Flexbox pour aligner les éléments*/
-    flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement /*largeur des cartes correspondant à 16.5% de la largeur de l'écran*/
+.hebergements .rangee .card  {
+    width:17vw;
+    height:18vh; 
 }
-
-/* ligne tarifaire */
-.rangee .card-subtitle {
-    margin-top: 0.5%;/*supprime la marge haute*/
-    margin-bottom: 5%;/*marge basse correspondant a 1% de la largeur de la fenêtre*/
-}
-
-/* Images */
 .rangee .card img {
-    height: 60%;/* L'image prend 60% de la hauteur de la carte*/
-    border-top-left-radius: 0.8rem;
-    border-top-right-radius: 0.8rem;
-    object-fit: cover;
-}
-
-/*Contenu des cartes */
-.rangee .hebergement-content {
-    padding: 0.5%;/* espace intérieur égale 0.5% de la largeur de l'écran */
+    width: 100%;
+    border-radius:1rem 1rem 0 0;
+    height:50%;
 }
 
 /* Lien affichez plus */
@@ -471,98 +457,13 @@ ul {
 
 /* Section Populaires occupant 32% de la largeur */
 .populaires {
-    width: 32%; /* La section Populaires occupe 32% de la largeur de son parent */
+    width: 30%; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;/* Utilise flexbox pour aligner les éléments*/
     flex-direction: column;/* alignement en colonne*/
-    gap:2%;
     background-color: var(
         --main-bg-color
-    ); /* Fond gris clair pour la section populaires */
-}
-/* Titre de la section Populaires avec icône */
-.populaires-title {
-    display: flex; /* Aligne l'icône et le texte horizontalement */
-    justify-content: space-between; /* Espace le texte et l'icône */
-    padding-top: 0.2rem;/* Espace intérieur haut correspondant à 0.5% de la largeur de l'écran */
-    margin-bottom: 2%;
-}
-
-/* Style des cartes dans la section Populaires */
-.populaires-cards{
-    display: flex;/* utilise flexbox pour aligner les éléments*/
-    flex-direction: column;/* Alignement en colonne */
-    gap: 1rem;/* Espace entre les cartes */
-    padding: 0 0.2%;/* Espace intérieur correspondant à 0.2% de la largeur total de l'écran*/  ;
-}
-
-/* Style de l intérieur cartes dans la section Populaires */
-.populaires-cards .card {
-    display: flex; /* Aligne l'image et le texte en ligne */
-    flex-direction: row; /* Aligne les éléments horizontalement */
-    background-color: #fff; /* Fond blanc pour les cartes */
-    border-radius: 1rem; /* Bords arrondis */
-    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
-    overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
-    height: 6rem; /* hauteur de la carte correspondant 9 % de la largeur de l'écran */
-    padding: 0; /* supprime les espaces intérieurs*/
-    margin:0;/* supprime les marges */
+    );
     
-}
-
-/* Style des images dans les cartes Populaires */
-.populaires-cards img {
-    width: 33%; /* L'image occupe 33% de la largeur de la carte */
-    object-fit: cover; /* L'image remplit son conteneur sans être déformée */
-    border-top-left-radius: 0.8rem; /* Arrondit le coin supérieur gauche */
-    border-bottom-left-radius: 0.8rem; /* Arrondit le coin inférieur gauche */
-    margin:0.4rem; /*espace intérieur correspondant à 4% de la largeur de l'écran */
-}
-
-/* Contenu textuel des cartes Populaires */
-.populaires-cards .card-content {
-    width: 67%; /* Le texte occupe 67% de la carte */
-    display: flex;/* Utilise flexbox pour aligner les éléments*/
-    flex-direction: column; /* Le texte est aligné verticalement */
-    margin: 0; /* Supprime les marges*/
-    justify-content: center;/* aligne les éléments au centre dans la hauteur*/
-}
-
-/* Conteneur parent comprenant le titre et le sous-titre*/
-.populaires-cards .card-txt{
-    padding:0;/*Suppression des espaces intérieurs*/
-    margin-left: 2%;/* Espace intérieur gauche correspondant à 0.5% de la largeur total*/
-    display: flex;/* Utilise flexbox pour aligner les éléments*/
-    flex-direction: column;/* alignement en colonne */
-}
-
-/* Style des sous titre pour les titre sur deux lignes */
-.populaires-cards .card-subtitle {
-    margin-top:0;/* Suppression de la marge haute*/
-    margin-bottom:15%;/* espace bas correspondant à 2% de la largeur de l'écran*/
-    padding:0; /*suppression des espaces intérieurs*/
-}
-
-/*Style des titres sur deux lignes*/
-.populaires-cards .card-title {
-    margin: 0; /* Supprime les marges */
-    padding:0;  /*Supprime les espaces intérieurs*/
-}
-
-/* Style pour les étoiles*/
-.populaires-cards .card-rating {
-    margin:0.5%;/*espace correspondant a 0.5% de la largeur de l'écran*/
-}
-
-
-.populaires-cards .card-title1 {
-    margin-top:5%; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
-    padding:0
-
-}
-/* Style pour les sous-titres des titres sur une lignes */
-.populaires-cards .card-subtitle1 {
-    margin-top:0;/* suppression de la marge haute*/
-    margin-bottom:24%;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
 }
 
 
