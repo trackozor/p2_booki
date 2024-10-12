@@ -239,6 +239,19 @@ ul {
 /*--------------------------------Recherche: Barre------------------------------------------------------*/
 /*********************************************************************************************************/
 
+/*------Conteneur parent pour la barre de recherche -------------*/
+
+.search-bar {
+    max-width: 20rem; /* Limite la largeur pour garder une bonne lisibilité */
+    height: 2.5rem; /* Hauteur en rem */
+    display: flex;  /* Utilise Flexbox pour aligner les éléments */
+    align-items: center; /* Aligne les éléments enfants au centre verticalement */
+    border: 1px solid #d9d9d9; /* Bordure fine */
+    border-radius: 1rem; /* Coins arrondis */
+}
+
+/*---------------- Icône Localisation -----------------------*/
+
 /* Conteneur parent pour l'icône localisation */
 .local {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
@@ -257,16 +270,25 @@ ul {
     justify-content: center;
 }
 
-/* Style pour la barre de recherche */
-.search-bar {
-    max-width: 20rem; /* Limite la largeur pour garder une bonne lisibilité */
-    height: 2.5rem; /* Hauteur en rem */
-    display: flex;  /* Utilise Flexbox pour aligner les éléments */
-    align-items: center; /* Aligne les éléments enfants au centre verticalement */
-    border: 1px solid #d9d9d9; /* Bordure fine */
-    border-radius: 1rem; /* Coins arrondis */
+/*---------------- Zone de texte barre de recherche ------------*/
+
+/* Style pour la zone de saisie */
+.search-input {
+    width: 70%; /* Prend une partie de la barre de recherche pour équilibrer avec le bouton */
+    height: 2rem; /* Correspond à la hauteur du bouton pour un alignement parfait */
+    padding: 0.5rem; /* Ajoute du padding pour améliorer la saisie */
+    border: none; /* Pas de bordure */
+    text-align: center;  /* Alignement du texte */
+    background-color: transparent;
 }
 
+/* Style du placeholder */
+.search-input::placeholder {
+    color: black;
+    font-weight: 900; /* Poids plus léger pour le placeholder */
+    border:none;
+}
+/*---------------- Bouton barre de recherche ------------*/
 /* Style bouton de recherche */
 .search-button {
     background-color: var(--main-color); /* Couleur de fond */
@@ -288,24 +310,6 @@ ul {
     background-color: var(--main-bg-color); /* Change la couleur de fond au survol */
     transform: scale(1.05); /* Légère animation pour attirer l'attention */
 }
-
-/* Style pour la zone de saisie */
-.search-input {
-    width: 70%; /* Prend une partie de la barre de recherche pour équilibrer avec le bouton */
-    height: 2rem; /* Correspond à la hauteur du bouton pour un alignement parfait */
-    padding: 0.5rem; /* Ajoute du padding pour améliorer la saisie */
-    border: none; /* Pas de bordure */
-    text-align: center;  /* Alignement du texte */
-    background-color: transparent;
-}
-
-/* Style du placeholder */
-.search-input::placeholder {
-    color: black;
-    font-weight: 900; /* Poids plus léger pour le placeholder */
-    border:none;
-}
-
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
 /*********************************************************************************************************/
