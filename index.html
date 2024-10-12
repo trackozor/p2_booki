@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <!-- Encodage des caractères (UTF-8) pour supporter tous les types de caractères -->
         <meta charset="UTF-8" >
 
         <!-- Ajuste l'affichage pour les appareils mobiles (responsive design) -->
@@ -55,23 +56,17 @@
             <header class="header">
                 <!-- logo -->
                 <div class="logo">
-                    <a href="/" aria-label="Retour à l'accueil">
-                        <img src="./images/logo/Booki@3x.webp" alt="logo de l entreprise booki">
-                    </a>
+                    <img
+                        src="./images/logo/Booki@3x.webp"
+                        alt="logo de l entreprise booki"
+                    >
                 </div>
                 <!-- Section de navigation contenant les liens vers différentes sections de la page -->
-                <nav class="nav" aria-label="Navigation Principale">
-                    <ul class="nav-list">
-                        
-                        <li>
-                        <!-- lien vers la section hébergements-->
-                            <a class="nav-element" href="#hebergements">Hébergements</a>
-                        </li>
-                        
-                        <li>
-                            <a class="nav-element" href="#activites">Activités</a>
-                        </li>
-                    </ul>
+                <nav class="nav">
+                    <!-- lien vers la section hébergements-->
+                    <a class="nav-element" href="#hebergements">Hébergements</a>
+                    <!-- lien vers la section Activités-->
+                    <a class="nav-element" href="#activites">Activités</a>
                 </nav>
             </header>
 
@@ -84,29 +79,36 @@
 
                 <div class="research">
                     <!-- Titre de la section -->
-                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                    <!-- Complément illustrant le titre -->
-                    <p>En plein centre-ville ou en pleine nature</p>
-                    
+                    <div class="research-txt">
+                        <h2>
+                            Trouvez votre hébergement pour des vacances de rêve
+                        </h2>
+                        <!-- complément illustrant le titre-->
+                        <p>En plein centre-ville ou en pleine nature</p>
+                    </div>
                     <!-- Formulaire de recherche -->
-                    <form class="search-bar" aria-label="Formulaire de recherche d'hébergement">
-                        <!-- Icône pour la localisation avec indication textuelle cachée -->
+                    <form class="Search-bar">
+                        <!-- Icône pour la localisation -->
                         <div class="local">
-                            <label for="localisation-search" class="sr-only">Localisation</label>
-                            <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                            <i
+                                class="fa fa-map-marker-alt"
+                                aria-hidden="true"
+                            ></i>
                         </div>
-                        <!-- Zone de texte où le lieu doit être rentré -->
+                        <!-- Zone de texte ou le lieu doit être rentré-->
+                        <label for="localisation-search" class="sr-only"
+                            >Saisissez un lieu</label
+                        >
                         <input
                             type="text"
                             id="localisation-search"
                             placeholder="Marseille, France"
                             class="search-input"
-                            aria-label="Saisissez un lieu"
                         >
-                        <!-- Bouton pour valider -->
+                        <!-- Bouton pour valider-->
                         <button type="submit" class="search-button">
                             <span class="search-txt">Rechercher</span>
-                            <i class="fa-solid fa-search search-icon" aria-hidden="true"></i>
+                            <i class="fa-solid fa-search search-icon"></i>
                         </button>
                     </form>
                 </div>
@@ -118,49 +120,59 @@
                     <h3>Filtres</h3>
 
                     <div class="filter-buttons">
-                        <!-- Bouton économique -->
-                        <button type="button" class="filter-button" aria-label="Filtrer les hébergements économiques">
-                            <!-- icône billet en vague -->
-                            <i class="fa fa-solid fa-money-bill-wave" aria-hidden="true"></i>
-                            <!-- titre bouton -->
-                            <span class="bold">Économique</span>
+                        <!-- Bouton économique-->
+                        <button type="button" class="filter-button">
+                        <!-- icône billet en vague-->
+                        <i
+                            class="fa fa-solid fa-money-bill-wave"
+                            aria-hidden="true"
+                        ></i>
+                        <!-- titre bouton-->
+                        <span class="bold">Économique</span>
                         </button>
-                        
                         <!-- Bouton familial -->
-                        <button type="button" class="filter-button" aria-label="Filtrer les hébergements familiaux">
-                            <!-- icône personne -->
-                            <i class="fa fa-solid fa-person" aria-hidden="true"></i>
-                            <!-- Titre bouton -->
-                            <span class="bold">Familial</span>
+                        <button type="button" class="filter-button">
+                        <!-- icône femme stylisé -->
+                        <i class="fa fa-solid fa-person" aria-hidden="true"></i>
+                        <!-- Titre bouton -->
+                        <span class="bold">Familial</span>
                         </button>
-                        
-                        <!-- Bouton romantique -->
-                        <button type="button" class="filter-button" aria-label="Filtrer les hébergements romantiques">
-                            <!-- icône cœur -->
-                            <i class="fa fa-solid fa-heart" aria-hidden="true"></i>
-                            <!-- Titre bouton -->
-                            <span class="bold">Romantique</span>
+                        <!-- Bouton Romantique -->
+                        <button type="button" class="filter-button">
+                        <!-- icône cur -->
+                        <i class="fa fa-solid fa-heart" aria-hidden="true"></i>
+                        <!-- Titre bouton -->
+                        <span class="bold">Romantique</span>
                         </button>
-                        
                         <!-- Bouton Nos pépites -->
-                        <button type="button" class="filter-button" aria-label="Filtrer les hébergements populaires">
-                            <!-- icône flamme -->
-                            <i class="fa fa-solid fa-fire" aria-hidden="true"></i>
-                            <!-- Titre bouton -->
-                            <span class="bold">Nos pépites</span>
+                        <button type="button" class="filter-button">
+                        <!-- icône flamme -->
+                        <i class="fa fa-solid fa-fire" aria-hidden="true"></i>
+                        <!-- Titre bouton -->
+                        <span class="bold">Nos pépites</span>
                         </button>
-                    </div>
-                    
                 </div>
+                    </div>
 
                 <!-- ***************************************************************************** -->
                 <!--#### Section info avec icône ###########-->
-                <div class="info" role="status" aria-live="polite">
-                    <!-- Icône "i" avec une bordure ronde et accessibilité -->
-                    <div class="info-icon" aria-label="Information" aria-hidden="true">i</div>                    
-                    <!-- Texte informatif -->
+
+                <!-- info avec icône -->
+                <div class="info">
+                    <!-- Icône personnalisée avec un cercle et un "i" à l'intérieur -->
+                    <span class="fa-layers fa-fw">
+                        <i
+                            class="fa-solid fa-circle icon-circle"
+                            aria-hidden="true"
+                        ></i>
+                        <i
+                            class="fa-solid fa-info icon-info"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+                    <!-- texte -->
                     <p>
-                        Plus de <span class="num">500</span> logements sont disponibles dans cette ville.
+                        Plus de <span class="num">500</span> logements sont disponibles dans cette ville
                     </p>
                 </div>
 
@@ -187,7 +199,9 @@
                                     <div class="hebergement-content">
                                         <div class="card-txt">
                                             <!-- Titre de l hébergement -->
-                                            <h3> Hôtel du port</h3>
+                                            <h3 class="card-title">
+                                                Hôtel du port
+                                            </h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">52 </span><span
@@ -241,7 +255,9 @@
                                     <div class="hebergement-content">
                                         <div class="card-txt">
                                             <!-- Titre de l hébergement -->
-                                            <h3> Hôtel chez Amina</h3>
+                                            <h3 class="card-title">
+                                                Hôtel chez Amina
+                                            </h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">96 </span><span
@@ -295,7 +311,9 @@
                                     <div class="hebergement-content">
                                         <div class="card-txt">
                                             <!-- Titre de l hébergement  -->
-                                            <h3>Hôtel les Mouettes</h3>
+                                            <h3 class="card-title">
+                                                Hôtel les Mouettes
+                                            </h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">76 </span><span
@@ -352,7 +370,9 @@
                                     <div class="hebergement-content">
                                         <div class="card-txt">
                                             <!-- Titre de l hébergement -->
-                                            <h3>Hôtel de la mer</h3>
+                                            <h3 class="card-title">
+                                                Hôtel de la mer
+                                            </h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">46 </span><span
@@ -406,7 +426,7 @@
                                     <div class="hebergement-content">
                                         <div class="card-txt">
                                             <!-- Titre de l hébergement -->
-                                            <h3> Auberge la Canebière</h3>
+                                            <h3 class="card-title"> Auberge la Canebière</h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                             Nuit à partir de <span class="num">25 </span><span class="bold">€</span>
@@ -457,7 +477,9 @@
                                     <div class="hebergement-content">
                                         <div class="card-txt">
                                             <!-- Titre de l hébergement -->
-                                            <h3>Auberge le Panier</h3>
+                                            <h3 class="card-title">
+                                                Auberge le Panier
+                                            </h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">23 </span><span
@@ -532,7 +554,9 @@
                                     <div class="card-content">
                                         <div class="card-txt">
                                             <!-- Titre de l'hébergement -->
-                                            <h3>Hôtel Le soleil du matin</h3>
+                                            <h3 class="card-title1">
+                                                Hôtel Le soleil du matin
+                                            </h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">128 </span><span
@@ -585,7 +609,9 @@
                                     <div class="card-content">
                                         <div class="card-txt">
                                             <!-- Titre de l 'Hébergement -->'
-                                            <h3>Chambres d’hôtes Au cœur de l’eau</h3>
+                                            <h3 class="card-title">Chambres d’hôtes Au cœur de
+                                                l’eau
+                                            </h3>
                                             <!-- Prix de la nuitée -->
                                             <p class="card-subtitle">
                                                 Nuit à partir de <span class="num">71 </span> <span class="bold">€</span>
@@ -637,7 +663,9 @@
                                     <div class="card-content">
                                         <div class="card-txt">
                                             <!-- Titre de l 'hébergement-->'
-                                            <h3>Hôtel Bleu et Blanc</h3>
+                                            <h3 class="card-title2">
+                                                Hôtel Bleu et Blanc
+                                            </h3>
                                             <!-- Prix de la nuitée-->
                                             <p class="card-subtitle1">
                                                 Nuit à partir de <span class="num">68 </span><span class="bold">€</span

@@ -11,73 +11,29 @@
 /*   - Conformité W3C : Oui                                                                             */
 /**********************************************************************************************************/
 
-/**********************************************************************************************************/
-/*                                 Styles Généraux                                                        */
-/**********************************************************************************************************/
+/*-------------------------------------------------------------------------------*/
+/*--------------------- Général -------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
 
-/*==================================================================*/
-/*                               Style police                       */
-/*==================================================================*/                        
-
-/*-----Style des polices ----------*/
 /* Application globale de la police 'Raleway' à tous les éléments */
 * {
     font-family: 'Raleway', sans-serif; /* Définit la police Raleway pour tout le document */
 }
 
-/* Police pour les chiffres*/
-.num {
-    font-family: 'Open Sans', sans-serif;
-}
-
-/*------- Taille des polices-------*/
-/*titre*/
-h2 {
-    font-size:1.3rem;
-}
-/*Titres cartes*/
-h3 {
-    font-size: 1rem;
-    font-weight:900;
-}
-/*autres textes*/
-p {
-    font-size: 0.9rem;
-}
-
-/*----- Déclaration de variables CSS globales pour les couleurs  et le contraste------------*/
+/* Déclaration de variables CSS globales pour les couleurs  et le contraste*/
 :root {
     --main-color: #0065fc; /* Couleur principale utilisée pour les éléments importants (ex: texte, bordures) */
     --main-bg-color: #f2f2f2; /* Couleur de fond globale pour les sections */
     --filter-bg-color: #deebff; /* Couleur de fond spécifique pour les filtres */
 }
 
-/* Style renforcé pour affichage en gras*/
-.bold {
-    font-weight: 900; /* Met le texte en gras */
-}
-
-/*------- Style des Icônes -------*/
-/* Style des étoiles de notation*/
-.card-rating {
-    font-size: 0.8rem; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
-    padding-bottom: 0.2rem;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
-}
-
-/* Style pour les étoiles inactives dans les évaluations */
-.neutral-star {
-    color: var(--main-bg-color); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
-}
-
 /* Style des icônes Font Awesome */
 .fa-solid {
-    color: var(--main-color); /* Applique la couleur principale aux icônes Font Awesome */
+    color: var(
+        --main-color
+    ); /* Applique la couleur principale aux icônes Font Awesome */
 }
 
-/*==================================================================*/
-/*                     Positionnement général                       */
-/*==================================================================*/  
-/*-------------------------------------------------------------------------------*/
 /* Centrage horizontal du contenu dans la page entière */
 body {
     min-width: 300px;
@@ -88,9 +44,8 @@ body {
     box-sizing: border-box; /* Utilise la méthode de calcul de la taille de la boîte pour inclure le padding et la bordure dans la largeur et la hauteur totales de l'élément. */
     font-size: 1rem; /* taille de la police equivalent à 1% de la largeur du viewport */
     background-color: white;/*Couleur de fond*/;
-
 }
-/*----------------------------------------------------------------------------------*/
+
 /* Conteneur principal qui limite la largeur et gère le padding */
 .main-container {
     /* Le conteneur occupe toute la largeur de la fenêtre */
@@ -98,41 +53,19 @@ body {
     padding: 0 3rem; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
 }
 
-/*==================================================================*/
-/*                     gestion des styles héritées                  */
-/*==================================================================*/  
 /* Liens : suppression de la décoration par défaut */
 a {
     color: inherit; /* Hérite de la couleur du parent */
     text-decoration: none; /* Supprime le soulignement par défaut des liens */
 }
 
-/* Style pour les listes */
-ul {
-    list-style-type: none; /* Supprime les puces par défaut */
+/* Style des titres de section */
+.section-title {
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 1.2rem; /* Taille du texte, équivaut à environ 22px */
 }
 
-/*==================================================================*/
-/*                     Accessibilité                                */
-/*==================================================================*/ 
-
-/* Texte pour les lecteurs d'écran */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-/*==================================================================*/
-/*                     Styles généraux des Cartes                   */
-/*==================================================================*/ 
-
-/* Style général des cartes de la section hebergement et populaires */
+/* Style général des cartes sur le site */
 .card {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Coins arrondis */
@@ -151,7 +84,6 @@ ul {
     ); /* Ajoute une ombre légère sous la carte */
 }
 
-/*-------------------Images dans les cartes---------------*/
 /* Style de base des images cartes d 'activités*/
 .card2 img {
     height: 80%; /*hauteur de base des images */
@@ -165,13 +97,54 @@ ul {
 /* Assure que les images des cartes conservent leurs proportions et remplissent bien l'espace */
 .card img {
     object-fit: cover; /* L'image remplit son conteneur sans être déformée */
-    overflow: hidden; /* L'image remplit son conteneur sans être déformée */
-    width: 100%; /* largeur des images correspondant à 20 % de la largeur du viewport*/
 }
 
-.card h3, .card2 h3 {
-    padding:0 5%;
+
+/*Style du text a l intérieur de la carte*/
+.card-txt {
+    margin-top: 1%; /* Suppression marge haute*/
+    margin-bottom:0; /* Suppression marge basse */
+    font-size: 0.6rem; /* taille de la police correspondant a 1% de la largeur de l'écran*/
 }
+.card-content .card-txt.card-title {
+    font-weight: 900;
+}
+/* Style des étoiles de notation*/
+.card-rating {
+    font-size: 0.8rem; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
+    padding-bottom: 0.2rem;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
+}
+
+/* Style renforcé pour affichage en gras*/
+.bold {
+    font-weight: 900; /* Met le texte en gras */
+}
+
+/* style des titres des cartes */
+h3 { 
+    margin: 0;/*Suppression des marges*/
+    font-weight: 900;
+}
+
+/* Style pour les listes */
+li {
+    padding:1rem;/* Espace entre chaque élément de liste */
+    list-style-type: none; /* Supprime les puces par défaut */
+}
+
+/* Style pour les étoiles inactives dans les évaluations */
+.neutral-star {
+    color: var(
+        --main-bg-color
+    ); /* Les étoiles neutres prennent la couleur du fond pour indiquer qu'elles ne sont pas sélectionnées */
+}
+
+/* Style pour les chiffres*/
+.num {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
 /*********************************************************************************************************/
 /*---------------------------------- Header -------------------------------------------------------------*/
 /*********************************************************************************************************/
@@ -180,7 +153,7 @@ ul {
 .header {
     display: flex; /* Utilise Flexbox pour aligner les éléments de l'en-tête */
     align-items: center; /* Centre verticalement les éléments */
-    gap: 2rem; /* Définit un espacement de 20% de la largeur de la fenêtre entre les éléments dans un conteneur. */
+    gap: 20%; /* Définit un espacement de 20% de la largeur de la fenêtre entre les éléments dans un conteneur. */
     margin: 0; /* Suppression de toutes les marges */
     justify-content: space-between;  /* Aligne les éléments sur la ligne, avec un espace égal entre eux, poussant le premier et le dernier élément aux extrémités du conteneur. */
 
@@ -188,127 +161,129 @@ ul {
 
 /* Style du logo */
 .logo img {
-    height: 1rem; /* Définit la hauteur du logo */
+    height: 2rem; /* Définit la hauteur du logo */
     margin-top: 1rem;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
 }
 
+/* Style pour le menu de navigation dans l'en-tête */
+.nav {
+    display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
+    gap: 3rem; /* Crée un espace de 30% entre les éléments */
+    padding: 0; /* Supprime tout espacement intérieur autour de l'élément. */
+    align-items: center; /* Aligne les éléments enfants au centre dans la hauteur */
+    margin-bottom: 1rem;/*espace inférieur correspondant à 1% de la largeur de l'écran*/
+    justify-content: space-between;
+    font-size: 1rem;
 
-/*------------------------Barre de navigations -------------------------*/
-/*-- Conteneur parent --*/
-.nav-list {
-    display: flex; /* Utilise Flexbox pour que les éléments de liste soient alignés horizontalement */
-    list-style: none; /* Supprime les puces de la liste */
-    padding: 0; /* Supprime les marges internes du <ul> */
-    margin: 0; /* Supprime les marges externes du <ul> */
-    gap: 3rem; /* Espacement entre les éléments de la liste */
 }
-/* -- éléments intérieur --*/
+
+/* Style les elements de la barre de navigation*/
 .nav-element {
-    padding: 0.9rem 0; /* Espacement intérieur haut et bas, uniformisé */
-    transition: color 0.3s ease, border-top 0.3s ease; /* Transition fluide lors du survol */
+    padding-top:1.4rem /* Espacement intérieur haut correspondant  1.4% de la largeur de l'écran*/
 }
 
-/*-- Style des éléments du menu lors du survol --*/
+/* Style des éléments du menu lors du survol */
 .nav-element:hover {
     color: var(--main-color); /* Change la couleur de texte au survol */
     border-top: 0.204rem solid var(--main-color); /* Ajoute une bordure supérieure colorée */
 }
 
 /********************************************************************************************************/
-/*--------------------------------Recherche: Texte------------------------------------------------------*/
+/*--------------------------------Recherche-------------------------------------------------------------*/
 /*********************************************************************************************************/
-/* Conteneur principal de la recherche */
+
+/* Conteneur parent*/
 .research {
-    display: flex;
-    flex-direction: column;;
-    padding: 3% 0; /* Applique un remplissage de 2rem en haut et en bas, et aucun à gauche et à droite */
-}
-
-/* tItres zone recherche */
-.research h2 {
-    margin:0
+    padding:3% 0; /* Applique un remplissage de 2vw en haut et en bas, et aucun à gauche et à droite. */
 
 }
-/* Texte zone recherche */
-.research p{
-    margin-top: 0;
-    margin-bottom: 2%;
+
+/* Style pour la zone de texte*/
+.research-txt p{
+    margin-top:0; /* Suppression de la marge haute*/
+    font-size: 0.8rem;/* Taille de la police*/
+    margin-bottom: 2%;/* Espace bas correspondant à 2% de la largeur de l’écran*/
+    
 }
 
-/********************************************************************************************************/
-/*--------------------------------Recherche: Barre------------------------------------------------------*/
-/*********************************************************************************************************/
-
-/*------Conteneur parent pour la barre de recherche -------------*/
-
-.search-bar {
-    max-width: 20rem; /* Limite la largeur pour garder une bonne lisibilité */
-    height: 2.5rem; /* Hauteur en rem */
-    display: flex;  /* Utilise Flexbox pour aligner les éléments */
-    align-items: center; /* Aligne les éléments enfants au centre verticalement */
-    border: 1px solid #d9d9d9; /* Bordure fine */
-    border-radius: 1rem; /* Coins arrondis */
+/* Style pour la zone de recherche*/
+.research-txt h2{
+    margin-bottom: 0.5%; /* Suppression de la marge basse*/
+    font-size: 1rem; /* taille de la police correspondant a 1.5% de la largeur de l'écran*/
 }
-
-/*---------------- Icône Localisation -----------------------*/
-
-/* Conteneur parent pour l'icône localisation */
+/* Conteneur parent pour l'icône localisation*/
 .local {
-    display: flex; /* Utilise Flexbox pour aligner les éléments */
-    height: 2.5rem; /* Hauteur en rem pour une meilleure cohérence */
-    width: 3rem; /* Largeur fixe */
-    border-radius: 1rem 0 0 1rem; /* Coins arrondis en haut à gauche et bas à gauche */
-    background-color: var(--main-bg-color); /* Couleur du fond */
-    align-items: center; /* Aligne les éléments enfants au centre verticalement */
-    justify-content: center; /* Centre les éléments horizontalement */
+    display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
+    height: 2rem; /* hauteur correspondant à 3% de la largeur du viewport*/
+    width: 30%; /* Largeur correspondant à 4 % de la largeur de l'écran*/
+    border-radius: 1rem 0 0 1rem; /*Coin arrondis haut gauche et bas gauche correspond a 1% de la largeur de la fenêtre*/
+    background-color: var(--main-bg-color);/* Couleur du fond */
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
+    justify-content: center;/* Centre les éléments enfants horizontalement avec des espaces égaux */
 }
 
 /* Style icône localisation */
 .local i {
-    padding: 0 1rem; /* Espacement intérieur gauche et droite en rem */
-    font-size: 1.2rem; /* Taille de l'icône */
+    display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
+    padding: 0 1%; /* espacement intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
+    font-size: 1rem; /*taille icône correspondant à 1% de la largeur de l'écran*/
     justify-content: center;
 }
 
-/*---------------- Zone de texte barre de recherche ------------*/
+/* Style pour la barre de recherche */
+.Search-bar {
+    width: 30%; /*largeur correspondant à 25 % de la largeur de l'écran*/
+    height: 3%; /*hauteur correspondant à 3% de la largeur de l'écran*/
+    display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
+    border:#d9d9d9 solid 0.1rem;/* bordure correspondant à 0.1% de la largeur de l'écran */
+    border-radius: 1rem;/*coins arrondis dont le rayon correspond à 1% de la largeur de l'écran*/
+}
+
+/* Style bouton */
+.search-button {
+    background-color: var(--main-color);/* Couleur de fond */
+    font-weight: 700;/*contrôle de la mise en gras du texte*/
+    color: #fff;/*couleur du texte*/
+    border-top-right-radius: 1rem; /* Bord haut droit arrondi */
+    border-bottom-right-radius: 1rem;/*bord haut gauche arrondi*/
+    border: none;/*pas de bordure*/
+    height: 2rem;/* Hauteur correspondant à 3% de la largeur de l'écran*/
+    display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
+    align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
+    font-size: 0.8rem;/*Taille de la police*/
+    width: 100%;/* Largeur corespondent a 10% de la largeur de l'écran*/
+    justify-content: center;
+}
 
 /* Style pour la zone de saisie */
 .search-input {
-    width: 70%; /* Prend une partie de la barre de recherche pour équilibrer avec le bouton */
-    height: 2rem; /* Correspond à la hauteur du bouton pour un alignement parfait */
-    padding: 0.5rem; /* Ajoute du padding pour améliorer la saisie */
-    border: none; /* Pas de bordure */
-    text-align: center;  /* Alignement du texte */
-    background-color: transparent;
+    display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
+    width: 17vw; /*Largeur correspondant à 17% de la largeur de l'écran  */
+    height: 1.6vw; /* hauteur correspondant à 1.6%de la largeur de la fenêtre*/
+    border: none;/* Pas de bordure*/
+    text-align: center;  /* Alignement du texte dans la largeur de son conteneur*/
+    align-items: center;
 }
 
 /* Style du placeholder */
 .search-input::placeholder {
-    color: black;
-    font-weight: 900; /* Poids plus léger pour le placeholder */
-    border:none;
+    color: #000;/*Couleur du texte*/
+    font-weight: 900;/* Mise en gras*/
+    font-size: 0.8rem;/* Taille de la police du texte*/
+    border:none;/*pas de bordure*/
+    display: flex;
+    align-content: center;
 }
-/*---------------- Bouton barre de recherche ------------*/
-/* Style bouton de recherche */
-.search-button {
-    background-color: var(--main-color); /* Couleur de fond */
-    font-weight: 700; /* Mise en gras du texte */
-    color: #fff; /* Couleur du texte */
-    border-top-right-radius: 1rem; /* Bord haut droit arrondi */
-    border-bottom-right-radius: 1rem; /* Bord bas droit arrondi */
-    border: none; /* Pas de bordure */
-    height: 2.5rem; /* Hauteur en rem */
-    padding: 0 1.5rem; /* Padding pour une meilleure apparence */
-    display: flex;  /* Utilise Flexbox pour aligner les éléments */
-    align-items: center; /* Aligne les éléments enfants au centre verticalement */
-    font-size: 0.8rem; /* Taille de la police */
-    justify-content: center;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition pour l'interaction utilisateur */
+.localisation-search {
+    display:flex;
+    align-items: center;
+    align-content: center;
 }
-
-.search-button:hover {
-    background-color: var(--main-bg-color); /* Change la couleur de fond au survol */
-    transform: scale(1.05); /* Légère animation pour attirer l'attention */
+.search-txt {
+    display: flex;
+    align-content: center;
 }
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
@@ -320,7 +295,7 @@ ul {
     gap: 1%; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
     height: 2vw;/* Hauteur correspondant à 2% de la largeur de l'écran*/
-    margin:2% 0; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
+    margin-bottom: 1.5%; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
     font-size: 0.8rem;/* Taille de la police du mot filtre*/
 }
 
@@ -362,26 +337,37 @@ ul {
 /*-----------------------------Zone de texte avec icône entre filtre et section hebergement-----------------------------------------------------*/
 /******************************************************************************************************/
 
+/* Conteneur d'informations */
 .info {
-    display: flex; 
-    align-items: center;
-    gap: 0.5rem; /* Espace entre l'icône et le texte */
-    margin-bottom: 1%;
+    display: flex; /* Flexbox pour aligner les informations */
+    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
+    margin-bottom: 1%;/* Espace entre le conteneur et la section hebergement correspondant à 1% de la largeur de l'écran */
 }
 
-.info-icon  {
-    color: rgb(94, 155, 211); /* Couleur du "i" en bleu */
-    font-size: 0.7rem; /* Taille augmentée pour être plus visible */
-    font-weight: 700;
-    border: 2px solid lightgray; /* Bordure grise */
-    border-radius: 50%; /* Pour arrondir la bordure en cercle */
-    padding: 0.1rem; /* Espace autour de l'icône */
-    display: inline-flex; /* Pour centrer le contenu plus facilement */
-    justify-content: center; /* Centre le "i" horizontalement */
-    align-items: center; /* Centre le "i" verticalement */
-    width: 0.8rem;
+/* Style calque icône info personnalisé */
+.fa-layers {
+    display: inline-flex;/* Affiche l'élément en tant qu'élément flex en ligne, permettant un alignement horizontal des enfants */
+    align-items: center;/* Aligne les éléments enfants au centre sur l'axe transversal. */
+    margin-right: 1%; /* Espace entre l'icône et le texte*/
+    justify-content: center;/* Centre les éléments  horizontalement . */
 }
 
+/* Style pour le cercle */
+.icon-circle {
+    position: absolute; /* Positionne l'élément et le retire du flux pour permettre de pouvoir positionner un autre élément  */
+    color: white; /* Couleur du cercle */
+    border: 2px solid gray;/*bordure grise*/
+    border-radius: 50%;/* bordure circulaire */
+    font-size: 1rem;/*hauteur correspondant à 1.6% de la largeur de l'écran*/
+}
+
+/* Style pour le "I" */
+.icon-info {
+    color: var(--main-color); /* Couleur du "i" */
+    font-size: 0.5rem; /* Taille du "i", plus petit que le cercle */
+    z-index: 1; /* L'élément sera au-dessus du cercle*/
+    position: relative;/*positionne l’élément mais reste dans le flux*/
+}
 
 /********************************************************************************************************/
 /*-----------------------------Conteneur Principale-----------------------------------------------------*/
@@ -389,7 +375,6 @@ ul {
 
 /* Conteneur pour la section Hébergements et Populaires, alignée avec Flexbox */
 .hebergements-and-populaires {
-    width: 100%;
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
     gap: 2%;/*Espacement correspondant à 2% de la largeur de l'écran*/
     flex-direction: row;/*alignement sur une ligne de gauche a droite*/
@@ -397,7 +382,6 @@ ul {
 
 /* Style des sections Hébergements et Populaires */
 .hebergements-and-populaires section {
-    height:auto;
     border-radius: 1rem; /* Bords arrondis */
     padding: 1%; /* Espace intérieur */
     box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
@@ -413,31 +397,58 @@ ul {
 /* Section des hébergements, occupant 65% de la largeur */
 .hebergements {
     display: flex;/* Flexbox pour aligner les éléments */
-    flex-direction: column;
-    justify-content: space-around
-    ;/*alignement en colonne*/
-    
-    width: 70%; /* La section hébergements occupe 65% de la largeur de son parent */
+    flex-direction: column;/*alignement en colonne*/
+    width: 65%; /* La section hébergements occupe 65% de la largeur de son parent */
     background-color: var(
         --main-bg-color
     ); /* Fond gris clair pour la section hebergement*/
 }
 
+/*Style titre section hébergement*/
+.hebergements h3, h2 {
+    font-size: 0.7rem;
+    padding-left: 0.5%;/* Espace intérieur gauche correspondant à 0.5% de la largeur de l'écran*/
+    margin-bottom: 4%;
+    font-weight: 900;
+}
+
 /* Style pour les rangées */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
-    flex-direction: row;
-    justify-content: space-around;
-    height:30vh;   
+    width: auto;/* Largeur automatique pour prendre toute la largeur disponible*/
+    justify-content: space-between;/*espacement répartis également*/
+    align-items: center;/*centrage des éléments dans la hauteur*/
+    padding:0 0.5%;/* espace intérieur gauche et droite correspondant à 1% de la largeur de l'écran*/
 }
-.hebergements .rangee .card  {
-    width:18vw; 
-    height: 25vh;
+
+/*Style des cartes hébergements*/
+.rangee .card {
+    display: flex;/*Flexbox pour aligner les éléments*/
+    flex-direction: column; /* Assure que le contenu interne est bien organisé verticalement */
+    height: 8rem;/* hauteur de la carte correspondant a 12% de la largeur de l'écran*/
+    width: 9rem;/*largeur des cartes correspondant à 16.5% de la largeur de l'écran*/
 }
+h3 {
+    font-weight: 900;
+    color: #000;
+}
+/* ligne tarifaire */
+.rangee .card-subtitle {
+    margin-top: 0.5%;/*supprime la marge haute*/
+    margin-bottom: 5%;/*marge basse correspondant a 1% de la largeur de la fenêtre*/
+}
+
+/* Images */
 .rangee .card img {
-    width: 100%;
-    border-radius:1rem 1rem 0 0;
-    height:20vh;
+    height: 60%;/* L'image prend 60% de la hauteur de la carte*/
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    object-fit: cover;
+}
+
+/*Contenu des cartes */
+.rangee .hebergement-content {
+    padding: 0.5%;/* espace intérieur égale 0.5% de la largeur de l'écran */
 }
 
 /* Lien affichez plus */
@@ -452,13 +463,98 @@ ul {
 
 /* Section Populaires occupant 32% de la largeur */
 .populaires {
-    width: 30%; /* La section Populaires occupe 32% de la largeur de son parent */
+    width: 32%; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;/* Utilise flexbox pour aligner les éléments*/
     flex-direction: column;/* alignement en colonne*/
+    gap:2%;
     background-color: var(
         --main-bg-color
-    );
+    ); /* Fond gris clair pour la section populaires */
+}
+/* Titre de la section Populaires avec icône */
+.populaires-title {
+    display: flex; /* Aligne l'icône et le texte horizontalement */
+    justify-content: space-between; /* Espace le texte et l'icône */
+    padding-top: 0.2rem;/* Espace intérieur haut correspondant à 0.5% de la largeur de l'écran */
+    margin-bottom: 2%;
+}
+
+/* Style des cartes dans la section Populaires */
+.populaires-cards{
+    display: flex;/* utilise flexbox pour aligner les éléments*/
+    flex-direction: column;/* Alignement en colonne */
+    gap: 1rem;/* Espace entre les cartes */
+    padding: 0 0.2%;/* Espace intérieur correspondant à 0.2% de la largeur total de l'écran*/  ;
+}
+
+/* Style de l intérieur cartes dans la section Populaires */
+.populaires-cards .card {
+    display: flex; /* Aligne l'image et le texte en ligne */
+    flex-direction: row; /* Aligne les éléments horizontalement */
+    background-color: #fff; /* Fond blanc pour les cartes */
+    border-radius: 1rem; /* Bords arrondis */
+    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1); /* Ombre sous la carte */
+    overflow: hidden; /* Empêche le contenu de dépasser les bords arrondis */
+    height: 6rem; /* hauteur de la carte correspondant 9 % de la largeur de l'écran */
+    padding: 0; /* supprime les espaces intérieurs*/
+    margin:0;/* supprime les marges */
     
+}
+
+/* Style des images dans les cartes Populaires */
+.populaires-cards img {
+    width: 33%; /* L'image occupe 33% de la largeur de la carte */
+    object-fit: cover; /* L'image remplit son conteneur sans être déformée */
+    border-top-left-radius: 0.8rem; /* Arrondit le coin supérieur gauche */
+    border-bottom-left-radius: 0.8rem; /* Arrondit le coin inférieur gauche */
+    margin:0.4rem; /*espace intérieur correspondant à 4% de la largeur de l'écran */
+}
+
+/* Contenu textuel des cartes Populaires */
+.populaires-cards .card-content {
+    width: 67%; /* Le texte occupe 67% de la carte */
+    display: flex;/* Utilise flexbox pour aligner les éléments*/
+    flex-direction: column; /* Le texte est aligné verticalement */
+    margin: 0; /* Supprime les marges*/
+    justify-content: center;/* aligne les éléments au centre dans la hauteur*/
+}
+
+/* Conteneur parent comprenant le titre et le sous-titre*/
+.populaires-cards .card-txt{
+    padding:0;/*Suppression des espaces intérieurs*/
+    margin-left: 2%;/* Espace intérieur gauche correspondant à 0.5% de la largeur total*/
+    display: flex;/* Utilise flexbox pour aligner les éléments*/
+    flex-direction: column;/* alignement en colonne */
+}
+
+/* Style des sous titre pour les titre sur deux lignes */
+.populaires-cards .card-subtitle {
+    margin-top:0;/* Suppression de la marge haute*/
+    margin-bottom:15%;/* espace bas correspondant à 2% de la largeur de l'écran*/
+    padding:0; /*suppression des espaces intérieurs*/
+}
+
+/*Style des titres sur deux lignes*/
+.populaires-cards .card-title {
+    margin: 0; /* Supprime les marges */
+    padding:0;  /*Supprime les espaces intérieurs*/
+}
+
+/* Style pour les étoiles*/
+.populaires-cards .card-rating {
+    margin:0.5%;/*espace correspondant a 0.5% de la largeur de l'écran*/
+}
+
+
+.populaires-cards .card-title1 {
+    margin-top:5%; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
+    padding:0
+
+}
+/* Style pour les sous-titres des titres sur une lignes */
+.populaires-cards .card-subtitle1 {
+    margin-top:0;/* suppression de la marge haute*/
+    margin-bottom:24%;/* Marge base correspondant à 3.5 % de la largeur de l'écran*/
 }
 
 
@@ -493,6 +589,14 @@ ul {
     border-top-right-radius: 1rem; /* Arrondit le coin supérieur droit */
 }
 
+/* Style des titres dans les cartes d'activités */
+.activites-a-marseille h3 {
+    display: flex;/* Utilise Flexbox pour aligner les éléments */
+    padding: 5%; /* Espacement à gauche pour le titre */
+    font-size: 0.7rem; /* taille de la police correspondant a 1.2% de la largeur de l'écran */
+    font-weight: 900;
+}
+
 /*********************************************************************************************************/
 /*------------------------------Footer-------------------------------------------------------------------*/
 /*********************************************************************************************************/
@@ -522,60 +626,55 @@ ul {
 /*-------------------------------------------------------------------------------*/
 @media (min-width:1240px) {
     body {  
-        display: flex;/* Utilise flexbox pour ligner les éléments*/  
-        align-content: center; /* Centre verticalement les éléments */
-        justify-content: center; /* Centre horizontalement le contenu */
-        margin: 0 auto; /* Centre la page avec des marges automatiques */
-        font-size: 1rem; /* Taille de la police par défaut */
-        max-width: 1440px; /* Limite la largeur du contenu */
-        padding: 0; /* Pas de padding pour le corps */
+        display: flex;  
+        align-content: center;
+        justify-content: center;
+        margin:0 auto;
+        font-size: 1rem;
+        max-width: 1440px;
+        padding:0;
     }
     
-     /* Ajuste la largeur maximale pour certains éléments comme le header, le footer, etc. */
-    header, footer, .research, .filter, .info, .activites, .activites-a-marseille, .card2 {
-        max-width: 1240px; /* Limite la largeur de ces éléments à 1240px */
-        margin: 0 auto; /* Centre ces éléments horizontalement */
-        width: 1440px; /* Définit la largeur maximale de ces éléments */
+    header,  footer,.research, .filter, .info, .activites, .activites-a-marseille, .card2  {
+        max-width:1240px;
+
+        margin: 0 auto;
+        width: 1440px;
     }
     
-    /* Ajuste la taille du logo */
     .logo img {
-        height: 2rem; /* Définit la hauteur du logo à 2rem */
+        height:2rem;
     }
-
-    /* Ajuste la hauteur des sections d'hébergements et populaires */
-    .hebergements-and-populaires section {
-        height: 37rem; /* Définit la hauteur des sections à 37rem */
+    .hebergements-and-populaires section  {
+        height:37rem;
     }
-
-    /* Ajuste les dimensions des cartes d'activités */
+    
     .activites-a-marseille .card2 {
-        height: 25rem; /* Définit la hauteur des cartes d'activités à 25rem */
-        width: 17rem;  /* Définit la largeur des cartes à 17rem */
+        height:25rem;
+        width:17rem
+
     }
 
-    /* Ajuste la taille du lien "affichez plus" */
     .affichez_plus a {
-        font-size: 1rem; /* Définit la taille de la police du lien "affichez plus" */
+        font-size: 1rem;
     }
     /*--------------------------------------------------------------------------------------------------*/
     /*---------------- hebergements --------------------------------------------------------------------*/
     
     .rangee {
         height: 30rem; 
-    }
-    .rangee h3 {
+        .card {
+            height: 14rem;
+            width: 15rem;
+        }
+        h3 {
             font-size: 1.1rem;
             margin-bottom: 2%;
             padding-top: 1%;
         }
 
     }
-    .rangee .card{
-        height: 14rem;
-        width: 15rem;
-
-    }
+    
     .rangee .card img{
         height: 65%;
     }
@@ -591,14 +690,15 @@ ul {
     }
     /*--------------------------------------------------------------------------------------------------*/
     /*-------------populaires -----------------------*/
-    .populaires-cards .card{
+    .populaires-cards {
+        .card{
         height: 10rem;
-    }
+        }
 
-    .populaires-cards  h3{
-        font-size: 1.2rem;
+        h3{
+            font-size: 1.2rem;
+        }
     }
-    
 
     .populaires-cards .card-rating {
         font-size: 1.2rem;
@@ -617,7 +717,7 @@ ul {
     .activites h2 {
         font-size: 1.2rem;
     }
-
+}
 /***************************************************************************************************************************************************************************/
 /***************************************************************************************************************************************************************************/
 /***************************************************************************************************************************************************************************/
@@ -847,7 +947,6 @@ ul {
     .populaires-cards .card-title {
         margin: 0; /* Supprime les marges */
         padding:0;  /*Supprime les espaces intérieurs*/
-        font-size: 0.9rem;
     }
 
     /* Style pour les étoiles*/
@@ -858,11 +957,8 @@ ul {
     /* Style pour les titres sur une lignes*/
     .populaires-cards .card-title1 {
         margin-top:1.2vw; /*espace haut correspondant à 0.7 % de la largeur de l'écran*/
-        font-size: 0.9rem;
     }
-    .populaires-cards .card-title2 {
-        font-size: 0.9rem;
-    }
+
     /* Style pour les sous-titres des titres sur une lignes */
     .populaires-cards .card-subtitle1 {
         margin-top:0.5vw;/* suppression de la marge haute*/
@@ -1224,7 +1320,6 @@ ul {
         width: 60%; /* Largeur du contenu texte des cartes */
         padding-left: 1%; /* Espace entre l'image et le texte */
         display: flex; /* Flexbox pour aligner les éléments */
-        justify-content: space-between;
     }
 
     /*titres*/
@@ -1238,14 +1333,14 @@ ul {
     .populaires-cards .card-subtitle {
         font-size: 0.7rem; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
-
+        margin-bottom: 12%;/* marge inférieur correspondant à 4% de la hauteur de l'écran*/
     }
 
     /*Style 2 sous-titres*/
     .populaires-cards .card-subtitle1 {
         font-size: 0.7rem; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
-
+        margin-bottom: 21%;/*marge inférieur correspondant à 6% de la hauteur de l'écran*/
     }
 
     /*Etoiles*/
@@ -1323,4 +1418,3 @@ ul {
         padding:0 2%;
     }
 }
-
