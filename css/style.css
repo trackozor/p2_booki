@@ -99,7 +99,7 @@ body {
 }
 
 /*==================================================================*/
-/*                     désactivation des styles héritées            */
+/*                     gestion des styles héritées                  */
 /*==================================================================*/  
 /* Liens : suppression de la décoration par défaut */
 a {
@@ -112,10 +112,27 @@ ul {
     list-style-type: none; /* Supprime les puces par défaut */
 }
 
+/*==================================================================*/
+/*                     Accessibilité                                */
+/*==================================================================*/ 
 
-/*----------------------------------------------------------------------------------*/
+/* Texte pour les lecteurs d'écran */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
-/* Style général des cartes sur le site */
+/*==================================================================*/
+/*                     Styles généraux des Cartes                   */
+/*==================================================================*/ 
+
+/* Style général des cartes de la section hebergement et populaires */
 .card {
     background-color: white; /* Fond blanc pour les cartes */
     border-radius: 1.25rem; /* Coins arrondis */
@@ -134,7 +151,7 @@ ul {
     ); /* Ajoute une ombre légère sous la carte */
 }
 
-/*----------------------------------------------------------------------*/
+/*-------------------Images dans les cartes---------------*/
 /* Style de base des images cartes d 'activités*/
 .card2 img {
     height: 80%; /*hauteur de base des images */
@@ -151,23 +168,9 @@ ul {
     overflow: hidden; /* L'image remplit son conteneur sans être déformée */
     width: 100%; /* largeur des images correspondant à 20 % de la largeur du viewport*/
 }
-/* Style des étoiles de notation*/
-.card-rating {
-    font-size: 0.8rem; /*Taille de étoiles correspondant a 1% de la largeur de l'écran */
-    padding-bottom: 0.2rem;/*espace intérieur bas correspondant a 0.5% de la largeur de l'écran*/
-}
-/*-----------------------------------------------------------------------------------------*/
 
-/* Texte pour les lecteurs d'écran */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+.card h3, .card2 h3 {
+    padding:0 5%;
 }
 /*********************************************************************************************************/
 /*---------------------------------- Header -------------------------------------------------------------*/
@@ -185,50 +188,34 @@ ul {
 
 /* Style du logo */
 .logo img {
-    height: 2rem; /* Définit la hauteur du logo */
+    height: 1rem; /* Définit la hauteur du logo */
     margin-top: 1rem;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
 }
 
-/* Style pour le menu de navigation dans l'en-tête */
-.nav {
-    display: flex; /* Utilise Flexbox pour aligner les éléments du menu */
-    align-items: center; /* Aligne les éléments enfants au centre dans la hauteur */
-    justify-content: center;
-    padding: 0; /* Supprime tout espacement intérieur autour de l'élément. */
-    margin-bottom: 1rem;/*espace inférieur correspondant à 1% de la largeur de l'écran*/
-    font-size: 1rem;
 
-}
-
+/*------------------------Barre de navigations -------------------------*/
+/*-- Conteneur parent --*/
 .nav-list {
     display: flex; /* Utilise Flexbox pour que les éléments de liste soient alignés horizontalement */
     list-style: none; /* Supprime les puces de la liste */
     padding: 0; /* Supprime les marges internes du <ul> */
     margin: 0; /* Supprime les marges externes du <ul> */
-    gap: 2rem; /* Espacement entre les éléments de la liste */
+    gap: 3rem; /* Espacement entre les éléments de la liste */
 }
-
-.nav-list li {
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les marges internes */
-}
-
+/* -- éléments intérieur --*/
 .nav-element {
-    text-decoration: none; /* Supprime la décoration de lien par défaut (souvent un soulignement) */
-    color: inherit; /* Conserve la couleur de texte héritée, utile pour la flexibilité de design */
     padding: 0.9rem 0; /* Espacement intérieur haut et bas, uniformisé */
     transition: color 0.3s ease, border-top 0.3s ease; /* Transition fluide lors du survol */
 }
 
-
-/* Style des éléments du menu lors du survol */
+/*-- Style des éléments du menu lors du survol --*/
 .nav-element:hover {
     color: var(--main-color); /* Change la couleur de texte au survol */
     border-top: 0.204rem solid var(--main-color); /* Ajoute une bordure supérieure colorée */
 }
 
 /********************************************************************************************************/
-/*--------------------------------Recherche-------------------------------------------------------------*/
+/*--------------------------------Recherche: Texte------------------------------------------------------*/
 /*********************************************************************************************************/
 /* Conteneur principal de la recherche */
 .research {
@@ -236,15 +223,21 @@ ul {
     flex-direction: column;;
     padding: 3% 0; /* Applique un remplissage de 2rem en haut et en bas, et aucun à gauche et à droite */
 }
+
+/* tItres zone recherche */
 .research h2 {
-    margin:0;
+    margin:0
 
 }
+/* Texte zone recherche */
 .research p{
     margin-top: 0;
     margin-bottom: 2%;
 }
 
+/********************************************************************************************************/
+/*--------------------------------Recherche: Barre------------------------------------------------------*/
+/*********************************************************************************************************/
 
 /* Conteneur parent pour l'icône localisation */
 .local {
@@ -266,7 +259,6 @@ ul {
 
 /* Style pour la barre de recherche */
 .search-bar {
-    width: 100%; /* Prend tout l'espace disponible dans le conteneur */
     max-width: 20rem; /* Limite la largeur pour garder une bonne lisibilité */
     height: 2.5rem; /* Hauteur en rem */
     display: flex;  /* Utilise Flexbox pour aligner les éléments */
@@ -300,10 +292,11 @@ ul {
 /* Style pour la zone de saisie */
 .search-input {
     width: 70%; /* Prend une partie de la barre de recherche pour équilibrer avec le bouton */
-    height: 2.5rem; /* Correspond à la hauteur du bouton pour un alignement parfait */
+    height: 2rem; /* Correspond à la hauteur du bouton pour un alignement parfait */
     padding: 0.5rem; /* Ajoute du padding pour améliorer la saisie */
     border: none; /* Pas de bordure */
     text-align: center;  /* Alignement du texte */
+    background-color: transparent;
 }
 
 /* Style du placeholder */
@@ -313,16 +306,6 @@ ul {
     border:none;
 }
 
-/* Autres classes supplémentaires */
-.localisation-search {
-    display: flex;
-    align-items: center;
-}
-
-.search-txt {
-    display: flex;
-    align-items: center;
-} 
 /**********************************************************************************************************/
 /*-------------------------------Filtres------------------------------------------------------------------*/
 /*********************************************************************************************************/
@@ -333,7 +316,7 @@ ul {
     gap: 1%; /* Espace de 2rem entre les éléments */
     align-items: center; /* Centre verticalement les éléments */
     height: 2vw;/* Hauteur correspondant à 2% de la largeur de l'écran*/
-    margin-bottom: 1.5%; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
+    margin:2% 0; /*Marge basse correspondant à 1.5% de la largeur de l'écran*/
     font-size: 0.8rem;/* Taille de la police du mot filtre*/
 }
 
@@ -384,16 +367,15 @@ ul {
 
 .info-icon  {
     color: rgb(94, 155, 211); /* Couleur du "i" en bleu */
-    font-size: 1.2rem; /* Taille augmentée pour être plus visible */
+    font-size: 0.7rem; /* Taille augmentée pour être plus visible */
     font-weight: 700;
     border: 2px solid lightgray; /* Bordure grise */
     border-radius: 50%; /* Pour arrondir la bordure en cercle */
-    padding: 0.2rem; /* Espace autour de l'icône */
+    padding: 0.1rem; /* Espace autour de l'icône */
     display: inline-flex; /* Pour centrer le contenu plus facilement */
     justify-content: center; /* Centre le "i" horizontalement */
     align-items: center; /* Centre le "i" verticalement */
-    width: 1.2rem; /* Largeur du cercle */
-    height: 1.2rem; /* Hauteur du cercle (égale à la largeur pour un cercle parfait) */
+    width: 0.8rem;
 }
 
 
@@ -436,28 +418,22 @@ ul {
         --main-bg-color
     ); /* Fond gris clair pour la section hebergement*/
 }
-/*Style titre section hébergement*/
-.hebergements h3 {
-    font-size: 0.9rem;
-    padding-left: 0.5%;/* Espace intérieur gauche correspondant à 0.5% de la largeur de l'écran*/
-    font-weight: 900;
-}
 
 /* Style pour les rangées */
 .rangee {
     display: flex; /* Flexbox pour aligner les éléments en ligne */
     flex-direction: row;
     justify-content: space-around;
-    height:22vh;   
+    height:30vh;   
 }
 .hebergements .rangee .card  {
-    width:17vw;
-    height:18vh; 
+    width:18vw; 
+    height: 25vh;
 }
 .rangee .card img {
     width: 100%;
     border-radius:1rem 1rem 0 0;
-    height:50%;
+    height:20vh;
 }
 
 /* Lien affichez plus */
