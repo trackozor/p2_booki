@@ -163,6 +163,7 @@ li {
 .logo img {
     height: 2rem; /* Définit la hauteur du logo */
     margin-top: 1rem;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
+    margin-left:  0.5rem;
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
@@ -379,6 +380,7 @@ li {
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
     gap: 1%;/*Espacement correspondant à 2% de la largeur de l'écran*/
     flex-direction: row;/*alignement sur une ligne de gauche a droite*/
+    justify-content: center;
 }
 
 /* Style des sections Hébergements et Populaires */
