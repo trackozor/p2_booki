@@ -234,7 +234,7 @@ li {
 /* Style pour la barre de recherche */
 .Search-bar {
     width: 30%; /*largeur correspondant à 25 % de la largeur de l'écran*/
-    height: 3%; /*hauteur correspondant à 3% de la largeur de l'écran*/
+    height: 2.1rem; /*hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     border:#d9d9d9 solid 0.1rem;/* bordure correspondant à 0.1% de la largeur de l'écran */
@@ -249,7 +249,7 @@ li {
     border-top-right-radius: 1rem; /* Bord haut droit arrondi */
     border-bottom-right-radius: 1rem;/*bord haut gauche arrondi*/
     border: none;/*pas de bordure*/
-    height: 2rem;/* Hauteur correspondant à 3% de la largeur de l'écran*/
+    height: 2.1rem;/* Hauteur correspondant à 3% de la largeur de l'écran*/
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     align-items: center; /* Aligne les éléments enfants au centre sur l'axe transversal. */
     font-size: 0.8rem;/*Taille de la police*/
@@ -261,7 +261,7 @@ li {
 .search-input {
     display: flex;  /* Utilise Flexbox pour aligner les éléments du menu */
     width: 17vw; /*Largeur correspondant à 17% de la largeur de l'écran  */
-    height: 1.6vw; /* hauteur correspondant à 1.6%de la largeur de la fenêtre*/
+    height: 2rem; /* hauteur correspondant à 1.6%de la largeur de la fenêtre*/
     border: none;/* Pas de bordure*/
     text-align: center;  /* Alignement du texte dans la largeur de son conteneur*/
     align-items: center;
@@ -375,8 +375,9 @@ li {
 
 /* Conteneur pour la section Hébergements et Populaires, alignée avec Flexbox */
 .hebergements-and-populaires {
+    width: 100%;
     display: flex; /* Utilise Flexbox pour aligner les sections côte à côte */
-    gap: 2%;/*Espacement correspondant à 2% de la largeur de l'écran*/
+    gap: 1%;/*Espacement correspondant à 2% de la largeur de l'écran*/
     flex-direction: row;/*alignement sur une ligne de gauche a droite*/
 }
 
