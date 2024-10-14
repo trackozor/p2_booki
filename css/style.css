@@ -1232,7 +1232,7 @@ h3 {
         display: flex;
         flex-direction: column;
         width: 100%;/* Prend 902% de la largeur de son conteneur parent*/
-        padding:0 2%;/* espace intérieur gauche et droite correspondant à 2% de la hauteur */
+        padding:0 ;
     }
 
     /*Cartes*/
@@ -1364,7 +1364,7 @@ h3 {
         display: flex; /* Flexbox pour aligner les cartes */
         flex-direction: column; /* Aligne les cartes verticalement */
         gap: 4vh; /* Espacement entre les cartes */
-        width: 100%; /* Les cartes occupent toute la largeur */
+        width:100ù; /* Les cartes occupent toute la largeur */
         align-items: center;/*aligne les éléments depuis le centre */
     }
     /*titre section*/
@@ -1418,3 +1418,4 @@ h3 {
         padding:0 2%;
     }
 }
+
