@@ -37,7 +37,7 @@
 /* Centrage horizontal du contenu dans la page entière */
 body {
     min-width: 300px;
-    max-width: 1240px;
+    max-width: 1440px;
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     justify-content: center; /* Centre horizontalement le contenu */
     align-items: center; /* alignement du contenu dans la hauteur */
@@ -50,7 +50,7 @@ body {
 .main-container {
     /* Le conteneur occupe toute la largeur de la fenêtre */
     max-width: 90%; /* Il est limité à 90% de la largeur de la fenêtre */
-    padding: 0 3rem; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
+    padding: 0 3%; /* Ajoute un espace de chaque côté en fonction de la largeur de la fenêtre */
 }
 
 /* Liens : suppression de la décoration par défaut */
