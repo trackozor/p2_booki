@@ -653,12 +653,12 @@ h3 {
     }
     .activites-a-marseille {
         gap:2%;
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
     }
     .activites-a-marseille .card2 {
         height:25rem;
-        width:16rem
+        width:18rem
 
     }
 
