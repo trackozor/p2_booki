@@ -1350,7 +1350,7 @@ h3 {
     .populaires-cards .card-subtitle1 {
         font-size: 0.7rem; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
-        margin-bottom: 30%;/*marge inférieur correspondant à 21% */
+        margin-bottom: 23%;/*marge inférieur correspondant à 21% */
     }
 
     /*Etoiles*/
