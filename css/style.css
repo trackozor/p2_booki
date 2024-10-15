@@ -811,7 +811,6 @@ h3 {
         font-size: 0.8rem;
         display: flex;
         justify-content: space-between;
-
     }
 
     /*----------------------------------------------------------------------------------------*/
@@ -1176,8 +1175,8 @@ h3 {
     
     /* Bouton de filtre*/
     .filter-button {
-        width: 40%;/*largeur correspondant à 18% de la hauteur de l'écran*/
-        height: 3rem; /* Hauteur correspondant à 5% de la hauteur de l'écran */
+        width: 45%;
+        height: 3rem; 
         border-radius: 1.25rem; /*  ajustement Bord arrondi */
         padding: 2%; /* Espacement intérieur du bouton */
         font-size: 1rem;/* Taille de la police correspondant à 1.2% de la largeur de l'écran*/
