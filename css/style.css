@@ -466,7 +466,7 @@ h3 {
 
 /* Section Populaires occupant 32% de la largeur */
 .populaires {
-    width: 32%; /* La section Populaires occupe 32% de la largeur de son parent */
+    width: 35%; /* La section Populaires occupe 32% de la largeur de son parent */
     display: flex;/* Utilise flexbox pour aligner les éléments*/
     flex-direction: column;/* alignement en colonne*/
     gap:2%;
@@ -650,6 +650,11 @@ h3 {
     }
     .hebergements-and-populaires section  {
         height:37rem;
+    }
+    .hebergements-and-populaires{
+        gap:3%;
+        width: 100%;
+        margin: 0 auto;
     }
     .activites-a-marseille {
         gap:2%;
