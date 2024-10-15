@@ -639,10 +639,10 @@ h3 {
     }
     
     header,  footer,.research, .filter, .info, .activites, .activites-a-marseille, .card2  {
-        max-width:1240px;
+        max-width:1440px;
 
         margin: 0 auto;
-        width: 1440px;
+        width: 1340px;
     }
     
     .logo img {
@@ -651,10 +651,14 @@ h3 {
     .hebergements-and-populaires section  {
         height:37rem;
     }
-    
+    .activites-a-marseille {
+        gap:2%;
+        width: 95%;
+        margin: 0 auto;
+    }
     .activites-a-marseille .card2 {
         height:25rem;
-        width:17rem
+        width:16rem
 
     }
 
