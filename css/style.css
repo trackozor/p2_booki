@@ -1310,7 +1310,7 @@ h3 {
     /*icône statistique*/
     .custom-icon {
         padding-right: 2%;/*espace intérieur droit correspondant à 2% de la hauteur*/
-        padding-top: 2%;/*espace supérieur correspondant à 2% de la hauteur*/
+        padding-top: 6%;/*espace supérieur correspondant à 5% de la hauteur*/
     }
     /*conteneur des cartes*/
     .populaires-cards{
