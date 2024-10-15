@@ -1092,7 +1092,7 @@ h3 {
     }
     /*Conteneur de la barre de recherche*/
     .Search-bar {
-        width: 90%; /* La barre de recherche prend toute la largeur */
+        width: 90%; /* La barre de recherche prend 90% de toute la largeur */
         height: 3rem;
         margin: 3vh auto; /* Espace vertical autour de la barre */
         display: flex; /* Flexbox pour aligner les éléments à l'intérieur */
@@ -1101,7 +1101,7 @@ h3 {
 
     /*conteneur icône localisation*/
     .local {
-        height: 3rem; /* Hauteur correspondant à 5% de la hauteur de l'écran */
+        height: 3rem; /* Hauteur correspondant à 3rem */
         width: 25%; /* Largeur de l'icône */
         display: flex; /* Flexbox pour aligner */
         align-items: center; /* Centre verticalement  */
@@ -1134,7 +1134,7 @@ h3 {
         display: inline; /* Affiche l'icône de recherche */
         color: #f2f2f2; /* Couleur de l'icône */
         font-size: 1rem; /* Taille de l'icône */
-        padding-left:0.5vh/*espace intérieur gauche correspondant à 1.5% de la hauteur de l’écran*/
+        padding-left:0.5vh/*espace intérieur gauche correspondant à 0.5% de la hauteur de l’écran*/
     }
 
     /* désactivation texte*/
@@ -1247,7 +1247,7 @@ h3 {
 
     /*Cartes*/
     .rangee .card {
-        width: 90vw; /* Chaque carte prend toute la largeur */
+        width: 90vw; 
         margin-top: 1vh ; /* marge entre le titre et la première carte */
         border-radius: 1.2rem;/* Ajustement des coins arrondis*/
         height: 35vh;
@@ -1321,7 +1321,7 @@ h3 {
     /*carte*/
     .populaires-cards .card {
         margin: 1% ; /* Espacement vertical autour des cartes */
-        width: 90vw;/* largeur du contenu correspondant à 38% de la hauteur de l'écran  */
+        width: 90vw;
         border-radius: 1rem;/* Ajustement visuel des coins arrondis*/
     }
 
@@ -1337,20 +1337,20 @@ h3 {
         font-size: 0.9rem; /* Taille du titre des cartes populaires correspondant à 2% de la hauteur de l'écran */
     }
     .populaires-cards .card-title2 {
-        padding-bottom: 0;/* marge inférieur correspondant à 3% de la hauteur de l'écran*/
+        padding-bottom: 0;
     }
     /*Style 1 sous-titres*/
     .populaires-cards .card-subtitle {
         font-size: 0.7rem; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
-        margin-bottom: 12%;/* marge inférieur correspondant à 4% de la hauteur de l'écran*/
+        margin-bottom: 12%;/* marge inférieur correspondant à 12% */
     }
 
     /*Style 2 sous-titres*/
     .populaires-cards .card-subtitle1 {
         font-size: 0.7rem; /* Taille légèrement plus petite pour le sous-titre */
         font-weight: 500; /* Semi-gras pour le sous-titre */
-        margin-bottom: 21%;/*marge inférieur correspondant à 6% de la hauteur de l'écran*/
+        margin-bottom: 21%;/*marge inférieur correspondant à 21% */
     }
 
     /*Etoiles*/
@@ -1361,7 +1361,7 @@ h3 {
     /*image des cartes populaires*/
     .populaires-cards img {
         width: 35%; /* Taille des images dans les cartes populaires */
-        padding: 0.4%;/*espace intérieur correspondant à 0.4% de la hauteur de l'écran*/
+        padding: 0.4%;/*espace intérieur correspondant à 0.4% du conteneur parent */
         border-radius: 0.8rem 0 0 0.8rem ;/*Ajustement visuel des coins arrondis*/
     }
 
@@ -1413,7 +1413,7 @@ h3 {
         flex-direction: column; /* Aligne les éléments du footer verticalement */
         gap: 12%; /* Espacement entre les éléments du footer */
         width: 100%; /* Le footer prend toute la largeur */
-        margin-top: 15%;/*marge supérieur correspondant à 5% de la hauteur de l'écran*/
+        margin-top: 15%;/*marge supérieur correspondant à 15% */
     }
 
     /*liste*/
