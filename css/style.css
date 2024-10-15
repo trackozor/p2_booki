@@ -163,7 +163,6 @@ li {
 .logo img {
     height: 2rem; /* Définit la hauteur du logo */
     margin-top: 1rem;/*marge supérieur logo correspondant à 3 % de la largeur de l'écran*/
-    margin-left:  0.5rem;
 }
 
 /* Style pour le menu de navigation dans l'en-tête */
@@ -211,6 +210,7 @@ li {
 .research-txt h2{
     margin-bottom: 0.5%; /* Suppression de la marge basse*/
     font-size: 1rem; /* taille de la police correspondant a 1.5% de la largeur de l'écran*/
+    padding-left: 0;
 }
 /* Conteneur parent pour l'icône localisation*/
 .local {
