@@ -666,18 +666,19 @@ h3 {
     
     .rangee {
         height: 30rem; 
-        .card {
-            height: 14rem;
-            width: 15rem;
-        }
-        h3 {
-            font-size: 1.1rem;
-            margin-bottom: 2%;
-            padding-top: 1%;
-        }
 
     }
-    
+
+    .rangee .card {
+        height: 14rem;
+        width: 15rem;
+    }
+
+    .rangee h3 {
+        font-size: 1.1rem;
+        margin-bottom: 2%;
+        padding-top: 1%;
+    }
     .rangee .card img{
         height: 65%;
     }
@@ -693,16 +694,12 @@ h3 {
     }
     /*--------------------------------------------------------------------------------------------------*/
     /*-------------populaires -----------------------*/
-    .populaires-cards {
-        .card{
+    .populaires-cards .card {
         height: 10rem;
-        }
-
-        h3{
-            font-size: 1.2rem;
-        }
     }
-
+    .populaires-cards h3 {
+        font-size: 1.2rem;
+    }
     .populaires-cards .card-rating {
         font-size: 1.2rem;
         padding-left: 2%;
@@ -739,7 +736,9 @@ h3 {
         margin:0;/*suppression de marges*/
         padding:0;/*suppression espaces intérieur*/     
     }
-
+    .main-container {
+        padding: 0;
+    }
     .logo img {
         height:1rem;
     }
@@ -766,7 +765,7 @@ h3 {
     }
     .Search-bar {
         width: 40%;
-        margin:-top 2%;
+        margin-top: 2%;
     }
     /*ajustement zone de texte*/
     .search-input{
@@ -1367,7 +1366,6 @@ h3 {
         display: flex; /* Flexbox pour aligner les cartes */
         flex-direction: column; /* Aligne les cartes verticalement */
         gap: 4vh; /* Espacement entre les cartes */
-        width:100ù; /* Les cartes occupent toute la largeur */
         align-items: center;/*aligne les éléments depuis le centre */
     }
     /*titre section*/
